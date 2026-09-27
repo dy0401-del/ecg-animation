@@ -1,0 +1,779 @@
+{
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "animations/af.html",
+      "bytes": 4427,
+      "sha256": "76e0083a14614eaedd2eedcb08fa7a1c8e9c6fab25d7488556bf07adf091cd89"
+    },
+    {
+      "path": "animations/afl.html",
+      "bytes": 3176172,
+      "sha256": "42b26c35cd40d26ae6133a19e0c6e4cc17b1c67084749c8ef77704de24756801"
+    },
+    {
+      "path": "animations/app.js",
+      "bytes": 8607,
+      "sha256": "78d2316816b60af5467e45e1fafdf3ff99b3e67b474f0711a1205c0378c089fa"
+    },
+    {
+      "path": "animations/assets/ecg/rbbb-reference/traced-waveforms.json",
+      "bytes": 30215,
+      "sha256": "220a945a23bdb0a570a08a050d5790860ebe64d3b66cd0ae264ce9a2ab258015"
+    },
+    {
+      "path": "animations/assets/ecg/rbbb-reference/V1-trace-overlay.png",
+      "bytes": 294473,
+      "sha256": "53ca4f025ba8cbd3912a10fe900cd38eef173f262a7763c66b30cb71fe6b73f8"
+    },
+    {
+      "path": "animations/assets/ecg/rbbb-reference/V1.png",
+      "bytes": 359506,
+      "sha256": "365e1667329a76f2939ee536def8c38262a171c741072cc4b295d70b8bd80c47"
+    },
+    {
+      "path": "animations/assets/ecg/rbbb-reference/V6-trace-overlay.png",
+      "bytes": 284597,
+      "sha256": "09dddf343d9a06cb7b152a4df4ad9936af3849434e910c67973b5bade8fc3470"
+    },
+    {
+      "path": "animations/assets/ecg/rbbb-reference/V6.png",
+      "bytes": 345684,
+      "sha256": "aa47a1c085f8e67b172e9306f59ee9fc7928612a80bd20baa2ef7394a197f6d1"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/000.webp",
+      "bytes": 917696,
+      "sha256": "33031bd7ecdd128350aa8dc207cfa553247bcefdaecb2a53634199648ae7fd98"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/001.webp",
+      "bytes": 917538,
+      "sha256": "49e0ef4ed349adf45327fe7785a6cf474b1e0b562c255d2b63ebe52cd020fd61"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/002.webp",
+      "bytes": 917402,
+      "sha256": "7d87aa275d363f7f756d26300527e99c69be36f5cd50d4751b23689f1cffebce"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/003.webp",
+      "bytes": 917366,
+      "sha256": "59e04f049baf120d8953db36c8103a8dca75abe648130967f025c2793869f27e"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/004.webp",
+      "bytes": 917362,
+      "sha256": "c9bb0f34847e7a0ecbcc7b97a0c20938df56dc8d31079989e44c9ab5d138ea62"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/005.webp",
+      "bytes": 917486,
+      "sha256": "94e2dfc8da173e62a1167eea644cd844a19363391e97ee9750aafac18f0fea47"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/006.webp",
+      "bytes": 917716,
+      "sha256": "4d6d8aaf3319dffe8c60d1a982babab681e32af1223d3c59d39f403403c990e5"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/007.webp",
+      "bytes": 917798,
+      "sha256": "4f58490233bec97a43b32378e7b4b2a4b0a02130c281ae123f09f991a2335100"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/008.webp",
+      "bytes": 917958,
+      "sha256": "20f7d9c75026cc283216e4e2028441213684d61cf5c44016b411e72b9645aa4a"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/009.webp",
+      "bytes": 918494,
+      "sha256": "c4e4dacb75bfae1129d1557fbbe1a2e1fb3a06583177cfab16d7ed91d006ee97"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/010.webp",
+      "bytes": 914390,
+      "sha256": "5dffb7a4815b69b08b5488f0b8911e171ccf80727da6e3c84f12cf8e9b34acc7"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/011.webp",
+      "bytes": 903806,
+      "sha256": "c43b995d23cb81eb6055ba494b3e0eb8208ddc271770248d9f179943889b4f21"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/012.webp",
+      "bytes": 901438,
+      "sha256": "21bc93ebb938aa4265f796462f18d9d49052533d1c5b1ab182ccc28ac59b44bb"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/013.webp",
+      "bytes": 901050,
+      "sha256": "20e34354dba8cb0bbba04b435e8a576b46def26b5fbb54b53c24d11794df32e6"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/014.webp",
+      "bytes": 900544,
+      "sha256": "c15571a9ec0b0b502828ef4399432c41d8f9d5861a1d80f03c51124e7d5ef819"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/015.webp",
+      "bytes": 900008,
+      "sha256": "f5bf52c38facc327b5a2d9bd49f2da4271bf99ec70861f56afbd91fcc6457c5b"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/016.webp",
+      "bytes": 900818,
+      "sha256": "e7fc5aeb7a7dfe3c366f1614a0f39393dfce8ccf20f0c852c9fb6deea10bb1b7"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/017.webp",
+      "bytes": 900660,
+      "sha256": "77b49694a5a8c233aa0cd21804df94c79ff5002a4005b75b0b10d51d17b4c4a8"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/018.webp",
+      "bytes": 899506,
+      "sha256": "0534ecf3e6e10806e9278928343ce8a978329bb0d467fe714437cc1bd5a73e63"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/019.webp",
+      "bytes": 898830,
+      "sha256": "b446dac8da1b038473d27dbfa2059dfeec61454c28746f3185f0030c38e6e3b3"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/020.webp",
+      "bytes": 897730,
+      "sha256": "67569208743fe91c50a46dcb130ed21e3d841a525460518c605c36216e390db0"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/021.webp",
+      "bytes": 897674,
+      "sha256": "963f4df37eda8c657b0a34f52d7e81cc4fabf786bd08f6a141510ed99d685275"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/022.webp",
+      "bytes": 896962,
+      "sha256": "f34ead5d3e88ce94ed2255a23e26959d849ff652bb467ac511083c6fa762609f"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/023.webp",
+      "bytes": 896976,
+      "sha256": "ce7db1471662a80e7bba563f60dd22488f0a81d3cbf9c688606411d8c2aad1a2"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/024.webp",
+      "bytes": 896752,
+      "sha256": "357f26d2aac51a66b421811b1c389540105f0a38d339cd1396bbe3bfe1a5b928"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/025.webp",
+      "bytes": 896694,
+      "sha256": "f777d76fec9c3d059fcaf715c26bc535c4c695fb0ccff668fa4a0ea3bdf95df4"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/026.webp",
+      "bytes": 895978,
+      "sha256": "33cff212feae722e787e74cc4223b2de12d1c33199890d452e3d1829d9efd184"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/027.webp",
+      "bytes": 895650,
+      "sha256": "86662c245194ad10b39fd088b97852b2b93c07e39700772ffea7906658e097d1"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/028.webp",
+      "bytes": 895008,
+      "sha256": "0999aceeeb4232486c3f8b1817eb9cd29f8ce98eed3038c5a557e8d681f87594"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/029.webp",
+      "bytes": 895696,
+      "sha256": "13fb26e27516ef9118adc441e692e41e7da584615dbcf40876ec1380470f0ae5"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/030.webp",
+      "bytes": 895392,
+      "sha256": "226cd53ff01c962b3c4d5010652a03de9452ccd343719b603f87af26625c4edc"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/031.webp",
+      "bytes": 895520,
+      "sha256": "658413a907b3a832cfe52bd50d924defccb548c7447c450bab15b8550058cadf"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/032.webp",
+      "bytes": 895614,
+      "sha256": "7e253cfcfc5bf2a36ac6e0f138b4ef9cffe65f1ed6ce23b2de322dbf3c42cfc8"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/033.webp",
+      "bytes": 895268,
+      "sha256": "b7f951df0ea4f529622f21f520302ef6556943b8b2990244aaff19e5645765ed"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/034.webp",
+      "bytes": 896128,
+      "sha256": "da9319be724aae9a887e358893e13998504975fe6443650587fb773d19a1e58f"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/035.webp",
+      "bytes": 895436,
+      "sha256": "e298fa05869b3ef958c314ceeeb4474dadbc1001863d9c2ccec4f980ab7dd956"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/036.webp",
+      "bytes": 897900,
+      "sha256": "cb74ac37bd00915857d133eec23c9a96678636415105e1901f320db02e67cda8"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/037.webp",
+      "bytes": 906204,
+      "sha256": "708ee538667a0928af93e2fc9991b73efc43216b39622bcd04449475a77f943e"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/038.webp",
+      "bytes": 910414,
+      "sha256": "3ce7ddf4da2d909c22e2f3b5a2531ded0d692d9f5598fdbd3ff9a1e1928e3066"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/039.webp",
+      "bytes": 916316,
+      "sha256": "5b0dab4432f883dbf1a825d468ab357a30ff34fd231641006bb9665b3c6565a9"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/040.webp",
+      "bytes": 916260,
+      "sha256": "754aeab22e6c7622b8b08b804abd947045948227dd859bc638d328189b49a983"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/041.webp",
+      "bytes": 916624,
+      "sha256": "c89879d7e063e7e2e08e35efb868abd51d6584fb8a61d1fddc65875eac36bd82"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/042.webp",
+      "bytes": 916248,
+      "sha256": "21537185f9de5ed7d6dad1bc9cdb45fd74b295fe3229683b473b8f71b73db49f"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/043.webp",
+      "bytes": 915960,
+      "sha256": "5be4047cb69dca0a5e14d5c9d57d5526f01a9e180b6403c6ff014582b1c909fb"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/044.webp",
+      "bytes": 915884,
+      "sha256": "61f1e14b320511cc279f1eb919b779c8c66563558c80d8c7badcafbad10a550f"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/045.webp",
+      "bytes": 915634,
+      "sha256": "df39a08eaa0211f8f1bcf45734eed7bd29ff062d5325d3fa2f57e37b5b0275d1"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/046.webp",
+      "bytes": 915344,
+      "sha256": "8a7a7b3ba5bdea3dd3eff2bf742895d55fc41401ddf2799106f9f4c8f7576e24"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/047.webp",
+      "bytes": 914796,
+      "sha256": "a9ffa21c23dc25dfed0d2542e7e22441eca7043f76ef08bbf2415e388f214e5e"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/048.webp",
+      "bytes": 914350,
+      "sha256": "dd49d9b60564f13902a1f9837d7f87413abf949c002583cd797ee8fc6d187b5c"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/049.webp",
+      "bytes": 914212,
+      "sha256": "b6124af96053f78dc4cfc8e755595de3bc7082ac1b85b48a4119303b0541e6c3"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/050.webp",
+      "bytes": 914286,
+      "sha256": "19dc385d3b3a2e19f53035fba13ac6470951fe2c7c7aec57f86571c96b1ef9f4"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/051.webp",
+      "bytes": 914150,
+      "sha256": "392afd52a16009bf6a7f731fb7ad37b00cbd474a2b222326ff712b93021e13cc"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/052.webp",
+      "bytes": 914558,
+      "sha256": "e70ef3844cd71eaba575e042bf18d3665c82871fd53ff873ccce85102792d470"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/053.webp",
+      "bytes": 914384,
+      "sha256": "1b6c5308662a7acedc2d698c325e5a1071784058d0d8ad822762f743969b5501"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/054.webp",
+      "bytes": 914752,
+      "sha256": "4a79e217a368569db7517437675d851238279a25003bf27c3cf4de89d995c62a"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/055.webp",
+      "bytes": 914758,
+      "sha256": "bf840f16a66a7339787ed60664e212c8035bbc63c02e5cb30ca5d146250ab789"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/056.webp",
+      "bytes": 913840,
+      "sha256": "4b9eb1defcb53632d33cd038427007f171db2673d11496ac90f50fe9d1118900"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/057.webp",
+      "bytes": 905218,
+      "sha256": "ba7e4cac618f89c2e1ac0f3b60b3d84a845e466fa11dccdad83b8e3c55881d9c"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/058.webp",
+      "bytes": 876504,
+      "sha256": "46620bbfcdaabcec291fd90228e88f04c71de6499387f1b92fe7c8de625b1881"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/059.webp",
+      "bytes": 867416,
+      "sha256": "114b45349e5069e69746680d0f40cf5f427216420656206797a1ee9afd92054f"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/060.webp",
+      "bytes": 864814,
+      "sha256": "49b88b40ea5d1ed0587a4a7343cbbae313351e7bb53c9cec310af888aa20641a"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/061.webp",
+      "bytes": 861452,
+      "sha256": "e33c0d706a9990ec3c3491d6827629a52d6a34282ea3c60d3c74439a0935437f"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/062.webp",
+      "bytes": 858632,
+      "sha256": "b7a3820dd8d192e2866fd3bdc4a1102405f3caaf9ff11ca926d966d3b0f65be4"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/063.webp",
+      "bytes": 855208,
+      "sha256": "c309130d4c5987785cc29c66b82c59f4718e65f33ee4e603425bafd7a6eb546b"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/064.webp",
+      "bytes": 851556,
+      "sha256": "18990c005bb462c9170564395ef47f3ea5ae79c481fc70fa34b787172276caf5"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/065.webp",
+      "bytes": 850066,
+      "sha256": "91a2e8a8d1e30941d41cb86664855c577966e9d2d1e6e1b2ad68082d3cb2310c"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/066.webp",
+      "bytes": 849540,
+      "sha256": "5ec49da4be2cca3a2e588467f076a51d0f1998d599e645c0f798f22c78fd3676"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/067.webp",
+      "bytes": 849858,
+      "sha256": "8fdc14d80efc95d9283da6a5eeb1dc03b89c8e993f1c20f996a6e6dc51daf703"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/068.webp",
+      "bytes": 850294,
+      "sha256": "0368e68519d8df726a1cecf38007400083adc8438df600f1b91e89d899e7af3b"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/069.webp",
+      "bytes": 851362,
+      "sha256": "32e1d5da9b9d28dfaecb4cbd4b250b7daf3c61be88d39f591b971ee852d26d25"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/070.webp",
+      "bytes": 851666,
+      "sha256": "f5b7d449636eed6b4fb934fd69df954e355c03380d4efdcc15762302fc79728b"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/071.webp",
+      "bytes": 852050,
+      "sha256": "00eb7f70e0c9822f9a3911a2c6eff5ae34cedfb32e7583a6d0cfc81a22c6da25"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/072.webp",
+      "bytes": 851658,
+      "sha256": "8e001d1c6be3fcc6fa81ccdd14c46012e2fb4aa7d5072f92c419808ce2b25a84"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/073.webp",
+      "bytes": 851766,
+      "sha256": "646bece37505d7af77ea1c80c2bb465025af888edbe898a8a0804121bfd9964f"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/074.webp",
+      "bytes": 852146,
+      "sha256": "1362d68e54234fe770e0215e26a5f50e8375c8b5eff59604700022a1f381a2e6"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/075.webp",
+      "bytes": 852224,
+      "sha256": "d2c752365e6237a39153f5540c792ea0c6c1f9152705433d6af29a747b455ea3"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/076.webp",
+      "bytes": 849784,
+      "sha256": "08d330aadae304e587b6011198329b0194462015afe38d7849daf7f1d0ebcf05"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/077.webp",
+      "bytes": 843794,
+      "sha256": "eec0b13ea8a6c309b3c870e7ad660caa813a5d6bbc78e879c7696e25e99988fc"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/078.webp",
+      "bytes": 839156,
+      "sha256": "8649cbb7220dca9fc79734d58fcc55dddebd3812fb6386c32a822a2b70beb7fa"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/079.webp",
+      "bytes": 836254,
+      "sha256": "f321f62c93909b77399496a5868bb9db80ec304d23b818e06ffc2e7e0e9e252d"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/080.webp",
+      "bytes": 837764,
+      "sha256": "5ea9b95c33c3ef204a90f1cede3aa91f62fc0c347f2c223d3fdf5bf7362c8648"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/081.webp",
+      "bytes": 838542,
+      "sha256": "2f254c9f8ba16e08fd3be9f7517de60168eedc1c36099b6acff4f5c2037abe1c"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/082.webp",
+      "bytes": 838540,
+      "sha256": "59b51f8ae23024af41b11cc576cf8d15b11c174659ac48ef4052c26f3be32396"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/083.webp",
+      "bytes": 840802,
+      "sha256": "ab07e2d7191629cb544bc0cf47b1e6bcf4e52af541cc2191bac39a930f9a13b1"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/084.webp",
+      "bytes": 842918,
+      "sha256": "ff6559a931d03936db9bec2a186770fc0228afc16dd133cd3b0e74db6bea4f77"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/085.webp",
+      "bytes": 844352,
+      "sha256": "ab7734d70e933d86c6f19201a4ced263b7a9e2b910d05bc49940f639361cb83d"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/086.webp",
+      "bytes": 847356,
+      "sha256": "4a6054a846fdfdf0d33b3f27e0cea202f3b331ab95794369d75a133649f90b73"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/087.webp",
+      "bytes": 849968,
+      "sha256": "27fdeca451348af6d39650ee0917a9db629afa97242d33d741bb700683aedcc1"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/088.webp",
+      "bytes": 853048,
+      "sha256": "045fb3f022b9dcd15df23bcd96ec12a4e6936ca812f118f3c57e353b13b132a8"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/089.webp",
+      "bytes": 855032,
+      "sha256": "fe120351c805ad358d1f1af89f388f542d98591c1bf3b58201902bf3a8a631fd"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/090.webp",
+      "bytes": 859390,
+      "sha256": "95ac78c28263cfc13b2347cef9fe6bec108dd94582c24499e654fa27a5be8f3e"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/091.webp",
+      "bytes": 861088,
+      "sha256": "3281e950d5ca49a0a3266efb89d1d0526f6b6d4f082f7e7d687359f9360c1d58"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/092.webp",
+      "bytes": 864720,
+      "sha256": "bc5d93749ef1ac3c34853fd04df8a3909c597fc977c814a8d6bf2ccd34555983"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/093.webp",
+      "bytes": 867412,
+      "sha256": "581a63fdb0d788a8827366dffd0d1fff4ffb572332263683640b3a36d54ba3fa"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/094.webp",
+      "bytes": 869526,
+      "sha256": "c52b432ed784424e705089fcaf757a15937454db79ba7cf04afd0261aa4b5c0f"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/095.webp",
+      "bytes": 873136,
+      "sha256": "218f8ba9cea2de96dc2d2ba15e0db8cf7eaf799ac8f36073dab4a34292276505"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/096.webp",
+      "bytes": 877748,
+      "sha256": "e534db5bb1f6515ec98488a58fe30a8a5511c01469cb8090145ad16df32ea3d1"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/097.webp",
+      "bytes": 894232,
+      "sha256": "848805fa38e71b1cda52d420a493f24266c7354854d1de62d5313a300300407c"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/098.webp",
+      "bytes": 905842,
+      "sha256": "7076b7eefda03acc879177912b1fb5dafe706f1a2ff5c155986c48fa23f1184a"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/099.webp",
+      "bytes": 908988,
+      "sha256": "52af8aefc20e7813f42775210379957921c378213bd7675443fc74c4beb7382c"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/100.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/101.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/102.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/103.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/104.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/105.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/106.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/107.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/108.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/109.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/110.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/111.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/112.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/113.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/114.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/115.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/116.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/117.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/118.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/assets/heart/sinus-v24/119.webp",
+      "bytes": 916200,
+      "sha256": "7414d3898fa01029638b87f702d436df1be5a3899f7e7a1b65346c2fca1e4550"
+    },
+    {
+      "path": "animations/config/anatomy.js",
+      "bytes": 1566,
+      "sha256": "bb50dd34fb458872d40c383332b5d69c1dd4e4b491fa741f8f10b4737ae4f4a3"
+    },
+    {
+      "path": "animations/config/defaults.js",
+      "bytes": 525,
+      "sha256": "66232a7897324735519fbe4ff7b6e45e271e38ebddf256766cbc46b18bea8b55"
+    },
+    {
+      "path": "animations/config/design.js",
+      "bytes": 1454,
+      "sha256": "9e0e68ce9e5b3610125a61239117bcfcbe3fea329be01c917385d3fef68309c2"
+    },
+    {
+      "path": "animations/core/activation-renderer.js",
+      "bytes": 1225,
+      "sha256": "2b73f857022f5275a26a6b113125f2b55ca6a82618aab7e7dec465f8145d8095"
+    },
+    {
+      "path": "animations/core/conduction-renderer.js",
+      "bytes": 1540,
+      "sha256": "0052c5f96539a24e68085345ace2a85bae60943bd8203d6e750a02d7fba740f0"
+    },
+    {
+      "path": "animations/core/contraction-renderer.js",
+      "bytes": 1264,
+      "sha256": "7ea2eddcc151167572bdccb0dc7233df462d99eb1326cd9c2e6d121ad9619d3a"
+    },
+    {
+      "path": "animations/core/ecg-renderer.js",
+      "bytes": 7317,
+      "sha256": "5264d89e6ffcbcc3b7f4e660a50b661d37ba1eaf1d9b5710d6978fcabd80bfbd"
+    },
+    {
+      "path": "animations/core/heart-renderer.js",
+      "bytes": 1768,
+      "sha256": "609150f93a7b28b6ed1e526a099b29ff4696a580a660ce6c9ae243882d7630d0"
+    },
+    {
+      "path": "animations/core/label-renderer.js",
+      "bytes": 758,
+      "sha256": "6865dc7339d6eb061bca076f8a10656c4123928391301cb545f185fd60c41ca5"
+    },
+    {
+      "path": "animations/core/mechanical-renderer.js",
+      "bytes": 1412,
+      "sha256": "2fb216b29313e77a0266414bab068aa8835e234308fe799eea0ac665d2267e5c"
+    },
+    {
+      "path": "animations/core/rhythm-engine.js",
+      "bytes": 4154,
+      "sha256": "531419df868eacac0e7563e1f88cbd1e73b9edf8606468ab0a3544ff6e6423d7"
+    },
+    {
+      "path": "animations/core/timeline.js",
+      "bytes": 5189,
+      "sha256": "d8a1586687c660e4ef50907f6f67f462c1f1e424bb05674a2e10b3ba39951d38"
+    },
+    {
+      "path": "animations/lbbb.html",
+      "bytes": 3111391,
+      "sha256": "87141d8c5cb8f4df67cb93fae0e3ef34cc11dc87f5be471b0f525e707da7822e"
+    },
+    {
+      "path": "animations/rbbb.html",
+      "bytes": 4524,
+      "sha256": "419b3127975c876e4f8c8448ed2d5f7ead6392584990815a5304abf0c0418639"
+    },
+    {
+      "path": "animations/rhythms/atrial-fibrillation.js",
+      "bytes": 37541,
+      "sha256": "0d4302f285f26fa4925aaeff3036db1173be9169a69759f1d387df5b56ec75d3"
+    },
+    {
+      "path": "animations/rhythms/README.md",
+      "bytes": 961,
+      "sha256": "7df19db6a05d032e88132aa9aa0757e950d0b6610fb5e4962bab45715091e626"
+    },
+    {
+      "path": "animations/rhythms/right-bundle-branch-block.js",
+      "bytes": 57773,
+      "sha256": "bfdf72977cb9b54d9ebd43955ae3366b42254bff6d7f5019a1228a8d9d6e8f81"
+    },
+    {
+      "path": "animations/rhythms/sinus.js",
+      "bytes": 4386,
+      "sha256": "0fbc3548ea327a0cdc610617ecf59cc822f458f1c0995a8e36ea078fb78a118b"
+    },
+    {
+      "path": "animations/sinus-rhythm.html",
+      "bytes": 142610434,
+      "sha256": "ef48372c4542e6f3460d22b1b92bf9f116ac66296668dae0f9e00c7283291564",
+      "parts": [
+        {
+          "path": ".deployment/parts/sinus-rhythm.000.part",
+          "sha256": "3f17673d7bb161fbfbfbdeff9f30895fa47318c83d51b7fc54af050786d6690e"
+        },
+        {
+          "path": ".deployment/parts/sinus-rhythm.001.part",
+          "sha256": "5c877e6a3c1afd40ab9c0253453b890b758cdde1b34dd050fc925db3b7d04a0f"
+        },
+        {
+          "path": ".deployment/parts/sinus-rhythm.002.part",
+          "sha256": "c9ba839c931c37547bfc00777907125a2b8090d02443702b50b6c549e466f2b4"
+        },
+        {
+          "path": ".deployment/parts/sinus-rhythm.003.part",
+          "sha256": "d01c73802482ef760018265c1ae03a7aa2e5fe492d04f54c633d300914165e6f"
+        },
+        {
+          "path": ".deployment/parts/sinus-rhythm.004.part",
+          "sha256": "9be4d7b0d22af6c5945aa58589a4bdeea696d20faa3f189e9b98a6162a09a3be"
+        },
+        {
+          "path": ".deployment/parts/sinus-rhythm.005.part",
+          "sha256": "affde489bd6b048ec29d33d70b5e439e6bee5f32d3bdf03403571830e38cbfec"
+        },
+        {
+          "path": ".deployment/parts/sinus-rhythm.006.part",
+          "sha256": "acb8b31bc255cbab4f3de3d31e9dd1b209a6ff642daf5d9e68e3cc6d1894d6a7"
+        }
+      ]
+    },
+    {
+      "path": "index.html",
+      "bytes": 3189,
+      "sha256": "752f3e6926d8a0b36fa992b50e1f4d7118f436d206e1f7a23a6a039a0eb35dad"
+    }
+  ]
+}

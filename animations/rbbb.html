@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <base href="./">
+  <script>window.CARDIAC_ANIMATION_REQUEST={"rhythm":"right-bundle-branch-block","heartRate":60,"duration":5,"fps":60};</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>右脚ブロックとV1・V6誘導心電図</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#fff;color:#1F2933;font-family:"BIZ UDPGothic","BIZ UDPゴシック","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;font-weight:600}main{display:flex;min-height:100vh;flex-direction:column;align-items:center;justify-content:center;padding:8px 12px}#scene{display:block;max-height:calc(100vh - 108px);max-width:100%;width:auto;height:auto;aspect-ratio:1808/1488;background:white}.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;min-height:52px;margin-top:8px}button,select{background:#F8FAFC;border:1px solid #94A3B8;border-radius:7px;color:#111827;padding:9px 14px;font-family:inherit;font-size:16px;font-weight:700;line-height:1.2;cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #37768a;outline-offset:2px}input{width:240px;accent-color:#526A75}#status{font-size:16px;font-weight:700;min-width:170px;color:#1F2933}details{font-size:15px;font-weight:600;color:#374151;max-width:1100px;margin:5px auto}details p{line-height:1.75}summary{cursor:pointer;text-align:center;font-size:16px;font-weight:700;color:#1F2933}#loading{position:fixed;inset:0;background:#fff;display:grid;place-content:center;color:#374151;font-size:18px;font-weight:600;z-index:5}a{color:#1D4F6E;font-weight:700}@media(max-width:500px){main{padding:4px}#scene{max-height:calc(100svh - 128px)}.controls{gap:7px}button,select{padding:8px 10px;font-size:15px}input{width:150px}#status{font-size:14px;min-width:145px}}
+  </style>
+</head>
+<body>
+  <div id="loading" role="status">心臓フレームを読み込み中…</div>
+  <main>
+    <canvas id="scene" width="1808" height="1488" aria-label="上段に正常洞調律の心臓、下段に25 mm/秒相当で5拍連続するⅡ誘導心電図"></canvas>
+    <div class="controls">
+      <button id="play">一時停止</button>
+      <button id="reset">最初から</button>
+      <input id="seek" type="range" min="0" max="299" step="1" value="0" aria-label="5拍・5秒内の再生位置">
+      <select id="speed" aria-label="再生速度">
+        <option value="1">1倍速</option>
+        <option value="0.5">0.5倍速</option>
+      </select>
+      <output id="status">0.00 / 5.00 秒</output>
+    </div>
+    <details id="explanation">
+      <summary>同期と波形について</summary>
+      <p>完成済みV24の心臓120フレームを変更せず、共通beatPhaseで1拍1000msとして5回繰り返します。ECGは完了した拍を残し、同じ波形を右へ連続して5拍描画します。1つの共通時間軸から、心臓フレームと心電図の描画範囲を決定します。心電図は実測データではなく正常Ⅱ誘導の模式波形です。横軸は25 mm/秒相当で、1小マス＝0.04秒、1大マス＝0.20秒、1拍＝1.00秒＝5大マスとして表示します。</p>
+      <p>心室脱分極の終わりに淡い興奮色を保持し、ST区間では維持、T波の開始から終了まで徐々に退色します。伝導路を逆向きに光らせる表現はありません。</p>
+      <p>参考：<a href="https://www.msdmanuals.com/professional/cardiovascular-disorders/cardiovascular-tests-and-procedures/electrocardiography" target="_blank" rel="noopener">MSD Manual：ECGの各成分</a></p>
+    </details>
+  </main>
+  <script src="config/defaults.js"></script>
+  <script src="config/design.js"></script>
+  <script src="config/anatomy.js"></script>
+  <script src="core/timeline.js"></script>
+  <script src="core/heart-renderer.js"></script>
+  <script src="core/mechanical-renderer.js"></script>
+  <script src="core/conduction-renderer.js"></script>
+  <script src="core/activation-renderer.js"></script>
+  <script src="core/contraction-renderer.js"></script>
+  <script src="core/ecg-renderer.js"></script>
+  <script src="core/label-renderer.js"></script>
+  <script src="core/rhythm-engine.js"></script>
+  <script src="rhythms/sinus.js"></script>
+  <script src="rhythms/atrial-fibrillation.js"></script>
+  <script src="rhythms/right-bundle-branch-block.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
