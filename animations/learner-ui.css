@@ -1,0 +1,118 @@
+/* Learner-facing layout only. Animation canvases and playback logic are unchanged. */
+html { background: #f5f7f9; }
+body {
+  margin: 0;
+  background: #f5f7f9;
+  color: #111827;
+  font-family: "BIZ UDPGothic","BIZ UDPゴシック","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+*, *::before, *::after { box-sizing: border-box; }
+.ecg-page {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 0;
+  margin: 0 auto;
+  padding: 16px;
+}
+.ecg-back-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin: 0 0 12px;
+  padding: 8px 4px;
+  color: #176873;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.ecg-back-link:hover { color: #0c424b; background: #e8f1f2; }
+.ecg-back-link:focus-visible { outline: 3px solid #168798; outline-offset: 3px; }
+#scene {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(100svh - 170px);
+  background: #fff;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.controls, .ecg-page > nav[aria-label="再生設定"] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: auto;
+  min-height: 58px;
+  margin: 0;
+  padding: 12px 0;
+}
+.controls > *, .frame-position > * { max-width: 100%; }
+button, select {
+  min-height: 44px;
+  padding: 8px 12px;
+  background: #fff;
+  color: #111827;
+  border: 1px solid #a9b7bf;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.controls label, .ecg-page > nav label { display: inline-flex; align-items: center; gap: 8px; }
+.ecg-watch, .ecg-learning-notes {
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px auto 32px;
+  padding: 32px;
+  background: #fff;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  overflow-wrap: break-word;
+  line-break: strict;
+}
+.ecg-watch { padding: 24px 32px; margin-bottom: 20px; }
+.ecg-learning-references { width: 100%; max-width: 1100px; margin: 0 auto 32px; font-size: 16px; line-height: 1.8; }
+.ecg-watch h2 { margin: 0 0 12px; font-size: 23px; line-height: 1.5; }
+.ecg-learning-notes h2 { margin: 0 0 28px; font-size: clamp(22px, 4vw, 30px); line-height: 1.5; }
+.ecg-learning-notes h3 { margin: 30px 0 10px; font-size: 23px; line-height: 1.5; }
+.ecg-watch p, .ecg-learning-notes p, .ecg-learning-references p {
+  margin: 0 0 16px;
+  color: #111827;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: left;
+}
+.ecg-watch p:last-child, .ecg-remember p:last-child, .ecg-learning-references p:last-child { margin-bottom: 0; }
+.ecg-learning-notes ul { margin: 0 0 16px; padding-left: 1.45em; }
+.ecg-learning-notes li { margin: 4px 0; }
+.ecg-remember {
+  margin-top: 30px;
+  padding: 24px;
+  background: #eef6f5;
+  color: #111827;
+  border: 1px solid #ccdedd;
+  border-radius: 8px;
+}
+.ecg-learning-notes .ecg-remember h3 { margin: 0 0 12px; }
+.ecg-learning-common { margin-top: 32px; padding-top: 24px; border-top: 1px solid #d1d5db; }
+.ecg-learning-notes .ecg-learning-common h3 { margin-top: 0; }
+@media (max-width: 600px) {
+  .ecg-page { padding: 12px; }
+  #scene { max-height: calc(100svh - 220px); }
+  .controls, .ecg-page > nav[aria-label="再生設定"] { gap: 8px; }
+  .ecg-watch, .ecg-learning-notes { margin: 16px auto 24px; padding: 20px 16px; font-size: 16px; }
+  .ecg-watch h2, .ecg-learning-notes h3 { font-size: 20px; }
+  .ecg-learning-notes h2 { font-size: 22px; margin-bottom: 22px; }
+  .ecg-remember { padding: 20px 16px; }
+}

@@ -12,11 +12,13 @@
 
 .ecg-learning-notes{width:min(100%,1100px);margin:24px auto 40px;padding:clamp(20px,4vw,38px);background:#fff;color:#111827;border:1px solid #d1d5db;border-radius:8px;font-size:16px;font-weight:400;line-height:1.8;overflow-wrap:anywhere}.ecg-learning-notes h2{margin:0 0 28px;color:#111827;font-size:clamp(22px,4vw,30px);line-height:1.45}.ecg-learning-notes h3{margin:30px 0 10px;color:#111827;font-size:clamp(18px,3vw,23px);line-height:1.5}.ecg-learning-notes p{margin:0 0 16px;color:#111827;text-align:left;font-size:inherit;line-height:inherit}.ecg-learning-notes ul{margin:0 0 16px;padding-left:1.45em}.ecg-learning-notes li{margin:4px 0}.ecg-learning-common{margin-top:34px;padding-top:24px;border-top:1px solid #d1d5db}.ecg-learning-common h3{margin-top:0}@media(max-width:600px){.ecg-learning-notes{margin:16px auto 28px;padding:18px 16px;font-size:15px}.ecg-learning-notes h2{margin-bottom:22px}.ecg-learning-notes h3{margin-top:24px}.ecg-learning-notes ul{padding-left:1.3em}}
 </style>
+  <link rel="stylesheet" href="learner-ui.css?v=20260929">
 </head>
 <body>
   <div id="loading" role="status">心臓フレームを読み込み中…</div>
-  <main>
-    <canvas id="scene" width="1808" height="1488" aria-label="上段に正常洞調律の心臓、下段に25 mm/秒相当で5拍連続するⅡ誘導心電図"></canvas>
+  <main class="ecg-page">
+    <a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a>
+    <canvas id="scene" width="1808" height="1488" aria-label="右脚ブロックの心臓と心電図の同期アニメーション"></canvas>
     <div class="controls">
       <button id="play">一時停止</button>
       <button id="reset">最初から</button>
@@ -27,6 +29,11 @@
       </select>
       <output id="status">0.00 / 5.00 秒</output>
     </div>
+  <section class="ecg-watch" aria-labelledby="ecg-watch-title">
+<h2 id="ecg-watch-title">ここを見る</h2>
+<p>特に、「左室と右室が同時に興奮していないこと」に注目してください。</p>
+<p>中隔・左室が先に興奮し、その後に右室自由壁が遅れて興奮するタイミングと、心電図のQRS終末部を見比べると理解しやすくなります。</p>
+</section>
   <section class="ecg-learning-notes" aria-label="rbbbの学習者向け波形解説">
 <h2>RBBB（Right Bundle Branch Block：右脚ブロック）</h2>
 <h3>どんな波形？</h3>
@@ -44,9 +51,6 @@
 <p>この遅れて起こる右室の興奮がQRS終末部に加わるため、QRS幅が広くなります。</p>
 <p>V1は右室に近い誘導なので、遅れて右室方向へ向かう興奮を捉え、QRS終末部にR'波が現れやすくなります。</p>
 <p>一方、Ⅰ・V6誘導では、この遅い右室方向への興奮が電極から遠ざかる方向になるため、終末部に幅の広いS波として現れます。</p>
-<h3>アニメーションで見るポイント</h3>
-<p>特に、「左室と右室が同時に興奮していないこと」に注目してください。</p>
-<p>中隔・左室が先に興奮し、その後に右室自由壁が遅れて興奮するタイミングと、心電図のQRS終末部を見比べると理解しやすくなります。</p>
 <h3>ST-T変化について</h3>
 <p>右脚ブロックでは、心室の興奮順序が変化することで二次性ST-T変化がみられることがあります。</p>
 <p>特にV1〜V3誘導では、</p>
@@ -58,8 +62,10 @@
 <p>右脚ブロックは、心室内の伝導異常を示す心電図所見です。</p>
 <p>右脚ブロックを認めたことだけで、その原因となる疾患まで判断することはできません。</p>
 <p>また、QRS幅が0.12秒未満でも右脚ブロック様の波形を示すことがあり、完全右脚ブロックと不完全右脚ブロックを区別して考えます。</p>
-<h3>覚えるポイント</h3>
+<section class="ecg-remember" aria-labelledby="ecg-remember-title">
+<h3 id="ecg-remember-title">覚えるポイント</h3>
 <p>「QRSが広い ＋ V1終末部のR' ＋ Ⅰ・V6の幅広いS」</p>
+</section>
 <section class="ecg-learning-common" aria-labelledby="ecg-learning-common-title">
 <h3 id="ecg-learning-common-title">この教材で共通して覚えてほしいこと</h3>
 <p>心電図は、波形の形だけを暗記するのではなく、</p>

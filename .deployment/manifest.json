@@ -7,13 +7,13 @@
     },
     {
       "path": "animations/af.html",
-      "bytes": 9767,
-      "sha256": "8543e84283898ce2be808b68b4a1f8d8beafd855c07ac10ea25aaf679f5ba4d9"
+      "bytes": 10064,
+      "sha256": "e2b03ed51ea054899d0c4f8ef634683261b887bf4d140726bcd65b4c239e536a"
     },
     {
       "path": "animations/afl.html",
-      "bytes": 7962,
-      "sha256": "cc5db951d784e63a51ea8106b71e6f9d9f84324d5d3c9d6c0757e6aeaeed40b5"
+      "bytes": 8284,
+      "sha256": "582d0e2888e8ec9a4e19abf7e5b5d77047026802441c669034e40c60ebc57133"
     },
     {
       "path": "animations/app.js",
@@ -707,13 +707,13 @@
     },
     {
       "path": "animations/lbbb.html",
-      "bytes": 7869,
-      "sha256": "d17bc4f9d14f7322eb6e3a1609f044ed220174fb363ebf7e43f3dbb626214a64"
+      "bytes": 8191,
+      "sha256": "95215601474a5d923e070958be58591739d65908177496c08fc5c9396931ab89"
     },
     {
       "path": "animations/rbbb.html",
-      "bytes": 9222,
-      "sha256": "f5852fe4c3f169c25e03844c79874cc4600809caf6354ee3a7e712784908d46a"
+      "bytes": 9525,
+      "sha256": "236dedabc65c35ed464987b5710d83d8a3dc8f6f0319f60c5082f20a1153d1db"
     },
     {
       "path": "animations/rhythms/atrial-fibrillation.js",
@@ -737,36 +737,36 @@
     },
     {
       "path": "animations/sinus-rhythm.html",
-      "bytes": 142615075,
-      "sha256": "f016ca7ae1cd94de6827fc3735705cfed8ab0260e1ff3a01f28c3f3b0051c708",
+      "bytes": 142615404,
+      "sha256": "bc8edbd0cd2bec3f7c5bf9ef414b5c982ae8b53f44e31cfdb860092d5cdf7c48",
       "parts": [
         {
           "path": ".deployment/parts/sinus-rhythm.000.part",
-          "sha256": "e9408c7304c6b8f2901e745cc7d679615cca3088a33a99898fd0b61b0cf3d2ec"
+          "sha256": "fdf7dc0918244897e7a2790828cec5698181367cd80035c1b48479debe56782d"
         },
         {
           "path": ".deployment/parts/sinus-rhythm.001.part",
-          "sha256": "cfdded5ab00abddf0b59af025aa4fa8479ba0b98ca2f6e48fd6b0898f1cf4caa"
+          "sha256": "2344d11d70b0692d43599cc450d54402f56cbfc998cd794f51141a3d0fe24d2e"
         },
         {
           "path": ".deployment/parts/sinus-rhythm.002.part",
-          "sha256": "d1c7d7cdca14d30abe75097686b9f21d1d4fdfe28efca0200214750c58cb5496"
+          "sha256": "c47435bfe16f47c856b4e6d2b633ecbe91e3cd673b3f810f78e9342d0f6817a2"
         },
         {
           "path": ".deployment/parts/sinus-rhythm.003.part",
-          "sha256": "69b5037a88f85344cbeb11e53c9ec0deb8b8a64d9a426464a3bcf04222d7420e"
+          "sha256": "cdfdca8a6966a528de416aa6c90d66d928f262de1298c10b009176a78bef04ab"
         },
         {
           "path": ".deployment/parts/sinus-rhythm.004.part",
-          "sha256": "9882eec966d2d98345034a2c6bd477eec42efca3034b4021b9c2374a271c0d92"
+          "sha256": "68f04d03d20c452a5a89f3cca5ff286b1cdd203a13c17cfe13da7eca3972b2fa"
         },
         {
           "path": ".deployment/parts/sinus-rhythm.005.part",
-          "sha256": "32714501292ddfae135d8170fe4cd9deec317f05002c324ff3c89d96c72822d1"
+          "sha256": "180f87b52fac056cb87aa263fa45c573bd7046ee7d946f1018cddcc2db8162d2"
         },
         {
           "path": ".deployment/parts/sinus-rhythm.006.part",
-          "sha256": "3bb145cb877c2296a3326b3178db81f5ce2a315012457ee248f3ffbf2c874aca"
+          "sha256": "4599c8c2656e97d5b98792662f8f2e4c494eae20f8c852c61fa97a87bb067348"
         }
       ]
     },
@@ -789,6 +789,11 @@
       "path": "animations/assets/video/afl.mp4",
       "bytes": 2380383,
       "sha256": "a003aec12631a4f384eaab95b71fbd7276f519bc9172c379de2dded5836344cb"
+    },
+    {
+      "path": "animations/learner-ui.css",
+      "bytes": 3601,
+      "sha256": "b661a947b7ce35c7fc5d88647079a2aafc1590d54b9768445cb8c90c02cb8f34"
     }
   ]
 }
