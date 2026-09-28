@@ -12,8 +12,8 @@
     },
     {
       "path": "animations/afl.html",
-      "bytes": 3181718,
-      "sha256": "8291cd158cc67615c6e8f3cbed10a807a94376120b75cf7bea52c1753eb10414"
+      "bytes": 7934,
+      "sha256": "62057cadf762d701d5de508aced98a2b818bdd1e75c0be9fbeb88c14220208fd"
     },
     {
       "path": "animations/app.js",
@@ -707,8 +707,8 @@
     },
     {
       "path": "animations/lbbb.html",
-      "bytes": 3116830,
-      "sha256": "c8129487f65ecbaa1042a147f8316f349a8bf7316b9f2cd2ba1745ab5f010d54"
+      "bytes": 7841,
+      "sha256": "69aacd599a18ab5c73c7b2e120c6accc51bc0378a2236bc6b4ef12c08fc93d48"
     },
     {
       "path": "animations/rbbb.html",
@@ -774,6 +774,2951 @@
       "path": "index.html",
       "bytes": 3189,
       "sha256": "752f3e6926d8a0b36fa992b50e1f4d7118f436d206e1f7a23a6a039a0eb35dad"
+    },
+    {
+      "path": "animations/frame-player.js",
+      "bytes": 4786,
+      "sha256": "399df9f43619c8f81dc760b29baba97d9847152e61e17b47c53dd0bfc4f589b9"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/000.webp",
+      "bytes": 841786,
+      "sha256": "6bb4be55a8496bc72dd380a7d02db039d0fdafb722a6b7afcc87411e472a2c52"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/001.webp",
+      "bytes": 849496,
+      "sha256": "f52d69bd978a2e3df9222a1c39ff7a35f4f44bbfe025a52a375ecd7a51b4dd5a"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/002.webp",
+      "bytes": 857356,
+      "sha256": "271952c2deacee989b607304f66643b27da31643d1327665a743f2991a3b2a2f"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/003.webp",
+      "bytes": 857572,
+      "sha256": "dfc8ee149390c52c7148ea35edd2d2fce1dc1438375a1d3fe092712b02162058"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/004.webp",
+      "bytes": 858334,
+      "sha256": "efadfb0645db7303ff13897f064bc43591771691b2b329164b982b13a1607c59"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/005.webp",
+      "bytes": 857046,
+      "sha256": "78d54e5267c4cb69af388c3057a21c2799ae31187f4cbf2fb8ee9a151b8f6803"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/006.webp",
+      "bytes": 859702,
+      "sha256": "faa20812252a1f81ca5df09141980b32633901336fb7962ad8bd6f03a6037d3d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/007.webp",
+      "bytes": 856830,
+      "sha256": "f220acaed249100f0111cdc01ca2bc6cb9d846bc382743074bad0babe2196ffd"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/008.webp",
+      "bytes": 862176,
+      "sha256": "45eadd5b03155b4b15d5e4bd65a4b2d5ba0b2e678eb78e54fd2185be3433a0c0"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/009.webp",
+      "bytes": 865060,
+      "sha256": "73da78b78ebe04c9d74d376ef6306cf22c3e350e8af043a020b16862d7e5c645"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/010.webp",
+      "bytes": 872280,
+      "sha256": "b0e9d633a4c2f019b6136e34cdca1fa43f341b912aaa6d454723b4322df14df9"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/011.webp",
+      "bytes": 874078,
+      "sha256": "ff41d7a5a9468cf5f5dbec57a60cf2bba53368ced035afd72b9c6f7c36a3e049"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/012.webp",
+      "bytes": 875264,
+      "sha256": "dd1f3152948e6ca088494a0591b8eb4c11521c92b0d48eeba05836a266608e9f"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/013.webp",
+      "bytes": 866828,
+      "sha256": "6ec2dc8aa5a830210e06714b949429003cf7d8d25b5664aba082d2bc25487736"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/014.webp",
+      "bytes": 850830,
+      "sha256": "3c77ea0473522315dedfcf5db9f47999c49471e3e31667e6a95d6c0931f5f4ce"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/015.webp",
+      "bytes": 842172,
+      "sha256": "d7b85bea268eb91526b0a734a302ea4dacac4da1c8456f5d9e165fa7556d3fa0"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/016.webp",
+      "bytes": 844302,
+      "sha256": "cda8d367a93dbd931f744d660be5ee80c4879c5cf0b888ff6c7985fbdbc59ae3"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/017.webp",
+      "bytes": 845148,
+      "sha256": "d43ef0242f1ee48ded47b2a498ad50f76e3cd503af2fcaec49919469b150b05d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/018.webp",
+      "bytes": 850364,
+      "sha256": "fa9f01cfd74844aac367333e595852fdc5c27c8cad887360e17e3651e9232f3d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/019.webp",
+      "bytes": 833578,
+      "sha256": "94d26a8508a0fdb536b08717fedc74b571d353a3368ad53e39a7524b038e9d23"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/020.webp",
+      "bytes": 831606,
+      "sha256": "70034d25abcca7bd2314c2cae7d7d596ecff764fa0d8b86a4517f6a2e7309757"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/021.webp",
+      "bytes": 832816,
+      "sha256": "7a133182c9e031a6be363e209eadfb7a08b8523f27a03b95c2941ffabf86aad6"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/022.webp",
+      "bytes": 832608,
+      "sha256": "fb282d1d510cb06901d7762d84a5625c8b78832d70f28b634563dabdaf5cef36"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/023.webp",
+      "bytes": 819022,
+      "sha256": "e9e61cf464c32abc15ed8c47bc970c6ab4b87b1690642e6b33ee2e0cd8d27657"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/024.webp",
+      "bytes": 821336,
+      "sha256": "844cae2bb72ca0a862009ae7d9bbf64052967ea8a70154e032bcc08fdef43950"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/025.webp",
+      "bytes": 820482,
+      "sha256": "3e61b0852dccecdeca1723c7ceaad3e99b654cd89b538d33899149085ee11e9a"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/026.webp",
+      "bytes": 829260,
+      "sha256": "6525e969ae8f686183880d316b98de942b8ed1411031d97f2afa45a44ee07898"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/027.webp",
+      "bytes": 827146,
+      "sha256": "61744096a72ab1fc12cfebc4788c50ead12ac8f90f0c5a80d69458854b1c1638"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/028.webp",
+      "bytes": 827498,
+      "sha256": "e49a20261fd58ff3e9d76eed89d72a18544f34b4e3ee8a2d730d76b88284c418"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/029.webp",
+      "bytes": 823630,
+      "sha256": "e6c2c5b74fc0a7ffa0d25ddb16b6b78afc45c9371131172a31c8c11966928745"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/030.webp",
+      "bytes": 834362,
+      "sha256": "300a56abf5da611f385d416801bd9651f267e55a150f57bb0dfe9aeadb26a1bc"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/031.webp",
+      "bytes": 836556,
+      "sha256": "062dba630d5e2a30dc76866b78ec0b269e17c96d8e19c5991ec89e4d902113d6"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/032.webp",
+      "bytes": 836408,
+      "sha256": "2a58475227d7f6a678eaf70d4cf7ab0e15b08ca0b0acf20cf634af9aab01e8d5"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/033.webp",
+      "bytes": 846112,
+      "sha256": "f39371c5534490e4429c7ea9eeca045588442928202c9b1a623f19b039441648"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/034.webp",
+      "bytes": 854758,
+      "sha256": "b59ca9dae4f1e1b3d754ba13c13c8f0b8ef2de9024201b72294d10e8841fde66"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/035.webp",
+      "bytes": 856014,
+      "sha256": "ae24f450ed923821fa45597c244ff3b2e269121993ffcff2ad7ece2bb1190a68"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/036.webp",
+      "bytes": 856266,
+      "sha256": "a32ffa3ce0f71b2e10cb6b8e5e48abaa06aaa6f18f3de791ccd7648e7667c281"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/037.webp",
+      "bytes": 860950,
+      "sha256": "96395a8e95ba4bda9e48cd642b1d033e4e7647b740ea6f524808dedb41d15ab7"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/038.webp",
+      "bytes": 867408,
+      "sha256": "8e7410da486ced2971a345f86b27352000c7f0a8e4c21b0f3aa9350c654caee1"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/039.webp",
+      "bytes": 866256,
+      "sha256": "b79b32b0ca1cdf73ef77c013aa6451794d833d2912a366aaa17f5f8e99632da9"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/040.webp",
+      "bytes": 872200,
+      "sha256": "0a3199d13241791d8460db103358002bd2ef8836932859e91a1e61e626ca7469"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/041.webp",
+      "bytes": 872260,
+      "sha256": "f25200c8865884075844ae29ef2ea3500cb61e5abb7c76e197e6eedbd149f520"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/042.webp",
+      "bytes": 874330,
+      "sha256": "12d0838fa04b614f77b3b0564bbaabc300bf7cba3cd4e519e253c802ed889b55"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/043.webp",
+      "bytes": 879008,
+      "sha256": "984705b96eaa5b9660855cc60ca94516bac2fbc18660b1c6b1cfd3d140a17f12"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/044.webp",
+      "bytes": 879522,
+      "sha256": "18ea33660f18ba8a3085eace166a0d9a0dc489978f40260da32b7d737088ca9b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/045.webp",
+      "bytes": 879108,
+      "sha256": "48ee160c675eca2b8e88c07faf38875bb5a83637437eb8da08aeef44b74d7343"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/046.webp",
+      "bytes": 879362,
+      "sha256": "6d98dc5c60ddf74e6b2989cee9280940fd78760ccdab9cdbfa61060769bb301d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/047.webp",
+      "bytes": 879164,
+      "sha256": "5f8399c483c1dee6a03255ab4291ceed5601c838bc1d2b44150d317cde53883b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/048.webp",
+      "bytes": 878778,
+      "sha256": "bb17615b1ab1d3f96b34ebcbd4eceb61d957cc9c95d44d43a5e85f58f3f3c42d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/049.webp",
+      "bytes": 880568,
+      "sha256": "e30e0b1edf351705d4f36b28130292618f26d3402630e9d2188d9d05d222cc87"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/050.webp",
+      "bytes": 879736,
+      "sha256": "15dd959c578556422c38c89727b0e5f7ec208524e3cc810891eef3cad75b70eb"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/051.webp",
+      "bytes": 880448,
+      "sha256": "30fd4023ebb7d27c7d4ebd6ac0d9f7f346ea3ea71cc6324c03f15532701a2241"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/052.webp",
+      "bytes": 880452,
+      "sha256": "cadcad5a32e2ba5375f2c677d3d79c82a5a146f1fa7a2f21dd82595f28f9bf78"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/053.webp",
+      "bytes": 881164,
+      "sha256": "58c02c3ff1264b0180474be4ab37316d097f8c6bad127c2111f3183236f20cdf"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/054.webp",
+      "bytes": 881024,
+      "sha256": "ba0b52fb1fcfd8167d2965b2c33929b8e7d75ad5187d88fa570fb6515f3f99d5"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/055.webp",
+      "bytes": 880898,
+      "sha256": "226ea11566cb891a0d27f1e5567a2c0cedd466fa129be2f24b80e55c2a5e514c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/056.webp",
+      "bytes": 880998,
+      "sha256": "33f9335f83113173054caf942efff607702c90e194dfbde4ca7b5b9d02a62c7d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/057.webp",
+      "bytes": 880478,
+      "sha256": "d14ad6bd1fc6c80e78132065accb0d27d9779749c3b62076d1890fe236d84f6c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/058.webp",
+      "bytes": 881592,
+      "sha256": "03527890da0133c83b72f095aa3b3de7f98c607d3ec106116f4fc083ba9334bc"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/059.webp",
+      "bytes": 881024,
+      "sha256": "fd6bbb29dcaaec13404ab458ae2b5d20e2d56b7578e612be585e3afbe9edf68e"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/060.webp",
+      "bytes": 878312,
+      "sha256": "ce4d0129d461e5a9c96f513a1e0e5124486958d6db4fd9de9321b1d75f333ce8"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/061.webp",
+      "bytes": 878064,
+      "sha256": "b461e6916716ea0b52e33f13e68404d7688df353c915e7a962fe4d82edb67a07"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/062.webp",
+      "bytes": 882822,
+      "sha256": "663e6849763d571cd2a1dfe1d91dc97e159c86fe47629aa8c6a040687a28faba"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/063.webp",
+      "bytes": 878950,
+      "sha256": "530fc146231dec9c03c586704c7125141e2162942527c25320d328d7d7955cff"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/064.webp",
+      "bytes": 875076,
+      "sha256": "d6665f8ade9a86c32e4522a032240e46a348a3f98a2e52441a891db63338d27c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/065.webp",
+      "bytes": 872712,
+      "sha256": "8214b98443de0c9fffe99bf2b858b4a422df67310cd805259b9cd14f8eda30e4"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/066.webp",
+      "bytes": 877188,
+      "sha256": "9fd9b628595d2a01932a78dad38309e11468dd4e9a61401179b69ef71b8d674f"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/067.webp",
+      "bytes": 873544,
+      "sha256": "7b14251559fd0933231bb9ce6a4215456e905db8f2cf9cf118f659bacd8ee052"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/068.webp",
+      "bytes": 881598,
+      "sha256": "5f3a9ed8cfe0674b77e9e2613c85e6e23673f92a4423841336867b5f38c31aa6"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/069.webp",
+      "bytes": 880706,
+      "sha256": "61470f5309cf101b7bfb8a9a4ccd09595a20ec8ad1c8e9ea2d06a1f1c03f528d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/070.webp",
+      "bytes": 885972,
+      "sha256": "a21a07476a123b2ea84366498ba9ade7abbab117a27798dd7bd23cf31a1655ae"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/071.webp",
+      "bytes": 886602,
+      "sha256": "10e89470a1014e1a2e568ac6cd2198324d6c4a41ae7bf409e3f4bdfe2358678f"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/072.webp",
+      "bytes": 885848,
+      "sha256": "70312f25a7013029e3aa8e61f5303538555ba7791529ef8ef1acfd627935a86c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/073.webp",
+      "bytes": 879170,
+      "sha256": "170a4aa2c37972aec56cdc4950c81d15a3adac83521f74454336fbe287e4d043"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/074.webp",
+      "bytes": 860282,
+      "sha256": "5483b12533c84c34dae907652791ba57e5084b0b649a61a480fb64df65b77625"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/075.webp",
+      "bytes": 854146,
+      "sha256": "4f687b957376d3352afc2cd22e1e5d70ac0bb36f3fa80e873485d094dbc24b05"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/076.webp",
+      "bytes": 857888,
+      "sha256": "82fd17efff13264b717a4965c3a2867daa112440d4bd033b76a0c9675e8ba869"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/077.webp",
+      "bytes": 856558,
+      "sha256": "cd65e8af9cf272576cc030311afc4e62bed5a048cc7ea1f0671c3d2b3d9248c3"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/078.webp",
+      "bytes": 856062,
+      "sha256": "d406e38e7f85f548bdee8166b1cbf24362702ae074925b31bcc484e9f2f5230e"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/079.webp",
+      "bytes": 845672,
+      "sha256": "c9d03d7f7aa846013f613af4e9026bfc8b4eb0635034509644e46608d1bb1ca2"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/080.webp",
+      "bytes": 849574,
+      "sha256": "fed4e2e9b5859cb0abeaf794069f7345f7b7b07698d37aebdeaa528e764a9b53"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/081.webp",
+      "bytes": 837780,
+      "sha256": "4afd02e009dedd5725113599cbc2edf7d221552d43a4511897141b72d1498995"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/082.webp",
+      "bytes": 837772,
+      "sha256": "c290ee779f665cf49038ebc99866addd46cce4d670a4946bab12944c27866826"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/083.webp",
+      "bytes": 832562,
+      "sha256": "7d680c538820538d39178dcb05100f974e69c98101119f0bd520295c58ab407e"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/084.webp",
+      "bytes": 837888,
+      "sha256": "d268ce965524ae3e62e1641c809af63f0986dab637b3394c5c2cefbaac42151f"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/085.webp",
+      "bytes": 833222,
+      "sha256": "1097a6624a94f1ce0ac0cfce699f7303bedc6b285c72322c513aa8df25f2c165"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/086.webp",
+      "bytes": 836938,
+      "sha256": "7213d1c57989e31b95c854ebd616507a3a15de540ba63dba259c482c854e09d8"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/087.webp",
+      "bytes": 846300,
+      "sha256": "b7d6f1b73dfabf26aa0bf475822c8fcf4e6fb9c498d6ca1a320a378cf96670f0"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/088.webp",
+      "bytes": 847552,
+      "sha256": "b444ea3e0b4ba36bec94b9c7deb2d254dda8b3af054f2647ae890e9988c1012d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/089.webp",
+      "bytes": 839024,
+      "sha256": "af5bde33cd2f4d1f43ac0adb5514404499b5be6d6af18921462cc66081c7aacb"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/090.webp",
+      "bytes": 840890,
+      "sha256": "f573e35c8e3cd8c81dfe1d8d796d3a7fe70c648b16e842a364763d647f6b3c43"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/091.webp",
+      "bytes": 854804,
+      "sha256": "89aa1f12647670702d3e3f076122db7ac13080db2b9948baada1e18d4e11c601"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/092.webp",
+      "bytes": 855534,
+      "sha256": "c5d5142507a0d5b0c0d97b9035fb184510fdd5f016c55c3bb5c5931a881d2c8c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/093.webp",
+      "bytes": 859576,
+      "sha256": "ef98c00d1047105ebb3b4a77baa47a101d74ddc9e43d856ed6aa315b8fc701e6"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/094.webp",
+      "bytes": 863162,
+      "sha256": "1812c84548f77d7ed6c232bc686c4c145fac6c9b847b1c7afae14140093edaff"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/095.webp",
+      "bytes": 869546,
+      "sha256": "a00fee54b00ad69ab5bdc2893405be110f02a5da430cdb4dfca8e0f561346ed7"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/096.webp",
+      "bytes": 870610,
+      "sha256": "21a44c166018027cc9d6d95b70bbf9ffd3274c893b579ee47070eaa24c2940da"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/097.webp",
+      "bytes": 871320,
+      "sha256": "bac8c7cfca4c2a39aaed7a04338ab6044be36d9281e8df5da576d8fbd2faf3f7"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/098.webp",
+      "bytes": 875162,
+      "sha256": "aca09766e78603bdb266d2f6a79963bd089266573e21428492f6049ed8c20530"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/099.webp",
+      "bytes": 880546,
+      "sha256": "df4f73a327262bd0326cb4fa053d30d2c4115d619a0e049b0203941ef131a41b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/100.webp",
+      "bytes": 882138,
+      "sha256": "81b75e5e6d3a78be4af981689cf6040e7ff5d9b4135671669d00b6efc71ccd75"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/101.webp",
+      "bytes": 882550,
+      "sha256": "c1b0a8fb6ba8a0fccd8b7d5deb75e75d8206e0ae00b99b5ad3c018134c99e27e"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/102.webp",
+      "bytes": 885926,
+      "sha256": "98d1247036e2290af370215bcfa67851ab0ff71531f884f8fc83d383e9e6620b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/103.webp",
+      "bytes": 890568,
+      "sha256": "9212de9bcdf850a42d0805ceaa4cc5bd71579865b3411acb327db9073181a1cd"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/104.webp",
+      "bytes": 891944,
+      "sha256": "64d9a393d3d947e82209c947a56b5d93bbee75dd3c8da2400cbb498cdd2cb640"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/105.webp",
+      "bytes": 891270,
+      "sha256": "023e40cc241a19c767ded39a0199d69f52b92570df7c64564f7c9b4ddd910638"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/106.webp",
+      "bytes": 891498,
+      "sha256": "da3727f82096df64024b441cfa2e3da8ef21bc7c374f3a0e6dda39a25492cf9b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/107.webp",
+      "bytes": 891246,
+      "sha256": "7b0ec2e65a0a0c64d5bf76fac047ea2248dafa9fd631fba00a813e4d98ac7114"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/108.webp",
+      "bytes": 891370,
+      "sha256": "fb905c48d2dcf3bfb254944899ea961d91faa176a4948dec9bf21378c9c3feec"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/109.webp",
+      "bytes": 892034,
+      "sha256": "cfbb4b7e4f1e7e3f275be35d0fc1568e896876732ca94e3ae4cabbb8312e7bbb"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/110.webp",
+      "bytes": 892694,
+      "sha256": "2eeb27259dfdf16d55563dfe9268bd230728dd094a709fee53768fc0d5f19aa0"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/111.webp",
+      "bytes": 891934,
+      "sha256": "7c560f1eaa04a0477215b4261680ea4ed45fcaee47dac6222b38416c049fc4ce"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/112.webp",
+      "bytes": 893618,
+      "sha256": "6e096531668fe9251542eda27cb97d8cfd741e3c93f8dc3f0f4eb90f45884637"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/113.webp",
+      "bytes": 892854,
+      "sha256": "cfbc22908b795f69dc15a39b1eb73687eaa5110ebc5d8b00b8b58ba7009d3c1c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/114.webp",
+      "bytes": 893288,
+      "sha256": "fc28e2db209b92c12a74e9d9b825f51c4dc61c1ac3b95001a81e8a136cf3692d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/115.webp",
+      "bytes": 892908,
+      "sha256": "16563e86174e8b9796ff9ef74b11e0bbd01bc66dadbc07c83d6fc941bfb4cbef"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/116.webp",
+      "bytes": 893596,
+      "sha256": "ea82178fd240136ed7240d10d26ef7363a6226ff0c3188f65e2647dfd74f43df"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/117.webp",
+      "bytes": 892986,
+      "sha256": "693d736b6226c453b07fd29b23a0ae745a84beda0c7e1ed06932ed4d30caf081"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/118.webp",
+      "bytes": 893026,
+      "sha256": "3a989dc0c36ee3cbbdbe4463af997630bb3d7a6919f0e477d5eb10091bd2d29d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/119.webp",
+      "bytes": 892188,
+      "sha256": "a368b31eb31531fc459b91f5ab7091af911921c6d2d757c38c693093573f2c76"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/120.webp",
+      "bytes": 890346,
+      "sha256": "cad635eb12563a102c47c07c8bf3fe60de3efde1e5a6f8046fe18aebc323b8d6"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/121.webp",
+      "bytes": 889656,
+      "sha256": "bb2bbfb5a7d47da1e80f983e73162342841e107960baadb468957338aa5734f2"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/122.webp",
+      "bytes": 894158,
+      "sha256": "8bc4988b5924d0ee8c7f0b0da178fd28f617a30f540ea7578af3efe2b89ce3cc"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/123.webp",
+      "bytes": 889552,
+      "sha256": "d4b03929a13fe48269f1ac5c052490d44ed14f14ce205011800c3999307b08ba"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/124.webp",
+      "bytes": 884332,
+      "sha256": "d6f70d5300b88a1b77840f70008e939b3d90232d0146b88230ecf7e20b0b76a9"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/125.webp",
+      "bytes": 882628,
+      "sha256": "00f0e03216e988ba44587f2bf632493d779e89d9cf83ad0bd267fc6bd7167b14"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/126.webp",
+      "bytes": 885306,
+      "sha256": "7fcd6b7a6e39d113549f7c14335b80eadb4d4174e881684cfbea478b47a36028"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/127.webp",
+      "bytes": 887822,
+      "sha256": "62e5b432e932367fc5097c073af4304dc4765784c73e16a87f82ec1d4f6811a0"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/128.webp",
+      "bytes": 889234,
+      "sha256": "acb04f77e9bbd8146db1f00f21917a9be1ba201c44ee9547b891c0025138677c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/129.webp",
+      "bytes": 892226,
+      "sha256": "efcc1e227f70efcfac167549540b5bd07cbe28840c5a82361170ed718f1ace4c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/130.webp",
+      "bytes": 897704,
+      "sha256": "e0482a2d79a8b70785c6fb13e36ff8a932760c38bc5501ce35a76b16dceef6f6"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/131.webp",
+      "bytes": 897570,
+      "sha256": "c812ccfe9dbf06b14b2a09f89079dcc8db8f76fe8663ec044e98eacc84d825e9"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/132.webp",
+      "bytes": 898416,
+      "sha256": "3b84f33d8c62ddd52c16f46704991b7d56eaaa9988ccbeaa2c48bc6e5c78d74f"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/133.webp",
+      "bytes": 891588,
+      "sha256": "2d34be325421877220d4bcbb79a7a49f9088042a47694a4d1cfe1d6592979de3"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/134.webp",
+      "bytes": 871120,
+      "sha256": "825fef9e2c0688dda65fdb084868704b7172965abd5290c73e9f48589c3ff7e5"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/135.webp",
+      "bytes": 869590,
+      "sha256": "4c3f7cae5ad06055742ea9dc427c3c59c3d6c29595b1f23238c8adb32a31a947"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/136.webp",
+      "bytes": 864378,
+      "sha256": "be5435c41f6652c7f79b053cea44d27b6eceea66bd355da5133a21e484c06ef9"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/137.webp",
+      "bytes": 871280,
+      "sha256": "95aac6f03727f0641ec5357c2540b6852517bcb1dbf3e0db44989a4359b650bd"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/138.webp",
+      "bytes": 864798,
+      "sha256": "23ffa3fc704867f15396559c8ccbf98b9c1b21af6a1ba07df20368f7fdb92748"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/139.webp",
+      "bytes": 865768,
+      "sha256": "07194a8fcd1875c0b9e91f482cb8ec25fd79a02612016f2523c31b26fba310a4"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/140.webp",
+      "bytes": 853252,
+      "sha256": "c24f2baf62ccd317098aa4e25566f1ec210aafd8bbbf0c5a8e80bb2bd7a7fb2c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/141.webp",
+      "bytes": 855346,
+      "sha256": "496ca1ead4c84909cffa7d7ce544c9f584d45b1e82f8a6ac9ea8f6b3c2fc3c2e"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/142.webp",
+      "bytes": 856226,
+      "sha256": "9200f59830ac5f21b62e12f50fa3b789b7e130484d2a0169c08ec01abe52bb52"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/143.webp",
+      "bytes": 843706,
+      "sha256": "0730891e2905ac24fc7a5c64d72c238ffbd2a7d71b61cfcaf7a412d56bdf235a"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/144.webp",
+      "bytes": 842792,
+      "sha256": "ee73bff5347e51af2e2674f7fc0616b9bd481db69a9686fe57be372a1c3fc518"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/145.webp",
+      "bytes": 850098,
+      "sha256": "c931504957f28385330c2473bfffbb69e3058d34dc90f4bb3006ea23a9cebb9b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/146.webp",
+      "bytes": 850646,
+      "sha256": "ca86479186d3639c231e1ac1810fd73ab0021798022b16dd1b09a77f7971a7dd"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/147.webp",
+      "bytes": 858838,
+      "sha256": "c1fba4423bb6042f47aefd7e2edb54242b6bb38bb78daf54b99bc83e673987d1"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/148.webp",
+      "bytes": 860422,
+      "sha256": "26e1b587b69333c1216ebe1f8fbc5dfe0dda35cd3a531c92463caef0f9208597"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/149.webp",
+      "bytes": 850570,
+      "sha256": "1d7078aedc4f166a76bef7a7dd33d86bf17c33927d55187a27b8bd738816d554"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/150.webp",
+      "bytes": 853026,
+      "sha256": "90f9a10e84d1c313bd10d65b2e1c973ff578b0ff7685fedbdd2ed4c35e4164d5"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/151.webp",
+      "bytes": 865624,
+      "sha256": "34cbfb17b6dabc3f681c46d836f8aa241770f534b24f4bb19a91ffc7c97b65f7"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/152.webp",
+      "bytes": 866618,
+      "sha256": "65af80aca94af4613d6f3caba2d33816f02dbb28392e72e84ad638286115c08a"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/153.webp",
+      "bytes": 872146,
+      "sha256": "ef8d13f3aecd8bbffbbb3958250cdfe9e17e0bd719b6e0fe9e104380a1747001"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/154.webp",
+      "bytes": 875406,
+      "sha256": "fc0ee980eac3e1520559aeae8e4ce091a078e8e2bd34cd8025ca2a1640d37ba1"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/155.webp",
+      "bytes": 881956,
+      "sha256": "67bf1feb7f23e45e35b56d799f474a2434a3d82dd07635268023e2822cf4e1eb"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/156.webp",
+      "bytes": 883188,
+      "sha256": "20fb63641638631db66573951ab0880203ec692ceb9f796bf7bf2eab24a4ac40"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/157.webp",
+      "bytes": 883066,
+      "sha256": "105e79b3b37d8fe4be0a9509f3416f334c240f3f09a5e77e38fd17c621ea2116"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/158.webp",
+      "bytes": 887520,
+      "sha256": "9454cbf9cb22efdf84cbb3c71c2ad95407fe876e246b3e214c84039ea2c2e6bd"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/159.webp",
+      "bytes": 892708,
+      "sha256": "1b75db36648d85ceca4c7ed380ede83be1f7cea6a22bab0783e94b6b2c3a34af"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/160.webp",
+      "bytes": 894860,
+      "sha256": "0606b747984d2046ad01b05ac86d7cf13e56d87b85a68346703d860480394357"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/161.webp",
+      "bytes": 894842,
+      "sha256": "4b94b55986d0ba77cc75dcd50320e735594bbe58e4ffa977d02332a19aa9544c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/162.webp",
+      "bytes": 898662,
+      "sha256": "0887c5f0a4c513c3e1847d569dc4d7692bc2533be995df116c374a9e62999de3"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/163.webp",
+      "bytes": 903472,
+      "sha256": "fe8a1402251dc21ae4f71861faea76543e446e251865d88cc4ac946e18b54e37"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/164.webp",
+      "bytes": 904850,
+      "sha256": "c5db6c20dec8e19827ff2153487e640e8a49ab30b8cfa89e39dbc70849daea3b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/165.webp",
+      "bytes": 904092,
+      "sha256": "a130968c5e34966a990327499bb29d1a7636d0819d95d7c34bfec8b0c375a793"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/166.webp",
+      "bytes": 904200,
+      "sha256": "3da75589ae14729b62e5f08d5bba3c5fa43b393502a9c9aed639b1419a496530"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/167.webp",
+      "bytes": 903840,
+      "sha256": "4ba91bb214a0832609392784b73133c4257a0ec920a1ab4fe280b02f7e808811"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/168.webp",
+      "bytes": 904244,
+      "sha256": "c4da21d105fc9b3962d2ef447f8fef4b8213fdac74b2d96dc59db18cd30a92c6"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/169.webp",
+      "bytes": 903948,
+      "sha256": "af08110c467d7970f2d3d6de6ac4f35c7be7ab8b090c91cfe804a9a2929401b2"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/170.webp",
+      "bytes": 903806,
+      "sha256": "c7bd8af862ede216a5ee157100f63e595a6b77412a2fc1416cb9561856cbf03c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/171.webp",
+      "bytes": 902866,
+      "sha256": "6de0d39ec2a9209423a4b07019484b85e6ccabdc7107aead138ea7cd0e6d8449"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/172.webp",
+      "bytes": 905642,
+      "sha256": "e996cc4a6375b7b903fd5c98fac629a022640bedf46d1eb1551fecea069ec96e"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/173.webp",
+      "bytes": 905310,
+      "sha256": "e173a96519c982bb8fe92cd8983b5697541145c303b2dadc7b825fbdf3ca984b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/174.webp",
+      "bytes": 905288,
+      "sha256": "edd38ad256caa63960c5a572590a63cf4f731af984dfd3ce6b3a145ce0a509bb"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/175.webp",
+      "bytes": 905112,
+      "sha256": "1149c5b05660021edaa75e77a5a9e747b778af21190ea74a85099e7ae9778bf0"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/176.webp",
+      "bytes": 905574,
+      "sha256": "c265a0164a22087a44590146f44c90f6c04792a58ebaa73aac9c6333bbec3598"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/177.webp",
+      "bytes": 905586,
+      "sha256": "ca9ecfa215109d127f9f86f185f93a4e39fceacbe82fb3d0d5b066237a6bbf34"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/178.webp",
+      "bytes": 905524,
+      "sha256": "5e04ad002e80628569cd732281623522b79ddfae60e26ceac1a26e0cb07a09f1"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/179.webp",
+      "bytes": 905994,
+      "sha256": "ecd96729ab38fabf6cc2ba2e51ed914eec7fb7e3784cbe20bf0a02e595baded7"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/180.webp",
+      "bytes": 902866,
+      "sha256": "9b86e9675e0a829d82f45db16b303ea0a16e5bda2d2e38cef94600128d1694c7"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/181.webp",
+      "bytes": 902464,
+      "sha256": "d012c783097bec1c65a505d8c36ba520f5e6e91c1bdf49ba8cdf4cf3abf204a6"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/182.webp",
+      "bytes": 907070,
+      "sha256": "917b0a6b7177bf24c4a0e482a8f98552252af64299359920e0ea1ea0365c8f07"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/183.webp",
+      "bytes": 902414,
+      "sha256": "7585011557a0cd0c6258991c51a4c34161f6498c8f4362e63e3cc2c3943ae4f4"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/184.webp",
+      "bytes": 896002,
+      "sha256": "b8d0c34f7c5f468c93f534d80ef9449517779b46edf9d34d058836d5cda3fbe4"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/185.webp",
+      "bytes": 895454,
+      "sha256": "a970b8ec982bc1e3900dec367ddb202d210cad9d1464b68385b64e95e90f9804"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/186.webp",
+      "bytes": 897370,
+      "sha256": "c734aa44f1160c3bfe4f3b097c3620e312d3296ebf8dfa6b8e09310fd52c1f40"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/187.webp",
+      "bytes": 899232,
+      "sha256": "bfc3baac621d9bc432daf53fbf59754019d8e213973b7925ab5598462a99f663"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/188.webp",
+      "bytes": 900726,
+      "sha256": "4f435b6e6107c1470ed585f957be100faef174277ec94d111f2966df1eae0acf"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/189.webp",
+      "bytes": 904448,
+      "sha256": "564a076abc83831de19d0febf4ab34b0c1eda31162fa78ddc7f2c3731e9b2b87"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/190.webp",
+      "bytes": 910098,
+      "sha256": "1c49ea6fada6b0c4f91922ac1c9e8c82f6239caf83bfb41ff0394afe424cf19d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/191.webp",
+      "bytes": 909590,
+      "sha256": "fbc01d3cd79dd0b3459fc7aa2eee4bcacf0f491d63fb3e2a5f260c44f32957cb"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/192.webp",
+      "bytes": 909580,
+      "sha256": "fb4966323e6083836cd1af31ab6e1c9389a47ad34654efc1743b3a020e8de514"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/193.webp",
+      "bytes": 904474,
+      "sha256": "0d01c4d4cacbc27e602613147a64b3642432e8202b87089bf555838c4c9b21d1"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/194.webp",
+      "bytes": 882562,
+      "sha256": "eee2b0c5bbb1b5d3b27e6501fcd5a4aaa21f1191474b1c90afde9e253087bb38"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/195.webp",
+      "bytes": 880528,
+      "sha256": "d849ea51aa5c0a542ee658136eeafc44f1568cf1237225b098f1a3e851e88e7d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/196.webp",
+      "bytes": 876276,
+      "sha256": "41ea58b9490d696e9f7fc8df64a33d4f8999d110b26526d4070fe5c0963fc26f"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/197.webp",
+      "bytes": 883372,
+      "sha256": "1b0ff7941b88956377c38fd7896aa83a2e8e81fca61a1318f9a9cd59719d5df1"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/198.webp",
+      "bytes": 876654,
+      "sha256": "def0d30d58f3f6b1c6f9a21ff673025af57dfaaed32a1588b660c45e40b246e5"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/199.webp",
+      "bytes": 878006,
+      "sha256": "5ee80daff0d4507f0292d9aa471a3dc6d0e20722f3281295a3b280c24e8fdd53"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/200.webp",
+      "bytes": 866136,
+      "sha256": "516dd12a48fecf44fbe9a411bd3d1c59434b84fcc8f66a63f208033a68c4317b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/201.webp",
+      "bytes": 867544,
+      "sha256": "f94cdc377b9911c8347a0f223ddd0d61c68fcf2543e0b408ed06f7b44000bd1c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/202.webp",
+      "bytes": 868364,
+      "sha256": "45bbc458103301a5e6072cc62d288f9605492aca44bf7aed2ef2bcee95ae9c31"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/203.webp",
+      "bytes": 856654,
+      "sha256": "47ae3007bf114e79d5344bf6fbdf1a91543b46a31ceeb3f7957fc72e41fdeacb"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/204.webp",
+      "bytes": 855120,
+      "sha256": "e2b0cd341ada96a768ce7478928b63d5e2f2c2d593e5664f64383f6062ca03c0"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/205.webp",
+      "bytes": 862010,
+      "sha256": "f4829a381fcc880d912bced007397686dab55a4a0f0f9dad73da8efd351347b8"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/206.webp",
+      "bytes": 858330,
+      "sha256": "5eedb811389a59c6ee8fd14b582e6df78c1298c5e10a9e633c24661b129cf4b0"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/207.webp",
+      "bytes": 864174,
+      "sha256": "c3d3ae43e2064f9187638b290c64f9af0c595e56d757426b3d23685226527ee3"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/208.webp",
+      "bytes": 863318,
+      "sha256": "133f63cc9d1baebd888b5fc735b09f706f6ce8ec25e2c711ff0b9122d3bcc2b5"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/209.webp",
+      "bytes": 864664,
+      "sha256": "23ff3bf9bd92bab7fb7da0eeae96bdbc1e675a011638b58286f64e2f219b2f68"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/210.webp",
+      "bytes": 863322,
+      "sha256": "a186b0ee60bf8f27de67ebb6689032e78f2f75a27302a7442a4d176f1978797c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/211.webp",
+      "bytes": 874538,
+      "sha256": "0d025a73ad32099249219137b243933359447c289f39fa8f0c1053a55a4a2de4"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/212.webp",
+      "bytes": 875372,
+      "sha256": "f4b95a152b0e975b24f088c975d1ea0919fa91d9365b2bd471c9431983b5fdcb"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/213.webp",
+      "bytes": 886788,
+      "sha256": "fa5e69fc08f684c6694fbd235ca673cd730ace6cb90c709a3977e756a876d77c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/214.webp",
+      "bytes": 886676,
+      "sha256": "5a8cad513508bdfe451f84daab5a764c3e325f0562417631c794fbc768ef66c1"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/215.webp",
+      "bytes": 890672,
+      "sha256": "05513007305ca38e7b3ae7110f1a0303445adb863864a655be441075aebf8ffa"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/216.webp",
+      "bytes": 890868,
+      "sha256": "3fb8d3c10e3a83abe83e5a7ffcc121c70b770b9fe328f307b9ccb703981889d7"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/217.webp",
+      "bytes": 896998,
+      "sha256": "1a1359ed5a7d398094cb86fb6354e68d3a17f149bee90ffbe51bb8f80b484665"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/218.webp",
+      "bytes": 898202,
+      "sha256": "af606b5ee0ad4ddad57b55012a7bffefe129d06058614df46afe8e8b76536254"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/219.webp",
+      "bytes": 901152,
+      "sha256": "9193469df3cebc670b9ca0a627b0b191dad390a5f6c214beb3332cefcef55cb6"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/220.webp",
+      "bytes": 905812,
+      "sha256": "9f6470c19c01b765d297531f857385d33c217ba950698ab72f2df024aa965247"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/221.webp",
+      "bytes": 905532,
+      "sha256": "88730b5103aaa33c0a1aaf3ee886bd5af20101bdb4ae9681b75df0f08273f4d8"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/222.webp",
+      "bytes": 908788,
+      "sha256": "acd3ed2a14cf2ec3d3347269ca8d1a31714a96fb9b20df5cc92a433981b1d512"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/223.webp",
+      "bytes": 913822,
+      "sha256": "f97d4786b3b52ee043e54dc01f4cc84be105be7082ff3368df41f625212d403a"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/224.webp",
+      "bytes": 913928,
+      "sha256": "9f4e78fff0f8ff12ad28c93f085a917c4d2a84358150a081850809c7921982ea"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/225.webp",
+      "bytes": 913040,
+      "sha256": "8a30d3e6cef9f7737bf1ae2fa88ede933c590d9319745886e311e09ba34e5c7c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/226.webp",
+      "bytes": 913894,
+      "sha256": "829c13596127dd5ca3002c70ef083af8613ab05f3f588d72e6622b5be7a2da73"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/227.webp",
+      "bytes": 914212,
+      "sha256": "7d9d9507ab7d0af29e338c87057385e08b17ae0e0d237a2a8bc1927dc169098c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/228.webp",
+      "bytes": 912886,
+      "sha256": "fe1cb66201f6d2091bcbbee20a070e9b34bd4236708e46e717011cd2a6184b9e"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/229.webp",
+      "bytes": 913776,
+      "sha256": "b661dbc92bfe3efbbdee105919536c4332f05321865d13425a9414bb24203266"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/230.webp",
+      "bytes": 914372,
+      "sha256": "c47cfc7d02d55ce1dfeeedd26189f361c94136837288acb299c16dbe233a51e7"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/231.webp",
+      "bytes": 914574,
+      "sha256": "c3c8c405acf0e0e929a7891f3567c33a977d21bd5fda59ad63bd84ac3523c153"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/232.webp",
+      "bytes": 914900,
+      "sha256": "4a35a493864e1bfa4e7a2045661a0c0b2aa4fb6f86cd08d9716a14316c5c2fe2"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/233.webp",
+      "bytes": 914096,
+      "sha256": "b63115563b04f1a65c41c674c348be5cc36c5390262db57589d56cc2f29b8419"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/234.webp",
+      "bytes": 914036,
+      "sha256": "ad9a364e51d7fee61f8a781e7bfb67edc8de268814e1ab82531d6b8c1fd99d60"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/235.webp",
+      "bytes": 914620,
+      "sha256": "a45600c5800ab893c033e4e575bbfbe28d9c052c095ce09b06ada1bc1391eb7b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/236.webp",
+      "bytes": 915028,
+      "sha256": "34051afb8633998bd8c691823daeda85934504f0d78ac26147f341170af5edfe"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/237.webp",
+      "bytes": 914920,
+      "sha256": "4f889a86649296209d0e9c00f144a3b99dfaecbf4391b843976bd0180eeaedc1"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/238.webp",
+      "bytes": 914634,
+      "sha256": "68315c372b03527a85beb52b0ff5fdadd58978cdee515074e717b856b471c16c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/239.webp",
+      "bytes": 914326,
+      "sha256": "182cb12642eea79ae7177cc88703ceb8aafaa003945a2f0d16332ed914f7c74f"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/240.webp",
+      "bytes": 911362,
+      "sha256": "662db2629415f1c0c2fbc6053ff5b33d0b70af9df1250f0158ac95b5ac26e2af"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/241.webp",
+      "bytes": 912350,
+      "sha256": "29e7c671e16649f24b8d3bdd67404f0f705c98afb4273e8da9edc0cd7628d89b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/242.webp",
+      "bytes": 915824,
+      "sha256": "6ad7d23926687d6794729ce7c2b303082f83abe103f0abfcb9d669653ce6cebd"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/243.webp",
+      "bytes": 912328,
+      "sha256": "7a62d7c6494dcffa3181bc09426af469a5ac63f934fd69ab812145293d3cd309"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/244.webp",
+      "bytes": 906876,
+      "sha256": "e7be5f81692ef014cc7b7952cb1e254a6d6de735636e61cad2fb20268d77fc92"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/245.webp",
+      "bytes": 903100,
+      "sha256": "72884038407d01c4c7928a03cf94954849aeebef7b82ecb5fb25ca2389b8da58"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/246.webp",
+      "bytes": 907482,
+      "sha256": "feb241947d64ba9214872633121a4a2087a88f301f958cdc01702a8f33a1d013"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/247.webp",
+      "bytes": 907954,
+      "sha256": "b6924df1dfe12f6ac41049ad54740307248171fdddbb1f7b10523d95b9ee3b99"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/248.webp",
+      "bytes": 911288,
+      "sha256": "e6b70de380b7c73d85f822e554b66b25cca72c7c6c696d148cd62d0267557708"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/249.webp",
+      "bytes": 913510,
+      "sha256": "b98fe8c7b4fd1b2f0b3100590def0d5bb2df3668faa5c01954a9d2a0fdbbc003"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/250.webp",
+      "bytes": 913670,
+      "sha256": "9bd1269e792305ba9da4e87e65ffebebae2beace733f585b758a8df80a4c408f"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/251.webp",
+      "bytes": 918228,
+      "sha256": "6258857bce60e0e665fd844d34742f3533016ab180ddfde4987dface5ed55a44"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/252.webp",
+      "bytes": 918276,
+      "sha256": "4e37dcb7170a798d759651918ecdaa033e5eb3ab47290425f2b15d29091b722c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/253.webp",
+      "bytes": 912924,
+      "sha256": "2ae4a62eb601106a9ce81b9803ed009d0bbb2dd22438d2d207cc6dee6b1e883b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/254.webp",
+      "bytes": 891472,
+      "sha256": "4b0056e1f4614432c4b3f735007a588faf82e3243104cd127dc94d29a571e3e5"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/255.webp",
+      "bytes": 884626,
+      "sha256": "ae6337b6696e856a4fec7d6ca35cc5745b6534d79f9b83e10ad526e4cf1ba49a"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/256.webp",
+      "bytes": 886822,
+      "sha256": "05391135b09f80a1754bb90684684b57799a6187f51fe7155a998f1250a07370"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/257.webp",
+      "bytes": 886040,
+      "sha256": "41db5f00ed2759938a9a0c1e7394511c564bb7de340913b08b8343e7f34747ad"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/258.webp",
+      "bytes": 889902,
+      "sha256": "1b8e6b8deebbcac6517685896dc879dd39418801439a7788560abe71fd2beeeb"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/259.webp",
+      "bytes": 876160,
+      "sha256": "72b76deae56e66310e48622fa88d5dc3e9b622d5e7ee5f9f9dc4029517d898ac"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/260.webp",
+      "bytes": 875924,
+      "sha256": "4d79f255c5b7ca939a67846d6a4f74bb09aad0e34210c1be33452dd9647f0149"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/261.webp",
+      "bytes": 872824,
+      "sha256": "b8098daa8ff17b8edbafe778f5eafc4de6f7c28e00e3c0223eed05aa2eee7033"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/262.webp",
+      "bytes": 872852,
+      "sha256": "21eea0d978f1f2553476f3c7de15f5e28c8d7d58d607d1a628fa9358fbfe1f88"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/263.webp",
+      "bytes": 859166,
+      "sha256": "6b51a35a6e980e876ccab98d975af71057abc6a4a7211a5bdcbd9db6904cdac8"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/264.webp",
+      "bytes": 861634,
+      "sha256": "31254ded50b3418c32bd927cf7cf4ebd61bb8483fb30fcefa9df7946e3482a34"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/265.webp",
+      "bytes": 864312,
+      "sha256": "32dd5c5af37902072ce58bde2f6cca934a84cdca4e69de9a5c490035ae2c4dae"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/266.webp",
+      "bytes": 870986,
+      "sha256": "313065c41452f5bec7da75645fd1d05d0a37df34a8936f13cce8da66797073c2"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/267.webp",
+      "bytes": 867448,
+      "sha256": "cc47ca9b7ee9703718b294e217bd0e23b1f33efff45c826d91a60d3a30545680"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/268.webp",
+      "bytes": 867496,
+      "sha256": "af37143011cb53906983ca2c6ba271dc9cbab06e44cf3116e620345ec16b3df0"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/269.webp",
+      "bytes": 867436,
+      "sha256": "fc933f42a58c3df0bb5817e85bed9d02d5d29409f3ff071befe0321d487681e4"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/270.webp",
+      "bytes": 877964,
+      "sha256": "ec7e166771c8e7de3db53f91ef2e122e3846bb57694e6d58a9b4f1d47f79d0fe"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/271.webp",
+      "bytes": 876328,
+      "sha256": "58074d81cba73413974a36837f2eb979ee66f7f88507d3cb31dae3e61b00bc0d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/272.webp",
+      "bytes": 876904,
+      "sha256": "f1cc4da79eb46e3cf6fbe1aed520226d054eb6599a81838fe590cb59954e58bc"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/273.webp",
+      "bytes": 885404,
+      "sha256": "b00e77294b3bff6834a07ce5d9dfcf81c7f8497897b98945c2dd8fa704f117be"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/274.webp",
+      "bytes": 892864,
+      "sha256": "b1921ca8b1201d2931d858a68c466d96da975b81fe675b1dc0748bfa0c09c5a5"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/275.webp",
+      "bytes": 892626,
+      "sha256": "9516a8e63743d01d2b25a61c1007c3a5ef30d3c2abd8f096e5caa1c300c0b735"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/276.webp",
+      "bytes": 893336,
+      "sha256": "7350a82d45aae25b2e096d20d797c77e2249cc65d006e66bcf229d20dc094916"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/277.webp",
+      "bytes": 896454,
+      "sha256": "8f0ceae240fcf2db100f4a889bd967104722917f8690276bf4f2e251abbd6ba6"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/278.webp",
+      "bytes": 903490,
+      "sha256": "a77896d0b7992b855027dc2ed22c31723632ecd4c9e2fffafcf526f8674ea2c4"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/279.webp",
+      "bytes": 902042,
+      "sha256": "a15a50136b95cf864e1fbbb27dde74ecca506737c072f6f9820e519847bbd536"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/280.webp",
+      "bytes": 906934,
+      "sha256": "ee22d6ec2b7102f70a85291e162fd9f6debd024ef11ad90445974ce055ffcfbe"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/281.webp",
+      "bytes": 906380,
+      "sha256": "ff48381980688f3dc608dbaa91b8e4d9d371eaff1578a18acd5a8dcbac125352"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/282.webp",
+      "bytes": 910336,
+      "sha256": "c79542be085fe70bae36cf250fbc142415c9ba512ee8ce6b766d1094c919f480"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/283.webp",
+      "bytes": 913766,
+      "sha256": "f2b738b8581486932e21c34ade8c8b20cb15cbe26da4493aab36b3d0327903cc"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/284.webp",
+      "bytes": 913668,
+      "sha256": "c917b39e0cc4f92fadc8e089329087eb5224e79fe4b1771e64cec79ec8b5eeab"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/285.webp",
+      "bytes": 913876,
+      "sha256": "ecba699ca97a3533e7ea1d7728ea3ad71c826d8e4d99405948c9fc9b0e1e624c"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/286.webp",
+      "bytes": 913406,
+      "sha256": "016634d8e59ab29305f224c20abe3b8865674d9942b047b4426c95f26af88217"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/287.webp",
+      "bytes": 912578,
+      "sha256": "fc85335dd69780724b28cf48a2b125d29a728323913f48ee9497412b2d13208d"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/288.webp",
+      "bytes": 913012,
+      "sha256": "4bbbfab017c3a4d024cbeeab26e33e78cf67eebc022d16a414f53a0382daca95"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/289.webp",
+      "bytes": 912992,
+      "sha256": "6af814878ca9a3fcb964611707854fea6417dae28096c7483815c166862fa98b"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/290.webp",
+      "bytes": 913376,
+      "sha256": "e0ad370c8f04b5ec974bf337e60717f9a91ad1f93ad92de133a2def05ebbb357"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/291.webp",
+      "bytes": 913472,
+      "sha256": "fcae52e056f73bcb4c8f6a04dfa7b5c631d8395710e34b565ce95d12f0fd2619"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/292.webp",
+      "bytes": 914108,
+      "sha256": "16a4f33b1a44553515a62e1404e6206a7319bc01e089178a0d76676142c98912"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/293.webp",
+      "bytes": 914400,
+      "sha256": "5476ef58efd88e8a4cb2bd6bd2a8f89b3fb2d280a0379e9f3542307c1a8ff502"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/294.webp",
+      "bytes": 913694,
+      "sha256": "d8e1c699ead750bb89206b24d6ca785c3838d343e03363ef1585361faaa86022"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/295.webp",
+      "bytes": 913832,
+      "sha256": "c0586b1af262e17ee7eb8e6e488cbea58a56469bb500b72e41f17ad4de039210"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/296.webp",
+      "bytes": 914298,
+      "sha256": "e786654d022b18b86df3a07e11cad1c4071b0534285d93751024ddc70b5ff1fe"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/297.webp",
+      "bytes": 913546,
+      "sha256": "4d2427a27e79f74d757eac9ca7f98ab792507dcc28b77de46f3da14f323d14b5"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/298.webp",
+      "bytes": 912968,
+      "sha256": "2fe531a30a99004c12a2a4a7cc7254738cac8a1497995b035ec42373fa1ae8d7"
+    },
+    {
+      "path": "animations/assets/frames/lbbb/299.webp",
+      "bytes": 912572,
+      "sha256": "ec28ff13b88a3478e1f1e7414e49302a155ac6e3a16d9cbae150b3130eb3ffb6"
+    },
+    {
+      "path": "animations/assets/frames/afl/000.webp",
+      "bytes": 785264,
+      "sha256": "e59ee79958b58eb3a55a3260ff63963f4a23df4d3398776ba69be622bb6b3ca5"
+    },
+    {
+      "path": "animations/assets/frames/afl/001.webp",
+      "bytes": 791944,
+      "sha256": "ce7d8f8851eb681fbcf715338fb21f24301e4e107d8a2ac7096ffdefd8d4aeba"
+    },
+    {
+      "path": "animations/assets/frames/afl/002.webp",
+      "bytes": 792896,
+      "sha256": "fa21ff2c1a999ff2755eff621b2f72caba749c8a130f1d58c44c8163c6cfe948"
+    },
+    {
+      "path": "animations/assets/frames/afl/003.webp",
+      "bytes": 796162,
+      "sha256": "6a4e425028f503722cb2ac03fbfd59a7fb27492d022a65777d6122dd8b665690"
+    },
+    {
+      "path": "animations/assets/frames/afl/004.webp",
+      "bytes": 793280,
+      "sha256": "3d8d15dea5c011916b95ebeccac893cc450da79eb04f2e9cace0483eda72861a"
+    },
+    {
+      "path": "animations/assets/frames/afl/005.webp",
+      "bytes": 799500,
+      "sha256": "19571ef6be49370861ecf5a16aa549ba34f195e8643b3a49b96f658a4f80685d"
+    },
+    {
+      "path": "animations/assets/frames/afl/006.webp",
+      "bytes": 797690,
+      "sha256": "77ca6c336321a1b89e7ef674d37c9a281f4f5d68eaba571593fdd7e03c7817b0"
+    },
+    {
+      "path": "animations/assets/frames/afl/007.webp",
+      "bytes": 800678,
+      "sha256": "93671a2473ed49ec54183125db210149fecad2fcec191e7e9cba200b69c56cbf"
+    },
+    {
+      "path": "animations/assets/frames/afl/008.webp",
+      "bytes": 797372,
+      "sha256": "f651ec2596e58a0f2eb6cf6cf58fd9ebe88f010903cb25405fe5049e4880f6fe"
+    },
+    {
+      "path": "animations/assets/frames/afl/009.webp",
+      "bytes": 800146,
+      "sha256": "ab690e64abe4c3caa3d1ec9581bc7d63ebe3579400996febdcf4c9718f81d1ce"
+    },
+    {
+      "path": "animations/assets/frames/afl/010.webp",
+      "bytes": 799838,
+      "sha256": "35f2fcc1723d42c30992ebf8573988591320e4287c16ddd1fa62304b3262a1d9"
+    },
+    {
+      "path": "animations/assets/frames/afl/011.webp",
+      "bytes": 791526,
+      "sha256": "88bd7f6679e6bce456815d8f3d9fa2114970836761f56945e5672c3909f1743e"
+    },
+    {
+      "path": "animations/assets/frames/afl/012.webp",
+      "bytes": 782580,
+      "sha256": "f1e8160adfa463644a19ffc5fd492232e4fa344430af95bc822576db3bce28f1"
+    },
+    {
+      "path": "animations/assets/frames/afl/013.webp",
+      "bytes": 762906,
+      "sha256": "a1d3f4171c97c1585b774ff6a8733bf38e23afa75b99bd6dc7995b340913abf4"
+    },
+    {
+      "path": "animations/assets/frames/afl/014.webp",
+      "bytes": 760604,
+      "sha256": "54500fc2e897a56e3f92faf92c5558aacd146c94038a6f276f6d2f42566f9051"
+    },
+    {
+      "path": "animations/assets/frames/afl/015.webp",
+      "bytes": 759594,
+      "sha256": "a5aab3dfa6fc0c5ca30e6da34f4d5ef4291935c8a6814b17c34d98468448d64b"
+    },
+    {
+      "path": "animations/assets/frames/afl/016.webp",
+      "bytes": 766186,
+      "sha256": "8ab8a12bf701314abb912819cf70ae83e480deb8db77a2bdf3162eb86f406cc3"
+    },
+    {
+      "path": "animations/assets/frames/afl/017.webp",
+      "bytes": 765488,
+      "sha256": "f39e519e4dc2556afd81f8f3b5d60a4349de2faa91951165e276d6d5dfad58fd"
+    },
+    {
+      "path": "animations/assets/frames/afl/018.webp",
+      "bytes": 771284,
+      "sha256": "e5a243228c5f9493bee820e74cb067b359eccac0d4782534df836976f155439d"
+    },
+    {
+      "path": "animations/assets/frames/afl/019.webp",
+      "bytes": 771592,
+      "sha256": "c2be7bb1dd42fcf4ce1668be0663a018ca112fc6fe35a1ef87da1aa9badf7d90"
+    },
+    {
+      "path": "animations/assets/frames/afl/020.webp",
+      "bytes": 784570,
+      "sha256": "f5794704b4bed3f1b9beeed7c6c3b5ed5ba99f671ce3e4f8fc0468ead89dfb5f"
+    },
+    {
+      "path": "animations/assets/frames/afl/021.webp",
+      "bytes": 787570,
+      "sha256": "20b3b151116acfde2c645e0f09421bd41beacf89e4bd69e3098dd99612e0874e"
+    },
+    {
+      "path": "animations/assets/frames/afl/022.webp",
+      "bytes": 795378,
+      "sha256": "80010908a313f332f91a8d64cf4b56a93f646e42f109fdccd7ca541ebe48d773"
+    },
+    {
+      "path": "animations/assets/frames/afl/023.webp",
+      "bytes": 802446,
+      "sha256": "2b4db2cc73388403df49ec2a994e951eee1cc2a8913da4e03433f8009a4afcb5"
+    },
+    {
+      "path": "animations/assets/frames/afl/024.webp",
+      "bytes": 799898,
+      "sha256": "f22fd9605677f2b0f3617a123e6bd54adc3a45fb4500ed1ac7c21c7be4c9c0e4"
+    },
+    {
+      "path": "animations/assets/frames/afl/025.webp",
+      "bytes": 802058,
+      "sha256": "930ecac277a127cd1e7e5a2d1b0ee82f7c397b2891856204754b03cc25cacbaa"
+    },
+    {
+      "path": "animations/assets/frames/afl/026.webp",
+      "bytes": 802400,
+      "sha256": "67d67b60370ff0a072f428b571b711431a5f259b55399baa46c7c0087189f976"
+    },
+    {
+      "path": "animations/assets/frames/afl/027.webp",
+      "bytes": 803118,
+      "sha256": "5a7d4dcfc4d4af4bc5f3aacd8441966d67f28c2e0556cfd4258466c6479964d9"
+    },
+    {
+      "path": "animations/assets/frames/afl/028.webp",
+      "bytes": 806600,
+      "sha256": "ec083cf23747074f724b7b8e6684c8b2875ea7db46b6348a87eb80b81b1a59ba"
+    },
+    {
+      "path": "animations/assets/frames/afl/029.webp",
+      "bytes": 806760,
+      "sha256": "dc9c784b39bf6090a4480eb313ba9d87b45ff41be50517997fde94e5cb99fc7e"
+    },
+    {
+      "path": "animations/assets/frames/afl/030.webp",
+      "bytes": 807466,
+      "sha256": "9dc09cf0a8903daa3ad8deb5f342acad2bef07b3ab3c3b5e5954476b3e8c5c47"
+    },
+    {
+      "path": "animations/assets/frames/afl/031.webp",
+      "bytes": 807168,
+      "sha256": "9d71a10ff715437180dc8d70eff79cce538aef24a1268885df5533fad5ac0dec"
+    },
+    {
+      "path": "animations/assets/frames/afl/032.webp",
+      "bytes": 806278,
+      "sha256": "10171adac0e2d451c7a826252cf9f2d3dc5df192bab970161b58e9c35fe1e6ca"
+    },
+    {
+      "path": "animations/assets/frames/afl/033.webp",
+      "bytes": 807954,
+      "sha256": "1f6c702c4196c9de8d94d1baf37fec7efb893ff15b33263fa4be33ce76a5dcf1"
+    },
+    {
+      "path": "animations/assets/frames/afl/034.webp",
+      "bytes": 805608,
+      "sha256": "2451349c89326f79a95a88837cd1278c6fd9011f6bcc1a692a45ceffe7cbef7c"
+    },
+    {
+      "path": "animations/assets/frames/afl/035.webp",
+      "bytes": 795574,
+      "sha256": "cfab37cd0d96d62706db0ffba3cc0ee4f8c4630dbfdd886b8d9c8effd43dce99"
+    },
+    {
+      "path": "animations/assets/frames/afl/036.webp",
+      "bytes": 787802,
+      "sha256": "adb542514c3ebc2e2a215a50f653237989089406414b91bbe9976deb985a68d7"
+    },
+    {
+      "path": "animations/assets/frames/afl/037.webp",
+      "bytes": 772144,
+      "sha256": "ee0382c04132e06a23fadb993171fde871f358c6472b22f8a823195cdf9ba150"
+    },
+    {
+      "path": "animations/assets/frames/afl/038.webp",
+      "bytes": 769770,
+      "sha256": "10c558f0f271a1651e99b0b2d9ee2a83abc238c0cd4b04e35efd547c02170e7e"
+    },
+    {
+      "path": "animations/assets/frames/afl/039.webp",
+      "bytes": 771082,
+      "sha256": "47eca3fe97d21502adc97f40dd35d8531cf44a74092aa03fd9c7287e1f6f8d54"
+    },
+    {
+      "path": "animations/assets/frames/afl/040.webp",
+      "bytes": 773430,
+      "sha256": "055ee577efc67f3f45a802b57c034ff95a5c5dbc5fe8de28af935462b5341306"
+    },
+    {
+      "path": "animations/assets/frames/afl/041.webp",
+      "bytes": 771448,
+      "sha256": "2a5dd9bf8a51fa33717fcf37d5f50bf6f4a3dbb765d38d3c0b27621c06f36019"
+    },
+    {
+      "path": "animations/assets/frames/afl/042.webp",
+      "bytes": 777422,
+      "sha256": "1ca8efbf054b87761a547a7e48fe61fe8e7f7e3ecb6984dcd7235c4b41e14475"
+    },
+    {
+      "path": "animations/assets/frames/afl/043.webp",
+      "bytes": 777290,
+      "sha256": "08e3425b87cb804d85c7c1bf91a79eda70a5456f7953a606274e4da3e0bb261c"
+    },
+    {
+      "path": "animations/assets/frames/afl/044.webp",
+      "bytes": 789922,
+      "sha256": "25d0f030e99b61c027bc45c9a31b2485879b4c58466797af3c4dd4d29121c283"
+    },
+    {
+      "path": "animations/assets/frames/afl/045.webp",
+      "bytes": 791956,
+      "sha256": "91b923ee56fa746353935d045a593aa4c3a8b68c907e8c9b88905285dd8f13e0"
+    },
+    {
+      "path": "animations/assets/frames/afl/046.webp",
+      "bytes": 800064,
+      "sha256": "d73e28863a45d625b4bd0e9a18a1a57e422edbdc702b2ddac0eabf0d31362935"
+    },
+    {
+      "path": "animations/assets/frames/afl/047.webp",
+      "bytes": 807502,
+      "sha256": "ab97b17d47bba3128039f10c2ff12a6cbf41b1da26ce53517e0a6af5827ddc31"
+    },
+    {
+      "path": "animations/assets/frames/afl/048.webp",
+      "bytes": 809680,
+      "sha256": "a50f708c0e9d9c5f3510fb37be3a9e9b9d404fea4546340e39cca081582011ad"
+    },
+    {
+      "path": "animations/assets/frames/afl/049.webp",
+      "bytes": 811996,
+      "sha256": "9778c2d1ed49a3e4606ddd22e96a4ec91a476c38fb1ab3321b919e41b717e788"
+    },
+    {
+      "path": "animations/assets/frames/afl/050.webp",
+      "bytes": 810722,
+      "sha256": "2af2d0db501fd0c66ef402cc9a82174a75a0fb109f3dce1c7b944d80c8194cba"
+    },
+    {
+      "path": "animations/assets/frames/afl/051.webp",
+      "bytes": 812504,
+      "sha256": "6fe4243ca78714cda87ea5cd15c373590dad331b28af0b1dac7444110759da60"
+    },
+    {
+      "path": "animations/assets/frames/afl/052.webp",
+      "bytes": 811150,
+      "sha256": "7dea9c5b117b4b06fd8ceee5fdda688af215c09072828880ca712823a2c9f5f8"
+    },
+    {
+      "path": "animations/assets/frames/afl/053.webp",
+      "bytes": 815186,
+      "sha256": "d8b814c4e4c62be98313067d0d512e0eeae3a6edb90ace4422a8f563ffde729e"
+    },
+    {
+      "path": "animations/assets/frames/afl/054.webp",
+      "bytes": 811934,
+      "sha256": "2ac259e82ed00f4a3e36374a3af8527324736d657b290784ed9e4bd6499f9086"
+    },
+    {
+      "path": "animations/assets/frames/afl/055.webp",
+      "bytes": 812832,
+      "sha256": "d1dbfe35a9587360549173d52add163548dcf40ca2b6153462ecbfa151ae8cd8"
+    },
+    {
+      "path": "animations/assets/frames/afl/056.webp",
+      "bytes": 813470,
+      "sha256": "32206db43f2ab134263359765f1ae6cc09b686adc9ed8d1c4f5daec8b6f01410"
+    },
+    {
+      "path": "animations/assets/frames/afl/057.webp",
+      "bytes": 814678,
+      "sha256": "3c710946907b906aa07da11599cb96449053ac6907ac727444f06b92726059fd"
+    },
+    {
+      "path": "animations/assets/frames/afl/058.webp",
+      "bytes": 812626,
+      "sha256": "33fadc58d9ab653c7f0e9b28fe7b8ca5bd59de1985fc6fa255e627a5b448c6ff"
+    },
+    {
+      "path": "animations/assets/frames/afl/059.webp",
+      "bytes": 801536,
+      "sha256": "f828ffe189660bec7b2e668c0173a681a5b2d82c01b70c6ce8f4ede7300e92d8"
+    },
+    {
+      "path": "animations/assets/frames/afl/060.webp",
+      "bytes": 795072,
+      "sha256": "bb53040911bb1c523e13a2002cd71a5ccb8cddefa61a4e99a818a4739193d990"
+    },
+    {
+      "path": "animations/assets/frames/afl/061.webp",
+      "bytes": 779694,
+      "sha256": "dbe9275b742d8491ddc538675d58642a136ac3da42d753b1e6cd09eb29e06eeb"
+    },
+    {
+      "path": "animations/assets/frames/afl/062.webp",
+      "bytes": 777226,
+      "sha256": "bb069983c7b85d389f199245bd65b5c4269d4716482001aec5e995f9cac71bb2"
+    },
+    {
+      "path": "animations/assets/frames/afl/063.webp",
+      "bytes": 775036,
+      "sha256": "e28f46053bf8c8afac5421f96e541a5d4f24b5a51b199f1a99e06caa931a580b"
+    },
+    {
+      "path": "animations/assets/frames/afl/064.webp",
+      "bytes": 780528,
+      "sha256": "8722c5b3223361ba599f4ed3f87d0cf07ed482c10b3e213eacc6e13ce3ce8fa5"
+    },
+    {
+      "path": "animations/assets/frames/afl/065.webp",
+      "bytes": 778924,
+      "sha256": "6efb4643d42c7df5b3ff9331622e829dd51089658cce3750b74e5f363101886c"
+    },
+    {
+      "path": "animations/assets/frames/afl/066.webp",
+      "bytes": 782704,
+      "sha256": "7be93b1913d682a16de0ec5b4b54bd4217f37ea5fbe02266796b23c16307ba19"
+    },
+    {
+      "path": "animations/assets/frames/afl/067.webp",
+      "bytes": 784978,
+      "sha256": "536b00cc01c7f52c982d2740a8119c4bae9dad33a5c2e040cfaf477c5a6bba27"
+    },
+    {
+      "path": "animations/assets/frames/afl/068.webp",
+      "bytes": 794640,
+      "sha256": "6defe4f4e8925d15391482e1c852804deb936c1bf8815f80574bd3993947afdb"
+    },
+    {
+      "path": "animations/assets/frames/afl/069.webp",
+      "bytes": 798590,
+      "sha256": "e1a6e8ff557b139521e74f855bbc567db4766a08e85cd4747519b1c212d0a728"
+    },
+    {
+      "path": "animations/assets/frames/afl/070.webp",
+      "bytes": 807488,
+      "sha256": "2bb6b598b30e11338bc02c9854142bd75c95fb6f44a0fa98e262e0e21b743af9"
+    },
+    {
+      "path": "animations/assets/frames/afl/071.webp",
+      "bytes": 814882,
+      "sha256": "429555ba32717e09c1d85ab708e977c9b5650be10d7d7cd631134ef4d9b38cb8"
+    },
+    {
+      "path": "animations/assets/frames/afl/072.webp",
+      "bytes": 814384,
+      "sha256": "01e7554304755d19bb24c98ca8895f34073fdd27849af6c67a142a156cee9136"
+    },
+    {
+      "path": "animations/assets/frames/afl/073.webp",
+      "bytes": 816764,
+      "sha256": "789c672e29a059bf7a30ed4adf169a0114b2b07bf2c918c7e2b4e885c16d080e"
+    },
+    {
+      "path": "animations/assets/frames/afl/074.webp",
+      "bytes": 816850,
+      "sha256": "495cc7cbdb9698f6e70c6feb6e2b233f6a23a1f97d72ab4c87ac7907fb1dbd29"
+    },
+    {
+      "path": "animations/assets/frames/afl/075.webp",
+      "bytes": 817364,
+      "sha256": "cfb1188d95f58241b3daee1e2e07a9149b8b95ce6dd84dd2c2fbd4d7e684f6fd"
+    },
+    {
+      "path": "animations/assets/frames/afl/076.webp",
+      "bytes": 819156,
+      "sha256": "74128c8f776576e3c09ce8665cfa99b7e869c8be09694123f9ac108b9c707385"
+    },
+    {
+      "path": "animations/assets/frames/afl/077.webp",
+      "bytes": 819804,
+      "sha256": "15b9b24f96c02d2f834386607199c93a26abb407dcd4c7dc01b4c6f13a6c74a7"
+    },
+    {
+      "path": "animations/assets/frames/afl/078.webp",
+      "bytes": 818616,
+      "sha256": "ff7bb835a5bd71e7167d6cc1c7827f7e02e6f4366f81e964667149342559dfb3"
+    },
+    {
+      "path": "animations/assets/frames/afl/079.webp",
+      "bytes": 818766,
+      "sha256": "db8f5f43b9c65cd53c93716847a3a29ceb70ea53bf5ac5aac74245b3d54d0dbb"
+    },
+    {
+      "path": "animations/assets/frames/afl/080.webp",
+      "bytes": 819490,
+      "sha256": "07f472c977daafcb41a58a8fc8d830a2e0fe4fc47507bd4252bdbb2843cacdda"
+    },
+    {
+      "path": "animations/assets/frames/afl/081.webp",
+      "bytes": 820194,
+      "sha256": "7713433458d801ff084fbdcb0e8683c41ba37fd2f29e98a1b0797c991993714e"
+    },
+    {
+      "path": "animations/assets/frames/afl/082.webp",
+      "bytes": 819818,
+      "sha256": "cf999a0bf4dec5ef2565f247100d21236be6e1b78eecf54fe26ce0fddb523c03"
+    },
+    {
+      "path": "animations/assets/frames/afl/083.webp",
+      "bytes": 809770,
+      "sha256": "3451c9f1ad2fec1ed9ac7b1cff455c39566865edfc50082d99c361aa1671951c"
+    },
+    {
+      "path": "animations/assets/frames/afl/084.webp",
+      "bytes": 802960,
+      "sha256": "1786c15ffda18e2f6a6dd05deb3161608c0c37baf70f586afd128d365f3d8351"
+    },
+    {
+      "path": "animations/assets/frames/afl/085.webp",
+      "bytes": 787206,
+      "sha256": "78e8584a870aadd56cc6cd2b96add4068141205d3709aa81e654be0f2b62f1b0"
+    },
+    {
+      "path": "animations/assets/frames/afl/086.webp",
+      "bytes": 784484,
+      "sha256": "8dc5ff5a35de1e77372f75896bab1200b52471637a9040856f5f013e707d799a"
+    },
+    {
+      "path": "animations/assets/frames/afl/087.webp",
+      "bytes": 784270,
+      "sha256": "24cde5ca65de0aea9d9e0aa5e1d7e06718403c22c441bff4878b17546571d75d"
+    },
+    {
+      "path": "animations/assets/frames/afl/088.webp",
+      "bytes": 787746,
+      "sha256": "f970713bf3b7dd170d41ffea832b02af8a6d9c811b7e359fe2d23d36ed15ce0d"
+    },
+    {
+      "path": "animations/assets/frames/afl/089.webp",
+      "bytes": 786862,
+      "sha256": "6c8ac056e3cf7cc712b0d5fcf790bc4da9187d8f4529e722d54a59aabd875afb"
+    },
+    {
+      "path": "animations/assets/frames/afl/090.webp",
+      "bytes": 790318,
+      "sha256": "c364b517de211c87686d3eea7c053d6cfa0ace0163d37d239b02271858786c38"
+    },
+    {
+      "path": "animations/assets/frames/afl/091.webp",
+      "bytes": 792180,
+      "sha256": "24718b307d018685e4dbda8d1cfabb66ff727056ca6a835fa48089ab7f63847d"
+    },
+    {
+      "path": "animations/assets/frames/afl/092.webp",
+      "bytes": 802672,
+      "sha256": "22066d2245964b8a6d247a58b2c019e5558b978d4f2411e2e519bfab5e695d6d"
+    },
+    {
+      "path": "animations/assets/frames/afl/093.webp",
+      "bytes": 807948,
+      "sha256": "14e833661d248342a006110b03968e2d3263518825094186d5900b1eeba8ad41"
+    },
+    {
+      "path": "animations/assets/frames/afl/094.webp",
+      "bytes": 815342,
+      "sha256": "532cdbae273f8c96c389e6006864ff098440b6b5bcff8fbf534d8011072b7b93"
+    },
+    {
+      "path": "animations/assets/frames/afl/095.webp",
+      "bytes": 823238,
+      "sha256": "f7fa132a6fdbbfce64f9324bae8b242f1d2f591de83696c10a2305d6fe25d320"
+    },
+    {
+      "path": "animations/assets/frames/afl/096.webp",
+      "bytes": 824840,
+      "sha256": "b67cf1f4997a568831bb6ca31b67ac7e8716cfacc51860c3cf09f6f22b786e0f"
+    },
+    {
+      "path": "animations/assets/frames/afl/097.webp",
+      "bytes": 826364,
+      "sha256": "5594b8990f7c974dc96a38aef947244a5f01f923999332adf75a3e542ff62235"
+    },
+    {
+      "path": "animations/assets/frames/afl/098.webp",
+      "bytes": 825584,
+      "sha256": "1c7d03cf9bdaf53af6e5874e2b6581645062d1c7b2d5bca0d93fc9cf388e8309"
+    },
+    {
+      "path": "animations/assets/frames/afl/099.webp",
+      "bytes": 827460,
+      "sha256": "3bdb601eb3122011c0ecc05749486caf08f3a52b431f08944ff6801c3bb4dd54"
+    },
+    {
+      "path": "animations/assets/frames/afl/100.webp",
+      "bytes": 825292,
+      "sha256": "6034d7a9c65956b7f115f9dbf0b8a4395fedca0f348f4d5b090bc3687ebcb6b4"
+    },
+    {
+      "path": "animations/assets/frames/afl/101.webp",
+      "bytes": 827568,
+      "sha256": "41c7e90d48ecb06d8233b871ce2ac69860c2004926a5886e57821e4c535bed12"
+    },
+    {
+      "path": "animations/assets/frames/afl/102.webp",
+      "bytes": 827006,
+      "sha256": "281e586dfead08522efdbe3db4fca49d77093e1fe3f661674cacc404701905a9"
+    },
+    {
+      "path": "animations/assets/frames/afl/103.webp",
+      "bytes": 828182,
+      "sha256": "ca71f5df02ed0d6897bad6f6401a6d5a63a59cea4e92d65437160773db9ab12d"
+    },
+    {
+      "path": "animations/assets/frames/afl/104.webp",
+      "bytes": 826896,
+      "sha256": "c94ec094bd2dc982bc6e85054bf5e2a236b4a5ca3a376156421dff26c1d8d5be"
+    },
+    {
+      "path": "animations/assets/frames/afl/105.webp",
+      "bytes": 828592,
+      "sha256": "1e92299a63903631e056729d0883f72efd31acebf44c4c1c5b53902c1042fc60"
+    },
+    {
+      "path": "animations/assets/frames/afl/106.webp",
+      "bytes": 825178,
+      "sha256": "01a140fb353b8673ec7d225c995f6cd402156ea41804936d78345dbba59be96c"
+    },
+    {
+      "path": "animations/assets/frames/afl/107.webp",
+      "bytes": 816830,
+      "sha256": "d9ca63a287a04db7b7735c95742a9d8f282ac336563670777463ae3ba425a647"
+    },
+    {
+      "path": "animations/assets/frames/afl/108.webp",
+      "bytes": 810874,
+      "sha256": "6474b08655a1a0db86f36c013bf1fa705be125b49e8d250ac364afe80c3fbfa5"
+    },
+    {
+      "path": "animations/assets/frames/afl/109.webp",
+      "bytes": 796170,
+      "sha256": "79067bbed8cbc719040cb043ec4d82f065af58ff42db27e0c5e949a672b34c3c"
+    },
+    {
+      "path": "animations/assets/frames/afl/110.webp",
+      "bytes": 793290,
+      "sha256": "96a69f76d63f63b70f98ee35f712703620874e1434e477d67228443834465112"
+    },
+    {
+      "path": "animations/assets/frames/afl/111.webp",
+      "bytes": 791116,
+      "sha256": "d6a336891039b6a1d245fa1335c343f59bea19d1a1bcc970b4d2d90b358ace9d"
+    },
+    {
+      "path": "animations/assets/frames/afl/112.webp",
+      "bytes": 795260,
+      "sha256": "d8c542902720994c0d5d7a08387dbb26d8ee411b5462bbe69eda10738757bcfa"
+    },
+    {
+      "path": "animations/assets/frames/afl/113.webp",
+      "bytes": 794950,
+      "sha256": "47aaaa5e917044b8309b7881edbdf633465de00dd06a72687355db949161fd7f"
+    },
+    {
+      "path": "animations/assets/frames/afl/114.webp",
+      "bytes": 800668,
+      "sha256": "05f7f2609a661eb0daf5732cb16393044dfa0979f4eaea3198897bb35fbafbeb"
+    },
+    {
+      "path": "animations/assets/frames/afl/115.webp",
+      "bytes": 801420,
+      "sha256": "84fd697916f6a3ddc3bbb01ce9ad74315152f3f067dce27c7a0e5cc1c3c17a68"
+    },
+    {
+      "path": "animations/assets/frames/afl/116.webp",
+      "bytes": 811960,
+      "sha256": "ad61b5df00c40ceffc9bf17a1e070ca4a2a7e92d1ee080348413703eeb4d5a80"
+    },
+    {
+      "path": "animations/assets/frames/afl/117.webp",
+      "bytes": 815616,
+      "sha256": "8ee4c4f480d316753581767ccbf2b74dcff974cf435a51fa509cd6ffa88824fc"
+    },
+    {
+      "path": "animations/assets/frames/afl/118.webp",
+      "bytes": 823378,
+      "sha256": "8550582a636c61ed6d6e212778d49b98b31978f91bf75632496a2a4044b7befc"
+    },
+    {
+      "path": "animations/assets/frames/afl/119.webp",
+      "bytes": 831796,
+      "sha256": "5a80a89276ddb13112aa98ca92c369049be59156c7b858ebc12ade3929f6da2b"
+    },
+    {
+      "path": "animations/assets/frames/afl/120.webp",
+      "bytes": 832682,
+      "sha256": "ffdb05ee38f263d0df9c29888d23fd89563bd98acaf91749b3846275c3723e20"
+    },
+    {
+      "path": "animations/assets/frames/afl/121.webp",
+      "bytes": 834436,
+      "sha256": "219028fcf6e42583846e4d8b7f3f1d12db63ff0e7ba067219f8ddb7c1a0c5901"
+    },
+    {
+      "path": "animations/assets/frames/afl/122.webp",
+      "bytes": 835960,
+      "sha256": "943322577d3345f01a0918b7b1eaf07232478111c9eb5ea82265a2a1363b66c2"
+    },
+    {
+      "path": "animations/assets/frames/afl/123.webp",
+      "bytes": 836258,
+      "sha256": "e9aba6a9b023c9700c53607e154cf078abfd1750e56e40a1923490b002748156"
+    },
+    {
+      "path": "animations/assets/frames/afl/124.webp",
+      "bytes": 836058,
+      "sha256": "2f7e1f3b0e83331abd6c549016886952156db6ee96d8a0dc95ca5b8e02595bf8"
+    },
+    {
+      "path": "animations/assets/frames/afl/125.webp",
+      "bytes": 834710,
+      "sha256": "276c91c741e8f1846975be0b929158459f91bed1cef7f8309cb08c7777b9e297"
+    },
+    {
+      "path": "animations/assets/frames/afl/126.webp",
+      "bytes": 835690,
+      "sha256": "d78d099d195c899e39601c6f894aad4e5b772eb360f06a39273db10a4d4712f5"
+    },
+    {
+      "path": "animations/assets/frames/afl/127.webp",
+      "bytes": 835680,
+      "sha256": "b8fbfe4d3ad2173987b0abee8dc74bb7bd85f65e8653078e830e05b1e6fdaf16"
+    },
+    {
+      "path": "animations/assets/frames/afl/128.webp",
+      "bytes": 836182,
+      "sha256": "9a304281a20ccd8721c1218af7bfc08d5dad33187a56b6efdc3006e5b935dfa1"
+    },
+    {
+      "path": "animations/assets/frames/afl/129.webp",
+      "bytes": 836176,
+      "sha256": "4c640ad77b17462695a3ff90bcf3d0aeda87a59f04560be33074da5472dce76a"
+    },
+    {
+      "path": "animations/assets/frames/afl/130.webp",
+      "bytes": 835512,
+      "sha256": "6200670eb3b93dcaa31babb5c025377a1e917e01086298d693aedb93a5189393"
+    },
+    {
+      "path": "animations/assets/frames/afl/131.webp",
+      "bytes": 825528,
+      "sha256": "5baee81e174c55073e8e17084f2ca90158a0746436e1c2f0413a54d28084d893"
+    },
+    {
+      "path": "animations/assets/frames/afl/132.webp",
+      "bytes": 820332,
+      "sha256": "55b399498e7c4d73e24b03aa162169ab7d4cdd558091e81fc1a6ebce3e9e9f95"
+    },
+    {
+      "path": "animations/assets/frames/afl/133.webp",
+      "bytes": 803124,
+      "sha256": "3a60afb8819810dbbb34a2b0a797a58a289cf8150e973e690a01929505f01e0b"
+    },
+    {
+      "path": "animations/assets/frames/afl/134.webp",
+      "bytes": 801308,
+      "sha256": "4d261ea873c51e949811850407c2edcf9247a38da22c94dc2702821a21a79e39"
+    },
+    {
+      "path": "animations/assets/frames/afl/135.webp",
+      "bytes": 799818,
+      "sha256": "55e87b9f4dc9e6d073d5660a13370f4e078ffde7a386040c4cb2a7097cfe20b4"
+    },
+    {
+      "path": "animations/assets/frames/afl/136.webp",
+      "bytes": 803944,
+      "sha256": "0cb9db85a7b8e5482e485886e1dd1ecdb08c0c6545a58e5c5295f7c6e71a1538"
+    },
+    {
+      "path": "animations/assets/frames/afl/137.webp",
+      "bytes": 801076,
+      "sha256": "87eb69b7707ba02a66fca6e9c72749c31b8b62ecf489a221f228d4ed9d87352c"
+    },
+    {
+      "path": "animations/assets/frames/afl/138.webp",
+      "bytes": 805182,
+      "sha256": "090b5c7e32a5260f378c765c1f27928d93bec3f5f975387a8a57892abbaf9907"
+    },
+    {
+      "path": "animations/assets/frames/afl/139.webp",
+      "bytes": 806924,
+      "sha256": "37e2394d706ea866386780238902a4e30822132c4b15a3deec69ad6da0de5304"
+    },
+    {
+      "path": "animations/assets/frames/afl/140.webp",
+      "bytes": 817366,
+      "sha256": "d18ccc1e699876258ffcd2f2b2550116c046f9707915f1856542dc1823ad504b"
+    },
+    {
+      "path": "animations/assets/frames/afl/141.webp",
+      "bytes": 822180,
+      "sha256": "4a5c1bc2f437701a619e66afd1c8e4a25f631109bcac6bbc31d3bd0cb79bacc9"
+    },
+    {
+      "path": "animations/assets/frames/afl/142.webp",
+      "bytes": 830368,
+      "sha256": "d120b7547d745a543e8534a3ebd412dd5a392aa1ce4ff069848b8262b9a15ed4"
+    },
+    {
+      "path": "animations/assets/frames/afl/143.webp",
+      "bytes": 837818,
+      "sha256": "d5357caa13458349b1e358a82aaf14c6cd111732ada63658f57b45c8d30554bd"
+    },
+    {
+      "path": "animations/assets/frames/afl/144.webp",
+      "bytes": 838940,
+      "sha256": "28bd8617e9ea9dc9be356093d6ae920603e4b897f7f5f9dc2e547070eadf220f"
+    },
+    {
+      "path": "animations/assets/frames/afl/145.webp",
+      "bytes": 840530,
+      "sha256": "b78631f7d083f820336c77daa81912ca316aece8a057b9847b5129e2ab1e8842"
+    },
+    {
+      "path": "animations/assets/frames/afl/146.webp",
+      "bytes": 840580,
+      "sha256": "220156ad4e820da418cebb1374f00765dde0122b583d12701d6950aaa108fe89"
+    },
+    {
+      "path": "animations/assets/frames/afl/147.webp",
+      "bytes": 842070,
+      "sha256": "f8e85aaac54aaae064847d2902234ce544795657f9afa5d1ef3740219d19f929"
+    },
+    {
+      "path": "animations/assets/frames/afl/148.webp",
+      "bytes": 839772,
+      "sha256": "1cca7cdc0cc8ecde4efc600ceb410451833b079f43197616bf9fda353d466f9a"
+    },
+    {
+      "path": "animations/assets/frames/afl/149.webp",
+      "bytes": 841380,
+      "sha256": "d4f1c641e18244539b0f6ed83ae66ce9e94c582cbeb8b56ce7469b4d5bf11e27"
+    },
+    {
+      "path": "animations/assets/frames/afl/150.webp",
+      "bytes": 840446,
+      "sha256": "b29b1585a00d6b2d5562ff92ccb554b790e828ae91e4305f46d237dabb8fb991"
+    },
+    {
+      "path": "animations/assets/frames/afl/151.webp",
+      "bytes": 841896,
+      "sha256": "7e3ac1e033dabeeebcb7b6752251a2a6556be3d022e06053bb824d88f679d14a"
+    },
+    {
+      "path": "animations/assets/frames/afl/152.webp",
+      "bytes": 840124,
+      "sha256": "de46badd91b011c9749b75ae907cdad7ad143adbca4e4a6a7c6596d2d60fb961"
+    },
+    {
+      "path": "animations/assets/frames/afl/153.webp",
+      "bytes": 841362,
+      "sha256": "64bd82ad5e71e87d76a3cddb3192aae2f126445de238dbf58e5a79e703c0d27a"
+    },
+    {
+      "path": "animations/assets/frames/afl/154.webp",
+      "bytes": 839904,
+      "sha256": "ffec9d5d4e3164433f056a22391fcd21bb9c99c54be4b9c8f26b6b6013e495ee"
+    },
+    {
+      "path": "animations/assets/frames/afl/155.webp",
+      "bytes": 828778,
+      "sha256": "c50ff2d0c4d8eaf4e4b4f1d0e40e29072698ba023050b08af9baedc34a449d50"
+    },
+    {
+      "path": "animations/assets/frames/afl/156.webp",
+      "bytes": 824844,
+      "sha256": "d59f0f8852cb0a7aeb8ce4765d75c7497906776e0861804b14bb4eff765a51bb"
+    },
+    {
+      "path": "animations/assets/frames/afl/157.webp",
+      "bytes": 807312,
+      "sha256": "cb5a95f0b755d78b71367dd1dc8835ac78bdefcd3c1555951ab049aea88ddba1"
+    },
+    {
+      "path": "animations/assets/frames/afl/158.webp",
+      "bytes": 805224,
+      "sha256": "3909a1dbe96974e8e1682cdb41a3a615739da4b21be6fb69e0ac224da66f3306"
+    },
+    {
+      "path": "animations/assets/frames/afl/159.webp",
+      "bytes": 803792,
+      "sha256": "a34c883823003fe4e6184586b7b7c232bafd8287c53eabdde1220c01607a590d"
+    },
+    {
+      "path": "animations/assets/frames/afl/160.webp",
+      "bytes": 808874,
+      "sha256": "07db199bc553c27a720653af49fe02caa3b9ea946eef4fc3f6a0503e7d365b63"
+    },
+    {
+      "path": "animations/assets/frames/afl/161.webp",
+      "bytes": 806276,
+      "sha256": "5db449bf147fd12c79112c39d3e9734f81de1c2eafc718bfba904f3438377bd4"
+    },
+    {
+      "path": "animations/assets/frames/afl/162.webp",
+      "bytes": 811144,
+      "sha256": "14ab35d39a7ae4e73cc371a95ec1ce3e1e7d6dc0470ba3a79a35abdcbf58d30b"
+    },
+    {
+      "path": "animations/assets/frames/afl/163.webp",
+      "bytes": 812374,
+      "sha256": "01c5daa6d772c42101c293a996c53fbe828a412363f15b1be7820657b37000f4"
+    },
+    {
+      "path": "animations/assets/frames/afl/164.webp",
+      "bytes": 823202,
+      "sha256": "09403bcac07e8115ab6c498c3eb41ef6d9bc0f9bd8d4d94eb593593176bd93d6"
+    },
+    {
+      "path": "animations/assets/frames/afl/165.webp",
+      "bytes": 857720,
+      "sha256": "bb00638844b0b5e67246baaa2715aa82147cb2945dc6016bbdde6516035d7b7a"
+    },
+    {
+      "path": "animations/assets/frames/afl/166.webp",
+      "bytes": 834408,
+      "sha256": "5d8cdc4e1db32079ca03d3c623b76afe9729363c923c12e26159476f83b980bf"
+    },
+    {
+      "path": "animations/assets/frames/afl/167.webp",
+      "bytes": 842356,
+      "sha256": "b6a964baddcc06a15d1f26d36ce5721c81bfa0131032a97408b23a86ddaa48f2"
+    },
+    {
+      "path": "animations/assets/frames/afl/168.webp",
+      "bytes": 843132,
+      "sha256": "51dc33f42b2c5123431fca78c40730fab997deef3513eda66dec8a2915811237"
+    },
+    {
+      "path": "animations/assets/frames/afl/169.webp",
+      "bytes": 845628,
+      "sha256": "85cc1983001daba1fa02c9ca72e2d435a8831c26277e14b54b98879558cbb1d7"
+    },
+    {
+      "path": "animations/assets/frames/afl/170.webp",
+      "bytes": 876456,
+      "sha256": "31667c09eb0815c77670ab954d909732d22ebf091d91b61e72572caea430fc2d"
+    },
+    {
+      "path": "animations/assets/frames/afl/171.webp",
+      "bytes": 877796,
+      "sha256": "300358c3f607772d7c86d5beb438bab16c44c00f86a4c7ffba83cf59b35c1641"
+    },
+    {
+      "path": "animations/assets/frames/afl/172.webp",
+      "bytes": 877016,
+      "sha256": "1567fa7090ad8b3d37b3fe3dc7d45bb2aa53330fdd7c683a6248a90e8816dc90"
+    },
+    {
+      "path": "animations/assets/frames/afl/173.webp",
+      "bytes": 876754,
+      "sha256": "f746cf3db7b06f967b73d46ad1303a76e3c2892b878122117fb3691f0cffc206"
+    },
+    {
+      "path": "animations/assets/frames/afl/174.webp",
+      "bytes": 877128,
+      "sha256": "717ca0b42730be929bb29c16206beb196f812ddd506938610a910a452a28e8f5"
+    },
+    {
+      "path": "animations/assets/frames/afl/175.webp",
+      "bytes": 877248,
+      "sha256": "f118b350de136d8a7edd4c54ee85c0e22eea82f85baf0b661f9f2745a18c8e31"
+    },
+    {
+      "path": "animations/assets/frames/afl/176.webp",
+      "bytes": 877224,
+      "sha256": "9d7fa6000c25f86d91da4c297d506b6882b3f2456fbdda0e3b23c88b39a1c0ab"
+    },
+    {
+      "path": "animations/assets/frames/afl/177.webp",
+      "bytes": 877148,
+      "sha256": "494a974d3da66402b067792411fb9be41ac33e3332774a06c5a1975008d6454e"
+    },
+    {
+      "path": "animations/assets/frames/afl/178.webp",
+      "bytes": 876200,
+      "sha256": "50e3404edae4e544f9a1bc066fdcad333bc2c744210937408071017e1ec5c43c"
+    },
+    {
+      "path": "animations/assets/frames/afl/179.webp",
+      "bytes": 866170,
+      "sha256": "45450507d97dd9304c3dd4e126482cd8fe2094b065abba895f889c15f2412c3e"
+    },
+    {
+      "path": "animations/assets/frames/afl/180.webp",
+      "bytes": 861446,
+      "sha256": "0e91fe561cb53c426d4d9f65fcba2436125384ab7f5e3a66e466d61a6cf3873c"
+    },
+    {
+      "path": "animations/assets/frames/afl/181.webp",
+      "bytes": 844520,
+      "sha256": "7bfea0fde00fb6d3a3bd1b4328e5713304f7b8aa52c1ce8011f5bd16856a45c2"
+    },
+    {
+      "path": "animations/assets/frames/afl/182.webp",
+      "bytes": 841422,
+      "sha256": "9efd6cfd7da47cda957095bd596ffbccffefc6d33e27b30fb35cec0deb8abd93"
+    },
+    {
+      "path": "animations/assets/frames/afl/183.webp",
+      "bytes": 840316,
+      "sha256": "222a40b6f0fac30cb24a8de6cefa9a68b5a36172ccd6d9cae6c869d60fda5fa9"
+    },
+    {
+      "path": "animations/assets/frames/afl/184.webp",
+      "bytes": 844402,
+      "sha256": "7211ff1e8485da954ad09531c3be6647d6a6cfbb1a6fbf3ac0f376f17aa617d7"
+    },
+    {
+      "path": "animations/assets/frames/afl/185.webp",
+      "bytes": 842232,
+      "sha256": "304481d7355b1535a17934b9b94a7a80cd7c37b88838df58546833bb582c5ed2"
+    },
+    {
+      "path": "animations/assets/frames/afl/186.webp",
+      "bytes": 846704,
+      "sha256": "47668e69eebd8fff17f04540b53983d5d9ed333236b11102cd2fa966f3981233"
+    },
+    {
+      "path": "animations/assets/frames/afl/187.webp",
+      "bytes": 847198,
+      "sha256": "3172c6538c9d566470cd4316f2a28b32bbc4f13010c0e89a41fe4de9520b8d41"
+    },
+    {
+      "path": "animations/assets/frames/afl/188.webp",
+      "bytes": 858830,
+      "sha256": "0fc8b65f818d09662d68ba550f5dbe05bad61206855847a194e3130b21788094"
+    },
+    {
+      "path": "animations/assets/frames/afl/189.webp",
+      "bytes": 861252,
+      "sha256": "6642e79c4b725707b17943a837fa14a75329413977fe72ba3cbf17c2e81c662d"
+    },
+    {
+      "path": "animations/assets/frames/afl/190.webp",
+      "bytes": 869722,
+      "sha256": "1d8b49adcb1052a2e6c87db17003ffe2048c802894f56c408bc219c9d8dce502"
+    },
+    {
+      "path": "animations/assets/frames/afl/191.webp",
+      "bytes": 876980,
+      "sha256": "1b144f3592bc546667021574bc9cc3ff9c2bcea3e66f6530487e276a33406859"
+    },
+    {
+      "path": "animations/assets/frames/afl/192.webp",
+      "bytes": 878902,
+      "sha256": "faf9355584c6ff5d70504b5286fd294665c9bf6ea4c971f57a0a4f6a09f8acdf"
+    },
+    {
+      "path": "animations/assets/frames/afl/193.webp",
+      "bytes": 878738,
+      "sha256": "5483468e7da7bf6234a9ae4f0819ce493842682b1780e7529bae861ae99910ff"
+    },
+    {
+      "path": "animations/assets/frames/afl/194.webp",
+      "bytes": 878506,
+      "sha256": "34eb071e1ddaae320b71256f558a0fdd30da75d86ba31b80afe9f461a916bc4e"
+    },
+    {
+      "path": "animations/assets/frames/afl/195.webp",
+      "bytes": 881146,
+      "sha256": "537abe75b45e8589b2ba3c329bb51939322b5d53f7059ae8c5bf4c00e3cc416c"
+    },
+    {
+      "path": "animations/assets/frames/afl/196.webp",
+      "bytes": 877676,
+      "sha256": "86cebcb71d78a35b83360dafc87531f9f33791a64f8352faae7e3661ba95cca2"
+    },
+    {
+      "path": "animations/assets/frames/afl/197.webp",
+      "bytes": 879900,
+      "sha256": "9b914531b9fb2b4c6029d1fd061c248af9cca331c8c24c794bfc64c816b4e69c"
+    },
+    {
+      "path": "animations/assets/frames/afl/198.webp",
+      "bytes": 879476,
+      "sha256": "913bf69656bf85afa3f5d5d85101b139fedfc8b8138eaf317474d1f654496ad1"
+    },
+    {
+      "path": "animations/assets/frames/afl/199.webp",
+      "bytes": 879804,
+      "sha256": "a36ea269910994c0e0e37c86ef3c22ce421f7d3b46073ca7964fec6af2332407"
+    },
+    {
+      "path": "animations/assets/frames/afl/200.webp",
+      "bytes": 879094,
+      "sha256": "b86d82ee368ba6229f0ec186cd7c5f235438fc71b00c1e2e22884e28e29ba40a"
+    },
+    {
+      "path": "animations/assets/frames/afl/201.webp",
+      "bytes": 879572,
+      "sha256": "8271b9188cf80f97e769e22d69ce6fbe2d60e93a826bf7587696936408baecda"
+    },
+    {
+      "path": "animations/assets/frames/afl/202.webp",
+      "bytes": 878194,
+      "sha256": "3ebc3e248484b1a060c2f2c3b2143401f3de3aa42a178dc7180dfe5fe876511a"
+    },
+    {
+      "path": "animations/assets/frames/afl/203.webp",
+      "bytes": 867802,
+      "sha256": "942059a0b1b5a0d518444446bcb21b3049045efb0ad95fab4e18b5a8fb6b9ae9"
+    },
+    {
+      "path": "animations/assets/frames/afl/204.webp",
+      "bytes": 862722,
+      "sha256": "6954b55dbb1ddb9fba8015fb3ba164d644565f96053548fb04688ecabfc9b59f"
+    },
+    {
+      "path": "animations/assets/frames/afl/205.webp",
+      "bytes": 845028,
+      "sha256": "4d0542a7ad38a46a2419021b5d6151d53d0eb926813321d96332eb61eb43f2f3"
+    },
+    {
+      "path": "animations/assets/frames/afl/206.webp",
+      "bytes": 842852,
+      "sha256": "04ca811d8623c574efa8d492fc4c34bdf90644c51cd22e691f2a7b8ea89e12ba"
+    },
+    {
+      "path": "animations/assets/frames/afl/207.webp",
+      "bytes": 841232,
+      "sha256": "13f3bba8939839000a241b9f129d4106be2d96e88c0a896d5b82a1e3b61685e5"
+    },
+    {
+      "path": "animations/assets/frames/afl/208.webp",
+      "bytes": 846772,
+      "sha256": "4ce432ac5fd64efff136a92769063d77dac9951c3af9c10ed127297cb038cef7"
+    },
+    {
+      "path": "animations/assets/frames/afl/209.webp",
+      "bytes": 843576,
+      "sha256": "22016f9e3aee14b075a1508ab781e31e4158257341c6e07f9eac36e5ca66a084"
+    },
+    {
+      "path": "animations/assets/frames/afl/210.webp",
+      "bytes": 848554,
+      "sha256": "84b51b604a9919d1ddb028066db551791d0cfd3c5974ccd7b86e79c1d8866743"
+    },
+    {
+      "path": "animations/assets/frames/afl/211.webp",
+      "bytes": 850282,
+      "sha256": "a74f8c1666aefb6d30c10da8841c4fa8b96bd47bf4747eee0b1fdd03da29c788"
+    },
+    {
+      "path": "animations/assets/frames/afl/212.webp",
+      "bytes": 860562,
+      "sha256": "5b7ac469aadb9e3459bbafe8e82a0d5ddbd83505ca7d85e0076ba72ba7a63227"
+    },
+    {
+      "path": "animations/assets/frames/afl/213.webp",
+      "bytes": 862762,
+      "sha256": "2023f9769fdaf40495dd279399d0cce9df9c964a80a0bd329e61c3ff2a67749c"
+    },
+    {
+      "path": "animations/assets/frames/afl/214.webp",
+      "bytes": 870524,
+      "sha256": "f05c5dfe20d72e979634cd4c7f817c4e096f2297413f05f2295da5907c0ff5eb"
+    },
+    {
+      "path": "animations/assets/frames/afl/215.webp",
+      "bytes": 878174,
+      "sha256": "37d5576aed0fda19d0c78ee379e5c8e59b7f9bced448436d709656a22fd0943f"
+    },
+    {
+      "path": "animations/assets/frames/afl/216.webp",
+      "bytes": 880134,
+      "sha256": "f9b9ca44a0ca45dfb5204b232931033c5d54fae45597c7c49946bccfe60d4433"
+    },
+    {
+      "path": "animations/assets/frames/afl/217.webp",
+      "bytes": 881154,
+      "sha256": "320c803ec29ce35f6555cd25edbcb12b2f9821bd9a8252dee3af3aee0ed6c4c0"
+    },
+    {
+      "path": "animations/assets/frames/afl/218.webp",
+      "bytes": 881464,
+      "sha256": "afc01b0bcf22d74948aa602026ba06b2cf56fd5e32ff2c15a9858c5e52f6fd33"
+    },
+    {
+      "path": "animations/assets/frames/afl/219.webp",
+      "bytes": 882738,
+      "sha256": "c7adfde670d8e238896a6464d5ec01a7ceb70c85e65e2239f217da9363ff314a"
+    },
+    {
+      "path": "animations/assets/frames/afl/220.webp",
+      "bytes": 882222,
+      "sha256": "9de9b4a861528d76fc580d73f401a65ecd18f32f596e97ba96423af8daefdaae"
+    },
+    {
+      "path": "animations/assets/frames/afl/221.webp",
+      "bytes": 881562,
+      "sha256": "1d74bb4b9e5658b2d85dfdaed24bff9304361f9a94232bf8287b6102d60045ce"
+    },
+    {
+      "path": "animations/assets/frames/afl/222.webp",
+      "bytes": 882428,
+      "sha256": "c4dd28ed06e4c0d93f7700b70d9682f41e65e5c2943ac29edb9aa164f2972390"
+    },
+    {
+      "path": "animations/assets/frames/afl/223.webp",
+      "bytes": 881958,
+      "sha256": "81648aee323fef9dc3bed9c0f16bdf24efa822c8470d14cd93f075f50f93b1b3"
+    },
+    {
+      "path": "animations/assets/frames/afl/224.webp",
+      "bytes": 882120,
+      "sha256": "476d058f62f37c05356c1a76f9831fdd932b5c32000d90ade2f7a10edae5dd60"
+    },
+    {
+      "path": "animations/assets/frames/afl/225.webp",
+      "bytes": 882794,
+      "sha256": "fc835be9c5bf6f0042e3e12e4856123d1d4efabc4397caaac83b63b64edd685e"
+    },
+    {
+      "path": "animations/assets/frames/afl/226.webp",
+      "bytes": 882318,
+      "sha256": "8d83cca0e51c1cbfe6ef4ef96356b657f510a891c02d3d122c67c7fdef62b30f"
+    },
+    {
+      "path": "animations/assets/frames/afl/227.webp",
+      "bytes": 872476,
+      "sha256": "fdb00c15596ba7d2a06206a872f9870442662cf0f01716d8eae9188c755161ee"
+    },
+    {
+      "path": "animations/assets/frames/afl/228.webp",
+      "bytes": 861282,
+      "sha256": "afde9dea0152d0c8da0f07f3f30bfd93abb2fbe913f686fe60ba6d13fd571233"
+    },
+    {
+      "path": "animations/assets/frames/afl/229.webp",
+      "bytes": 853764,
+      "sha256": "dfc38f8c024e8b9d3a2ac3bf99204ee70b22ed580f4a58fd4beafc5975acfdcb"
+    },
+    {
+      "path": "animations/assets/frames/afl/230.webp",
+      "bytes": 842566,
+      "sha256": "4ddd6e900d06764e24fae1ef5b8c887a278147d3098b5aacf89329e4468414e9"
+    },
+    {
+      "path": "animations/assets/frames/afl/231.webp",
+      "bytes": 843274,
+      "sha256": "fbbdc5db7fd166dc63d0dc9e088979015dc3825f498c16cd791251967c3ba8a7"
+    },
+    {
+      "path": "animations/assets/frames/afl/232.webp",
+      "bytes": 843450,
+      "sha256": "2c085c4bba21a1efe61b4c6dff0df9d7b4c4349d582aff3af265246826d59150"
+    },
+    {
+      "path": "animations/assets/frames/afl/233.webp",
+      "bytes": 850072,
+      "sha256": "991a5b2667f6e315c89a05838aeac76044b7291b3da6a6787156ec0edfcd5ba6"
+    },
+    {
+      "path": "animations/assets/frames/afl/234.webp",
+      "bytes": 850248,
+      "sha256": "9bfca2f6c3d60dfb59e679aaa7699d6b2127a1c7babce3254ad94f99aa851f3c"
+    },
+    {
+      "path": "animations/assets/frames/afl/235.webp",
+      "bytes": 855340,
+      "sha256": "b5555169604e9b9b73e5b6e591c5f5d796b5bcf3eec150edd0f3c59831c2c7fb"
+    },
+    {
+      "path": "animations/assets/frames/afl/236.webp",
+      "bytes": 858446,
+      "sha256": "79153dd9edeca6935a9fdd37bfa2277ec5947d5a3d564f1c4ceb1b44da3b8ff9"
+    },
+    {
+      "path": "animations/assets/frames/afl/237.webp",
+      "bytes": 869910,
+      "sha256": "c2d1fe6e858002b30f59b6aa6a893bdc7e39b8d23879d259f7525d8e0728f60a"
+    },
+    {
+      "path": "animations/assets/frames/afl/238.webp",
+      "bytes": 871966,
+      "sha256": "8f2345ed16217b01b04f837db2e32c9fa63dd69c82fe45c941b7544cc9535d1f"
+    },
+    {
+      "path": "animations/assets/frames/afl/239.webp",
+      "bytes": 881108,
+      "sha256": "576279b2a4df7eb4a1726e42223705f892d5b81bb951ed74f5c0ec0ea0d24f31"
+    },
+    {
+      "path": "animations/assets/frames/afl/240.webp",
+      "bytes": 883764,
+      "sha256": "86dfbc8f41e420f3698698345052638df5e3783ec830fa9c2986c0a519726b98"
+    },
+    {
+      "path": "animations/assets/frames/afl/241.webp",
+      "bytes": 883366,
+      "sha256": "aaed547ffac244b025c125b9a99ceba0df49db4232c7b6f9c4180f92ad6f6055"
+    },
+    {
+      "path": "animations/assets/frames/afl/242.webp",
+      "bytes": 884208,
+      "sha256": "f9e451b4c90035f3e176182de1cd5058ee0eba68fd6b90090814428dbfaafe29"
+    },
+    {
+      "path": "animations/assets/frames/afl/243.webp",
+      "bytes": 885774,
+      "sha256": "0637b81d3f6e3f8d6a93de34a3a3ba9ccd986c8d41ce90a512c041d2039a9c81"
+    },
+    {
+      "path": "animations/assets/frames/afl/244.webp",
+      "bytes": 885360,
+      "sha256": "bea686c7ae2f627411b51e205806483a72fd31fed84787f1a8f405322b18cfa6"
+    },
+    {
+      "path": "animations/assets/frames/afl/245.webp",
+      "bytes": 885068,
+      "sha256": "efdc456fb8e166f76d997efd5c00e3ef2f9607ce17add0e30c32c2bf2380df01"
+    },
+    {
+      "path": "animations/assets/frames/afl/246.webp",
+      "bytes": 884922,
+      "sha256": "764b658949eeb8dbe1a1c4dfd1655deb6667063373b97a18f7360a15d07de865"
+    },
+    {
+      "path": "animations/assets/frames/afl/247.webp",
+      "bytes": 884784,
+      "sha256": "9fb452485ea65daeedd8ad2965a732d41c88277b6b8055f8e5b595a256d7c3c8"
+    },
+    {
+      "path": "animations/assets/frames/afl/248.webp",
+      "bytes": 885600,
+      "sha256": "66667ac7defccb956b8810454b61b961368da7e7698e1f3c03f625f04d64f0c8"
+    },
+    {
+      "path": "animations/assets/frames/afl/249.webp",
+      "bytes": 884682,
+      "sha256": "8665018e03c7aa17343aabf421aac7d13dd6fc0c6ce1f083a6961cabb3249ea5"
+    },
+    {
+      "path": "animations/assets/frames/afl/250.webp",
+      "bytes": 800754,
+      "sha256": "826a6a1361edd840efe2df6dd35b3ab9b999ba4c194e9cabd879593e5b499c7a"
+    },
+    {
+      "path": "animations/assets/frames/afl/251.webp",
+      "bytes": 792456,
+      "sha256": "7bf8bb798954a17306a181c20d8ac07e2af54a479e357838b57d7847c9a0dc5c"
+    },
+    {
+      "path": "animations/assets/frames/afl/252.webp",
+      "bytes": 786664,
+      "sha256": "aa9cea6967ee39452b1f08c3651676da0ed00ecdcaaafd79f8976e711a9cd01f"
+    },
+    {
+      "path": "animations/assets/frames/afl/253.webp",
+      "bytes": 767732,
+      "sha256": "7008e30408a4b245d7a1288ae1b0fa840653e2c430a3951536a02f2c4b2a559b"
+    },
+    {
+      "path": "animations/assets/frames/afl/254.webp",
+      "bytes": 771940,
+      "sha256": "4996e8510513cf93bf3f5793f0ede8f7c7d1df8e920c8e06371e622feeae0451"
+    },
+    {
+      "path": "animations/assets/frames/afl/255.webp",
+      "bytes": 765756,
+      "sha256": "0f21c2daa57c078c2969cbeab5b1f79fe6b9c10096e58c43ded7371a606c1254"
+    },
+    {
+      "path": "animations/assets/frames/afl/256.webp",
+      "bytes": 767934,
+      "sha256": "74abac278f203692bd6847884114cd26d19ae95a90d501c7396e195a9f2b6e65"
+    },
+    {
+      "path": "animations/assets/frames/afl/257.webp",
+      "bytes": 767400,
+      "sha256": "6a81ea7d0cda76cfab7c1acf9a58239187e63f082dcee6144356b2b8960df1b9"
+    },
+    {
+      "path": "animations/assets/frames/afl/258.webp",
+      "bytes": 777886,
+      "sha256": "da96a09bc022236b89c90bca180a7972d80305ebc88680e6a973c09a65820c0d"
+    },
+    {
+      "path": "animations/assets/frames/afl/259.webp",
+      "bytes": 773200,
+      "sha256": "81a338f239b6297e20b6e983d4a14e36bf392eeac7928da95f6c66c7457615d9"
+    },
+    {
+      "path": "animations/assets/frames/afl/260.webp",
+      "bytes": 779048,
+      "sha256": "eb4d9e9d65e98e6d211b573f09b61e0a57dbf966cb73b01ec4fb777609d013f8"
+    },
+    {
+      "path": "animations/assets/frames/afl/261.webp",
+      "bytes": 787594,
+      "sha256": "d730c4b1e05e67383e6fae144d3acc2b4b9ff7020958f1be46ba0fa8073df6a8"
+    },
+    {
+      "path": "animations/assets/frames/afl/262.webp",
+      "bytes": 796632,
+      "sha256": "a37ee1fb52eaa8727f6efad8c7d4b6d5efad218dd1f47e23f4371c453584497f"
+    },
+    {
+      "path": "animations/assets/frames/afl/263.webp",
+      "bytes": 799824,
+      "sha256": "0eafc501dec8f31da89096e0d3f3d8a01114b4af5b988d773f310ea37f10abff"
+    },
+    {
+      "path": "animations/assets/frames/afl/264.webp",
+      "bytes": 803578,
+      "sha256": "8d26f0f6f54de9f275a7e582f7b4680a610b0013c6d0d54097c7a374685438b8"
+    },
+    {
+      "path": "animations/assets/frames/afl/265.webp",
+      "bytes": 802916,
+      "sha256": "d9a18e627fac6f007b4bef77170979a9598c8de34b6dd3ca5c96e8a8cc203195"
+    },
+    {
+      "path": "animations/assets/frames/afl/266.webp",
+      "bytes": 803648,
+      "sha256": "d29b38a7c11b74d67f4e19435fb18c1f3fc049bfcd2e6c222f9227bc2b9d9a81"
+    },
+    {
+      "path": "animations/assets/frames/afl/267.webp",
+      "bytes": 805132,
+      "sha256": "29ae80b8bbad5b6bbbb5fad3a30237821781cb873e322570497cb884b0719907"
+    },
+    {
+      "path": "animations/assets/frames/afl/268.webp",
+      "bytes": 803806,
+      "sha256": "102d288cab9143e0fb60cee3461d86b23c621ce2e18841121e2bdc9c085dbea9"
+    },
+    {
+      "path": "animations/assets/frames/afl/269.webp",
+      "bytes": 803112,
+      "sha256": "4a73c01cba9ad6843bdde938c199da5fede4cf62a89d2078d8ed96b03167aef8"
+    },
+    {
+      "path": "animations/assets/frames/afl/270.webp",
+      "bytes": 805042,
+      "sha256": "418b3831933e2b7095c553e8016dd471a2960732f56136955822f0d401d77c39"
+    },
+    {
+      "path": "animations/assets/frames/afl/271.webp",
+      "bytes": 805156,
+      "sha256": "7d81046ca0b576a000e18ed65ed98b415d88de4e372b8774d130cfcf7b3e928f"
+    },
+    {
+      "path": "animations/assets/frames/afl/272.webp",
+      "bytes": 804652,
+      "sha256": "c8629332429b62a987ed2deee870b9559360c020bf53bb384191a853b28b32ed"
+    },
+    {
+      "path": "animations/assets/frames/afl/273.webp",
+      "bytes": 804828,
+      "sha256": "3dbd4e44b166d5fbfff4fbb28c9ca68b3be52340650d22a493937e75c33068d1"
+    },
+    {
+      "path": "animations/assets/frames/afl/274.webp",
+      "bytes": 804590,
+      "sha256": "61afddd352dd4fdacb4211d7e797a418bc726aaf487b2f618ba92b677a46c256"
+    },
+    {
+      "path": "animations/assets/frames/afl/275.webp",
+      "bytes": 795146,
+      "sha256": "a04c476ce050d98969088351f240f2cda816c3fb77f390c5be159f4a81b32147"
+    },
+    {
+      "path": "animations/assets/frames/afl/276.webp",
+      "bytes": 785674,
+      "sha256": "c41518faa73941964527c7f0d277f0ee50f7c173309d5402ee74f84774cf0a2f"
+    },
+    {
+      "path": "animations/assets/frames/afl/277.webp",
+      "bytes": 777904,
+      "sha256": "abe9a547c34429d226d1485d97fee1f3b579a15e716fdd15e9d17174734abd7b"
+    },
+    {
+      "path": "animations/assets/frames/afl/278.webp",
+      "bytes": 767836,
+      "sha256": "da0e071704318eee64ce8614a66bdd9f543c45e17ca2dd8dd057cc3ba380998a"
+    },
+    {
+      "path": "animations/assets/frames/afl/279.webp",
+      "bytes": 767876,
+      "sha256": "c4bef312d836dc7ba633f62bf499c94497a250536889a72cd0cdde956b8a98a3"
+    },
+    {
+      "path": "animations/assets/frames/afl/280.webp",
+      "bytes": 767088,
+      "sha256": "5a5e23c2e865eb94898258cefffeccf4234685747b7d67aa73dc781e8ba96810"
+    },
+    {
+      "path": "animations/assets/frames/afl/281.webp",
+      "bytes": 772420,
+      "sha256": "dc4f1744481be469b0b2d5407ae60f0bcdeac02a5d00e96ec9d402966d1c1061"
+    },
+    {
+      "path": "animations/assets/frames/afl/282.webp",
+      "bytes": 772628,
+      "sha256": "082da52c51df70114aac538ddef00b08b73d366ac5c6ac71f576a464e19599cc"
+    },
+    {
+      "path": "animations/assets/frames/afl/283.webp",
+      "bytes": 777348,
+      "sha256": "fc0307345cf256b4294b20add506a657b9788c15ee8b187a9699f107a8a0ea0a"
+    },
+    {
+      "path": "animations/assets/frames/afl/284.webp",
+      "bytes": 777380,
+      "sha256": "41a575880cfc950bbb5c7da4f756dfabed46ad87a7da411bcfa63d423d22129c"
+    },
+    {
+      "path": "animations/assets/frames/afl/285.webp",
+      "bytes": 789410,
+      "sha256": "d72b7aa0ee68d70f2f1518eb071a60dbf4471d35eafbc71b0c17bbc8c21b75eb"
+    },
+    {
+      "path": "animations/assets/frames/afl/286.webp",
+      "bytes": 790792,
+      "sha256": "9c36d90c520a4fcaa1f5fd1f4a9023792d47f013319b4e8f889482cf413d9436"
+    },
+    {
+      "path": "animations/assets/frames/afl/287.webp",
+      "bytes": 795506,
+      "sha256": "fa2e93f41743c47fb9f59ae2ed86f2b3c3a96ffec3df28c4b22385d4dceb37a3"
     }
   ]
 }
