@@ -12,8 +12,8 @@
     },
     {
       "path": "animations/afl.html",
-      "bytes": 7957,
-      "sha256": "124b5d3c9da5403c488d10c530f191ff43cf8339dc44c9beee74a6a44515d4e7"
+      "bytes": 7959,
+      "sha256": "4ce7fb84950c9098ad77ddbbb41b31d25ebabed5cb53e5c79f4468698178a8d5"
     },
     {
       "path": "animations/app.js",
@@ -707,8 +707,8 @@
     },
     {
       "path": "animations/lbbb.html",
-      "bytes": 7864,
-      "sha256": "a4833ffee7d80fcd0a70392d537bf2ab9608e94974283a43805663dbfb1d7131"
+      "bytes": 7866,
+      "sha256": "1cb4de97c0249f0a23d5d553e3279cd78cc5ce6600abdcef97fa66c7f86f76bc"
     },
     {
       "path": "animations/rbbb.html",
@@ -777,8 +777,8 @@
     },
     {
       "path": "animations/frame-player.js",
-      "bytes": 4481,
-      "sha256": "0965a57cff60ba4e45e7cc12a889c030fc4c3ceac24895e1f4fde26bf0bdbb5e"
+      "bytes": 5370,
+      "sha256": "21e23d5d9788928e51df7d2af5ce5683afd47d724b83e2b0e48372c64db4465e"
     },
     {
       "path": "animations/assets/video/lbbb.mp4",

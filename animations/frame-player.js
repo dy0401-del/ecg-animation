@@ -27,11 +27,26 @@
   seek.max = String(count - 1);
   let callback = null;
   let lastPaintTime = -1;
+  let drawnFrames = 0, sampleFrames = 0, sampleStart = performance.now();
   const videoCallbacks = typeof video.requestVideoFrameCallback === 'function';
 
   function paint(time = video.currentTime) {
     if (video.readyState < 2) return;
     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    drawnFrames++;
+    const now = performance.now();
+    if (now - sampleStart >= 1000) {
+      // Lightweight DOM diagnostics make sustained playback measurable without
+      // exposing native video controls or retaining any frame images.
+      canvas.dataset.drawnFrames = String(drawnFrames);
+      canvas.dataset.renderedFps = ((drawnFrames - sampleFrames) * 1000 / (now - sampleStart)).toFixed(1);
+      if (typeof video.getVideoPlaybackQuality === 'function') {
+        const quality = video.getVideoPlaybackQuality();
+        canvas.dataset.totalVideoFrames = String(quality.totalVideoFrames);
+        canvas.dataset.droppedVideoFrames = String(quality.droppedVideoFrames);
+      }
+      sampleFrames = drawnFrames; sampleStart = now;
+    }
     lastPaintTime = time;
     seek.value = String(Math.min(count - 1, Math.max(0, Math.floor(time * fps))));
     status.textContent = `${time.toFixed(2)} / ${video.duration.toFixed(2)} 秒`;
@@ -87,6 +102,7 @@
   video.addEventListener('play', () => {
     toggle.textContent = '一時停止';
     loading.hidden = true;
+    sampleStart = performance.now(); sampleFrames = drawnFrames;
     schedule();
   });
   video.addEventListener('pause', () => {
