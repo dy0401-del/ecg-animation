@@ -2,10 +2,8 @@
   'use strict';
   const canvas = document.getElementById('scene');
   const ctx = canvas.getContext('2d', { alpha: false });
-  const count = Number(canvas.dataset.frames);
   const fps = Number(canvas.dataset.fps);
-  const duration = count / fps;
-  const folder = canvas.dataset.framePath;
+  const count = Number(canvas.dataset.frames);
   const toggle = document.getElementById('toggle');
   const reset = document.getElementById('reset');
   const speed = document.getElementById('speed');
@@ -13,114 +11,108 @@
   const seek = document.getElementById('seek');
   const status = document.getElementById('frame-status');
   const loading = document.getElementById('frame-loading');
-  const blobs = new Array(count);
-  const cache = new Map();
-  const pending = new Map();
-  let ready = false, playing = false, position = 0, previous = 0, shown = -1, rendering = false;
   const controls = [toggle, reset, speed, loop, seek];
+  const video = document.createElement('video');
+  video.id = 'canvas-video-source';
+  video.muted = true;
+  video.playsInline = true;
+  video.preload = 'auto';
+  video.setAttribute('aria-hidden', 'true');
+  video.setAttribute('tabindex', '-1');
+  // Keep a tiny source surface composited for video-frame callbacks, without
+  // showing a second player or native video controls to the learner.
+  video.style.cssText = 'position:fixed;left:0;bottom:0;width:1px;height:1px;opacity:0.001;pointer-events:none';
+  canvas.after(video);
   controls.forEach(control => { control.disabled = true; });
   seek.max = String(count - 1);
-  function indexAt(seconds) { return Math.min(count - 1, Math.max(0, Math.floor(seconds * fps))); }
-  function bitmap(index) {
-    if (cache.has(index)) return Promise.resolve(cache.get(index));
-    if (pending.has(index)) return pending.get(index);
-    const task = createImageBitmap(blobs[index]).then(image => {
-      cache.set(index, image);
-      pending.delete(index);
-      return image;
-    });
-    pending.set(index, task);
-    return task;
+  let callback = null;
+  let lastPaintTime = -1;
+  const videoCallbacks = typeof video.requestVideoFrameCallback === 'function';
+
+  function paint(time = video.currentTime) {
+    if (video.readyState < 2) return;
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    lastPaintTime = time;
+    seek.value = String(Math.min(count - 1, Math.max(0, Math.floor(time * fps))));
+    status.textContent = `${time.toFixed(2)} / ${video.duration.toFixed(2)} 秒`;
   }
-  function warm(index) {
-    const keep = new Set([index]);
-    for (let offset = 1; offset <= 12; offset++) {
-      const next = index + offset;
-      if (next < count || loop.checked) keep.add(next % count);
+  function stopDrawing() {
+    if (callback === null) return;
+    if (videoCallbacks) video.cancelVideoFrameCallback(callback);
+    else cancelAnimationFrame(callback);
+    callback = null;
+  }
+  function schedule() {
+    if (callback !== null || video.paused || video.ended || document.hidden) return;
+    if (videoCallbacks) {
+      callback = video.requestVideoFrameCallback((now, metadata) => {
+        callback = null;
+        paint(metadata.mediaTime);
+        schedule();
+      });
+    } else {
+      callback = requestAnimationFrame(() => {
+        callback = null;
+        if (video.currentTime !== lastPaintTime) paint();
+        schedule();
+      });
     }
-    for (const [key, image] of cache) {
-      if (!keep.has(key)) { image.close(); cache.delete(key); }
+  }
+  async function play() {
+    try { await video.play(); }
+    catch (error) {
+      toggle.textContent = '再生';
+      loading.hidden = false;
+      loading.textContent = '再生を開始できませんでした。再生ボタンをもう一度押してください。';
+      console.error(error);
     }
-    for (const key of keep) bitmap(key).catch(fail);
-  }
-  function fail(error) {
-    playing = false;
-    loading.hidden = false;
-    loading.textContent = '画像の読込みに失敗しました。ページを再読込みしてください。';
-    controls.forEach(control => { control.disabled = true; });
-    console.error(error);
-  }
-  async function paint() {
-    const index = indexAt(position);
-    if (rendering) return;
-    rendering = true;
-    try {
-      const image = await bitmap(index);
-      // A seek or reset may have happened while the image was decoding.
-      if (index === indexAt(position)) {
-        ctx.drawImage(image, 0, 0);
-        shown = index;
-        seek.value = String(index);
-        status.textContent = `${position.toFixed(2)} / ${duration.toFixed(2)} 秒`;
-        warm(index);
-      }
-    } catch (error) { fail(error); }
-    finally { rendering = false; }
-  }
-  function advance(now) {
-    if (playing && previous) {
-      position += (now - previous) / 1000 * Number(speed.value);
-      if (position >= duration) {
-        if (loop.checked) position %= duration;
-        else { position = duration; playing = false; toggle.textContent = '再生'; }
-      }
-    }
-    previous = now;
-  }
-  function tick(now) {
-    if (ready) {
-      advance(now);
-      if (shown !== indexAt(position)) paint();
-    }
-    requestAnimationFrame(tick);
   }
   toggle.onclick = () => {
-    advance(performance.now());
-    if (!playing && position >= duration) position = 0;
-    playing = !playing;
-    toggle.textContent = playing ? '一時停止' : '再生';
+    if (video.paused) {
+      if (video.ended) video.currentTime = 0;
+      play();
+    } else video.pause();
   };
-  reset.onclick = () => {
-    position = 0; previous = performance.now(); playing = true;
-    toggle.textContent = '一時停止'; paint();
-  };
-  speed.addEventListener('change', () => { previous = performance.now(); });
-  seek.addEventListener('input', () => {
-    position = Number(seek.value) / fps; previous = performance.now(); paint();
-  });
-  window.addEventListener('pagehide', () => { for (const image of cache.values()) image.close(); });
-  (async () => {
-    let next = 0, loaded = 0;
-    async function worker() {
-      while (next < count) {
-        const index = next++;
-        const response = await fetch(`${folder}/${String(index).padStart(3, '0')}.webp`);
-        if (!response.ok) throw new Error(`Frame ${index}: ${response.status}`);
-        blobs[index] = await response.blob();
-        if (index === 0) {
-          const image = await bitmap(0);
-          ctx.drawImage(image, 0, 0);
-          shown = 0;
-        }
-        loaded++;
-        loading.textContent = `アニメーションを読み込み中… ${loaded} / ${count}`;
-      }
-    }
-    await Promise.all(Array.from({ length: 6 }, worker));
-    await Promise.all(Array.from({ length: 13 }, (_, index) => bitmap(index)));
-    await paint();
-    ready = true; loading.hidden = true;
+  reset.onclick = () => { video.currentTime = 0; play(); };
+  speed.addEventListener('change', () => { video.playbackRate = Number(speed.value); });
+  loop.addEventListener('change', () => { video.loop = loop.checked; });
+  seek.addEventListener('input', () => { video.currentTime = Number(seek.value) / fps; });
+  video.addEventListener('loadeddata', () => {
+    video.playbackRate = Number(speed.value);
+    video.loop = loop.checked;
+    paint();
+    loading.hidden = true;
     controls.forEach(control => { control.disabled = false; });
-    previous = performance.now(); requestAnimationFrame(tick);
-  })().catch(fail);
+  });
+  video.addEventListener('play', () => {
+    toggle.textContent = '一時停止';
+    loading.hidden = true;
+    schedule();
+  });
+  video.addEventListener('pause', () => {
+    toggle.textContent = '再生';
+    stopDrawing();
+    paint();
+  });
+  video.addEventListener('ended', () => {
+    toggle.textContent = '再生';
+    stopDrawing();
+    paint();
+  });
+  video.addEventListener('seeked', () => { paint(); schedule(); });
+  video.addEventListener('error', () => {
+    video.pause();
+    stopDrawing();
+    controls.forEach(control => { control.disabled = true; });
+    loading.hidden = false;
+    loading.textContent = '動画の読込みに失敗しました。ページを再読込みしてください。';
+    console.error(video.error);
+  });
+  document.addEventListener('visibilitychange', () => {
+    stopDrawing();
+    if (!document.hidden) { paint(); schedule(); }
+  });
+  window.addEventListener('pagehide', () => { video.pause(); stopDrawing(); });
+  window.addEventListener('pageshow', () => { paint(); });
+  video.src = canvas.dataset.videoSource;
 })();
