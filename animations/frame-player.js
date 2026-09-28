@@ -11,19 +11,27 @@
   const seek = document.getElementById('seek');
   const status = document.getElementById('frame-status');
   const loading = document.getElementById('frame-loading');
-  const controls = [toggle, reset, speed, loop, seek];
   const video = document.createElement('video');
   video.id = 'canvas-video-source';
   video.muted = true;
   video.playsInline = true;
-  video.preload = 'auto';
+  video.preload = 'metadata';
+  video.setAttribute('muted', '');
+  video.setAttribute('playsinline', '');
+  video.setAttribute('webkit-playsinline', '');
   video.setAttribute('aria-hidden', 'true');
   video.setAttribute('tabindex', '-1');
   // Keep a tiny source surface composited for video-frame callbacks, without
   // showing a second player or native video controls to the learner.
   video.style.cssText = 'position:fixed;left:0;bottom:0;width:1px;height:1px;opacity:0.001;pointer-events:none';
   canvas.after(video);
-  controls.forEach(control => { control.disabled = true; });
+  // A tap must be possible even when Safari refuses to preload a first frame.
+  toggle.disabled = speed.disabled = loop.disabled = false;
+  reset.disabled = seek.disabled = true;
+  loading.hidden = false;
+  loading.textContent = '「再生」をタップするとアニメーションを読み込みます。';
+  video.playbackRate = Number(speed.value);
+  video.loop = loop.checked;
   seek.max = String(count - 1);
   let callback = null;
   let lastPaintTime = -1;
@@ -74,7 +82,14 @@
     }
   }
   async function play() {
-    try { await video.play(); }
+    loading.hidden = false;
+    loading.textContent = 'アニメーションを読み込み中…';
+    try {
+      if (video.error) video.load();
+      // Call play synchronously from the click handler, before any await, so
+      // iPhone Safari retains the user's media-playback activation.
+      await video.play();
+    }
     catch (error) {
       toggle.textContent = '再生';
       loading.hidden = false;
@@ -92,16 +107,20 @@
   speed.addEventListener('change', () => { video.playbackRate = Number(speed.value); });
   loop.addEventListener('change', () => { video.loop = loop.checked; });
   seek.addEventListener('input', () => { video.currentTime = Number(seek.value) / fps; });
-  video.addEventListener('loadeddata', () => {
-    video.playbackRate = Number(speed.value);
-    video.loop = loop.checked;
+  function updateReadiness() {
+    reset.disabled = seek.disabled = video.readyState < 1;
+    if (video.readyState < 2) return;
     paint();
     loading.hidden = true;
-    controls.forEach(control => { control.disabled = false; });
-  });
+    schedule();
+  }
+  video.addEventListener('loadedmetadata', updateReadiness);
+  video.addEventListener('loadeddata', updateReadiness);
+  video.addEventListener('canplay', updateReadiness);
+  video.addEventListener('playing', updateReadiness);
   video.addEventListener('play', () => {
     toggle.textContent = '一時停止';
-    loading.hidden = true;
+    updateReadiness();
     sampleStart = performance.now(); sampleFrames = drawnFrames;
     schedule();
   });
@@ -119,9 +138,10 @@
   video.addEventListener('error', () => {
     video.pause();
     stopDrawing();
-    controls.forEach(control => { control.disabled = true; });
+    reset.disabled = seek.disabled = true;
+    toggle.disabled = false;
     loading.hidden = false;
-    loading.textContent = '動画の読込みに失敗しました。ページを再読込みしてください。';
+    loading.textContent = '動画の読込みに失敗しました。「再生」をタップして再試行してください。';
     console.error(video.error);
   });
   document.addEventListener('visibilitychange', () => {
