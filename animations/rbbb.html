@@ -9,7 +9,9 @@
   <title>右脚ブロックとV1・V6誘導心電図</title>
   <style>
     *{box-sizing:border-box}body{margin:0;background:#fff;color:#1F2933;font-family:"BIZ UDPGothic","BIZ UDPゴシック","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;font-weight:600}main{display:flex;min-height:100vh;flex-direction:column;align-items:center;justify-content:center;padding:8px 12px}#scene{display:block;max-height:calc(100vh - 108px);max-width:100%;width:auto;height:auto;aspect-ratio:1808/1488;background:white}.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;min-height:52px;margin-top:8px}button,select{background:#F8FAFC;border:1px solid #94A3B8;border-radius:7px;color:#111827;padding:9px 14px;font-family:inherit;font-size:16px;font-weight:700;line-height:1.2;cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #37768a;outline-offset:2px}input{width:240px;accent-color:#526A75}#status{font-size:16px;font-weight:700;min-width:170px;color:#1F2933}details{font-size:15px;font-weight:600;color:#374151;max-width:1100px;margin:5px auto}details p{line-height:1.75}summary{cursor:pointer;text-align:center;font-size:16px;font-weight:700;color:#1F2933}#loading{position:fixed;inset:0;background:#fff;display:grid;place-content:center;color:#374151;font-size:18px;font-weight:600;z-index:5}a{color:#1D4F6E;font-weight:700}@media(max-width:500px){main{padding:4px}#scene{max-height:calc(100svh - 128px)}.controls{gap:7px}button,select{padding:8px 10px;font-size:15px}input{width:150px}#status{font-size:14px;min-width:145px}}
-  </style>
+
+.ecg-learning-notes{width:min(100%,1100px);margin:24px auto 40px;padding:clamp(20px,4vw,38px);background:#fff;color:#111827;border:1px solid #d1d5db;border-radius:8px;font-size:16px;font-weight:400;line-height:1.8;overflow-wrap:anywhere}.ecg-learning-notes h2{margin:0 0 28px;color:#111827;font-size:clamp(22px,4vw,30px);line-height:1.45}.ecg-learning-notes h3{margin:30px 0 10px;color:#111827;font-size:clamp(18px,3vw,23px);line-height:1.5}.ecg-learning-notes p{margin:0 0 16px;color:#111827;text-align:left;font-size:inherit;line-height:inherit}.ecg-learning-notes ul{margin:0 0 16px;padding-left:1.45em}.ecg-learning-notes li{margin:4px 0}.ecg-learning-common{margin-top:34px;padding-top:24px;border-top:1px solid #d1d5db}.ecg-learning-common h3{margin-top:0}@media(max-width:600px){.ecg-learning-notes{margin:16px auto 28px;padding:18px 16px;font-size:15px}.ecg-learning-notes h2{margin-bottom:22px}.ecg-learning-notes h3{margin-top:24px}.ecg-learning-notes ul{padding-left:1.3em}}
+</style>
 </head>
 <body>
   <div id="loading" role="status">心臓フレームを読み込み中…</div>
@@ -25,13 +27,48 @@
       </select>
       <output id="status">0.00 / 5.00 秒</output>
     </div>
-    <details id="explanation">
-      <summary>同期と波形について</summary>
-      <p>完成済みV24の心臓120フレームを変更せず、共通beatPhaseで1拍1000msとして5回繰り返します。ECGは完了した拍を残し、同じ波形を右へ連続して5拍描画します。1つの共通時間軸から、心臓フレームと心電図の描画範囲を決定します。心電図は実測データではなく正常Ⅱ誘導の模式波形です。横軸は25 mm/秒相当で、1小マス＝0.04秒、1大マス＝0.20秒、1拍＝1.00秒＝5大マスとして表示します。</p>
-      <p>心室脱分極の終わりに淡い興奮色を保持し、ST区間では維持、T波の開始から終了まで徐々に退色します。伝導路を逆向きに光らせる表現はありません。</p>
-      <p>参考：<a href="https://www.msdmanuals.com/professional/cardiovascular-disorders/cardiovascular-tests-and-procedures/electrocardiography" target="_blank" rel="noopener">MSD Manual：ECGの各成分</a></p>
-    </details>
-  </main>
+  <section class="ecg-learning-notes" aria-label="rbbbの学習者向け波形解説">
+<h2>RBBB（Right Bundle Branch Block：右脚ブロック）</h2>
+<h3>どんな波形？</h3>
+<p>右脚ブロックは、心室へ興奮を伝える刺激伝導系のうち、「右脚の伝導が遅延または途絶し、右室の興奮が遅れる状態」です。</p>
+<p>左脚から左室への伝導は保たれているため、左室が先に興奮し、その後に右室が遅れて興奮します。</p>
+<h3>波形の特徴</h3>
+<p>完全右脚ブロックでは、代表的に次の所見を認めます。</p>
+<ul><li>QRS幅 0.12秒以上</li><li>V1・V2誘導で、rsR'・rSR'などの波形を認めることがある</li><li>V1ではQRS終末部のR'波が目立つ</li><li>Ⅰ・V6誘導では、幅の広い終末S波を認める</li><li>V1〜V3誘導などで、二次性ST-T変化を認めることがある</li></ul>
+<p>右脚ブロックが必ず「M字型」になるわけではなく、QRSの形には幅があります。V1の形だけで判断せず、QRS幅やⅠ・V6誘導のS波も合わせて確認することが大切です。</p>
+<h3>なぜこの波形になる？</h3>
+<p>正常では、左脚と右脚を通って左右の心室がほぼ同時に興奮します。</p>
+<p>右脚ブロックでは、</p>
+<p>中隔・左室が先に興奮<br>↓<br>右脚を直接通れない<br>↓<br>左室側から心筋を介して右室へ興奮が伝わる<br>↓<br>右室自由壁が遅れて興奮</p>
+<p>という順序になります。</p>
+<p>この遅れて起こる右室の興奮がQRS終末部に加わるため、QRS幅が広くなります。</p>
+<p>V1は右室に近い誘導なので、遅れて右室方向へ向かう興奮を捉え、QRS終末部にR'波が現れやすくなります。</p>
+<p>一方、Ⅰ・V6誘導では、この遅い右室方向への興奮が電極から遠ざかる方向になるため、終末部に幅の広いS波として現れます。</p>
+<h3>アニメーションで見るポイント</h3>
+<p>特に、「左室と右室が同時に興奮していないこと」に注目してください。</p>
+<p>中隔・左室が先に興奮し、その後に右室自由壁が遅れて興奮するタイミングと、心電図のQRS終末部を見比べると理解しやすくなります。</p>
+<h3>ST-T変化について</h3>
+<p>右脚ブロックでは、心室の興奮順序が変化することで二次性ST-T変化がみられることがあります。</p>
+<p>特にV1〜V3誘導では、</p>
+<ul><li>ST低下</li><li>陰性T波</li></ul>
+<p>などを認めることがあります。</p>
+<p>これは、心室の興奮順序の変化に伴って再分極の方向も変化するためです。</p>
+<p>ただし、すべてのST-T変化を「右脚ブロックによるもの」と判断してはいけません。虚血など、ほかの原因による変化との区別が必要です。</p>
+<h3>臨床での注意</h3>
+<p>右脚ブロックは、心室内の伝導異常を示す心電図所見です。</p>
+<p>右脚ブロックを認めたことだけで、その原因となる疾患まで判断することはできません。</p>
+<p>また、QRS幅が0.12秒未満でも右脚ブロック様の波形を示すことがあり、完全右脚ブロックと不完全右脚ブロックを区別して考えます。</p>
+<h3>覚えるポイント</h3>
+<p>「QRSが広い ＋ V1終末部のR' ＋ Ⅰ・V6の幅広いS」</p>
+<section class="ecg-learning-common" aria-labelledby="ecg-learning-common-title">
+<h3 id="ecg-learning-common-title">この教材で共通して覚えてほしいこと</h3>
+<p>心電図は、波形の形だけを暗記するのではなく、</p>
+<p>「心臓のどこが、どの順番で興奮しているか」<br>↓<br>「その電気活動が、なぜこの心電図波形として現れるのか」</p>
+<p>を結びつけて考えることが大切です。</p>
+<p>このアニメーションでは、心臓の興奮伝播と心電図を同時に見ることで、波形を単なる「形」ではなく、「心臓の電気活動の結果として理解すること」を目標としています。</p>
+<p>また、心電図所見だけで患者の状態や原因疾患を判断することはできません。実際の臨床では、症状・バイタルサイン・既往歴・以前の心電図・その他の検査結果を合わせて評価します。</p>
+</section>
+</section><section class="ecg-learning-references" aria-label="参考資料"><p>参考：<a href="https://www.msdmanuals.com/professional/cardiovascular-disorders/cardiovascular-tests-and-procedures/electrocardiography" target="_blank" rel="noopener">MSD Manual：ECGの各成分</a></p></section></main>
   <script src="config/defaults.js"></script>
   <script src="config/design.js"></script>
   <script src="config/anatomy.js"></script>
