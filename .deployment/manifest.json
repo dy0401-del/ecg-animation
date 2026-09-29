@@ -772,8 +772,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 4197,
-      "sha256": "656474bc0bb502df7cb164756530614e270d75ec3b32215dee8005b21a64702d"
+      "bytes": 4445,
+      "sha256": "ee152feee1196e8029248c90cfebe6239b00ca0131398062ff7d15b6d569c4d2"
     },
     {
       "path": "animations/frame-player.js",
@@ -864,6 +864,17 @@
         {
           "path": ".deployment/parts/third-degree-av-block.000.part",
           "sha256": "c9772845f0768283943ba084a2d08c65b36d37fc095807dc42afceab9f3afa6f"
+        }
+      ]
+    },
+    {
+      "path": "animations/sss-group-i.html",
+      "bytes": 1252563,
+      "sha256": "82c3def45b6b5574b747507bd15e2d66b2ccd9cd174149b7bce3fff11dd13f14",
+      "parts": [
+        {
+          "path": ".deployment/parts/sss-group-i.000.part",
+          "sha256": "82c3def45b6b5574b747507bd15e2d66b2ccd9cd174149b7bce3fff11dd13f14"
         }
       ]
     }
