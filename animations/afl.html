@@ -3,13 +3,14 @@
 <style>*{box-sizing:border-box}body{margin:0;background:#f5f7f9;color:#25313b;font-family:"Yu Gothic",Meiryo,sans-serif}main{max-width:1200px;margin:auto;padding:16px}#scene{display:block;width:100%;max-height:calc(100dvh - 110px);background:white;border-radius:8px}nav{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;padding:14px 0}button,select{font:inherit;padding:8px 14px;border:1px solid #a9b7bf;border-radius:6px;background:white;color:inherit}button{cursor:pointer}label{display:flex;align-items:center;gap:7px}input{width:18px;height:18px}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #168798;outline-offset:3px}p{font-size:13px;color:#52616c;text-align:center;margin:0 0 8px}@media(max-width:600px){main{padding:8px}#scene{max-height:calc(100dvh - 160px)}nav{gap:9px}button,select{padding:7px 10px}}
 .ecg-learning-notes{width:min(100%,1100px);margin:24px auto 40px;padding:clamp(20px,4vw,38px);background:#fff;color:#111827;border:1px solid #d1d5db;border-radius:8px;font-size:16px;font-weight:400;line-height:1.8;overflow-wrap:anywhere}.ecg-learning-notes h2{margin:0 0 28px;color:#111827;font-size:clamp(22px,4vw,30px);line-height:1.45}.ecg-learning-notes h3{margin:30px 0 10px;color:#111827;font-size:clamp(18px,3vw,23px);line-height:1.5}.ecg-learning-notes p{margin:0 0 16px;color:#111827;text-align:left;font-size:inherit;line-height:inherit}.ecg-learning-notes ul{margin:0 0 16px;padding-left:1.45em}.ecg-learning-notes li{margin:4px 0}.ecg-learning-common{margin-top:34px;padding-top:24px;border-top:1px solid #d1d5db}.ecg-learning-common h3{margin-top:0}@media(max-width:600px){.ecg-learning-notes{margin:16px auto 28px;padding:18px 16px;font-size:15px}.ecg-learning-notes h2{margin-bottom:22px}.ecg-learning-notes h3{margin-top:24px}.ecg-learning-notes ul{padding-left:1.3em}}
 .frame-position{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}.frame-position input{width:min(260px,70vw);height:auto}.frame-position output{font-size:14px}#frame-loading{color:#25313b}#scene{height:auto;aspect-ratio:1808/1488;object-fit:contain}</style><link rel="stylesheet" href="learner-ui.css?v=20260929"></head>
-<body><main class="ecg-page"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><canvas id="scene" width="1808" height="1488" role="img" aria-label="心房粗動の心臓と心電図の同期アニメーション" data-frames="288" data-fps="60" data-video-source="assets/video/afl.mp4"></canvas>
+<body><main class="ecg-page"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><canvas id="scene" width="1808" height="1488" role="img" aria-label="心房粗動の心臓と心電図の同期アニメーション" data-frames="288" data-fps="60" data-video-source="assets/video/afl.mp4?v=medical-20260930"></canvas>
 <nav aria-label="再生設定"><button id="toggle" type="button">再生</button><button id="reset" type="button">最初から</button><label>速度<select id="speed"><option value="0.25">0.25倍</option><option value="0.5">0.5倍</option><option value="1" selected>1倍</option></select></label><label><input id="loop" type="checkbox" checked>繰り返す</label></nav>
 <div class="frame-position"><input id="seek" type="range" min="0" step="1" value="0" aria-label="再生位置"><output id="frame-status">0.00 / 4.80 秒</output></div><p id="frame-loading" role="status">アニメーションを読み込み中…</p>
 <section class="ecg-watch" aria-labelledby="ecg-watch-title">
 <h2 id="ecg-watch-title">ここを見る</h2>
 <p>心房内を興奮が繰り返し旋回する様子と、心電図上に連続して出現するF波を見比べてください。</p>
 <p>特に、心房は非常に速く興奮している一方、そのすべてが心室へ伝わっているわけではないことに注目してください。</p>
+<p>QRSは心室の電気的興奮を示し、収縮はその後に始まります。両者を区別して見てください。</p>
 </section>
 <section class="ecg-learning-notes" aria-label="aflの学習者向け波形解説">
 <h2>AFL（Atrial Flutter：心房粗動）</h2>
@@ -25,8 +26,8 @@
 <p>心房粗動では、心房内に興奮が旋回できる回路が形成されるため、</p>
 <p>興奮が心房内を繰り返し旋回<br>↓<br>心房が高速かつ規則的に興奮<br>↓<br>P波ではなく、連続するF波として記録される</p>
 <p>という状態になります。</p>
-<p>一方、房室結節は心房から届くすべての刺激を心室へ伝えることはできません。</p>
-<p>例えば、心房レートが約300回/分で、2回に1回だけ心室へ伝わる2：1房室伝導であれば、心室レートは約150回/分になります。</p>
+<p>通常は、心房の刺激の一部だけが房室結節を経て心室へ伝わります。まれに1：1伝導となる場合もあります。</p>
+<p>この教材は、心房300回/分・心室150回/分の2：1房室伝導を示しています。心房が2回興奮する間に、心室へ1回伝わります。</p>
 <h3>2：1伝導に注意</h3>
 <p>2：1伝導の心房粗動では、F波の一部がQRS波やT波に重なり、見えにくくなることがあります。</p>
 <p>そのため、一見すると単純な規則正しい頻拍に見える場合があります。</p>
