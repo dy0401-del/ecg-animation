@@ -772,8 +772,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 3189,
-      "sha256": "752f3e6926d8a0b36fa992b50e1f4d7118f436d206e1f7a23a6a039a0eb35dad"
+      "bytes": 3438,
+      "sha256": "b58248e680afe8ac5a1e40b73f988692fd1657d23ebf745734d21ac89593c0d3"
     },
     {
       "path": "animations/frame-player.js",
@@ -794,6 +794,45 @@
       "path": "animations/learner-ui.css",
       "bytes": 3601,
       "sha256": "b661a947b7ce35c7fc5d88647079a2aafc1590d54b9768445cb8c90c02cb8f34"
+    },
+    {
+      "path": "animations/first-degree-av-block.html",
+      "bytes": 142621604,
+      "sha256": "0a95fd56f127d535d2bd6315fe0f96e95ff3606b5669f6460b65d229b99ffdd3",
+      "parts": [
+        {
+          "path": ".deployment/parts/first-degree-av-block.000.part",
+          "sha256": "4d505e6e0b4972aa1e8132f6d8ed9eaa2b975c4a7655e823f9d328f92c7ff0d0"
+        },
+        {
+          "path": ".deployment/parts/first-degree-av-block.001.part",
+          "sha256": "16a9c233e0fafefda057ab84671424748a85970b2b07bb8ed3218540e8859cb3"
+        },
+        {
+          "path": ".deployment/parts/first-degree-av-block.002.part",
+          "sha256": "65ce4a0807cb91e400e6484756c88a00f26fa646e5326fa04df5f0328908e7bb"
+        },
+        {
+          "path": ".deployment/parts/first-degree-av-block.003.part",
+          "sha256": "1faf7921dab0af8618a01f6e6297ca600efe95faccf29b88fe754ef64247bb54"
+        },
+        {
+          "path": ".deployment/parts/first-degree-av-block.004.part",
+          "sha256": "910f3313f79bcfadf80b4cb5e021ff7a37acdb63a52a6a114016e53ddc0f9977"
+        },
+        {
+          "path": ".deployment/parts/first-degree-av-block.005.part",
+          "sha256": "d460faaee41e7b28980d9a57b59b3b632e78b8fb50a8fce20fff2f9fecbb79cb"
+        },
+        {
+          "path": ".deployment/parts/first-degree-av-block.006.part",
+          "sha256": "fb77fcbb790f50fd15e6c12a66611d7f5bd840b9200fb812ef82093221f3672d"
+        },
+        {
+          "path": ".deployment/parts/first-degree-av-block.007.part",
+          "sha256": "e0dae3d523f631c22fb26af89961220c2070e5793331dbe24eda35f5aa95a3f0"
+        }
+      ]
     }
   ]
 }

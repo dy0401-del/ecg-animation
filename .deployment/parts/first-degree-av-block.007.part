@@ -1,0 +1,80 @@
+aper.height=canvas.height;const p=ecgPaper.getContext('2d');
+ ecgInk=document.createElement('canvas');ecgInk.width=canvas.width;ecgInk.height=canvas.height;const ink=ecgInk.getContext('2d');
+ p.fillStyle='#ffffff';p.fillRect(0,1088,canvas.width,400);
+ p.fillStyle='#fffdfd';p.fillRect(a.x,a.y,a.width,a.height);
+ for(let k=0;k<=125;k++){p.strokeStyle=k%5?'#f8e1e4':'#edb7bd';p.lineWidth=k%5?.65:1;p.beginPath();p.moveTo(a.x+k*a.smallBoxPx,a.y);p.lineTo(a.x+k*a.smallBoxPx,a.y+a.height);p.stroke();}
+ for(let k=-17;k<=9;k++){const gy=a.baseline+k*a.smallBoxPx;if(gy<a.y||gy>a.y+a.height)continue;p.strokeStyle=k%5?'#f8e1e4':'#edb7bd';p.lineWidth=k%5?.65:1;p.beginPath();p.moveTo(a.x,gy);p.lineTo(a.x+a.width,gy);p.stroke();}
+ p.font='bold 29px "Yu Gothic",Meiryo';p.fillStyle='#283743';p.fillText('II',a.x+8,a.y+29);
+ for(const [target,color] of [[p,'#919da5'],[ink,'#20282e']]){target.strokeStyle=color;target.lineWidth=a.lineWidth;target.lineJoin='round';target.beginPath();for(let t=0;t<=5000;t++){const px=a.x+t*a.pxPerMs,py=a.baseline-ecgValue(t)*a.pxPerMv;t?target.lineTo(px,py):target.moveTo(px,py);}target.stroke();}
+}
+function drawECG(ms){
+ if(!ecgPaper)makePaper();const a=ECG.panel,clock=Math.max(0,Math.min(ms,5000));
+ ctx.drawImage(ecgPaper,0,0);
+ ctx.save();ctx.beginPath();ctx.rect(a.x,a.y,clock*a.pxPerMs,a.height);ctx.clip();ctx.drawImage(ecgInk,0,0);ctx.restore();
+ ctx.strokeStyle='#bf8a20';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(a.x+clock*a.pxPerMs,a.y);ctx.lineTo(a.x+clock*a.pxPerMs,a.y+a.height);ctx.stroke();
+}
+Object.assign(window.cardiacAnimation,{ECG,components,ecgValue,ecgState});
+
+"use strict";
+const annotationCanvas=document.createElement('canvas');
+annotationCanvas.width=canvas.width;annotationCanvas.height=canvas.height;
+const annotationCtx=annotationCanvas.getContext('2d');
+const annotationPlan={
+ title:{text:'Ⅰ度房室ブロック',x:1000,y:112,size:50},
+ av:{text:'房室結節で伝導が遅延',x:1000,y:455,size:28,leader:[[988,446],[960,446],[528,458]]},
+ points:[{text:'・PR間隔 ＞ 200 ms',x:980,y:960,size:28},{text:'・すべてのP波がQRSへ伝導（1：1伝導）',x:980,y:1020,size:28}],
+ pr:{text:'PR間隔 240 ms',beat:2,startMs:2020,endMs:2260,y:1172,textY:1142,guideEndY:1332,size:28,showAfterMs:2350,fadeMs:150},
+ colors:{text:'#283743',leader:'#526A75',accent:'#bf8a20'}
+};
+function annotationText(c,item,color){c.font=`${item.size}px "BIZ UDPGothic","Yu Gothic",Meiryo,sans-serif`;c.fillStyle=color;c.fillText(item.text,item.x,item.y);}
+function drawAnnotations(ms){
+ const d=annotationCtx,p=annotationPlan;d.clearRect(0,0,canvas.width,canvas.height);
+ annotationText(d,p.title,p.colors.text);
+ annotationText(d,p.av,p.colors.text);
+ p.points.forEach(item=>annotationText(d,item,p.colors.text));
+ d.strokeStyle=p.colors.leader;d.lineWidth=1.2;d.beginPath();p.av.leader.forEach(([x,y],i)=>i?d.lineTo(x,y):d.moveTo(x,y));d.stroke();
+ const pr=p.pr,a=config.ecg.panel,x0=a.x+pr.startMs*a.pxPerMs,x1=a.x+pr.endMs*a.pxPerMs;
+ const alpha=Math.max(0,Math.min(1,(ms-pr.showAfterMs)/pr.fadeMs));
+ if(alpha>0){
+  d.save();d.globalAlpha=alpha;d.strokeStyle=p.colors.accent;d.fillStyle=p.colors.accent;d.lineWidth=1.5;
+  d.font=`${pr.size}px "BIZ UDPGothic","Yu Gothic",Meiryo,sans-serif`;d.textAlign='center';d.fillText(pr.text,(x0+x1)/2,pr.textY);d.textAlign='left';
+  d.beginPath();d.moveTo(x0,pr.y);d.lineTo(x1,pr.y);d.stroke();
+  for(const [x,sign] of [[x0,1],[x1,-1]]){d.beginPath();d.moveTo(x,pr.y);d.lineTo(x+sign*6,pr.y-4);d.moveTo(x,pr.y);d.lineTo(x+sign*6,pr.y+4);d.stroke();}
+  d.setLineDash([4,4]);d.beginPath();for(const x of [x0,x1]){d.moveTo(x,pr.y-6);d.lineTo(x,pr.guideEndY);}d.stroke();d.restore();
+ }
+ ctx.drawImage(annotationCanvas,0,0);
+ return{startMs:pr.startMs,endMs:pr.endMs,x0,x1,alpha};
+}
+const stage2Renderer=window.renderStage2Time;
+function renderAnnotated(ms){const s=stage2Renderer(ms);drawAnnotations(ms);return s;}
+// The original requestAnimationFrame loop calls this binding, with its clock untouched.
+render=renderAnnotated;
+window.renderExportTime=renderAnnotated;
+window.renderExportFrame=i=>renderAnnotated(i*1000/config.duration.fps);
+Object.assign(window.cardiacAnimation,{render:renderAnnotated,renderBase:stage2Renderer,annotationPlan,annotationCanvas,drawAnnotations});
+
+
+"use strict";
+if(location.search.includes('mode=export'))document.documentElement.classList.add('export');
+function startPlayback(){
+ const play=document.getElementById('play'),reset=document.getElementById('reset'),seek=document.getElementById('seek'),speedControl=document.getElementById('speed'),repeat=document.getElementById('repeat'),status=document.getElementById('status');
+ const duration=config.duration.seconds*1000||5000,lastFrame=duration-1000/config.duration.fps;
+ let elapsed=0,playing=true,speed=1,previous=performance.now(),cycles=0;
+ for(const control of [play,reset,seek,speedControl,repeat])control.disabled=false;
+ function sync(){play.textContent=playing?'一時停止':'再生';play.setAttribute('aria-label',play.textContent);seek.value=String(Math.min(299,Math.floor(elapsed*config.duration.fps/1000)));status.value=(elapsed/1000).toFixed(2)+' / 5.00 秒';}
+ function advance(now){
+  if(playing){elapsed+=Math.max(0,now-previous)*speed;if(elapsed>=duration){if(repeat.checked){cycles+=Math.floor(elapsed/duration);elapsed%=duration;}else{elapsed=duration;playing=false;}}}
+  previous=now;
+ }
+ function draw(){render(Math.min(elapsed,lastFrame));sync();}
+ function tick(now){advance(now);draw();requestAnimationFrame(tick);}
+ play.onclick=()=>{advance(performance.now());if(!playing&&elapsed>=duration)elapsed=0;playing=!playing;draw();};
+ reset.onclick=()=>{elapsed=0;cycles=0;previous=performance.now();playing=true;draw();};
+ seek.oninput=()=>{playing=false;elapsed=Number(seek.value)*1000/config.duration.fps;previous=performance.now();draw();};
+ speedControl.onchange=()=>{advance(performance.now());speed=Number(speedControl.value);draw();};
+ document.addEventListener('visibilitychange',()=>{previous=performance.now();});
+ window.cardiacAnimation.playback={getState:()=>({elapsed,playing,speed,repeat:repeat.checked,cycles})};
+ draw();requestAnimationFrame(tick);
+}
+
+</script></html>
