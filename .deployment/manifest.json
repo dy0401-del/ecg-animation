@@ -772,8 +772,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 3438,
-      "sha256": "b58248e680afe8ac5a1e40b73f988692fd1657d23ebf745734d21ac89593c0d3"
+      "bytes": 3701,
+      "sha256": "ce1685a540a811e2b744e01de02bada0c3d55778c667c2251a9ed604a5da2869"
     },
     {
       "path": "animations/frame-player.js",
@@ -831,6 +831,17 @@
         {
           "path": ".deployment/parts/first-degree-av-block.007.part",
           "sha256": "e0dae3d523f631c22fb26af89961220c2070e5793331dbe24eda35f5aa95a3f0"
+        }
+      ]
+    },
+    {
+      "path": "animations/wenckebach.html",
+      "bytes": 1254798,
+      "sha256": "269cdaf1a16c0c0302934fefd45df44d71e12f4aadd8d4ea44d7fd98b9523429",
+      "parts": [
+        {
+          "path": ".deployment/parts/wenckebach.000.part",
+          "sha256": "269cdaf1a16c0c0302934fefd45df44d71e12f4aadd8d4ea44d7fd98b9523429"
         }
       ]
     }
