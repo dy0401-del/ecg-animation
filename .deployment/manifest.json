@@ -772,8 +772,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 3701,
-      "sha256": "ce1685a540a811e2b744e01de02bada0c3d55778c667c2251a9ed604a5da2869"
+      "bytes": 3949,
+      "sha256": "0763c5bf1772516fb3cf16a9e26db3b97281922c6b98bb49caded310574b9df1"
     },
     {
       "path": "animations/frame-player.js",
@@ -842,6 +842,17 @@
         {
           "path": ".deployment/parts/wenckebach.000.part",
           "sha256": "269cdaf1a16c0c0302934fefd45df44d71e12f4aadd8d4ea44d7fd98b9523429"
+        }
+      ]
+    },
+    {
+      "path": "animations/mobitz-ii.html",
+      "bytes": 1256162,
+      "sha256": "4f6093ba6e6098f5c27fa68b5f26568ef73ac2258f55bed92d6e38d6635917de",
+      "parts": [
+        {
+          "path": ".deployment/parts/mobitz-ii.000.part",
+          "sha256": "4f6093ba6e6098f5c27fa68b5f26568ef73ac2258f55bed92d6e38d6635917de"
         }
       ]
     }
