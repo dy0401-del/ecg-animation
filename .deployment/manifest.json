@@ -772,8 +772,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 3949,
-      "sha256": "0763c5bf1772516fb3cf16a9e26db3b97281922c6b98bb49caded310574b9df1"
+      "bytes": 4197,
+      "sha256": "656474bc0bb502df7cb164756530614e270d75ec3b32215dee8005b21a64702d"
     },
     {
       "path": "animations/frame-player.js",
@@ -853,6 +853,17 @@
         {
           "path": ".deployment/parts/mobitz-ii.000.part",
           "sha256": "4f6093ba6e6098f5c27fa68b5f26568ef73ac2258f55bed92d6e38d6635917de"
+        }
+      ]
+    },
+    {
+      "path": "animations/third-degree-av-block.html",
+      "bytes": 1262983,
+      "sha256": "c9772845f0768283943ba084a2d08c65b36d37fc095807dc42afceab9f3afa6f",
+      "parts": [
+        {
+          "path": ".deployment/parts/third-degree-av-block.000.part",
+          "sha256": "c9772845f0768283943ba084a2d08c65b36d37fc095807dc42afceab9f3afa6f"
         }
       ]
     }
