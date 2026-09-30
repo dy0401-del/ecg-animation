@@ -7,13 +7,13 @@
     },
     {
       "path": "animations/af.html",
-      "bytes": 10397,
-      "sha256": "6bb8a3d367b11fef25becedfc197375c748bbb02c18696160c637c9ee40f8195"
+      "bytes": 13154,
+      "sha256": "3d9634c3cf211ad38cadb038d112d3f66ad31edf6af0da85ab7ca8b8c76628d3"
     },
     {
       "path": "animations/afl.html",
-      "bytes": 8728,
-      "sha256": "ebcc9b1e53eed44a32c0f5207d68a0346368210bb03ea2219a5fc8baa18be815"
+      "bytes": 11533,
+      "sha256": "e13f02479639cf7fe354d935a73a65afd980ec5efc2ed39e8cb075f25b1c952a"
     },
     {
       "path": "animations/app.js",
@@ -727,8 +727,8 @@
     },
     {
       "path": "animations/first-degree-av-block.html",
-      "bytes": 20730,
-      "sha256": "1cbd233a297ea4bf2c4318f0c36f704de505da60e1cf2bb44af4db9877e1443b"
+      "bytes": 24214,
+      "sha256": "b48573cd5b6b66fd86fa067591645bb00a156335c52c5653847f3339a50e8136"
     },
     {
       "path": "animations/frame-player.js",
@@ -737,8 +737,8 @@
     },
     {
       "path": "animations/lbbb.html",
-      "bytes": 8458,
-      "sha256": "07d18763dbc1c1a048bb17d1479d8ca25eccff8dfb10a66b924fd49cf16875ec"
+      "bytes": 11167,
+      "sha256": "c8c1aa56ce0c230da66d2142cd95d9de983e1b2c5968681453bab3b958e387d6"
     },
     {
       "path": "animations/learner-player.js",
@@ -747,18 +747,18 @@
     },
     {
       "path": "animations/learner-ui.css",
-      "bytes": 5792,
-      "sha256": "4ca87770824326db34520dc6fe0aea0d2e68e25854f2b35ff21127af7c39c37a"
+      "bytes": 7180,
+      "sha256": "2ec0360b7bcc5dad62a2d5e1e9fe68ce72c09f861caa63e47936cf60386b5539"
     },
     {
       "path": "animations/mobitz-ii.html",
-      "bytes": 1254672,
-      "sha256": "6c5a27387573727f2fe1e68daf48af6a61ff0205e7fb74c40d7e812272575a3a"
+      "bytes": 1258433,
+      "sha256": "66766b85bd7007e62008ba018c79761e99916cf88d204fd6b6d79bf58ad6c355"
     },
     {
       "path": "animations/rbbb.html",
-      "bytes": 9864,
-      "sha256": "0895f5429da598400a0a83b4bcf9543866b9a69795af935b841ecbf5631d7906"
+      "bytes": 12541,
+      "sha256": "4fd51acc5e917857fd566472a374e97b703fb28f6ce1ceead4d2f131fa4ecc8f"
     },
     {
       "path": "animations/rhythms/README.md",
@@ -782,28 +782,33 @@
     },
     {
       "path": "animations/sinus-rhythm.html",
-      "bytes": 16286,
-      "sha256": "66c886fdf1e7c59058060f623cedb2fc2b6da9d0ec3c7d3046760973aeeb1b3a"
+      "bytes": 18492,
+      "sha256": "f3b9b011bcda44d22c66a59a496ba6570e5d076507456aa18e634dce538e34dd"
     },
     {
       "path": "animations/sss-group-i.html",
-      "bytes": 1251079,
-      "sha256": "e4ca0ab26eaea4f418e8d058245c080df02a8609f015a3acd6983ad30f2e7e89"
+      "bytes": 1253409,
+      "sha256": "5af89175ec80d066d88d184c4469a27596d48c113e606365625722826001f466"
     },
     {
       "path": "animations/third-degree-av-block.html",
-      "bytes": 1261484,
-      "sha256": "3584875cec79bffcfe3810863986946a343baa4d93b2a3990ba26def5daff548"
+      "bytes": 1265206,
+      "sha256": "e7c2aee9e086dcd23437e941c2f7f93e8b98ab7f8a8e37bc89e0d7419c360bd3"
     },
     {
       "path": "animations/wenckebach.html",
-      "bytes": 1253309,
-      "sha256": "eeb94cf5ad34ab049aa88d6ea74fa78ecb93ea16e94085b12f0f75d775b13fbd"
+      "bytes": 1256855,
+      "sha256": "89a65f1ca68dd3134d49d281cff0410d64738f91df099f8a60974550926eedb3"
     },
     {
       "path": "index.html",
-      "bytes": 4445,
-      "sha256": "ee152feee1196e8029248c90cfebe6239b00ca0131398062ff7d15b6d569c4d2"
+      "bytes": 10012,
+      "sha256": "e679d9a85239e4cc7d1d675044b46f938571603330cfa9dc0a684cb3e9f6b338"
+    },
+    {
+      "path": "rhythm-finder.js",
+      "bytes": 1502,
+      "sha256": "481029da30011a32d8e2b2710393d3ef87ed697ea5087e4f2f477eaa41a41022"
     }
   ]
 }

@@ -11,7 +11,7 @@
 
 .ecg-learning-notes{width:min(100%,1100px);margin:24px auto 40px;padding:clamp(20px,4vw,38px);background:#fff;color:#111827;border:1px solid #d1d5db;border-radius:8px;font-size:16px;font-weight:400;line-height:1.8;overflow-wrap:anywhere}.ecg-learning-notes h2{margin:0 0 28px;color:#111827;font-size:clamp(22px,4vw,30px);line-height:1.45}.ecg-learning-notes h3{margin:30px 0 10px;color:#111827;font-size:clamp(18px,3vw,23px);line-height:1.5}.ecg-learning-notes p{margin:0 0 16px;color:#111827;text-align:left;font-size:inherit;line-height:inherit}.ecg-learning-notes ul{margin:0 0 16px;padding-left:1.45em}.ecg-learning-notes li{margin:4px 0}.ecg-learning-common{margin-top:34px;padding-top:24px;border-top:1px solid #d1d5db}.ecg-learning-common h3{margin-top:0}@media(max-width:600px){.ecg-learning-notes{margin:16px auto 28px;padding:18px 16px;font-size:15px}.ecg-learning-notes h2{margin-bottom:22px}.ecg-learning-notes h3{margin-top:24px}.ecg-learning-notes ul{padding-left:1.3em}}
 </style>
-  <link rel="stylesheet" href="learner-ui.css?v=usability-20260930">
+  <link rel="stylesheet" href="learner-ui.css?v=learning-20260930">
 </head>
 <body>
   <div id="loading" role="status">心臓フレームを読み込み中…</div>
@@ -32,7 +32,7 @@
 <p>ことと、</p>
 <p>房室結節へ刺激が不規則に到達する<br>→ QRSの出現間隔も不規則になる</p>
 <p>ことを、心臓の動きと心電図を見比べながら確認してください。</p>
-</section>
+<h3>観察する順番</h3><ol><li>明瞭で一定したP波がないことを確認する</li><li>隣り合うR波の間隔が不規則かを見る</li><li>P波の開始点を決められないため、PR間隔は測定しない</li></ol></section>
   <section class="ecg-learning-notes" aria-label="afの学習者向け波形解説">
 <h2>AF（Atrial Fibrillation：心房細動）</h2>
 <h3>どんな波形？</h3>
@@ -76,7 +76,7 @@
 <p>ただし、心電図だけで患者の重症度を判断することはできません。</p>
 <p>心拍数だけでなく、血圧・意識・症状・呼吸状態など、患者全体を評価することが必要です。</p>
 <p>なお、通常の心房細動ではR-R間隔は不規則ですが、完全房室ブロックや心室ペーシングなどを合併すると、心房細動であっても心室リズムが規則的にみえることがあります。</p>
-<section class="ecg-remember" aria-labelledby="ecg-remember-title">
+<h3>心房の収縮と血栓・塞栓</h3><p>心房の有効な収縮が損なわれると、左心耳などで血液がうっ滞し、血栓ができることがあります。血栓が流れて脳などの血管を塞ぐと、脳梗塞などの塞栓症につながります。心房粗動でも血栓塞栓リスクの評価が必要です。</p><p>抗凝固療法の要否は、年齢・既往歴などによる血栓塞栓リスクと出血リスクを個別に評価して判断します。心拍数や波形の見た目だけでは決めません。</p><details class="ecg-reading-guide"><summary>波形・図・時間の読み方</summary><dl><dt>P波</dt><dd>心房の脱分極（電気的興奮）。心房細動では明瞭なP波はありません。</dd><dt>QRS波</dt><dd>心室の脱分極。心室の収縮そのものを記録した波形ではありません。</dd><dt>T波</dt><dd>心室の再分極（電気的に回復する過程）。新たな刺激伝導の波ではありません。</dd><dt>PR間隔・QRS幅</dt><dd>PRはP波の開始からQRSの開始まで、QRS幅はQRSの開始から終了まで。ピーク同士で測りません。</dd><dt>心臓図の左右と光</dt><dd>正面から見た模式図です。患者の右心系は画面の左、左心系は画面の右にあります。動く光は興奮する部位・進む方向を表し、血流ではありません。電気的興奮と、その後に起こる収縮を見分けてください。</dd><dt>再生速度と心電図の目盛り</dt><dd>0.5倍速は観察をゆっくりする操作で、心拍数やPR・QRSなどの設定値を変えません。表示は模式図なので、画面上の長さを定規で測らず、図中の時間・電位の表示を使います。通常の25 mm/秒・10 mm/mVの記録では、小マスは0.04秒・0.1 mV、大マスは0.20秒・0.5 mVです。50 mm/秒では横の小マスは0.02秒になります。</dd></dl></details><section class="ecg-remember" aria-labelledby="ecg-remember-title">
 <h3 id="ecg-remember-title">覚えるポイント</h3>
 <p>「明瞭なP波がない ＋ R-R間隔がバラバラ」</p>
 </section>
@@ -88,7 +88,7 @@
 <p>このアニメーションでは、心臓の興奮伝播と心電図を同時に見ることで、波形を単なる「形」ではなく、「心臓の電気活動の結果として理解すること」を目標としています。</p>
 <p>また、心電図所見だけで患者の状態や原因疾患を判断することはできません。実際の臨床では、症状・バイタルサイン・既往歴・以前の心電図・その他の検査結果を合わせて評価します。</p>
 </section>
-</section><section class="ecg-learning-references" aria-label="参考資料"><p>参考：<a href="https://www.msdmanuals.com/professional/cardiovascular-disorders/cardiovascular-tests-and-procedures/electrocardiography" target="_blank" rel="noopener">MSD Manual：ECGの各成分</a></p></section></main>
+</section><section class="ecg-learning-references" aria-label="参考資料"><p>参考：<a href="https://www.msdmanuals.com/professional/cardiovascular-disorders/cardiovascular-tests-and-procedures/electrocardiography" target="_blank" rel="noopener">MSD Manual：ECGの各成分</a></p></section><section class="ecg-learning-references" aria-label="補足説明の参考資料"><h2>補足説明の参考資料</h2><ul><li><a href="https://www.jacc.org/doi/10.1016/j.jacc.2007.01.024">AHA/ACCF/HRS：心電図の標準化（電極位置・記録条件）</a></li><li><a href="https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/atrial-fibrillation/">ESC 2024：心房細動ガイドライン（心房粗動・血栓塞栓予防を含む）</a></li></ul><p>資料確認日：2026年9月30日。</p></section></main>
   <script src="config/defaults.js"></script>
   <script src="config/design.js"></script>
   <script src="config/anatomy.js"></script>
