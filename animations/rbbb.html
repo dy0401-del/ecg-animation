@@ -6,29 +6,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="data:,">
-  <title>右脚ブロックとV1・V6誘導心電図</title>
+  <title>右脚ブロック（RBBB）｜心電図アニメーション</title>
   <style>
     *{box-sizing:border-box}body{margin:0;background:#fff;color:#1F2933;font-family:"BIZ UDPGothic","BIZ UDPゴシック","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;font-weight:600}main{display:flex;min-height:100vh;flex-direction:column;align-items:center;justify-content:center;padding:8px 12px}#scene{display:block;max-height:calc(100vh - 108px);max-width:100%;width:auto;height:auto;aspect-ratio:1808/1488;background:white}.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;min-height:52px;margin-top:8px}button,select{background:#F8FAFC;border:1px solid #94A3B8;border-radius:7px;color:#111827;padding:9px 14px;font-family:inherit;font-size:16px;font-weight:700;line-height:1.2;cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #37768a;outline-offset:2px}input{width:240px;accent-color:#526A75}#status{font-size:16px;font-weight:700;min-width:170px;color:#1F2933}details{font-size:15px;font-weight:600;color:#374151;max-width:1100px;margin:5px auto}details p{line-height:1.75}summary{cursor:pointer;text-align:center;font-size:16px;font-weight:700;color:#1F2933}#loading{position:fixed;inset:0;background:#fff;display:grid;place-content:center;color:#374151;font-size:18px;font-weight:600;z-index:5}a{color:#1D4F6E;font-weight:700}@media(max-width:500px){main{padding:4px}#scene{max-height:calc(100svh - 128px)}.controls{gap:7px}button,select{padding:8px 10px;font-size:15px}input{width:150px}#status{font-size:14px;min-width:145px}}
 
 .ecg-learning-notes{width:min(100%,1100px);margin:24px auto 40px;padding:clamp(20px,4vw,38px);background:#fff;color:#111827;border:1px solid #d1d5db;border-radius:8px;font-size:16px;font-weight:400;line-height:1.8;overflow-wrap:anywhere}.ecg-learning-notes h2{margin:0 0 28px;color:#111827;font-size:clamp(22px,4vw,30px);line-height:1.45}.ecg-learning-notes h3{margin:30px 0 10px;color:#111827;font-size:clamp(18px,3vw,23px);line-height:1.5}.ecg-learning-notes p{margin:0 0 16px;color:#111827;text-align:left;font-size:inherit;line-height:inherit}.ecg-learning-notes ul{margin:0 0 16px;padding-left:1.45em}.ecg-learning-notes li{margin:4px 0}.ecg-learning-common{margin-top:34px;padding-top:24px;border-top:1px solid #d1d5db}.ecg-learning-common h3{margin-top:0}@media(max-width:600px){.ecg-learning-notes{margin:16px auto 28px;padding:18px 16px;font-size:15px}.ecg-learning-notes h2{margin-bottom:22px}.ecg-learning-notes h3{margin-top:24px}.ecg-learning-notes ul{padding-left:1.3em}}
 </style>
-  <link rel="stylesheet" href="learner-ui.css?v=20260929">
+  <link rel="stylesheet" href="learner-ui.css?v=usability-20260930">
 </head>
 <body>
   <div id="loading" role="status">心臓フレームを読み込み中…</div>
   <main class="ecg-page">
     <a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a>
-    <canvas id="scene" width="1808" height="1488" aria-label="右脚ブロックの心臓と心電図の同期アニメーション"></canvas>
-    <div class="controls">
-      <button id="play">一時停止</button>
-      <button id="reset">最初から</button>
-      <input id="seek" type="range" min="0" max="299" step="1" value="0" aria-label="5拍・5秒内の再生位置">
-      <select id="speed" aria-label="再生速度">
-        <option value="1">1倍速</option>
-        <option value="0.5">0.5倍速</option>
-      </select>
-      <output id="status">0.00 / 5.00 秒</output>
-    </div>
+    <h1>右脚ブロック（RBBB）</h1><canvas id="scene" data-ecg-x="0" data-ecg-y="1100" width="1808" height="1488" aria-label="右脚ブロックの心臓と心電図の同期アニメーション"></canvas>
+    <nav class="controls" aria-label="再生設定">
+<button id="play" type="button">再生</button><button id="reset" type="button">最初から</button>
+<label>速度<select id="speed"><option value="0.25">0.25倍速</option><option value="0.5">0.5倍速</option><option value="1" selected>1倍速</option><option value="2">2倍速</option></select></label>
+<label class="seek-label">再生位置<input id="seek" type="range" min="0" max="299" step="1" value="0" aria-label="再生位置"></label>
+<label><input id="repeat" type="checkbox" checked>繰り返し</label><output id="status">0.00 秒</output>
+</nav>
   <section class="ecg-watch" aria-labelledby="ecg-watch-title">
 <h2 id="ecg-watch-title">ここを見る</h2>
 <p>特に、「左室と右室が同時に興奮していないこと」に注目してください。</p>
@@ -90,6 +86,6 @@
   <script src="rhythms/sinus.js"></script>
   <script src="rhythms/atrial-fibrillation.js"></script>
   <script src="rhythms/right-bundle-branch-block.js"></script>
-  <script src="app.js"></script>
+  <script src="learner-player.js?v=usability-20260930"></script><script src="app.js?v=usability-20260930"></script>
 </body>
 </html>

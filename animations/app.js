@@ -24,7 +24,7 @@
   canvas.width = design.canvas.width;
   canvas.height = design.canvas.height;
   canvas.style.aspectRatio = design.canvas.width + "/" + design.canvas.height;
-  document.title = config.visual && config.visual.documentTitle || config.name + "とⅡ誘導心電図";
+  // Page title is supplied by the learner-facing HTML.
   canvas.setAttribute("aria-label", config.visual && config.visual.ariaLabel || "上段に" + config.name + "の心臓、下段にⅡ誘導心電図");
   const explanation = document.querySelector("#explanation p");
   if (explanation && config.visual && config.visual.explanation) explanation.textContent = config.visual.explanation;
@@ -108,48 +108,6 @@
     return result;
   }
 
-  function masterTimeline(timestamp) {
-    if (previousTimestamp !== null && playing) {
-      elapsedTime += (timestamp - previousTimestamp) * speed;
-      if (elapsedTime >= totalDuration) {
-        if (previewLoop) {
-          elapsedTime %= totalDuration;
-          lastOutputFrame = -1;
-        } else {
-          elapsedTime = totalDuration;
-          playing = false;
-          play.textContent = "再生";
-        }
-      }
-    }
-    previousTimestamp = timestamp;
-    renderElapsed(elapsedTime);
-    requestAnimationFrame(masterTimeline);
-  }
-
-  play.onclick = () => {
-    playing = !playing;
-    play.textContent = playing ? "一時停止" : "再生";
-  };
-  reset.onclick = () => {
-    elapsedTime = 0;
-    lastOutputFrame = -1;
-    renderElapsed(elapsedTime);
-  };
-  seek.oninput = () => {
-    playing = false;
-    play.textContent = "再生";
-    elapsedTime = Number(seek.value) * 1000 / config.duration.fps;
-    lastOutputFrame = -1;
-    renderElapsed(elapsedTime);
-  };
-  speedControl.onchange = event => {
-    speed = Number(event.target.value);
-  };
-  document.addEventListener("visibilitychange", () => {
-    previousTimestamp = null;
-  });
-
   window.renderExportFrame = frameIndex => {
     if (!Number.isInteger(frameIndex) || frameIndex < 0 || frameIndex >= frameCount) {
       throw new RangeError("frameIndex must be 0.." + (frameCount - 1));
@@ -167,14 +125,11 @@
     lastOutputFrame = -1;
     return renderElapsed(elapsedTime);
   };
-  engine.preload().then(() => {
-    loading.remove();
+  const start = () => engine.preload().then(() => {
+    loading.hidden = true;
     renderElapsed(0);
     window.__CARDIAC_READY__ = true;
-    window.dispatchEvent(new CustomEvent("cardiac-animation-ready"));
-    requestAnimationFrame(masterTimeline);
-  }).catch(error => {
-    loading.textContent = "画像を読み込めませんでした。ファイルを開き直してください。";
-    loading.dataset.error = error.message;
+    window.LearnerPlayer.start(ms => renderElapsed(ms), totalDuration, config.duration.fps, true);
   });
+  window.LearnerPlayer.waitForPlay(start, loading);
 })();

@@ -1,0 +1,107 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>正常洞調律｜心電図アニメーション</title><style>html,body{margin:0;background:#F8FAFC;font-family:Meiryo,sans-serif}canvas{display:block;width:100%;max-height:calc(100vh - 58px);object-fit:contain}.controls{height:58px;display:flex;gap:18px;align-items:center;justify-content:center}button,select{font:inherit;padding:7px 14px;border:1px solid #aab6bd;border-radius:7px;background:white}.export canvas{max-height:100vh}.export .controls{display:none}
+.ecg-learning-notes{width:min(100%,1100px);margin:24px auto 40px;padding:clamp(20px,4vw,38px);background:#fff;color:#111827;border:1px solid #d1d5db;border-radius:8px;font-size:16px;font-weight:400;line-height:1.8;overflow-wrap:anywhere}.ecg-learning-notes h2{margin:0 0 28px;color:#111827;font-size:clamp(22px,4vw,30px);line-height:1.45}.ecg-learning-notes h3{margin:30px 0 10px;color:#111827;font-size:clamp(18px,3vw,23px);line-height:1.5}.ecg-learning-notes p{margin:0 0 16px;color:#111827;text-align:left;font-size:inherit;line-height:inherit}.ecg-learning-notes ul{margin:0 0 16px;padding-left:1.45em}.ecg-learning-notes li{margin:4px 0}.ecg-learning-common{margin-top:34px;padding-top:24px;border-top:1px solid #d1d5db}.ecg-learning-common h3{margin-top:0}@media(max-width:600px){.ecg-learning-notes{margin:16px auto 28px;padding:18px 16px;font-size:15px}.ecg-learning-notes h2{margin-bottom:22px}.ecg-learning-notes h3{margin-top:24px}.ecg-learning-notes ul{padding-left:1.3em}}
+</style><link rel="stylesheet" href="learner-ui.css?v=usability-20260930"><body class="ecg-page"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><h1>正常洞調律</h1><canvas id="scene" data-ecg-x="1030" data-ecg-y="190" width="2400" height="1488" aria-label="従来の洞調律Golden Masterの心臓と12誘導心電図"></canvas><nav class="controls" aria-label="再生設定">
+<button id="play" type="button">再生</button><button id="reset" type="button">最初から</button>
+<label>速度<select id="speed"><option value="0.25">0.25倍速</option><option value="0.5">0.5倍速</option><option value="1" selected>1倍速</option><option value="2">2倍速</option></select></label>
+<label class="seek-label">再生位置<input id="seek" type="range" min="0" max="299" step="1" value="0" aria-label="再生位置"></label>
+<label><input id="repeat" type="checkbox" checked>繰り返し</label><output id="status">0.00 秒</output>
+</nav>
+<section class="ecg-watch" aria-labelledby="ecg-watch-title">
+<h2 id="ecg-watch-title">ここを見る</h2>
+<p>このアニメーションでは、心拍数60回/分の正常洞調律を再現しています。</p>
+<p>心電図だけでなく、</p>
+<p>洞結節から興奮が始まる<br>→ 心房が興奮しP波が出現する<br>→ 房室結節を通過する<br>→ 心室が興奮しQRS波が出現する<br>→ 心室が再分極しT波が出現する</p>
+<p>という電気活動と心電図の対応を確認してください。</p>
+</section>
+<section class="ecg-learning-notes" aria-label="sinus-rhythmの学習者向け波形解説">
+<h2>Normal Sinus Rhythm（正常洞調律）</h2>
+<h3>どんな波形？</h3>
+<p>正常洞調律は、心臓の正常なペースメーカーである「洞結節から規則的に電気刺激が発生し、その刺激が心房から心室へ正常に伝わっている状態」です。</p>
+<p>心電図を読むうえで基本となる波形なので、まず正常洞調律の特徴を理解しておきましょう。</p>
+<h3>波形の特徴</h3>
+<ul><li>心拍数は、成人安静時で一般に60〜100回/分</li><li>R-R間隔はほぼ一定で規則的</li><li>それぞれのQRS波の前にP波を認める</li><li>P波の形は拍ごとにほぼ一定</li><li>洞性P波は通常、Ⅰ・Ⅱ誘導などで陽性、aVR誘導で陰性</li><li>P波とQRS波は1：1で対応する</li><li>PR（PQ）間隔は一定で、通常0.12〜0.20秒</li><li>成人のQRS幅は通常おおむね110 ms以内です。120 ms未満でも伝導異常がある場合があります。完全脚ブロックは120 ms以上を目安に、波形の形も合わせて確認します</li></ul>
+<h3>なぜこの波形になる？</h3>
+<p>正常では、</p>
+<p>洞結節<br>→ 心房<br>→ 房室結節<br>→ His束（ヒス束）<br>→ 右脚・左脚<br>→ 心室</p>
+<p>の順に興奮が伝わります。</p>
+<p>心房が興奮するとP波、心室が興奮するとQRS波、心室が再分極するとT波として心電図に現れます。</p>
+<p>そのため、正常洞調律では、</p>
+<p>P波 → QRS波 → T波</p>
+<p>の順に規則正しく波形が繰り返されます。</p>
+<h3>臨床での注意</h3>
+<p>正常洞調律だからといって、心電図全体が正常とは限りません。</p>
+<p>正常洞調律でも、</p>
+<ul><li>ST-T変化</li><li>異常Q波</li><li>心肥大</li><li>電解質異常による変化</li></ul>
+<p>などを認めることがあります。</p>
+<p>また、「洞調律」と「正常洞調律」は完全に同じ意味ではありません。洞結節から興奮していても、呼吸性洞性不整脈や房室ブロックなどを合併することがあります。</p>
+<section class="ecg-remember" aria-labelledby="ecg-remember-title">
+<h3 id="ecg-remember-title">覚えるポイント</h3>
+<p>「一定したP波があり、その後にQRS波が続く」ことをまず確認する。</p>
+</section>
+<section class="ecg-learning-common" aria-labelledby="ecg-learning-common-title">
+<h3 id="ecg-learning-common-title">この教材で共通して覚えてほしいこと</h3>
+<p>心電図は、波形の形だけを暗記するのではなく、</p>
+<p>「心臓のどこが、どの順番で興奮しているか」<br>↓<br>「その電気活動が、なぜこの心電図波形として現れるのか」</p>
+<p>を結びつけて考えることが大切です。</p>
+<p>このアニメーションでは、心臓の興奮伝播と心電図を同時に見ることで、波形を単なる「形」ではなく、「心臓の電気活動の結果として理解すること」を目標としています。</p>
+<p>また、心電図所見だけで患者の状態や原因疾患を判断することはできません。実際の臨床では、症状・バイタルサイン・既往歴・以前の心電図・その他の検査結果を合わせて評価します。</p>
+</section>
+</section><script src="learner-player.js?v=usability-20260930"></script><script>if(location.search.includes('mode=export'))document.body.className='export';window.HEART_FRAMES=["assets/heart/sinus-v24/000.webp", "assets/heart/sinus-v24/001.webp", "assets/heart/sinus-v24/002.webp", "assets/heart/sinus-v24/003.webp", "assets/heart/sinus-v24/004.webp", "assets/heart/sinus-v24/005.webp", "assets/heart/sinus-v24/006.webp", "assets/heart/sinus-v24/007.webp", "assets/heart/sinus-v24/008.webp", "assets/heart/sinus-v24/009.webp", "assets/heart/sinus-v24/010.webp", "assets/heart/sinus-v24/011.webp", "assets/heart/sinus-v24/012.webp", "assets/heart/sinus-v24/013.webp", "assets/heart/sinus-v24/014.webp", "assets/heart/sinus-v24/015.webp", "assets/heart/sinus-v24/016.webp", "assets/heart/sinus-v24/017.webp", "assets/heart/sinus-v24/018.webp", "assets/heart/sinus-v24/019.webp", "assets/heart/sinus-v24/020.webp", "assets/heart/sinus-v24/021.webp", "assets/heart/sinus-v24/022.webp", "assets/heart/sinus-v24/023.webp", "assets/heart/sinus-v24/024.webp", "assets/heart/sinus-v24/025.webp", "assets/heart/sinus-v24/026.webp", "assets/heart/sinus-v24/027.webp", "assets/heart/sinus-v24/028.webp", "assets/heart/sinus-v24/029.webp", "assets/heart/sinus-v24/030.webp", "assets/heart/sinus-v24/031.webp", "assets/heart/sinus-v24/032.webp", "assets/heart/sinus-v24/033.webp", "assets/heart/sinus-v24/034.webp", "assets/heart/sinus-v24/035.webp", "assets/heart/sinus-v24/036.webp", "assets/heart/sinus-v24/037.webp", "assets/heart/sinus-v24/038.webp", "assets/heart/sinus-v24/039.webp", "assets/heart/sinus-v24/040.webp", "assets/heart/sinus-v24/041.webp", "assets/heart/sinus-v24/042.webp", "assets/heart/sinus-v24/043.webp", "assets/heart/sinus-v24/044.webp", "assets/heart/sinus-v24/045.webp", "assets/heart/sinus-v24/046.webp", "assets/heart/sinus-v24/047.webp", "assets/heart/sinus-v24/048.webp", "assets/heart/sinus-v24/049.webp", "assets/heart/sinus-v24/050.webp", "assets/heart/sinus-v24/051.webp", "assets/heart/sinus-v24/052.webp", "assets/heart/sinus-v24/053.webp", "assets/heart/sinus-v24/054.webp", "assets/heart/sinus-v24/055.webp", "assets/heart/sinus-v24/056.webp", "assets/heart/sinus-v24/057.webp", "assets/heart/sinus-v24/058.webp", "assets/heart/sinus-v24/059.webp", "assets/heart/sinus-v24/060.webp", "assets/heart/sinus-v24/061.webp", "assets/heart/sinus-v24/062.webp", "assets/heart/sinus-v24/063.webp", "assets/heart/sinus-v24/064.webp", "assets/heart/sinus-v24/065.webp", "assets/heart/sinus-v24/066.webp", "assets/heart/sinus-v24/067.webp", "assets/heart/sinus-v24/068.webp", "assets/heart/sinus-v24/069.webp", "assets/heart/sinus-v24/070.webp", "assets/heart/sinus-v24/071.webp", "assets/heart/sinus-v24/072.webp", "assets/heart/sinus-v24/073.webp", "assets/heart/sinus-v24/074.webp", "assets/heart/sinus-v24/075.webp", "assets/heart/sinus-v24/076.webp", "assets/heart/sinus-v24/077.webp", "assets/heart/sinus-v24/078.webp", "assets/heart/sinus-v24/079.webp", "assets/heart/sinus-v24/080.webp", "assets/heart/sinus-v24/081.webp", "assets/heart/sinus-v24/082.webp", "assets/heart/sinus-v24/083.webp", "assets/heart/sinus-v24/084.webp", "assets/heart/sinus-v24/085.webp", "assets/heart/sinus-v24/086.webp", "assets/heart/sinus-v24/087.webp", "assets/heart/sinus-v24/088.webp", "assets/heart/sinus-v24/089.webp", "assets/heart/sinus-v24/090.webp", "assets/heart/sinus-v24/091.webp", "assets/heart/sinus-v24/092.webp", "assets/heart/sinus-v24/093.webp", "assets/heart/sinus-v24/094.webp", "assets/heart/sinus-v24/095.webp", "assets/heart/sinus-v24/096.webp", "assets/heart/sinus-v24/097.webp", "assets/heart/sinus-v24/098.webp", "assets/heart/sinus-v24/099.webp", "assets/heart/sinus-v24/100.webp", "assets/heart/sinus-v24/101.webp", "assets/heart/sinus-v24/102.webp", "assets/heart/sinus-v24/103.webp", "assets/heart/sinus-v24/104.webp", "assets/heart/sinus-v24/105.webp", "assets/heart/sinus-v24/106.webp", "assets/heart/sinus-v24/107.webp", "assets/heart/sinus-v24/108.webp", "assets/heart/sinus-v24/109.webp", "assets/heart/sinus-v24/110.webp", "assets/heart/sinus-v24/111.webp", "assets/heart/sinus-v24/112.webp", "assets/heart/sinus-v24/113.webp", "assets/heart/sinus-v24/114.webp", "assets/heart/sinus-v24/115.webp", "assets/heart/sinus-v24/116.webp", "assets/heart/sinus-v24/117.webp", "assets/heart/sinus-v24/118.webp", "assets/heart/sinus-v24/119.webp"];
+// Educational analytic model, in mV and milliseconds; not a patient tracing.
+const ECG={pStart:20,pEnd:120,qrsStart:220,qrsEnd:310,tStart:450,tEnd:620,rr:1000,seconds:5,
+ leads:['I','II','III','aVR','aVL','aVF','V1','V2','V3','V4','V5','V6'],
+ chest:[ [.08,0,.20,-.85,.13],[.10,0,.40,-1.05,.24],[.11,0,.75,-.75,.36],[.12,-.035,1.10,-.35,.44],[.11,-.045,1.40,-.16,.40],[.10,-.04,1.50,-.08,.34] ]};
+function bump(t,a,b){if(t<=a||t>=b)return 0;return Math.sin(Math.PI*(t-a)/(b-a))**2;}
+function components(t){return [bump(t,20,120),bump(t,220,238),bump(t,234,268),bump(t,262,310),bump(t,450,620)];}
+function ecgValue(lead,ms){const t=((ms%1000)+1000)%1000,b=components(t);const dot=a=>a.reduce((s,v,i)=>s+v*b[i],0);
+ const I=dot([.13,-.035,.72,-.11,.25]),II=dot([.20,-.025,1.02,-.18,.34]);
+ if(lead==='I')return I;if(lead==='II')return II;if(lead==='III')return II-I;if(lead==='aVR')return -(I+II)/2;if(lead==='aVL')return I-II/2;if(lead==='aVF')return II-I/2;
+ const i=ECG.leads.indexOf(lead)-6;let v=dot(ECG.chest[i]);if(i===0)v+=.04*bump(t,20,68)-.055*bump(t,68,120);return v;
+}
+let ecgPaper,ecgInk;
+function makePaper(){
+ ecgPaper=document.createElement('canvas');ecgPaper.width=2400;ecgPaper.height=1488;const p=ecgPaper.getContext('2d');
+ ecgInk=document.createElement('canvas');ecgInk.width=2400;ecgInk.height=1488;const ink=ecgInk.getContext('2d');
+ for(let col=0;col<2;col++)for(let row=0;row<6;row++){
+ const x=1120+col*630,y=280+row*177,w=550,h=158,base=y+95;
+ p.fillStyle='#fffdfc';p.fillRect(x,y,w,h);
+ for(let k=0;k<=125;k++){p.strokeStyle=k%5?'#f4e5e5':'#e6c5c8';p.lineWidth=k%5?.65:1;p.beginPath();p.moveTo(x+k*4.4,y);p.lineTo(x+k*4.4,y+h);p.stroke();}
+ for(let k=-21;k<=14;k++){const gy=base+k*4.4;if(gy<y||gy>y+h)continue;p.strokeStyle=k%5?'#f4e5e5':'#e6c5c8';p.lineWidth=k%5?.65:1;p.beginPath();p.moveTo(x,gy);p.lineTo(x+w,gy);p.stroke();}
+ const lead=ECG.leads[col*6+row];p.font='bold 29px "Yu Gothic",Meiryo';p.fillStyle='#283743';p.fillText(lead,x-65,y+38);
+ for(const [target,color] of [[p,'#919da5'],[ink,'#203b49']]){target.strokeStyle=color;target.lineWidth=2.3;target.lineJoin='round';target.beginPath();for(let t=0;t<=5000;t++){const px=x+t*.11,py=base-ecgValue(lead,t)*44;t?target.lineTo(px,py):target.moveTo(px,py)}target.stroke();}
+ }
+}
+function drawECG(ms){if(!ecgPaper)makePaper();ctx.drawImage(ecgPaper,0,0);const clock=((ms%5000)+5000)%5000;
+ for(let i=0;i<12;i++){const col=Math.floor(i/6),row=i%6,x=1120+col*630,y=280+row*177,base=y+95;
+ ctx.save();ctx.beginPath();ctx.rect(x,y,clock*.11,158);ctx.clip();ctx.drawImage(ecgInk,0,0);ctx.restore();
+ ctx.strokeStyle='#bf8a20';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(x+clock*.11,y);ctx.lineTo(x+clock*.11,y+158);ctx.stroke();
+ }
+ text('肢誘導',1055,232,29);text('胸部誘導',1685,232,29);
+ text('25 mm/秒相当・10 mm/mV相当　｜　1大マス＝0.20秒／0.5 mV',1055,1404,24,'#52616c');
+ text('0',1120,1370,21);text('5秒',1627,1370,21);text('0',1750,1370,21);text('5秒',2257,1370,21);
+}
+function labels(s){
+ text('正常洞調律  ×  12誘導心電図',180,102,48);text('HR 60回/分　｜　RR 1.00秒　｜　5秒・5拍',180,158,29,'#52616c');
+ text('右房',230,495,27);text('左房',868,480,27);text('右室',259,1210,29);text('左室',847,1250,29);
+ const t=s.t,phase=t<20?'拡張期':t<120?'心房興奮：P波':t<200?'房室結節遅延：PR区間':t<220?'His束へ伝導：PR終末':t<310?'心室興奮：QRS波':t<450?'心室収縮：ST区間':t<620?'心室再分極：T波':'弛緩・拡張期';
+ text(phase,180,1340,30,'#9b6919');text('黄色：興奮　青緑：再分極',180,1394,25,'#52616c');
+ text('PR 200 ms　｜　QRS 90 ms　｜　QT 400 ms',1055,154,28,'#52616c');
+ text('正常範囲を示す模式波形 ／ 縦線は心臓と共通の現在時刻',1055,193,23,'#687780');
+}
+
+const canvas=document.getElementById('scene'),ctx=canvas.getContext('2d');
+const config={id:'sinus-v26-golden',duration:{fps:60,totalSeconds:5},heartRate:60,visual:{width:2400,height:1488,playbackRate:1},
+ heartSource:'正常洞調律_Ⅱ誘導同期_v24.html',ecgSource:'正常洞調律_12誘導同期_v25_stage2.html',
+ sourceFrameCount:120,
+ // [output milliseconds, original v24 cycle milliseconds]. Image pixels untouched.
+ heartTimeMap:[[0,0],[20,37.5],[120,217.1],[200,325],[220,465],[310,660],[450,680],[620,830],[850,975],[1000,1000]]};
+const frames=window.HEART_FRAMES.map(()=>new Image());
+function sourceTime(t){const a=config.heartTimeMap;for(let i=1;i<a.length;i++)if(t<=a[i][0]){const [x0,y0]=a[i-1],[x1,y1]=a[i];return y0+(y1-y0)*(t-x0)/(x1-x0)}return 0;}
+function frameAt(ms){const t=((ms%1000)+1000)%1000;return Math.min(119,Math.floor(sourceTime(t)*.12));}
+function state(ms){return{ms,t:((ms%1000)+1000)%1000,sourceFrame:frameAt(ms)};}
+function text(str,x,y,size,color='#283743'){ctx.font=`${size}px "BIZ UDPGothic","Yu Gothic",Meiryo,sans-serif`;ctx.fillStyle=color;ctx.fillText(str,x,y);}
+function render(ms){const s=state(ms);ctx.fillStyle='#F8FAFC';ctx.fillRect(0,0,2400,1488);ctx.drawImage(frames[s.sourceFrame],180,210,768,1088);labels(s);drawECG(ms);return s;}
+window.renderExportTime=render;window.renderExportFrame=i=>render(i*1000/60);
+window.cardiacAnimation={config,state,sourceTime,frameAt,render,ecgValue,ECG};config.ecg=ECG;
+window.LearnerPlayer.prepareFrames(frames,window.HEART_FRAMES,render,5000,60);
+</script></html>

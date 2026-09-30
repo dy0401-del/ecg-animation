@@ -116,3 +116,32 @@ button, select {
   .ecg-learning-notes h2 { font-size: 22px; margin-bottom: 22px; }
   .ecg-remember { padding: 20px 16px; }
 }
+
+/* Public copy: enlarge the original canvas without changing its pixels. */
+html, body { height:auto; min-height:100%; overflow:visible; }
+.ecg-page { height:auto; min-height:0; }
+.ecg-page h1 { margin: 0 0 14px; font-size: clamp(23px, 4vw, 32px); line-height: 1.5; }
+.ecg-page .diagram-viewport { width:100%; overflow:auto; max-height:70svh; background:white; border:1px solid #cbd5df; border-radius:8px; overscroll-behavior:contain; }
+.ecg-page .diagram-viewport #scene { display:block; flex:none; width:100%; max-width:none; height:auto; min-height:0; max-height:none; object-fit:fill; border-radius:0; }
+.diagram-viewport:focus-visible { outline:3px solid #168798; outline-offset:3px; }
+.diagram-tools { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:10px 0; }
+.diagram-tools label { display:flex; align-items:center; gap:8px; }
+.ecg-page .diagram-help { margin:0 0 12px; text-align:left; font-size:14px; line-height:1.6; color:#40515e; }
+.ecg-page .controls { justify-content:flex-start; width:100%; gap:12px; }
+.ecg-page .controls label { font-size:16px; }
+.ecg-page .controls input[type=checkbox] { width:20px; height:20px; }
+.ecg-page .controls input[type=range] { width:210px; min-height:44px; }
+.ecg-page .controls output { font-size:16px; }
+.ecg-page #loading, .ecg-page #frame-loading { position:static; inset:auto; z-index:auto; padding:12px; margin:8px 0; background:#eaf2f4; font-size:16px; line-height:1.6; text-align:left; }
+.ecg-page #loading[hidden], .ecg-page #frame-loading[hidden] { display:none; }
+.diagram-shell:fullscreen { padding:16px; background:#f5f7f9; overflow:auto; }
+.diagram-shell:fullscreen .diagram-viewport { max-height:calc(100svh - 160px); }
+.diagram-shell.expanded { position:fixed; inset:0; z-index:50; padding:12px; overflow:auto; background:#f5f7f9; }
+.diagram-shell.expanded .diagram-viewport { max-height:calc(100svh - 180px); }
+@media(max-width:600px) {
+ .ecg-page .controls { gap:8px; }
+ .ecg-page .controls .seek-label { display:flex; flex-basis:100%; text-align:left; }
+ .ecg-page .controls input[type=range] { flex:1; min-width:0; width:auto; }
+ .diagram-tools { gap:6px; }
+ .diagram-tools button { padding:8px 10px; }
+}

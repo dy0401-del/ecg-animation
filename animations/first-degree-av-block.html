@@ -1,0 +1,156 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ⅰ度房室ブロック｜心電図アニメーション</title><style>html,body{margin:0;background:#F8FAFC;width:100%;height:100%;overflow:hidden}canvas{display:block;width:100%;height:100%;object-fit:contain}*{box-sizing:border-box}html,body{height:auto;min-height:100%;overflow:auto;color:#283743;font-family:"Yu Gothic",Meiryo,sans-serif}main{display:flex;min-height:100dvh;flex-direction:column;align-items:center;justify-content:center;padding:8px 12px}#scene{width:auto;height:auto;max-width:100%;max-height:calc(100dvh - 104px);aspect-ratio:1808/1488;object-fit:contain}.controls{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:8px;min-height:52px}button,select{background:#F8FAFC;border:1px solid #94A3B8;border-radius:7px;color:#283743;padding:9px 14px;font:600 16px "Yu Gothic",Meiryo,sans-serif;cursor:pointer}button{min-width:100px}input{accent-color:#526A75}#seek{width:240px}label{display:flex;align-items:center;gap:6px;font-size:16px}#status{font-size:16px;min-width:130px;font-variant-numeric:tabular-nums}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #526A75;outline-offset:2px}@media(max-width:600px){main{padding:4px}#scene{max-height:calc(100dvh - 156px)}.controls{gap:8px;max-width:100%}button,select{font-size:15px;padding:8px 10px}button{min-width:90px}#seek{width:145px}label,#status{font-size:14px}#status{min-width:115px}}html.export main{padding:0;min-height:100vh}html.export #scene{width:100%;height:100vh;max-height:none;aspect-ratio:auto}html.export .controls{display:none}
+</style><link rel="stylesheet" href="learner-ui.css?v=usability-20260930"><main class="ecg-page"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><h1>Ⅰ度房室ブロック</h1><canvas id="scene" data-ecg-x="0" data-ecg-y="1100" width="1808" height="1488" aria-label="Ⅰ度房室ブロック_アニメーション_第2段階"></canvas><nav class="controls" aria-label="再生設定">
+<button id="play" type="button">再生</button><button id="reset" type="button">最初から</button>
+<label>速度<select id="speed"><option value="0.25">0.25倍速</option><option value="0.5">0.5倍速</option><option value="1" selected>1倍速</option><option value="2">2倍速</option></select></label>
+<label class="seek-label">再生位置<input id="seek" type="range" min="0" max="299" step="1" value="0" aria-label="再生位置"></label>
+<label><input id="repeat" type="checkbox" checked>繰り返し</label><output id="status">0.00 秒</output>
+</nav>
+<section class="ecg-watch" aria-labelledby="ecg-watch-title">
+<h2 id="ecg-watch-title">ここを見る</h2>
+<p>P波からQRS波までの間隔に注目してください。</p>
+<p>Ⅰ度房室ブロックでは、<strong>すべてのP波の後にQRS波が出現しますが、P波の開始からQRS波の開始までのPR間隔が延長しています。</strong></p>
+<p>心房から心室へ興奮が伝わるまでに通常より時間がかかっている様子と、心電図上の長いPR間隔を見比べてください。</p>
+</section>
+<section class="ecg-learning-notes" aria-label="Ⅰ度房室ブロックの学習者向け波形解説">
+<h2>Ⅰ度房室ブロック（First-degree AV block）</h2>
+<h3>どんな波形？</h3>
+<p>Ⅰ度房室ブロックは、<strong>心房から心室へ興奮が伝わるまでの時間が通常より長くなった状態</strong>です。</p>
+<p>心房からの興奮は毎回心室まで伝わるため、P波の後には必ずQRS波が出現します。</p>
+<p>そのため、厳密には刺激が途中で「ブロック」されているのではなく、<strong>房室伝導が遅延している状態</strong>と考えると理解しやすくなります。</p>
+<h3>波形の特徴</h3>
+<p>Ⅰ度房室ブロックでは、代表的に次の所見を認めます。</p>
+<ul><li>PR間隔が0.20秒（200 ms）を超えて延長する</li><li>PR間隔は一定</li><li>すべてのP波の後にQRS波を認める</li><li>P波とQRS波は1：1で対応する</li><li>QRS波の脱落を認めない</li></ul>
+<p>今回のアニメーションでは、<strong>PR間隔240 ms</strong>として表示しています。</p>
+<p>Ⅰ度房室ブロックでは、P波が途中で脱落するのではなく、<strong>P波からQRS波までの時間が長いこと</strong>が重要です。</p>
+<h3>なぜこの波形になる？</h3>
+<p>正常では、</p>
+<p>心房が興奮<br>↓<br>房室結節・His束などを通って心室へ伝導<br>↓<br>心室が興奮</p>
+<p>という順序で興奮が伝わります。</p>
+<p>Ⅰ度房室ブロックでは、</p>
+<p>心房が興奮<br>↓<br>房室伝導に通常より時間がかかる<br>↓<br>心室へ興奮が伝わる<br>↓<br>QRS波が出現</p>
+<p>という流れになります。</p>
+<p>そのため、<strong>P波の開始からQRS波の開始までのPR間隔が延長</strong>します。</p>
+<p>ただし、すべての心房興奮は心室へ伝わるため、QRS波の脱落はありません。</p>
+<p>なお、PR間隔の延長は房室結節での伝導遅延によることが多いものの、伝導遅延の部位は房室結節だけとは限りません。</p>
+<p>このアニメーションでは、房室結節付近での伝導遅延として表現しています。</p>
+<h3>Ⅱ度房室ブロックとの違い</h3>
+<p>Ⅰ度房室ブロックでは、<strong>すべてのP波が心室へ伝わります。</strong></p>
+<p>一方、Ⅱ度房室ブロックでは、一部のP波が心室へ伝わらず、QRS波が脱落します。</p>
+<p>そのため、</p>
+<p>Ⅰ度房室ブロック<br>→ PR間隔は延長するが、QRS波の脱落はない</p>
+<p>Ⅱ度房室ブロック<br>→ 一部のP波の後にQRS波が出現しない</p>
+<p>という違いがあります。</p>
+<h3>臨床での注意</h3>
+<p>Ⅰ度房室ブロックは、心電図上でPR間隔が延長している所見です。</p>
+<p>Ⅰ度房室ブロックを認めたことだけで、その原因や臨床的な重要性を判断することはできません。</p>
+<p>薬剤、迷走神経緊張、心疾患、刺激伝導系の異常など、さまざまな状況でみられることがあります。</p>
+<p>実際の臨床では、心電図所見だけでなく、症状、心拍数、既往歴、内服薬、以前の心電図などを合わせて評価します。</p>
+<section class="ecg-remember" aria-labelledby="ecg-remember-title">
+<h3 id="ecg-remember-title">覚えるポイント</h3>
+<p><strong>「PR間隔 ＞ 0.20秒 ＋ すべてのP波がQRSへ伝わる」</strong></p>
+</section>
+<section class="ecg-learning-common" aria-labelledby="ecg-learning-common-title">
+<h3 id="ecg-learning-common-title">この教材で共通して覚えてほしいこと</h3>
+<p>心電図は、波形の形だけを暗記するのではなく、</p>
+<p>「心臓のどこが、どの順番で興奮しているか」<br>↓<br>「その電気活動が、なぜこの心電図波形として現れるのか」</p>
+<p>を結びつけて考えることが大切です。</p>
+<p>このアニメーションでは、心臓の興奮伝播と心電図を同時に見ることで、波形を単なる「形」ではなく、「心臓の電気活動の結果として理解すること」を目標としています。</p>
+<p>また、心電図所見だけで患者の状態や原因疾患を判断することはできません。実際の臨床では、症状・バイタルサイン・既往歴・以前の心電図・その他の検査結果を合わせて評価します。</p>
+</section>
+</section>
+</main><script src="learner-player.js?v=usability-20260930"></script><script>window.RhythmConfig={"id":"first-degree-av-block-stage2","heartRate":60,"cycleMs":1000,"beatCount":5,"duration":{"fps":60,"totalSeconds":5},"visual":{"width":1808,"height":1488,"playbackRate":1},"anatomy":{"left":176,"top":-8,"width":768,"height":1088},"ecg":{"enabled":true,"leads":["II"],"rrMs":1000,"prMs":240,"pStart":20,"pEnd":120,"qrsStart":260,"qrsEnd":350,"tStart":490,"tEnd":660,"panel":{"x":28,"y":1102,"width":1750,"height":358,"baseline":1340,"pxPerMs":0.35,"pxPerMv":140,"smallBoxPx":14,"lineWidth":3},"source":"sinus-v26-golden/ecg-source-v25.js","normalVentricularShiftMs":40},"labels":{"enabled":false},"avNode":{"conductionRatio":"1:1","extraDelayMs":40,"delayMode":"constant","droppedBeats":0},"ventricularConduction":{"mode":"normal","leftRightExtraDelayMs":0},"futureEcg":{"pStartMs":20,"qrsStartMs":260,"prIntervalMs":240},"goldenTimeMap":[[0,0],[20,37.5],[120,217.1],[200,325],[220,465],[310,660],[450,680],[620,830],[850,975],[1000,1000]],"avHoldSourceMs":275,"source":{"file":"golden-master\\正常洞調律_v26_12誘導\\正常洞調律_12誘導同期_v26_完成版.html","sha256":"ef48372c4542e6f3460d22b1b92bf9f116ac66296668dae0f9e00c7283291564","frames":120},"references":["https://www.ncbi.nlm.nih.gov/books/NBK448164/"],"avHoldStartMs":162.9286376274328,"avHoldEndMs":202.9286376274328,"layoutReference":{"file":"右脚ブロック_アニメーション.mp4","heartAboveEcg":true},"stage1Source":{"file":"Ⅰ度房室ブロック_心臓アニメーション_第1段階.html","sha256":"5f9b202ac8405ea511f69fa41085bb8a5a14f1d56c997f2793d6d1b66755907b","adjustment":"User-authorized: reduce AV hold by 100 ms in stage 2 copy only"}};window.HEART_FRAMES=["assets/heart/sinus-v24/000.webp", "assets/heart/sinus-v24/001.webp", "assets/heart/sinus-v24/002.webp", "assets/heart/sinus-v24/003.webp", "assets/heart/sinus-v24/004.webp", "assets/heart/sinus-v24/005.webp", "assets/heart/sinus-v24/006.webp", "assets/heart/sinus-v24/007.webp", "assets/heart/sinus-v24/008.webp", "assets/heart/sinus-v24/009.webp", "assets/heart/sinus-v24/010.webp", "assets/heart/sinus-v24/011.webp", "assets/heart/sinus-v24/012.webp", "assets/heart/sinus-v24/013.webp", "assets/heart/sinus-v24/014.webp", "assets/heart/sinus-v24/015.webp", "assets/heart/sinus-v24/016.webp", "assets/heart/sinus-v24/017.webp", "assets/heart/sinus-v24/018.webp", "assets/heart/sinus-v24/019.webp", "assets/heart/sinus-v24/020.webp", "assets/heart/sinus-v24/021.webp", "assets/heart/sinus-v24/022.webp", "assets/heart/sinus-v24/023.webp", "assets/heart/sinus-v24/024.webp", "assets/heart/sinus-v24/025.webp", "assets/heart/sinus-v24/026.webp", "assets/heart/sinus-v24/027.webp", "assets/heart/sinus-v24/028.webp", "assets/heart/sinus-v24/029.webp", "assets/heart/sinus-v24/030.webp", "assets/heart/sinus-v24/031.webp", "assets/heart/sinus-v24/032.webp", "assets/heart/sinus-v24/033.webp", "assets/heart/sinus-v24/034.webp", "assets/heart/sinus-v24/035.webp", "assets/heart/sinus-v24/036.webp", "assets/heart/sinus-v24/037.webp", "assets/heart/sinus-v24/038.webp", "assets/heart/sinus-v24/039.webp", "assets/heart/sinus-v24/040.webp", "assets/heart/sinus-v24/041.webp", "assets/heart/sinus-v24/042.webp", "assets/heart/sinus-v24/043.webp", "assets/heart/sinus-v24/044.webp", "assets/heart/sinus-v24/045.webp", "assets/heart/sinus-v24/046.webp", "assets/heart/sinus-v24/047.webp", "assets/heart/sinus-v24/048.webp", "assets/heart/sinus-v24/049.webp", "assets/heart/sinus-v24/050.webp", "assets/heart/sinus-v24/051.webp", "assets/heart/sinus-v24/052.webp", "assets/heart/sinus-v24/053.webp", "assets/heart/sinus-v24/054.webp", "assets/heart/sinus-v24/055.webp", "assets/heart/sinus-v24/056.webp", "assets/heart/sinus-v24/057.webp", "assets/heart/sinus-v24/058.webp", "assets/heart/sinus-v24/059.webp", "assets/heart/sinus-v24/060.webp", "assets/heart/sinus-v24/061.webp", "assets/heart/sinus-v24/062.webp", "assets/heart/sinus-v24/063.webp", "assets/heart/sinus-v24/064.webp", "assets/heart/sinus-v24/065.webp", "assets/heart/sinus-v24/066.webp", "assets/heart/sinus-v24/067.webp", "assets/heart/sinus-v24/068.webp", "assets/heart/sinus-v24/069.webp", "assets/heart/sinus-v24/070.webp", "assets/heart/sinus-v24/071.webp", "assets/heart/sinus-v24/072.webp", "assets/heart/sinus-v24/073.webp", "assets/heart/sinus-v24/074.webp", "assets/heart/sinus-v24/075.webp", "assets/heart/sinus-v24/076.webp", "assets/heart/sinus-v24/077.webp", "assets/heart/sinus-v24/078.webp", "assets/heart/sinus-v24/079.webp", "assets/heart/sinus-v24/080.webp", "assets/heart/sinus-v24/081.webp", "assets/heart/sinus-v24/082.webp", "assets/heart/sinus-v24/083.webp", "assets/heart/sinus-v24/084.webp", "assets/heart/sinus-v24/085.webp", "assets/heart/sinus-v24/086.webp", "assets/heart/sinus-v24/087.webp", "assets/heart/sinus-v24/088.webp", "assets/heart/sinus-v24/089.webp", "assets/heart/sinus-v24/090.webp", "assets/heart/sinus-v24/091.webp", "assets/heart/sinus-v24/092.webp", "assets/heart/sinus-v24/093.webp", "assets/heart/sinus-v24/094.webp", "assets/heart/sinus-v24/095.webp", "assets/heart/sinus-v24/096.webp", "assets/heart/sinus-v24/097.webp", "assets/heart/sinus-v24/098.webp", "assets/heart/sinus-v24/099.webp", "assets/heart/sinus-v24/100.webp", "assets/heart/sinus-v24/101.webp", "assets/heart/sinus-v24/102.webp", "assets/heart/sinus-v24/103.webp", "assets/heart/sinus-v24/104.webp", "assets/heart/sinus-v24/105.webp", "assets/heart/sinus-v24/106.webp", "assets/heart/sinus-v24/107.webp", "assets/heart/sinus-v24/108.webp", "assets/heart/sinus-v24/109.webp", "assets/heart/sinus-v24/110.webp", "assets/heart/sinus-v24/111.webp", "assets/heart/sinus-v24/112.webp", "assets/heart/sinus-v24/113.webp", "assets/heart/sinus-v24/114.webp", "assets/heart/sinus-v24/115.webp", "assets/heart/sinus-v24/116.webp", "assets/heart/sinus-v24/117.webp", "assets/heart/sinus-v24/118.webp", "assets/heart/sinus-v24/119.webp"];
+"use strict";
+const config=window.RhythmConfig,canvas=document.getElementById('scene'),ctx=canvas.getContext('2d');
+const frames=window.HEART_FRAMES.map(()=>new Image());
+function goldenSourceTime(t){const a=config.goldenTimeMap;for(let i=1;i<a.length;i++){if(t<=a[i][0]){const [x0,y0]=a[i-1],[x1,y1]=a[i];return y0+(y1-y0)*(t-x0)/(x1-x0);}}return 1000;}
+function sourceTime(t){
+  if(t<config.avHoldStartMs)return goldenSourceTime(t);
+  if(t<config.avHoldEndMs)return config.avHoldSourceMs;
+  const lateRestStart=850+config.avNode.extraDelayMs;
+  const original=t<=lateRestStart?t-config.avNode.extraDelayMs:850+(t-lateRestStart)*150/(1000-lateRestStart);
+  return goldenSourceTime(original);
+}
+function state(ms){const t=((ms%1000)+1000)%1000,sourceMs=sourceTime(t);return{ms,t,beat:Math.floor(ms/1000),sourceMs,sourceFrame:Math.min(119,Math.floor(sourceMs*.12)),avHolding:t>=config.avHoldStartMs&&t<config.avHoldEndMs};}
+function render(ms){const s=state(ms);ctx.fillStyle='#F8FAFC';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(frames[s.sourceFrame],config.anatomy.left,config.anatomy.top,config.anatomy.width,config.anatomy.height);drawECG(ms);return s;}
+window.renderStage2Time=render;window.renderExportTime=render;window.renderExportFrame=i=>render(i*1000/config.duration.fps);
+window.cardiacAnimation={config,state,sourceTime,goldenSourceTime,render};
+let origin=null;
+function loop(now){if(origin===null)origin=now;render(Math.min(now-origin,5000-1000/60));if(now-origin<5000)requestAnimationFrame(loop);}
+window.LearnerPlayer.prepareFrames(frames,window.HEART_FRAMES,ms=>render(ms),5000,60);
+
+"use strict";
+const ECG=config.ecg;
+function bump(t,a,b){if(t<=a||t>=b)return 0;return Math.sin(Math.PI*(t-a)/(b-a))**2;}
+function components(ms){
+ const t=((ms%ECG.rrMs)+ECG.rrMs)%ECG.rrMs,shift=ECG.normalVentricularShiftMs;
+ // The original sinus lead-II shapes and amplitudes; only ventricular events shift.
+ const p=.20*bump(t,20,120);
+ const qrs=-.025*bump(t,220+shift,238+shift)+1.02*bump(t,234+shift,268+shift)-.18*bump(t,262+shift,310+shift);
+ const tw=.34*bump(t,450+shift,620+shift);
+ return{p,qrs,t:tw,total:p+qrs+tw};
+}
+function ecgValue(ms){return components(ms).total;}
+function ecgState(ms){const t=((ms%1000)+1000)%1000;return{ms,t,p:t>=ECG.pStart&&t<ECG.pEnd,qrs:t>=ECG.qrsStart&&t<ECG.qrsEnd,repolarizing:t>=ECG.tStart&&t<ECG.tEnd};}
+let ecgPaper,ecgInk;
+function makePaper(){
+ const a=ECG.panel;
+ ecgPaper=document.createElement('canvas');ecgPaper.width=canvas.width;ecgPaper.height=canvas.height;const p=ecgPaper.getContext('2d');
+ ecgInk=document.createElement('canvas');ecgInk.width=canvas.width;ecgInk.height=canvas.height;const ink=ecgInk.getContext('2d');
+ p.fillStyle='#ffffff';p.fillRect(0,1088,canvas.width,400);
+ p.fillStyle='#fffdfd';p.fillRect(a.x,a.y,a.width,a.height);
+ for(let k=0;k<=125;k++){p.strokeStyle=k%5?'#f8e1e4':'#edb7bd';p.lineWidth=k%5?.65:1;p.beginPath();p.moveTo(a.x+k*a.smallBoxPx,a.y);p.lineTo(a.x+k*a.smallBoxPx,a.y+a.height);p.stroke();}
+ for(let k=-17;k<=9;k++){const gy=a.baseline+k*a.smallBoxPx;if(gy<a.y||gy>a.y+a.height)continue;p.strokeStyle=k%5?'#f8e1e4':'#edb7bd';p.lineWidth=k%5?.65:1;p.beginPath();p.moveTo(a.x,gy);p.lineTo(a.x+a.width,gy);p.stroke();}
+ p.font='bold 29px "Yu Gothic",Meiryo';p.fillStyle='#283743';p.fillText('II',a.x+8,a.y+29);
+ for(const [target,color] of [[p,'#919da5'],[ink,'#20282e']]){target.strokeStyle=color;target.lineWidth=a.lineWidth;target.lineJoin='round';target.beginPath();for(let t=0;t<=5000;t++){const px=a.x+t*a.pxPerMs,py=a.baseline-ecgValue(t)*a.pxPerMv;t?target.lineTo(px,py):target.moveTo(px,py);}target.stroke();}
+}
+function drawECG(ms){
+ if(!ecgPaper)makePaper();const a=ECG.panel,clock=Math.max(0,Math.min(ms,5000));
+ ctx.drawImage(ecgPaper,0,0);
+ ctx.save();ctx.beginPath();ctx.rect(a.x,a.y,clock*a.pxPerMs,a.height);ctx.clip();ctx.drawImage(ecgInk,0,0);ctx.restore();
+ ctx.strokeStyle='#bf8a20';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(a.x+clock*a.pxPerMs,a.y);ctx.lineTo(a.x+clock*a.pxPerMs,a.y+a.height);ctx.stroke();
+}
+Object.assign(window.cardiacAnimation,{ECG,components,ecgValue,ecgState});
+
+"use strict";
+const annotationCanvas=document.createElement('canvas');
+annotationCanvas.width=canvas.width;annotationCanvas.height=canvas.height;
+const annotationCtx=annotationCanvas.getContext('2d');
+const annotationPlan={
+ title:{text:'Ⅰ度房室ブロック',x:1000,y:112,size:50},
+ av:{text:'房室結節で伝導が遅延',x:1000,y:455,size:28,leader:[[988,446],[960,446],[528,458]]},
+ points:[{text:'・PR間隔 ＞ 200 ms',x:980,y:960,size:28},{text:'・すべてのP波がQRSへ伝導（1：1伝導）',x:980,y:1020,size:28}],
+ pr:{text:'PR間隔 240 ms',beat:2,startMs:2020,endMs:2260,y:1172,textY:1142,guideEndY:1332,size:28,showAfterMs:2350,fadeMs:150},
+ colors:{text:'#283743',leader:'#526A75',accent:'#bf8a20'}
+};
+function annotationText(c,item,color){c.font=`${item.size}px "BIZ UDPGothic","Yu Gothic",Meiryo,sans-serif`;c.fillStyle=color;c.fillText(item.text,item.x,item.y);}
+function drawAnnotations(ms){
+ const d=annotationCtx,p=annotationPlan;d.clearRect(0,0,canvas.width,canvas.height);
+ annotationText(d,p.title,p.colors.text);
+ annotationText(d,p.av,p.colors.text);
+ p.points.forEach(item=>annotationText(d,item,p.colors.text));
+ d.strokeStyle=p.colors.leader;d.lineWidth=1.2;d.beginPath();p.av.leader.forEach(([x,y],i)=>i?d.lineTo(x,y):d.moveTo(x,y));d.stroke();
+ const pr=p.pr,a=config.ecg.panel,x0=a.x+pr.startMs*a.pxPerMs,x1=a.x+pr.endMs*a.pxPerMs;
+ const alpha=Math.max(0,Math.min(1,(ms-pr.showAfterMs)/pr.fadeMs));
+ if(alpha>0){
+  d.save();d.globalAlpha=alpha;d.strokeStyle=p.colors.accent;d.fillStyle=p.colors.accent;d.lineWidth=1.5;
+  d.font=`${pr.size}px "BIZ UDPGothic","Yu Gothic",Meiryo,sans-serif`;d.textAlign='center';d.fillText(pr.text,(x0+x1)/2,pr.textY);d.textAlign='left';
+  d.beginPath();d.moveTo(x0,pr.y);d.lineTo(x1,pr.y);d.stroke();
+  for(const [x,sign] of [[x0,1],[x1,-1]]){d.beginPath();d.moveTo(x,pr.y);d.lineTo(x+sign*6,pr.y-4);d.moveTo(x,pr.y);d.lineTo(x+sign*6,pr.y+4);d.stroke();}
+  d.setLineDash([4,4]);d.beginPath();for(const x of [x0,x1]){d.moveTo(x,pr.y-6);d.lineTo(x,pr.guideEndY);}d.stroke();d.restore();
+ }
+ ctx.drawImage(annotationCanvas,0,0);
+ return{startMs:pr.startMs,endMs:pr.endMs,x0,x1,alpha};
+}
+const stage2Renderer=window.renderStage2Time;
+function renderAnnotated(ms){const s=stage2Renderer(ms);drawAnnotations(ms);return s;}
+// The original requestAnimationFrame loop calls this binding, with its clock untouched.
+render=renderAnnotated;
+window.renderExportTime=renderAnnotated;
+window.renderExportFrame=i=>renderAnnotated(i*1000/config.duration.fps);
+Object.assign(window.cardiacAnimation,{render:renderAnnotated,renderBase:stage2Renderer,annotationPlan,annotationCanvas,drawAnnotations});
+
+
+"use strict";
+if(location.search.includes('mode=export'))document.documentElement.classList.add('export');
+function startPlayback(){window.LearnerPlayer.start(render,5000,60);}
+</script></html>

@@ -4,18 +4,18 @@
   const ctx = canvas.getContext('2d', { alpha: false });
   const fps = Number(canvas.dataset.fps);
   const count = Number(canvas.dataset.frames);
-  const toggle = document.getElementById('toggle');
+  const toggle = document.getElementById('play');
   const reset = document.getElementById('reset');
   const speed = document.getElementById('speed');
-  const loop = document.getElementById('loop');
+  const loop = document.getElementById('repeat');
   const seek = document.getElementById('seek');
-  const status = document.getElementById('frame-status');
+  const status = document.getElementById('status');
   const loading = document.getElementById('frame-loading');
   const video = document.createElement('video');
   video.id = 'canvas-video-source';
   video.muted = true;
   video.playsInline = true;
-  video.preload = 'metadata';
+  video.preload = 'none';
   video.setAttribute('muted', '');
   video.setAttribute('playsinline', '');
   video.setAttribute('webkit-playsinline', '');
@@ -56,7 +56,7 @@
       sampleFrames = drawnFrames; sampleStart = now;
     }
     lastPaintTime = time;
-    seek.value = String(Math.min(count - 1, Math.max(0, Math.floor(time * fps))));
+    seek.value = String(Math.min(count - 1, Math.max(0, Math.floor(time * fps + 1e-6))));
     status.textContent = `${time.toFixed(2)} / ${video.duration.toFixed(2)} 秒`;
   }
   function stopDrawing() {
@@ -99,14 +99,14 @@
   }
   toggle.onclick = () => {
     if (video.paused) {
-      if (video.ended) video.currentTime = 0;
+      if (video.ended && video.currentTime >= video.duration - 1e-6) video.currentTime = 0;
       play();
     } else video.pause();
   };
-  reset.onclick = () => { video.currentTime = 0; play(); };
+  reset.onclick = () => { video.pause(); video.currentTime = 0; seek.value = '0'; status.textContent = `0.00 / ${video.duration.toFixed(2)} 秒`; };
   speed.addEventListener('change', () => { video.playbackRate = Number(speed.value); });
   loop.addEventListener('change', () => { video.loop = loop.checked; });
-  seek.addEventListener('input', () => { video.currentTime = Number(seek.value) / fps; });
+  seek.addEventListener('input', () => { const target = Number(seek.value) / fps; video.pause(); video.currentTime = target; status.textContent = `${target.toFixed(2)} / ${video.duration.toFixed(2)} 秒`; });
   function updateReadiness() {
     reset.disabled = seek.disabled = video.readyState < 1;
     if (video.readyState < 2) return;
@@ -150,5 +150,11 @@
   });
   window.addEventListener('pagehide', () => { video.pause(); stopDrawing(); });
   window.addEventListener('pageshow', () => { paint(); });
-  video.src = canvas.dataset.videoSource;
+  const poster = new Image();
+  poster.onload = () => { if (!drawnFrames) ctx.drawImage(poster, 0, 0, canvas.width, canvas.height); };
+  poster.src = canvas.dataset.poster;
+  let assigned = false;
+  const originalToggle = toggle.onclick;
+  toggle.onclick = () => { if (!assigned) { video.src = canvas.dataset.videoSource; assigned = true; } originalToggle(); };
+
 })();
