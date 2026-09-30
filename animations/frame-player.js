@@ -91,6 +91,11 @@
       await video.play();
     }
     catch (error) {
+      if (error.name === 'AbortError' && video.paused) {
+        toggle.textContent = '再生';
+        loading.hidden = true;
+        return;
+      }
       toggle.textContent = '再生';
       loading.hidden = false;
       loading.textContent = '再生を開始できませんでした。再生ボタンをもう一度押してください。';

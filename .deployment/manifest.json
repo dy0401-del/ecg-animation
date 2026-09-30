@@ -12,8 +12,8 @@
     },
     {
       "path": "animations/afl.html",
-      "bytes": 8726,
-      "sha256": "ca10e29f0541d69e3f3db0291b22ad654c5458cf6db0d88a63e6e9dce593db0e"
+      "bytes": 8728,
+      "sha256": "ebcc9b1e53eed44a32c0f5207d68a0346368210bb03ea2219a5fc8baa18be815"
     },
     {
       "path": "animations/app.js",
@@ -732,13 +732,13 @@
     },
     {
       "path": "animations/frame-player.js",
-      "bytes": 6832,
-      "sha256": "6419ac9a90d7fbad8134afd0ea27829d2ef8b7d0020ea970086b69300c223252"
+      "bytes": 6983,
+      "sha256": "119c8f2bd04c8b9a632d10b109dfdc45952403f60e48a64b0ed481d93d5b14af"
     },
     {
       "path": "animations/lbbb.html",
-      "bytes": 8456,
-      "sha256": "0d1220d94dfff2e7bfdfbcd901ed692c1f3663e32d92ff9a61a09cf3c69482bd"
+      "bytes": 8458,
+      "sha256": "07d18763dbc1c1a048bb17d1479d8ca25eccff8dfb10a66b924fd49cf16875ec"
     },
     {
       "path": "animations/learner-player.js",
