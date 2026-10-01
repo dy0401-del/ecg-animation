@@ -791,6 +791,16 @@
       "sha256": "5af89175ec80d066d88d184c4469a27596d48c113e606365625722826001f466"
     },
     {
+      "path": "animations/sss-group-ii-sa-block.html",
+      "bytes": 1257808,
+      "sha256": "f1d18e78c5d70f96444ffa025446e7772416066453f9f9299ff5bbe1d69356df"
+    },
+    {
+      "path": "animations/sss-group-ii-sinus-arrest.html",
+      "bytes": 1254634,
+      "sha256": "0ce37a2a8c3f048f512e98c07a4a5d1915d37dc5b4ae092d76920dfe943f58a3"
+    },
+    {
       "path": "animations/third-degree-av-block.html",
       "bytes": 1265206,
       "sha256": "e7c2aee9e086dcd23437e941c2f7f93e8b98ab7f8a8e37bc89e0d7419c360bd3"
@@ -802,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 10012,
-      "sha256": "e679d9a85239e4cc7d1d675044b46f938571603330cfa9dc0a684cb3e9f6b338"
+      "bytes": 11133,
+      "sha256": "3894c781aaa12c48474900de6769fdadfaadecfc86afaec238fe6b4300560d2a"
     },
     {
       "path": "rhythm-finder.js",
