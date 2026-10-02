@@ -812,13 +812,13 @@
     },
     {
       "path": "index.html",
-      "bytes": 12760,
-      "sha256": "ca95e430cead1f48c569e8ab711d595767f6168f0d6555d06b19599fa487d980"
+      "bytes": 13925,
+      "sha256": "2e9111893c08c979fdb03c89fac731b0ddc35d897c8a21f42dc220d5d51bc086"
     },
     {
       "path": "rhythm-finder.js",
-      "bytes": 1502,
-      "sha256": "481029da30011a32d8e2b2710393d3ef87ed697ea5087e4f2f477eaa41a41022"
+      "bytes": 1598,
+      "sha256": "a2a0fafe9ed9e4301050098aee0c3fff8a667bea7c9e16baf71f6d23de752523"
     },
     {
       "path": "animations/sss-group-iii.html",
@@ -834,6 +834,16 @@
       "path": "animations/pvc.html",
       "bytes": 1271220,
       "sha256": "fa304b10a4c43bbf42f369be95a6500c372f125acbbc0fca0ca864f003fc37eb"
+    },
+    {
+      "path": "animations/avnrt-typical.html",
+      "bytes": 1285466,
+      "sha256": "246ddd1b2adf2e4d41777f25b28d13ad9cb19d7876bd77dc2de995c0d08b6df9"
+    },
+    {
+      "path": "animations/avnrt-fast-slow.html",
+      "bytes": 1285935,
+      "sha256": "258284e79267ed96dc821f52663a5fd80131c7ab7c44e1bde4b978494598405d"
     }
   ]
 }

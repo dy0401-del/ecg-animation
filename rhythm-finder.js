@@ -2,7 +2,7 @@
  'use strict';
  const search=document.getElementById('rhythm-search'),cards=[...document.querySelectorAll('#rhythm-list > li')],buttons=[...document.querySelectorAll('[data-filter]')];
  let category='all';
- const normalize=value=>value.normalize('NFKC').toLowerCase().replace(/(?<![a-z])iii(?=度|群)/g,'3').replace(/(?<![a-z])ii(?=度|群)/g,'2').replace(/(?<![a-z])i(?=度|群)/g,'1').replace(/[‐–—ー＿_-]/g,' ').replace(/\s+/g,' ').trim();
+ const normalize=value=>value.normalize('NFKC').toLowerCase().replace(/slow[\s‐–—_-]*fast/g,'slowfast').replace(/fast[\s‐–—_-]*slow/g,'fastslow').replace(/(?<![a-z])iii(?=度|群)/g,'3').replace(/(?<![a-z])ii(?=度|群)/g,'2').replace(/(?<![a-z])i(?=度|群)/g,'1').replace(/[‐–—ー＿_-]/g,' ').replace(/\s+/g,' ').trim();
  // Match whole abbreviation tokens: AF does not also select AFL.
  const matches=(hay,term)=>/^afl?$/.test(term)?hay.split(/[^a-z]+/).includes(term):hay.includes(term);
  function render(){
