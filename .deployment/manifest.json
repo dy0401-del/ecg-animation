@@ -812,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 13925,
-      "sha256": "2e9111893c08c979fdb03c89fac731b0ddc35d897c8a21f42dc220d5d51bc086"
+      "bytes": 15212,
+      "sha256": "df9a21bfede801e52663615afa570822e481e0554f22123b3ca10d8b6544cad0"
     },
     {
       "path": "rhythm-finder.js",
@@ -844,6 +844,16 @@
       "path": "animations/avnrt-fast-slow.html",
       "bytes": 1285935,
       "sha256": "258284e79267ed96dc821f52663a5fd80131c7ab7c44e1bde4b978494598405d"
+    },
+    {
+      "path": "animations/avrt-orthodromic.html",
+      "bytes": 1294858,
+      "sha256": "cb37e1ae1a41ea1951aa0da46b64e1c999480f85c4cf14d29f739da0540fb3e6"
+    },
+    {
+      "path": "animations/avrt-antidromic.html",
+      "bytes": 1295247,
+      "sha256": "9383a351457abf68e7c8a9af11395ff9d05ca7f354bd7fa5a709de20359ad952"
     }
   ]
 }
