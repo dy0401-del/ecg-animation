@@ -812,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 15212,
-      "sha256": "df9a21bfede801e52663615afa570822e481e0554f22123b3ca10d8b6544cad0"
+      "bytes": 16194,
+      "sha256": "b306c3c4511257f6c4cc8090e6e84081f6e193ed842522a19b4c655ff6bb2d03"
     },
     {
       "path": "rhythm-finder.js",
@@ -854,6 +854,16 @@
       "path": "animations/avrt-antidromic.html",
       "bytes": 1295247,
       "sha256": "9383a351457abf68e7c8a9af11395ff9d05ca7f354bd7fa5a709de20359ad952"
+    },
+    {
+      "path": "animations/pvc-run.html",
+      "bytes": 1268160,
+      "sha256": "5d94b26512890486f21867ada482ab08dfdc5bdeafd3b1c9277030160381ca14"
+    },
+    {
+      "path": "animations/vt.html",
+      "bytes": 1291596,
+      "sha256": "b0a16792d2d75f37ef5afba47805cb147355abeef4cfb62db4ad69864c996292"
     }
   ]
 }
