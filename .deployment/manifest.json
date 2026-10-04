@@ -812,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 16194,
-      "sha256": "b306c3c4511257f6c4cc8090e6e84081f6e193ed842522a19b4c655ff6bb2d03"
+      "bytes": 16755,
+      "sha256": "fbceadbea3073628053b76d37b3e2051d61b6c6551abf12283a00c108700fc2b"
     },
     {
       "path": "rhythm-finder.js",
@@ -864,6 +864,11 @@
       "path": "animations/vt.html",
       "bytes": 1291596,
       "sha256": "b0a16792d2d75f37ef5afba47805cb147355abeef4cfb62db4ad69864c996292"
+    },
+    {
+      "path": "animations/vf-transition.html",
+      "bytes": 1292757,
+      "sha256": "6ed5621fb536db4867fd0457b6e9dfb1fd8823a13db3035241c91334fddfa0bd"
     }
   ]
 }
