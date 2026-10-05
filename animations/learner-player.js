@@ -1,25 +1,6 @@
 (() => {
  'use strict';
- const canvas=document.getElementById('scene');
- const shell=document.createElement('section');shell.className='diagram-shell';shell.setAttribute('aria-label','心臓と心電図の表示');
- const viewport=document.createElement('div');viewport.className='diagram-viewport';viewport.tabIndex=0;viewport.setAttribute('aria-label','図の表示領域。拡大後は上下左右にスクロールできます');
- canvas.before(shell);shell.append(viewport);viewport.append(canvas);
- const tools=document.createElement('div');tools.className='diagram-tools';
- tools.innerHTML='<label>図の倍率<select id="diagram-zoom"><option value="1">全体</option><option value="2">2倍</option><option value="4">4倍</option><option value="native">実寸</option></select></label><button type="button" id="ecg-zoom">心電図を拡大</button><button type="button" id="diagram-fullscreen">全画面</button>';
- shell.append(tools);
- const help=document.createElement('p');help.className='diagram-help';help.textContent='拡大後は図を上下左右にスクロールできます。スマートフォンを横向きにすると広く表示できます。';shell.append(help);
- const zoom=tools.querySelector('select'),full=tools.querySelector('#diagram-fullscreen');
- function resize(){let width=zoom.value==='native'?Math.max(canvas.width,viewport.clientWidth):viewport.clientWidth*Number(zoom.value);if(zoom.value==='1')width=Math.min(width,window.innerHeight*.6*canvas.width/canvas.height);canvas.style.width=width+'px';canvas.style.margin='0 auto';}
- zoom.onchange=()=>{resize();if(zoom.value==='1'){viewport.scrollTop=viewport.scrollLeft=0;}};
- tools.querySelector('#ecg-zoom').onclick=()=>{zoom.value='native';resize();const scale=canvas.getBoundingClientRect().width/canvas.width;viewport.scrollLeft=Number(canvas.dataset.ecgX)*scale;viewport.scrollTop=Number(canvas.dataset.ecgY)*scale;viewport.focus({preventScroll:true});};
- full.onclick=async()=>{
-  if(document.fullscreenElement){await document.exitFullscreen();return;}
-  if(shell.classList.contains('expanded')){shell.classList.remove('expanded');full.textContent='全画面';resize();return;}
-  try{if(!shell.requestFullscreen)throw new Error('fallback');await shell.requestFullscreen();}catch{shell.classList.add('expanded');full.textContent='全画面を閉じる';resize();}
- };
- document.addEventListener('fullscreenchange',()=>{full.textContent=document.fullscreenElement?'全画面を閉じる':'全画面';resize();});
- document.addEventListener('keydown',e=>{if(e.key==='Escape'&&shell.classList.contains('expanded')){shell.classList.remove('expanded');full.textContent='全画面';resize();}});
- new ResizeObserver(resize).observe(viewport);
+ const {canvas,shell}=window.LearnerDiagram;
  let loading=document.getElementById('loading')||document.getElementById('frame-loading');
  if(!loading){loading=document.createElement('p');loading.id='frame-loading';shell.after(loading);}
  shell.append(loading);

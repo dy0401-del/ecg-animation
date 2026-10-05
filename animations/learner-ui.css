@@ -134,10 +134,6 @@ html, body { height:auto; min-height:100%; overflow:visible; }
 .ecg-page .controls output { font-size:16px; }
 .ecg-page #loading, .ecg-page #frame-loading { position:static; inset:auto; z-index:auto; padding:12px; margin:8px 0; background:#eaf2f4; font-size:16px; line-height:1.6; text-align:left; }
 .ecg-page #loading[hidden], .ecg-page #frame-loading[hidden] { display:none; }
-.diagram-shell:fullscreen { padding:16px; background:#f5f7f9; overflow:auto; }
-.diagram-shell:fullscreen .diagram-viewport { max-height:calc(100svh - 160px); }
-.diagram-shell.expanded { position:fixed; inset:0; z-index:50; padding:12px; overflow:auto; background:#f5f7f9; }
-.diagram-shell.expanded .diagram-viewport { max-height:calc(100svh - 180px); }
 @media(max-width:600px) {
  .ecg-page .controls { gap:8px; }
  .ecg-page .controls .seek-label { display:flex; flex-basis:100%; text-align:left; }
@@ -148,3 +144,16 @@ html, body { height:auto; min-height:100%; overflow:visible; }
 
 /* Supplemental learner text: existing layout retained. */
 .ecg-watch h3{font-size:18px;margin:20px 0 8px}.ecg-watch ol{margin:0 0 16px;padding-left:1.5em}.ecg-watch li{margin:6px 0}.ecg-reading-guide{margin:24px 0;padding:16px;background:#f5f7f9;border:1px solid #d1d5db;border-radius:8px}.ecg-reading-guide summary{font-weight:700;cursor:pointer;min-height:44px;display:list-item;line-height:1.7}.ecg-reading-guide summary:focus-visible,.ecg-comparison:focus-visible{outline:3px solid #168798;outline-offset:3px}.ecg-reading-guide dt{font-weight:700;margin-top:16px}.ecg-reading-guide dd{margin:4px 0 16px}.ecg-comparison{max-width:100%;overflow-x:auto;border:1px solid #d1d5db;border-radius:8px;margin:12px 0 16px}.ecg-comparison table{width:100%;min-width:620px;border-collapse:collapse;text-align:left;font-size:16px}.ecg-comparison caption{font-weight:700;text-align:left;padding:12px;background:#eaf2f4}.ecg-comparison th,.ecg-comparison td{padding:12px;border-bottom:1px solid #d1d5db;vertical-align:top}.ecg-comparison thead{background:#f5f7f9}.ecg-learning-references h2{font-size:20px}.ecg-learning-references ul{padding-left:1.4em}.ecg-learning-references a,.ecg-comparison a{color:#176873;text-underline-offset:3px}.ecg-learning-references a{overflow-wrap:anywhere}@media(max-width:600px){.ecg-reading-guide{padding:12px}.ecg-comparison th,.ecg-comparison td{padding:10px}}
+
+/* Shared full-screen layout, independent of the source animation's aspect ratio. */
+.diagram-shell { width:100%; min-width:0; }
+.diagram-shell:is(:fullscreen,.expanded) { position:fixed; inset:0; width:100%; max-width:none; height:100vh; height:100dvh; min-height:0; margin:0; padding:12px; z-index:1000; background:#f5f7f9; display:flex; flex-direction:column; overflow:auto; }
+.ecg-page .diagram-shell:is(:fullscreen,.expanded) .diagram-viewport { flex:1 1 0; min-height:120px; max-height:none; width:100%; border-radius:0; }
+.diagram-shell:is(:fullscreen,.expanded) > :not(.diagram-viewport) { flex-shrink:0; }
+.ecg-page .diagram-shell:is(:fullscreen,.expanded) .controls { height:auto; min-height:0; margin-top:0; }
+.ecg-page .diagram-shell:is(:fullscreen,.expanded) .diagram-help { display:none; }
+.diagram-shell:is(:fullscreen,.expanded) .diagram-tools { margin:8px 0; }
+.diagram-shell .legacy-display-control { display:none; }
+@media(max-width:600px) { .diagram-shell:is(:fullscreen,.expanded) { padding:6px; } }
+
+.diagram-shell:is(:fullscreen,.expanded) .rbbb-now { max-height:64px; overflow:auto; margin:4px 0; font-size:14px; line-height:1.4; }
