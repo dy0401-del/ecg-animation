@@ -812,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 19202,
-      "sha256": "ccdf2a02eba18d848b13d2e7ff0ad3cfd92ecaeede1a4022ef0eb424c35cbdcb"
+      "bytes": 19292,
+      "sha256": "9139c378160879aba0e0521bbb8bc3f5fb754b2ecd8d9730149355703250d34e"
     },
     {
       "path": "rhythm-finder.js",
@@ -822,8 +822,8 @@
     },
     {
       "path": "animations/sss-group-iii.html",
-      "bytes": 1268649,
-      "sha256": "681a089c3762fdd1984941383a3e6d5bc3cfff700ee48cdb535989a28b1e38fb"
+      "bytes": 13709735,
+      "sha256": "513d38e7677188ba5a0e9383fb40d352d7c66c42dd92a5a7b915e12df643d410"
     },
     {
       "path": "animations/pac.html",
