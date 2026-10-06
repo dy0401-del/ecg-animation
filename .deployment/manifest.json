@@ -812,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 17278,
-      "sha256": "46fd7866e461914f0ac2cc0266e62fec1c0e137a17162856b6e2454a81a264dd"
+      "bytes": 18965,
+      "sha256": "c34ceed8fd7955d12be3a29209bbb8e59f84c47eb43492e57a7819902eb9e6a1"
     },
     {
       "path": "rhythm-finder.js",
@@ -884,6 +884,21 @@
       "path": "animations/rhythms/atrial-fibrillation-fixed-cursor.js",
       "bytes": 37984,
       "sha256": "5523b738f807a15232a17a95450563381a16a0e04501d5ea58983a8bdf01cb66"
+    },
+    {
+      "path": "animations/wpw-a.html",
+      "bytes": 1286740,
+      "sha256": "844138755483708c22af815757564a4cfedaa894c25df4a4d4dab50fb7961073"
+    },
+    {
+      "path": "animations/wpw-b.html",
+      "bytes": 1286845,
+      "sha256": "9e51e736030074444dd45f27813dec1c9e03d0601d958adbef1a0ad5168200c2"
+    },
+    {
+      "path": "animations/wpw-c.html",
+      "bytes": 1286807,
+      "sha256": "2a10c271ba94c1cc496c63565e65e8fc2e459854020535f24d27fe9078eefe9d"
     }
   ]
 }
