@@ -222,8 +222,20 @@ function components(ms){let p=0,qrs=0,t=0;
 function ecgValue(ms){return components(ms).total;}
 let paper;
 function makePaper(){const a=ECG.panel;paper=document.createElement('canvas');paper.width=canvas.width;paper.height=canvas.height;const p=paper.getContext('2d');p.fillStyle='#ffffff';p.fillRect(0,1088,1808,400);p.fillStyle='#fffdfd';p.fillRect(a.x,a.y,a.width,a.height);for(let k=0;k<=125;k++){p.strokeStyle=k%5?'#f8e1e4':'#edb7bd';p.lineWidth=k%5?.65:1;p.beginPath();p.moveTo(a.x+k*14,a.y);p.lineTo(a.x+k*14,a.y+a.height);p.stroke();}for(let k=-17;k<=9;k++){const y=a.baseline+k*14;if(y<a.y||y>a.y+a.height)continue;p.strokeStyle=k%5?'#f8e1e4':'#edb7bd';p.lineWidth=k%5?.65:1;p.beginPath();p.moveTo(a.x,y);p.lineTo(a.x+a.width,y);p.stroke();}}
-function ecgViewport(ms){const a=ECG.panel,t=Math.max(0,Math.min(ms,config.duration.totalSeconds*1000)),cursorMarginPx=5*a.smallBoxPx,offset=Math.max(0,t-(ECG.windowMs-cursorMarginPx/a.pxPerMs));return{t,offset,cursorX:a.x+(t-offset)*a.pxPerMs,cursorMarginPx};}
-function drawECG(ms){if(!paper)makePaper();const a=ECG.panel,{t,offset}=ecgViewport(ms);ctx.drawImage(paper,0,0);ctx.save();ctx.beginPath();ctx.rect(a.x,a.y,a.width,a.height);ctx.clip();for(const [color,end] of [['#919da5',offset+ECG.windowMs],['#20282e',t]]){ctx.strokeStyle=color;ctx.lineWidth=3;ctx.lineJoin='round';if(!window.ecgTrace){window.ecgTrace=new Path2D();for(let x=0;x<=config.duration.totalSeconds*1000+ECG.windowMs;x++){const px=a.x+x*a.pxPerMs,y=a.baseline-ecgValue(x)*a.pxPerMv;x?window.ecgTrace.lineTo(px,y):window.ecgTrace.moveTo(px,y);}}ctx.save();ctx.beginPath();ctx.rect(a.x,a.y,Math.max(0,(end-offset)*a.pxPerMs),a.height);ctx.clip();ctx.translate(-offset*a.pxPerMs,0);ctx.stroke(window.ecgTrace);ctx.restore();}ctx.strokeStyle='#bf8a20';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(a.x+(t-offset)*a.pxPerMs,a.y);ctx.lineTo(a.x+(t-offset)*a.pxPerMs,a.y+a.height);ctx.stroke();ctx.restore();ctx.font='bold 29px "Yu Gothic",Meiryo';ctx.fillStyle='#283743';ctx.fillText('II',a.x+8,a.y+29);}
+function ecgViewport(ms){const a=ECG.panel,t=Math.max(0,Math.min(ms,config.duration.totalSeconds*1000)),cursorMarginPx=5*a.smallBoxPx,cursorX=a.x+a.width/2,offset=t-(cursorX-a.x)/a.pxPerMs;return{t,offset,cursorX,cursorMarginPx};}
+let fixedEcgTrace;
+function drawECG(ms){
+ if(!paper)makePaper();const a=ECG.panel,{t,offset,cursorX}=ecgViewport(ms);
+ ctx.drawImage(paper,0,0);
+ // Cache only the approved recording. Do not fabricate pre-roll or extra beats.
+ if(!fixedEcgTrace){fixedEcgTrace=new Path2D();for(let m=0;m<=Math.floor(config.duration.totalSeconds*1000);m++){const x=a.x+m*a.pxPerMs,y=a.baseline-ecgValue(m)*a.pxPerMv;m?fixedEcgTrace.lineTo(x,y):fixedEcgTrace.moveTo(x,y);}}
+ ctx.save();ctx.beginPath();ctx.rect(a.x,a.y,a.width,a.height);ctx.clip();
+ for(const [color,width] of [['#919da5',a.width],['#20282e',cursorX-a.x]]){
+  ctx.save();ctx.beginPath();ctx.rect(a.x,a.y,width,a.height);ctx.clip();ctx.translate(-offset*a.pxPerMs,0);ctx.strokeStyle=color;ctx.lineWidth=a.lineWidth||3;ctx.lineJoin='round';ctx.stroke(fixedEcgTrace);ctx.restore();
+ }
+ ctx.strokeStyle='#bf8a20';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(cursorX,a.y);ctx.lineTo(cursorX,a.y+a.height);ctx.stroke();ctx.restore();
+ ctx.font='bold 29px "Yu Gothic",Meiryo';ctx.fillStyle='#283743';ctx.fillText('II',a.x+8,a.y+29);
+}
 Object.assign(window.cardiacAnimation,{components,ecgValue,ecgViewport});
 
 const annotationCanvas=document.createElement('canvas');annotationCanvas.width=1808;annotationCanvas.height=1488;const annotationCtx=annotationCanvas.getContext('2d');

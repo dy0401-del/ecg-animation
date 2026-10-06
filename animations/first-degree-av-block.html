@@ -101,15 +101,23 @@ function makePaper(){
  for(let k=0;k<=125;k++){p.strokeStyle=k%5?'#f8e1e4':'#edb7bd';p.lineWidth=k%5?.65:1;p.beginPath();p.moveTo(a.x+k*a.smallBoxPx,a.y);p.lineTo(a.x+k*a.smallBoxPx,a.y+a.height);p.stroke();}
  for(let k=-17;k<=9;k++){const gy=a.baseline+k*a.smallBoxPx;if(gy<a.y||gy>a.y+a.height)continue;p.strokeStyle=k%5?'#f8e1e4':'#edb7bd';p.lineWidth=k%5?.65:1;p.beginPath();p.moveTo(a.x,gy);p.lineTo(a.x+a.width,gy);p.stroke();}
  p.font='bold 29px "Yu Gothic",Meiryo';p.fillStyle='#283743';p.fillText('II',a.x+8,a.y+29);
- for(const [target,color] of [[p,'#919da5'],[ink,'#20282e']]){target.strokeStyle=color;target.lineWidth=a.lineWidth;target.lineJoin='round';target.beginPath();for(let t=0;t<=5000;t++){const px=a.x+t*a.pxPerMs,py=a.baseline-ecgValue(t)*a.pxPerMv;t?target.lineTo(px,py):target.moveTo(px,py);}target.stroke();}
+ for(const [target,color] of [[ink,'#20282e']]){target.strokeStyle=color;target.lineWidth=a.lineWidth;target.lineJoin='round';target.beginPath();for(let t=0;t<=5000;t++){const px=a.x+t*a.pxPerMs,py=a.baseline-ecgValue(t)*a.pxPerMv;t?target.lineTo(px,py):target.moveTo(px,py);}target.stroke();}
 }
+function ecgViewport(ms){const a=ECG.panel,t=Math.max(0,Math.min(ms,config.duration.totalSeconds*1000)),cursorMarginPx=5*a.smallBoxPx,cursorX=a.x+a.width/2,offset=t-(cursorX-a.x)/a.pxPerMs;return{t,offset,cursorX,cursorMarginPx};}
+let fixedEcgTrace;
 function drawECG(ms){
- if(!ecgPaper)makePaper();const a=ECG.panel,clock=Math.max(0,Math.min(ms,5000));
+ if(!ecgPaper)makePaper();const a=ECG.panel,{t,offset,cursorX}=ecgViewport(ms);
  ctx.drawImage(ecgPaper,0,0);
- ctx.save();ctx.beginPath();ctx.rect(a.x,a.y,clock*a.pxPerMs,a.height);ctx.clip();ctx.drawImage(ecgInk,0,0);ctx.restore();
- ctx.strokeStyle='#bf8a20';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(a.x+clock*a.pxPerMs,a.y);ctx.lineTo(a.x+clock*a.pxPerMs,a.y+a.height);ctx.stroke();
+ // Cache only the approved recording. Do not fabricate pre-roll or extra beats.
+ if(!fixedEcgTrace){fixedEcgTrace=new Path2D();for(let m=0;m<=Math.floor(config.duration.totalSeconds*1000);m++){const x=a.x+m*a.pxPerMs,y=a.baseline-ecgValue(m)*a.pxPerMv;m?fixedEcgTrace.lineTo(x,y):fixedEcgTrace.moveTo(x,y);}}
+ ctx.save();ctx.beginPath();ctx.rect(a.x,a.y,a.width,a.height);ctx.clip();
+ for(const [color,width] of [['#919da5',a.width],['#20282e',cursorX-a.x]]){
+  ctx.save();ctx.beginPath();ctx.rect(a.x,a.y,width,a.height);ctx.clip();ctx.translate(-offset*a.pxPerMs,0);ctx.strokeStyle=color;ctx.lineWidth=a.lineWidth||3;ctx.lineJoin='round';ctx.stroke(fixedEcgTrace);ctx.restore();
+ }
+ ctx.strokeStyle='#bf8a20';ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(cursorX,a.y);ctx.lineTo(cursorX,a.y+a.height);ctx.stroke();ctx.restore();
+ ctx.font='bold 29px "Yu Gothic",Meiryo';ctx.fillStyle='#283743';ctx.fillText('II',a.x+8,a.y+29);
 }
-Object.assign(window.cardiacAnimation,{ECG,components,ecgValue,ecgState});
+Object.assign(window.cardiacAnimation,{ECG,components,ecgValue,ecgState,ecgViewport});
 
 "use strict";
 const annotationCanvas=document.createElement('canvas');
@@ -129,10 +137,10 @@ function drawAnnotations(ms){
  annotationText(d,p.av,p.colors.text);
  p.points.forEach(item=>annotationText(d,item,p.colors.text));
  d.strokeStyle=p.colors.leader;d.lineWidth=1.2;d.beginPath();p.av.leader.forEach(([x,y],i)=>i?d.lineTo(x,y):d.moveTo(x,y));d.stroke();
- const pr=p.pr,a=config.ecg.panel,x0=a.x+pr.startMs*a.pxPerMs,x1=a.x+pr.endMs*a.pxPerMs;
+ const pr=p.pr,a=config.ecg.panel,offset=ecgViewport(ms).offset,x0=a.x+(pr.startMs-offset)*a.pxPerMs,x1=a.x+(pr.endMs-offset)*a.pxPerMs;
  const alpha=Math.max(0,Math.min(1,(ms-pr.showAfterMs)/pr.fadeMs));
  if(alpha>0){
-  d.save();d.globalAlpha=alpha;d.strokeStyle=p.colors.accent;d.fillStyle=p.colors.accent;d.lineWidth=1.5;
+  d.save();d.beginPath();d.rect(a.x,a.y,a.width,a.height);d.clip();d.globalAlpha=alpha;d.strokeStyle=p.colors.accent;d.fillStyle=p.colors.accent;d.lineWidth=1.5;
   d.font=`${pr.size}px "BIZ UDPGothic","Yu Gothic",Meiryo,sans-serif`;d.textAlign='center';d.fillText(pr.text,(x0+x1)/2,pr.textY);d.textAlign='left';
   d.beginPath();d.moveTo(x0,pr.y);d.lineTo(x1,pr.y);d.stroke();
   for(const [x,sign] of [[x0,1],[x1,-1]]){d.beginPath();d.moveTo(x,pr.y);d.lineTo(x+sign*6,pr.y-4);d.moveTo(x,pr.y);d.lineTo(x+sign*6,pr.y+4);d.stroke();}

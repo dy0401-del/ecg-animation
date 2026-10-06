@@ -7,8 +7,8 @@
     },
     {
       "path": "animations/af.html",
-      "bytes": 13221,
-      "sha256": "1647cb2dacb79c8bc1cf400896bb46b1f8a7b9eae6352a3a61e6e12676711af7"
+      "bytes": 13234,
+      "sha256": "f2a42576348d9f1a4ca67fafa63991d27816a85435e60cc0af6137b80effebdc"
     },
     {
       "path": "animations/afl.html",
@@ -727,8 +727,8 @@
     },
     {
       "path": "animations/first-degree-av-block.html",
-      "bytes": 24281,
-      "sha256": "8d896cc3d940e3805f32334f4445464048f0c757137b9771f6b4272e043ea5b9"
+      "bytes": 25282,
+      "sha256": "8f745bcc53a0dfcab64dc0650d7ebedc299bfb628157ed20c67d14528736c638"
     },
     {
       "path": "animations/frame-player.js",
@@ -787,18 +787,18 @@
     },
     {
       "path": "animations/sss-group-i.html",
-      "bytes": 1253476,
-      "sha256": "fea7cbc2d3644ffbafb5c1fd6b1178f6d6706aa41c365f16c2afaba0ab685c53"
+      "bytes": 1253719,
+      "sha256": "3678c846edb017965f825356cc88c58aa73c969e6059a7431c5119d979cb3a0d"
     },
     {
       "path": "animations/sss-group-ii-sa-block.html",
-      "bytes": 1257883,
-      "sha256": "3998fe470b587b5d8ce265e9effe3eb766be09392a76c8ee1fb5d75068128405"
+      "bytes": 1258129,
+      "sha256": "81bc75289523cd382ee10eac149924776e8c234022affe0b4f40028b0b0992ab"
     },
     {
       "path": "animations/sss-group-ii-sinus-arrest.html",
-      "bytes": 1254709,
-      "sha256": "412b40cfd0c19bc18929e56912864bca2c172dddc0869bcf5d95b3d532bbc922"
+      "bytes": 1254982,
+      "sha256": "933374411ba64eca58b42cf91f91173c1ddbf407f487a42081edef1ee69fd2b2"
     },
     {
       "path": "animations/third-degree-av-block.html",
@@ -822,43 +822,43 @@
     },
     {
       "path": "animations/sss-group-iii.html",
-      "bytes": 1268376,
-      "sha256": "3f0114b7b00869e4bd0860729169184a2439ed3530ad43b42e7a8d28a77bb0d5"
+      "bytes": 1268649,
+      "sha256": "681a089c3762fdd1984941383a3e6d5bc3cfff700ee48cdb535989a28b1e38fb"
     },
     {
       "path": "animations/pac.html",
-      "bytes": 1270025,
-      "sha256": "affc093f0f987aaeb604165baf4fa329409b02d43b4717c7a35c3ebb8e00fb81"
+      "bytes": 1270298,
+      "sha256": "73c8c35c1e11030fdd6cd3ad46b600f76b8a4b40a5d0fdb4a06d16f21d19f7f7"
     },
     {
       "path": "animations/pvc.html",
-      "bytes": 1271286,
-      "sha256": "549a01c6fd6281054fae4dd23abbcdd194361195b4ef4fa9b5a5eb6275752cff"
+      "bytes": 1271559,
+      "sha256": "c3c24c464b9cf09d2c9d214fe736a50b8d7286280102f24ccbafd2eaab9f2a10"
     },
     {
       "path": "animations/avnrt-typical.html",
-      "bytes": 1285532,
-      "sha256": "ea7584038eb085208391f2366c39d8bbed5f3ec0c958ec13ec5a0bd42f1370f3"
+      "bytes": 1285526,
+      "sha256": "23611b91d23f681cd9a98d180097a0e29a4bb450951f200c57dc2d3aca18641e"
     },
     {
       "path": "animations/avnrt-fast-slow.html",
-      "bytes": 1286001,
-      "sha256": "0d38b40c212f84c81898dd1f74181e8b25c2e7e5534003a7b79f5d1969769c16"
+      "bytes": 1285995,
+      "sha256": "f53b6da73d96a46f55724c3a1068168bc935094cd0082ff08727ea814ee80d41"
     },
     {
       "path": "animations/avrt-orthodromic.html",
-      "bytes": 1294924,
-      "sha256": "fa3db05f64c952262bcc57bb3723b42b92c0aef57b4f89cb2aed4b5f0960a305"
+      "bytes": 1294975,
+      "sha256": "380e9eaefc8d69eb24b0580b4e340f08841cb4bbda27efac3e9bfada7c947232"
     },
     {
       "path": "animations/avrt-antidromic.html",
-      "bytes": 1295313,
-      "sha256": "71b6e21a44eb3a3e3e9f1d4048b4450044629b518dfb7c783235d7361cc1c3c6"
+      "bytes": 1295364,
+      "sha256": "c737bcefc481a834c86cc83071b3d0bd9764ef119821c952d42fa32ddcf1aad0"
     },
     {
       "path": "animations/pvc-run.html",
-      "bytes": 1268226,
-      "sha256": "889726d64bc87dce516e8e56f95ce6e9b87c85b8450eebf7c0642ba3f641ce6c"
+      "bytes": 1268259,
+      "sha256": "5b1be5d0cc655f330a8941aa37cf8ed33a72651894b89acd156597be4b7943a1"
     },
     {
       "path": "animations/vt.html",
@@ -867,8 +867,8 @@
     },
     {
       "path": "animations/vf-transition.html",
-      "bytes": 1292823,
-      "sha256": "605198f83a1c364a0be4d0288fba40342246add18de464cab9cf035ae565db0c"
+      "bytes": 1293077,
+      "sha256": "03656d70447b052cae59efd3627f73d379ccee48538f65964904871c2d04bd36"
     },
     {
       "path": "animations/high-grade-av-block.html",
@@ -879,6 +879,11 @@
       "path": "animations/learner-display.js",
       "bytes": 3987,
       "sha256": "04d1fead3ffd41c52b090ef23e95557182f275f22afdf8619daad9ce16b2cb91"
+    },
+    {
+      "path": "animations/rhythms/atrial-fibrillation-fixed-cursor.js",
+      "bytes": 37984,
+      "sha256": "5523b738f807a15232a17a95450563381a16a0e04501d5ea58983a8bdf01cb66"
     }
   ]
 }
