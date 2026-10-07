@@ -1,9 +1,9 @@
 <!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>心室細動</title><style>html,body{margin:0;background:#F8FAFC;width:100%;height:100%;overflow:hidden}canvas{display:block;width:100%;height:100%;object-fit:contain}html,body{overflow:auto;font-family:"BIZ UDPGothic","Yu Gothic",Meiryo,sans-serif}main{height:100vh;display:flex;flex-direction:column}canvas{width:100%;height:0;flex:1;min-height:0}.controls{padding:12px 16px;background:white;border-top:1px solid #d9e1e5;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center;flex-shrink:0;font-size:15px}button,select{font:inherit;padding:8px 14px;background:#fff;border:1px solid #93a4ad;border-radius:7px;min-height:40px}input[type=checkbox]{width:18px;height:18px;vertical-align:middle}input[type=range]{width:220px;vertical-align:middle}.export .controls{display:none}.export canvas{height:100vh;flex:none}@media(max-width:600px){.controls{gap:8px;padding:8px;font-size:13px}.seek-label{flex-basis:100%;text-align:center}input[type=range]{width:65%}} </style><link rel="stylesheet" href="learner-ui.css?v=fullscreen-20261005"><body style="height:auto"><main class="ecg-page" style="height:auto"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><h1>心室細動</h1><canvas data-ecg-x="0" data-ecg-y="1088" id="scene" width="1808" height="1488" aria-label="洞調律からPVC散発・VTを経てVFへ移行する一例、教育用模式図"></canvas><nav class="controls" aria-label="アニメーション操作"><button id="play" disabled>再生</button><button id="reset" disabled>最初から</button><label>速度 <select id="speed" disabled><option value="0.25">0.25倍</option><option value="0.5">0.5倍</option><option value="1" selected>1倍</option><option value="2">2倍</option></select></label><label><input id="repeat" type="checkbox" disabled> 繰り返し</label><label class="seek-label">再生位置 <input id="seek" type="range" min="0" max="1559" value="0" disabled></label><output id="status">0.00 / 26.00 秒</output></nav><section class="ecg-watch" aria-labelledby="ecg-watch-title">
 <h2 id="ecg-watch-title">ここを見る</h2>
-<ol><li>最初は洞調律です。P波 → QRS → T波が順番に現れ、心室がそろって収縮します。</li><li>単発のPVCと2連発を見ます。これらは直前のT波が終わり、平坦な部分を挟んでから出現します。</li><li>15秒付近で0.25倍速にしてください。15.48秒のPVCだけが直前のT波に重なります。このR on TをきっかけにVTが始まります。</li><li>約19.81秒からVFになります。形のそろったQRSが見分けられなくなり、心室全体がそろって収縮する動きも失われます。</li></ol>
-<p>濃い線が現在までの波形、薄灰色の線がこれから現れる予定の波形、橙の縦線が現在時刻です。薄灰色の線は、すでに起きた電気活動ではありません。</p>
-<p>図中の文字や波形が小さいときは、表示倍率を上げて図の中をスクロールしてください。「心電図を拡大」で波形を詳しく見られます。再生位置を動かすと一時停止し、「再生」でそこから続きます。</p>
-<p>繰り返しは初期設定では無効です。有効にしたときのVFから洞調律への切り替わりは、教材を最初から再開する操作です。</p>
+<ol><li>最初は洞調律です。P波 → QRS → T波が順番に現れ、心室がそろって収縮します。</li><li>単発のPVCと2連発を見ます。これらは直前のT波が終わり、平坦な部分を挟んでから出現します。</li><li>PVCが直前のT波に重なるR on Tと、それに続く速い幅広いQRSのVTを見比べます。これは起こり得る経過の一例です。</li><li>VFでは形のそろったQRSが見分けられなくなり、心室全体がそろって収縮する動きも失われます。</li></ol>
+
+
+
 </section>
 <section class="ecg-learning-notes" aria-label="心室細動の解説">
 <h2>心室細動とは？</h2>
@@ -20,21 +20,21 @@
 <p>「QRSが幅広い」は、横方向の時間が長いという意味です。波の高さとは別です。この教材のPVC・VTのQRS幅は160ms（0.16秒）です。Ⅱ誘導は心臓の電気活動を見る方向の一つで、波形の上下の向きだけで良い・悪いを判断することはできません。</p>
 </details>
 <h3>VTとVFの違い</h3>
-<div class="ecg-comparison"><table><caption>この教材で比べる心室頻拍と心室細動</caption><thead><tr><th scope="col">見る点</th><th scope="col">心室頻拍（VT）</th><th scope="col">心室細動（VF）</th></tr></thead><tbody><tr><th scope="row">電気活動</th><td>心室の興奮が速く繰り返されます。この例では一定のパターンが続きます。</td><td>心室の各部分の興奮が乱れ、全体としてそろいません。</td></tr><tr><th scope="row">心電図</th><td>この例では、同じ形の幅広いQRSが規則的に続きます（180回／分）。</td><td>不規則な波が続き、まとまったQRSとT波を区別できません。</td></tr><tr><th scope="row">循環</th><td>脈がある場合と、脈のない心停止の場合があります。心電図だけでは区別できません。</td><td>有効なポンプ作用を失う心停止です。</td></tr></tbody></table></div>
+<div class="ecg-comparison"><table><caption>この教材で比べる心室頻拍と心室細動</caption><thead><tr><th scope="col">見る点</th><th scope="col">心室頻拍（VT）</th><th scope="col">心室細動（VF）</th></tr></thead><tbody><tr><th scope="row">電気活動</th><td>心室の興奮が速く繰り返されます。この例では一定のパターンが続きます。</td><td>心室の各部分の興奮が乱れ、全体としてそろいません。</td></tr><tr><th scope="row">心電図</th><td>この例では、同じ形の幅広いQRSが規則的に続きます。</td><td>不規則な波が続き、まとまったQRSとT波を区別できません。</td></tr><tr><th scope="row">循環</th><td>脈がある場合と、脈のない心停止の場合があります。心電図だけでは区別できません。</td><td>有効なポンプ作用を失う心停止です。</td></tr></tbody></table></div>
 <p>VTにも波形の形が変化する種類があります。この教材では比較しやすいよう、形のそろったVTを示しています。</p>
 <section aria-labelledby="vt-to-vf-title"><h3 id="vt-to-vf-title">なぜVTからVFへ移行することがある？</h3>
 <p>この例のVTでは、電気的な興奮が一定の経路を繰り返し巡り、心室が毎回ほぼ同じ順序で興奮しています。そのため、心電図には形のそろったQRSが規則的に現れます。</p>
 <p>ところが、心筋の傷みや血流不足などを背景に、<strong>電気の伝わる速さや、次の興奮を受けられるまでの回復時間が、場所によって異なる</strong>ことがあります。そこに速い興奮が続くと、まだ回復していない部分には次の興奮が伝わらず、興奮の波が途中で途切れたり、分かれたりすることがあります。</p>
 <ol><li><strong>VT：</strong>一定のパターンで心室の興奮が繰り返されます。</li><li><strong>興奮の広がりが乱れる：</strong>電気が進める部分と進めない部分が生じ、波が途切れ、複数の波に分かれます。</li><li><strong>VF：</strong>複数の興奮の波が異なる場所・タイミングで広がり、心室全体がそろって興奮できなくなります。</li></ol>
 <p>こうなると、形のそろったQRSは見分けられなくなり、心室のまとまった収縮も失われ、有効に血液を送り出せなくなります。<strong>移行を理解するポイントは、心拍の速さに加えて「興奮の伝わり方が乱れること」です。</strong></p>
-<p>これはVTからVFへ移る仕組みの一つを、初心者向けに整理した説明です。VTが必ずVFになるわけではなく、VFの成り立ちにも複数の仕組みがあります。この教材では、約19.81秒で規則的な興奮から乱れた興奮へ変わる様子を模式的に示しています。</p></section>
+<p>これはVTからVFへ移る仕組みの一つです。VTが必ずVFになるわけではなく、VFの成り立ちにも複数の仕組みがあります。形のそろった興奮が崩れ、心室全体としてそろった興奮を保てなくなる点に注目します。</p></section>
 <h3>PVCと2連発は何を示す？</h3>
 <p>心室期外収縮（PVC）は、次の通常の拍を待たずに心室から早く起こる興奮です。洞結節（通常の電気刺激を出す心房の部位）から始まる通常の伝導で心室が興奮する拍とは、波形が異なります。単発は1拍だけ、2連発は心室性の拍が2拍続くことです。</p>
 <p>この例のPVCは、小さな上向きのr波と幅広い下向きのS波でQRSを作り、その後に上向きのT波を描いています。<strong>PVCの後にある上向きの山は、そのPVC自身のT波です。</strong>形や向きは興奮の起源や誘導で変わり、すべてのPVCがこの形になるわけではありません。</p>
-<p>単発PVCは4.97秒・7.97秒、2連発は10.97／11.67秒と13.97／14.67秒に現れます。いずれも先行するT波が終わり、基線を挟んでから出現します。2連発の後には洞調律の拍に戻ります。</p>
+<p>単発は心室性の拍が1つ早く現れるもの、2連発は2つ続くものです。拍の連続数と、直前のT波に重なるかどうかは別々に確認します。</p>
 <h3>R on Tは「形」ではなく「出るタイミング」</h3>
 <p><strong>R on Tとは、PVCのR波が直前の拍のT波に重なることです。</strong>比べるのは、PVCのQRSと<strong>その前の拍のT波</strong>です。PVC自身のQRSの後にT波があることを、R on Tと呼ぶわけではありません。</p>
-<p>この教材ではPVCのQRS形態を共通にし、発生する時刻を変えています。通常のPVCは先行T波の終了後に出ます。VTの開始時だけ、15.45〜15.62秒の先行T波の途中に、15.48秒のPVCが割り込みます。その後のVTの各拍をすべてR on Tとして描いているわけではありません。</p>
+<p>R on TはPVCの形だけでは判断できません。PVCのQRSが先行する拍のT波に重なるかを確認します。VTの全ての拍をR on Tと呼ぶわけではありません。</p>
 <p>T波の時期は心室が電気的に回復する途中です。不整脈を起こしやすい背景があると、早い刺激が電気の旋回（リエントリー：興奮が回路を回って再び同じ場所を興奮させること）を始めるきっかけになることがあります。</p>
 <h3>この移行は誰にでも起こる？</h3>
 <p><strong>PVC → R on T → VT → VFは、起こり得る経過の一例です。PVCやR on Tが必ずVT・VFに進むわけではなく、VFに必ずVTが先行するわけでもありません。</strong>この教材では段階ごとの違いを比較できるよう、VTを挟んでいます。これだけで原因となる病気を診断することはできません。</p>

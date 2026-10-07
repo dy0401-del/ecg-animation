@@ -12,8 +12,8 @@
     },
     {
       "path": "animations/afl.html",
-      "bytes": 11600,
-      "sha256": "454d1f956036972263d01a8c63677c19d62029484ca07945936d902e0342114b"
+      "bytes": 11594,
+      "sha256": "fa5c0b91e9ebaa7d1dd94eac4fd5fac43215336c1e1d4034a8e9781b39802850"
     },
     {
       "path": "animations/app.js",
@@ -727,8 +727,8 @@
     },
     {
       "path": "animations/first-degree-av-block.html",
-      "bytes": 25282,
-      "sha256": "8f745bcc53a0dfcab64dc0650d7ebedc299bfb628157ed20c67d14528736c638"
+      "bytes": 25393,
+      "sha256": "2a7a28fc1d3df238a9c3d93e278bdd4b95bdb8986690276955d24dcd6b62d59b"
     },
     {
       "path": "animations/frame-player.js",
@@ -752,8 +752,8 @@
     },
     {
       "path": "animations/mobitz-ii.html",
-      "bytes": 1258500,
-      "sha256": "da8c4b42726a291c4e92a167c5fad39138bcbb851304171eafbc91d3c96f0820"
+      "bytes": 1258461,
+      "sha256": "97b4b228c689c1d93d8e7883dcf24e539f2761410151e626f28753453b803f16"
     },
     {
       "path": "animations/rbbb.html",
@@ -782,33 +782,33 @@
     },
     {
       "path": "animations/sinus-rhythm.html",
-      "bytes": 18559,
-      "sha256": "f63c2ca5f7cda593577bd7fd85d7d19703d26628ac2bfb179d5e3da6c700cc34"
+      "bytes": 8818604,
+      "sha256": "6032693c3875c086c36ff6ee907d3861eb6e5d6acfb21f58e0bebc571bf0a4b9"
     },
     {
       "path": "animations/sss-group-i.html",
-      "bytes": 1253719,
-      "sha256": "3678c846edb017965f825356cc88c58aa73c969e6059a7431c5119d979cb3a0d"
+      "bytes": 1253862,
+      "sha256": "00b396c99b0c26e2642d984016063f615b4b7708c877cd84299c6b9e93d590a4"
     },
     {
       "path": "animations/sss-group-ii-sa-block.html",
-      "bytes": 1258129,
-      "sha256": "81bc75289523cd382ee10eac149924776e8c234022affe0b4f40028b0b0992ab"
+      "bytes": 1258018,
+      "sha256": "ea8e1252e9654fb74eca96c6f4b21bc9b30cd3fcdf98ef366c3768a4d8e509a4"
     },
     {
       "path": "animations/sss-group-ii-sinus-arrest.html",
-      "bytes": 1254982,
-      "sha256": "933374411ba64eca58b42cf91f91173c1ddbf407f487a42081edef1ee69fd2b2"
+      "bytes": 1255009,
+      "sha256": "8478963f952e5203024192af554912699b9f278da11aa1769947177d03258792"
     },
     {
       "path": "animations/third-degree-av-block.html",
-      "bytes": 1265273,
-      "sha256": "b2ad6d978187c34deba28502716f8beb23004846b097caa49d7734c064bdb231"
+      "bytes": 1265188,
+      "sha256": "a5e52a11beb7840a9febd4a6518fa4f0b242254ade5c8ff101234a255b1b82f0"
     },
     {
       "path": "animations/wenckebach.html",
-      "bytes": 1256922,
-      "sha256": "f2df5a79c935327edcf7bced37adcbbcd7c631ee00fc8a7918a2cf3e58c7887c"
+      "bytes": 1257096,
+      "sha256": "a4c0e1843c3f9f785fd3eb75dd8b866f9060742d08b4b042f75e55d602d388a1"
     },
     {
       "path": "index.html",
@@ -827,53 +827,53 @@
     },
     {
       "path": "animations/pac.html",
-      "bytes": 1270298,
-      "sha256": "73c8c35c1e11030fdd6cd3ad46b600f76b8a4b40a5d0fdb4a06d16f21d19f7f7"
+      "bytes": 1269297,
+      "sha256": "fd47fd1fe13621d41fa8e91bc8580fc2ef2fa3961a92725cd757085508e1c8f3"
     },
     {
       "path": "animations/pvc.html",
-      "bytes": 1271559,
-      "sha256": "c3c24c464b9cf09d2c9d214fe736a50b8d7286280102f24ccbafd2eaab9f2a10"
+      "bytes": 1270553,
+      "sha256": "d82ad36d8f1b37379e525fd2af542cb063f068c4f5fff881927cff6bcfb21189"
     },
     {
       "path": "animations/avnrt-typical.html",
-      "bytes": 1285526,
-      "sha256": "23611b91d23f681cd9a98d180097a0e29a4bb450951f200c57dc2d3aca18641e"
+      "bytes": 1285127,
+      "sha256": "8cf303c2730460dcbaaa1feb8cd8f590794c69e704f7faa8ed0a4a4581b17dd1"
     },
     {
       "path": "animations/avnrt-fast-slow.html",
-      "bytes": 1285995,
-      "sha256": "f53b6da73d96a46f55724c3a1068168bc935094cd0082ff08727ea814ee80d41"
+      "bytes": 1285596,
+      "sha256": "850032ec2fb05246cceaf7117684895017246b07bd45ee9b6ca598dff3127f23"
     },
     {
       "path": "animations/avrt-orthodromic.html",
-      "bytes": 1294975,
-      "sha256": "380e9eaefc8d69eb24b0580b4e340f08841cb4bbda27efac3e9bfada7c947232"
+      "bytes": 1294821,
+      "sha256": "08853d4b24a134d4a955c5cf711cc8c2598340177e1c344ecccab9c042b89375"
     },
     {
       "path": "animations/avrt-antidromic.html",
-      "bytes": 1295364,
-      "sha256": "c737bcefc481a834c86cc83071b3d0bd9764ef119821c952d42fa32ddcf1aad0"
+      "bytes": 1295084,
+      "sha256": "b711fa8afe1b5c15736bcbe5e00e037975a1f69ef76c520c7a59d7dcd1c68523"
     },
     {
       "path": "animations/pvc-run.html",
-      "bytes": 1268259,
-      "sha256": "5b1be5d0cc655f330a8941aa37cf8ed33a72651894b89acd156597be4b7943a1"
+      "bytes": 1267588,
+      "sha256": "4d5603e491bf73bc22acad785d17cce4d7d3ce00bb3956c8d18cf3a2a07385b5"
     },
     {
       "path": "animations/vt.html",
-      "bytes": 1291662,
-      "sha256": "e1274811dc771fdc5d8d4db6c2c774a7da74523eeda23e5fef76e9323308ff3d"
+      "bytes": 1290561,
+      "sha256": "492195216a55966834e4918c9bc557a25b7f5dd2ee775ad6cf9f5dc470592d42"
     },
     {
       "path": "animations/vf-transition.html",
-      "bytes": 1293077,
-      "sha256": "03656d70447b052cae59efd3627f73d379ccee48538f65964904871c2d04bd36"
+      "bytes": 1292103,
+      "sha256": "1a5193ad6442fefb0ccccad937e631d774b37d387ddcc8a6e1b987d851ed3687"
     },
     {
       "path": "animations/high-grade-av-block.html",
-      "bytes": 1262990,
-      "sha256": "6287096cd620f6027256d5d954c8e87b1bf4eb487bcc40e3bdb48ccf96c45cfd"
+      "bytes": 1262645,
+      "sha256": "1ee8d7800687666251812babdd3859203908f34aab54266826c3cd4b7e914d32"
     },
     {
       "path": "animations/learner-display.js",
@@ -887,23 +887,23 @@
     },
     {
       "path": "animations/wpw-a.html",
-      "bytes": 1286740,
-      "sha256": "844138755483708c22af815757564a4cfedaa894c25df4a4d4dab50fb7961073"
+      "bytes": 1285661,
+      "sha256": "ce9222f535308711a43a51026901484b607700f02170c47623f53adfbe1a59f3"
     },
     {
       "path": "animations/wpw-b.html",
-      "bytes": 1286845,
-      "sha256": "9e51e736030074444dd45f27813dec1c9e03d0601d958adbef1a0ad5168200c2"
+      "bytes": 1285766,
+      "sha256": "8be21ddc6ed1e1cc49db679b59ab42c8ee9adcb7f13781c3c13ddc25b3a15add"
     },
     {
       "path": "animations/wpw-c.html",
-      "bytes": 1286807,
-      "sha256": "2a10c271ba94c1cc496c63565e65e8fc2e459854020535f24d27fe9078eefe9d"
+      "bytes": 1285728,
+      "sha256": "f62b8bd9c53e5f6d5b0254c42bc5a47219b529e0dd81d4fb655cb14b095aab95"
     },
     {
       "path": "animations/at.html",
-      "bytes": 1282366,
-      "sha256": "3845826c9bb0d881ffa34b6b9d12516748f4e48f24bf4a603a62445723f3886b"
+      "bytes": 1281679,
+      "sha256": "d43e13801ac7f958f7498ff3c7ca41fb7b1e6588764972296b7b112d28689144"
     },
     {
       "path": "animations/assets/at-fonts/BIZUDPGothic-Regular.ttf",
