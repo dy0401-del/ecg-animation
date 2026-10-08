@@ -812,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 19292,
-      "sha256": "9139c378160879aba0e0521bbb8bc3f5fb754b2ecd8d9730149355703250d34e"
+      "bytes": 19769,
+      "sha256": "0a3fc8bcc69155899f886bfc4569243225e316974f551871bfe7a52309516165"
     },
     {
       "path": "rhythm-finder.js",
@@ -919,6 +919,23 @@
       "path": "animations/assets/at-fonts/OFL.txt",
       "bytes": 4408,
       "sha256": "e753d7155d53c747d037a445e584c8ecfca6dd79846db610417e282a736b28bc"
+    },
+    {
+      "path": "animations/normal-axis.html",
+      "bytes": 13710179,
+      "sha256": "5c795f4bd61eb48e20906d236760032c86af5aee88b3b46d10d28021f5dafb28",
+      "parts": [
+        {
+          "path": ".deployment/parts/normal-axis.html.part-001",
+          "bytes": 8388608,
+          "sha256": "decd7b3650406ecd7e1a2a6e5741709da65cf6f4638f53c752862c64de3a4724"
+        },
+        {
+          "path": ".deployment/parts/normal-axis.html.part-002",
+          "bytes": 5321571,
+          "sha256": "48421c07ed29483b10e4e9abd9f8dcdf2cb04a33165b82b56b40d32246a13940"
+        }
+      ]
     }
   ]
 }
