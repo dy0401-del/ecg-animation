@@ -812,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 19769,
-      "sha256": "0a3fc8bcc69155899f886bfc4569243225e316974f551871bfe7a52309516165"
+      "bytes": 20317,
+      "sha256": "a7015dcca235a2c53600e0da6cabd8999f46ef39245f77a10aced7dab12ea6a1"
     },
     {
       "path": "rhythm-finder.js",
@@ -934,6 +934,23 @@
           "path": ".deployment/parts/normal-axis.html.part-002",
           "bytes": 5321571,
           "sha256": "48421c07ed29483b10e4e9abd9f8dcdf2cb04a33165b82b56b40d32246a13940"
+        }
+      ]
+    },
+    {
+      "path": "animations/left-axis-deviation.html",
+      "bytes": 13859972,
+      "sha256": "e0b1079dbf6cd2c613f7eae9ddd8254a875ea1f87d57cb0b34a65a72390756d4",
+      "parts": [
+        {
+          "path": ".deployment/parts/left-axis-deviation.html.part-001",
+          "bytes": 8388608,
+          "sha256": "830e2ad27f50eaf372e78d0bcbc616d86d06a26a6a6c9bc4fc6848d52751ffb9"
+        },
+        {
+          "path": ".deployment/parts/left-axis-deviation.html.part-002",
+          "bytes": 5471364,
+          "sha256": "974fb51ac9b11c9eaada54a0fabdd224c51287f7dfdfaf39c5a6d41729de1ae3"
         }
       ]
     }
