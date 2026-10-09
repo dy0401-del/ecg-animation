@@ -1,31 +1,9 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <base href="./">
-  <script>window.CARDIAC_ANIMATION_REQUEST={"rhythm":"right-bundle-branch-block","heartRate":60,"duration":5,"fps":60};</script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="icon" href="data:,">
-  <title>右脚ブロック（RBBB）｜心電図アニメーション</title>
-  <style>
-    *{box-sizing:border-box}body{margin:0;background:#fff;color:#1F2933;font-family:"BIZ UDPGothic","BIZ UDPゴシック","Noto Sans JP","Yu Gothic","Meiryo",sans-serif;font-weight:600}main{display:flex;min-height:100vh;flex-direction:column;align-items:center;justify-content:center;padding:8px 12px}#scene{display:block;max-height:calc(100vh - 108px);max-width:100%;width:auto;height:auto;aspect-ratio:1808/1488;background:white}.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;min-height:52px;margin-top:8px}button,select{background:#F8FAFC;border:1px solid #94A3B8;border-radius:7px;color:#111827;padding:9px 14px;font-family:inherit;font-size:16px;font-weight:700;line-height:1.2;cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #37768a;outline-offset:2px}input{width:240px;accent-color:#526A75}#status{font-size:16px;font-weight:700;min-width:170px;color:#1F2933}details{font-size:15px;font-weight:600;color:#374151;max-width:1100px;margin:5px auto}details p{line-height:1.75}summary{cursor:pointer;text-align:center;font-size:16px;font-weight:700;color:#1F2933}#loading{position:fixed;inset:0;background:#fff;display:grid;place-content:center;color:#374151;font-size:18px;font-weight:600;z-index:5}a{color:#1D4F6E;font-weight:700}@media(max-width:500px){main{padding:4px}#scene{max-height:calc(100svh - 128px)}.controls{gap:7px}button,select{padding:8px 10px;font-size:15px}input{width:150px}#status{font-size:14px;min-width:145px}}
-
-.ecg-learning-notes{width:min(100%,1100px);margin:24px auto 40px;padding:clamp(20px,4vw,38px);background:#fff;color:#111827;border:1px solid #d1d5db;border-radius:8px;font-size:16px;font-weight:400;line-height:1.8;overflow-wrap:anywhere}.ecg-learning-notes h2{margin:0 0 28px;color:#111827;font-size:clamp(22px,4vw,30px);line-height:1.45}.ecg-learning-notes h3{margin:30px 0 10px;color:#111827;font-size:clamp(18px,3vw,23px);line-height:1.5}.ecg-learning-notes p{margin:0 0 16px;color:#111827;text-align:left;font-size:inherit;line-height:inherit}.ecg-learning-notes ul{margin:0 0 16px;padding-left:1.45em}.ecg-learning-notes li{margin:4px 0}.ecg-learning-common{margin-top:34px;padding-top:24px;border-top:1px solid #d1d5db}.ecg-learning-common h3{margin-top:0}@media(max-width:600px){.ecg-learning-notes{margin:16px auto 28px;padding:18px 16px;font-size:15px}.ecg-learning-notes h2{margin-bottom:22px}.ecg-learning-notes h3{margin-top:24px}.ecg-learning-notes ul{padding-left:1.3em}}
-</style>
-  <link rel="stylesheet" href="learner-ui.css?v=fullscreen-20261005">
-</head>
-<body>
-  <div id="loading" role="status">心臓フレームを読み込み中…</div>
-  <main class="ecg-page">
-    <a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a>
-    <h1>右脚ブロック（RBBB）</h1><canvas id="scene" data-ecg-x="0" data-ecg-y="1100" width="1808" height="1488" aria-label="右脚ブロックの心臓と心電図の同期アニメーション"></canvas>
-    <nav class="controls" aria-label="再生設定">
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>右脚ブロック（RBBB）｜心電図アニメーション</title><link rel="icon" href="data:,"><script>window.CARDIAC_ANIMATION_REQUEST={rhythm:'right-bundle-branch-block',heartRate:60,duration:5,fps:60};</script><style>@font-face{font-family:'BIZ UDPGothic';font-weight:400;src:url(assets/at-fonts/BIZUDPGothic-Regular.ttf) format('truetype');font-display:block}@font-face{font-family:'BIZ UDPGothic';font-weight:700;src:url(assets/at-fonts/BIZUDPGothic-Bold.ttf) format('truetype');font-display:block}</style><link rel="stylesheet" href="learner-ui.css?v=fullscreen-20261005"></head><body><main class="ecg-page"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><h1>右脚ブロック（RBBB）</h1><canvas id="scene" data-ecg-x="0" data-ecg-y="1088" width="1808" height="1488" aria-label="右脚ブロックの心臓とV1・V6の同期アニメーション"></canvas><nav class="controls" aria-label="再生設定">
 <button id="play" type="button">再生</button><button id="reset" type="button">最初から</button>
 <label>速度<select id="speed"><option value="0.25">0.25倍速</option><option value="0.5">0.5倍速</option><option value="1" selected>1倍速</option><option value="2">2倍速</option></select></label>
 <label class="seek-label">再生位置<input id="seek" type="range" min="0" max="299" step="1" value="0" aria-label="再生位置"></label>
 <label><input id="repeat" type="checkbox" checked>繰り返し</label><output id="status">0.00 秒</output>
-</nav>
-  <section class="ecg-watch" aria-labelledby="ecg-watch-title">
+</nav><p id="loading" role="status"></p><section class="ecg-watch" aria-labelledby="ecg-watch-title">
 <h2 id="ecg-watch-title">ここを見る</h2>
 <p>特に、「左室と右室が同時に興奮していないこと」に注目してください。</p>
 <p>中隔・左室が先に興奮し、その後に右室自由壁が遅れて興奮するタイミングと、心電図のQRS終末部を見比べると理解しやすくなります。</p>
@@ -54,7 +32,7 @@
 <p>などを認めることがあります。</p>
 <p>これは、心室の興奮順序の変化に伴って再分極の方向も変化するためです。</p>
 <p>ただし、すべてのST-T変化を「右脚ブロックによるもの」と判断してはいけません。虚血など、ほかの原因による変化との区別が必要です。</p>
-<h3>臨床での注意</h3>
+<h3>この教材の表現について</h3><p>黄色い光は左脚側へ正常に伝わる興奮、水色の光は左室側から心筋を介して遅れて右室へ広がる興奮を示します。×は右脚の伝導遮断を示し、左脚前枝・後枝の伝導は保たれています。</p><p>淡い興奮色はT波に合わせて退色します。これは心室の再分極で、新しい刺激が逆向きに進む表現ではありません。興奮と収縮は別の現象です。収縮の時間差と変形量は学習用に強調しており、患者で必ず同じ動きになることを示すものではありません。波形は完全右脚ブロックの代表的な模式例です。</p><h3>臨床での注意</h3>
 <p>右脚ブロックは、心室内の伝導異常を示す心電図所見です。</p>
 <p>右脚ブロックを認めたことだけで、その原因となる疾患まで判断することはできません。</p>
 <p>また、QRS幅が0.12秒未満でも右脚ブロック様の波形を示すことがあり、完全右脚ブロックと不完全右脚ブロックを区別して考えます。</p>
@@ -70,33 +48,1892 @@
 <p>このアニメーションでは、心臓の興奮伝播と心電図を同時に見ることで、波形を単なる「形」ではなく、「心臓の電気活動の結果として理解すること」を目標としています。</p>
 <p>また、心電図所見だけで患者の状態や原因疾患を判断することはできません。実際の臨床では、症状・バイタルサイン・既往歴・以前の心電図・その他の検査結果を合わせて評価します。</p>
 </section>
-</section><section class="ecg-learning-references" aria-label="参考資料"><p>参考：<a href="https://www.msdmanuals.com/professional/cardiovascular-disorders/cardiovascular-tests-and-procedures/electrocardiography" target="_blank" rel="noopener">MSD Manual：ECGの各成分</a></p></section><section class="ecg-learning-references" aria-label="補足説明の参考資料"><h2>補足説明の参考資料</h2><ul><li><a href="https://www.jacc.org/doi/10.1016/j.jacc.2007.01.024">AHA/ACCF/HRS：心電図の標準化（電極位置・記録条件）</a></li><li><a href="https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000628">ACC/AHA/HRS 2018：徐脈・心伝導障害ガイドライン</a></li></ul><p>資料確認日：2026年9月30日。</p></section></main>
-  <script src="config/defaults.js"></script>
-  <script src="config/design.js"></script>
-  <script src="config/anatomy.js"></script>
-  <script src="core/timeline.js"></script>
-  <script src="core/heart-renderer.js"></script>
-  <script src="core/mechanical-renderer.js"></script>
-  <script src="core/conduction-renderer.js"></script>
-  <script src="core/activation-renderer.js"></script>
-  <script src="core/contraction-renderer.js"></script>
-  <script src="core/ecg-renderer.js"></script>
-  <script src="core/label-renderer.js"></script>
-  <script src="core/rhythm-engine.js"></script>
-  <script src="rhythms/sinus.js"></script>
-  <script src="rhythms/atrial-fibrillation.js"></script>
-  <script src="rhythms/right-bundle-branch-block.js"></script>
-  <script src="learner-display.js?v=fullscreen-20261005"></script><script src="learner-player.js?v=fullscreen-20261005"></script><script src="app.js?v=usability-20260930"></script>
+</section><section class="ecg-learning-references" aria-label="参考資料"><h2>病態と波形の参考資料</h2><p><a href="https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/不整脈の各論/脚ブロックおよび左脚分枝ブロック">MSDマニュアル：脚ブロックおよび左脚分枝ブロック</a>（確認日：2026年10月9日）</p></section><section class="ecg-learning-references" aria-label="補足説明の参考資料"><h2>補足説明の参考資料</h2><ul><li><a href="https://www.jacc.org/doi/10.1016/j.jacc.2007.01.024">AHA/ACCF/HRS：心電図の標準化（電極位置・記録条件）</a></li><li><a href="https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000628">ACC/AHA/HRS 2018：徐脈・心伝導障害ガイドライン</a></li></ul><p>資料確認日：2026年9月30日。</p></section></main><script>(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.Defaults = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  "use strict";
 
-<style id="rbbb-note-style">.diagram-viewport{position:relative}.rbbb-callouts{position:absolute;pointer-events:none}.rbbb-callouts text{font-family:"BIZ UDPGothic","Yu Gothic",sans-serif;font-size:31px;font-weight:700;fill:#243746}.rbbb-callouts .detail{font-size:25px;font-weight:500;fill:#435463}.rbbb-callouts path{stroke:#64748b;stroke-width:2;fill:none;opacity:.72}.rbbb-callouts circle{fill:#64748b}.rbbb-callouts rect{fill:#ffffff;stroke:#cbd5e1;stroke-width:2}.rbbb-callouts g[data-active="true"] rect{fill:#fff7cc;stroke:#a87900;stroke-width:3}.rbbb-callouts .blocked rect{fill:#fff1f2;stroke:#b73542}.rbbb-callouts .blocked text{fill:#9f2330}.rbbb-now{margin:10px 0 0;font-size:16px;line-height:1.65;color:#243746;max-width:1100px}.rbbb-now strong{color:#234f60}.rbbb-note-hint{font-size:14px;font-weight:400}@media(max-width:600px){.rbbb-now{font-size:15px}}</style>
-<script id="rbbb-note-script">(()=>{'use strict';const canvas=document.getElementById('scene'),view=canvas.parentElement,svgNS='http://www.w3.org/2000/svg';const labels=[
-['sa','洞結節','心房へ刺激を送る',364,267,220],
-['av','房室結節','刺激を少し遅らせる',509,455,365],
-['his','ヒス束','左右の脚へつなぐ',548,533,500],
-['blocked','右脚：ここで遮断','×印が遮断部位',506,634,625],
-['lb','左脚','左室へ伝導する',591,588,745],
-['lv','左室：先に興奮','図の右側にある心室',775,830,860],
-['rv','右室：遅れて興奮','図の左側にある心室',310,810,960]
-];const svg=document.createElementNS(svgNS,'svg');svg.classList.add('rbbb-callouts');svg.setAttribute('viewBox','0 0 1808 1488');svg.setAttribute('aria-hidden','true');const groups={};for(const [id,title,detail,tx,ty,y] of labels){const g=document.createElementNS(svgNS,'g');g.classList.add(id);g.innerHTML='<path d="M '+tx+' '+ty+' L 992 '+ty+' L 1035 '+y+'"/><circle cx="'+tx+'" cy="'+ty+'" r="4"/><rect x="1035" y="'+(y-40)+'" width="710" height="94" rx="12"/><text x="1057" y="'+(y-5)+'">'+title+'</text><text class="detail" x="1057" y="'+(y+32)+'">'+detail+'</text>';groups[id]=g;svg.append(g);}view.append(svg);const box=document.createElement('p');box.className='rbbb-now';box.innerHTML='<strong>図の注釈：</strong><span id="rbbb-current-note">再生すると、刺激が進んでいる場所の注釈が色づきます。</span><br><span class="rbbb-note-hint">光は電気的興奮を表します。左室側から心筋を介して右室へ広がり、その後に収縮します。小さい画面では「図の倍率」で2倍・4倍にすると注釈を読めます。</span>';view.after(box);const label=document.createElement('label');label.innerHTML='<input id="rbbb-label-toggle" type="checkbox" checked>注釈を表示';document.querySelector('nav.controls').append(label);label.querySelector('input').addEventListener('change',e=>{svg.style.visibility=e.target.checked?'visible':'hidden';box.hidden=!e.target.checked;});function layout(){svg.style.left=canvas.offsetLeft+'px';svg.style.top=canvas.offsetTop+'px';svg.style.width=canvas.offsetWidth+'px';svg.style.height=canvas.offsetHeight+'px';}new ResizeObserver(layout).observe(canvas);window.addEventListener('resize',layout);layout();const note=document.getElementById('rbbb-current-note');function update(){for(const id of Object.keys(groups))groups[id].dataset.active='false';const stage=canvas.dataset.conductionStage||'',wave=canvas.dataset.stage||'';let text='再生すると、刺激が進んでいる場所の注釈が色づきます。';if(stage.includes('両心房')){groups.sa.dataset.active='true';text='洞結節からの刺激が心房へ広がっています。P波に対応します。';}else if(stage.includes('房室結節')){groups.av.dataset.active='true';text='房室結節で伝導が少し遅くなっています。右脚の遮断とは別の、生理的な遅れです。';}else if(stage.includes('ヒス束')){groups.his.dataset.active='true';text='ヒス束まで伝わっています。右脚は遮断され、左脚の伝導は保たれています。';}else if(stage.includes('左脚')){groups.lb.dataset.active='true';groups.lv.dataset.active='true';text='左脚の伝導は保たれ、左室側が先に興奮します。QRS前半と対応させて見てください。';}else if(stage.includes('右室へ')){groups.rv.dataset.active='true';text='興奮が左室側から心筋を介して右室へ遅れて広がります。V1の終末R′・V6の終末S波と見比べてください。';}else if(wave.includes('T波')){text='再分極の時間です。T波は心室が電気的に回復する過程を表します。';}else if(canvas.dataset.ecgFrame){text='右脚の遮断は続いています。光の興奮と、その後の心室の収縮を見分けてください。';}note.textContent=text;}new MutationObserver(update).observe(canvas,{attributes:true,attributeFilter:['data-conduction-stage','data-stage','data-ecg-frame']});update();})();</script>
-</body>
-</html>
+  return Object.freeze({
+    rhythm: "sinus",
+    duration: Object.freeze({ totalSeconds: 5, fps: 60 }),
+    heartRate: 60,
+    lead: "II",
+    output: Object.freeze({ format: "html", videoFormat: "mp4" })
+  });
+});
+
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.Design = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  "use strict";
+
+  return Object.freeze({
+    id: "sinus-v24-visual-style",
+    background: "#ffffff",
+    canvas: Object.freeze({ width: 1808, height: 1488, heartHeight: 1088 }),
+    heart: Object.freeze({ width: 768, height: 1088, left: 520, top: 0 }),
+    ecg: Object.freeze({
+      width: 1808,
+      height: 400,
+      top: 1088,
+      smallBoxPx: 14,
+      largeBoxPx: 70,
+      paperSpeedMmPerSecond: 25,
+      minorGrid: "#f8e1e4",
+      majorGrid: "#edb7bd",
+      trace: "#20282e",
+      traceWidth: 3,
+      baselineY: 239,
+      amplitudeScale: 130
+    }),
+    typography: Object.freeze({
+      fontStack: '"BIZ UDPGothic","BIZ UDPゴシック","Noto Sans JP","Yu Gothic","Meiryo",sans-serif',
+      text: "#1F2933",
+      heading: "#111827",
+      support: "#374151"
+    }),
+    stageBadge: Object.freeze({
+      fill: "#F1F5F9",
+      stroke: "#CBD5E1",
+      radius: 9
+    }),
+    labels: Object.freeze({ language: "ja", mode: "embedded-in-golden-frames" }),
+    conduction: Object.freeze({
+      restingPath: "thin-dark-yellow",
+      excitation: "bright-moving-light-mass-with-short-afterglow",
+      forbidGrowingThickPath: true
+    })
+  });
+});
+
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.Anatomy = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  "use strict";
+
+  return Object.freeze({
+    view: "realistic-cutaway-v24",
+    coordinateSpace: Object.freeze({ width: 768, height: 1088 }),
+    chambers: Object.freeze(["right-atrium", "left-atrium", "right-ventricle", "left-ventricle"]),
+    conductionNodes: Object.freeze([
+      Object.freeze({ id: "sa-node", label: "洞結節" }),
+      Object.freeze({ id: "av-node", label: "房室結節" }),
+      Object.freeze({ id: "his-bundle", label: "ヒス束" })
+    ]),
+    conductionPathways: Object.freeze([
+      Object.freeze({ id: "bachmann-bundle", label: "Bachmann束" }),
+      Object.freeze({ id: "internodal-pathways", label: "結節間路" }),
+      Object.freeze({ id: "right-bundle-branch", label: "右脚" }),
+      Object.freeze({ id: "left-bundle-branch", label: "左脚" }),
+      Object.freeze({ id: "left-anterior-fascicle", label: "左脚前枝" }),
+      Object.freeze({ id: "left-posterior-fascicle", label: "左脚後枝" }),
+      Object.freeze({ id: "purkinje-network", label: "プルキンエ線維" })
+    ]),
+    goldenMasterPolicy: Object.freeze({
+      anatomyAndLabelsAreProtected: true,
+      sinusRenderer: "precomposed-frame-sequence",
+      futureRhythms: "reuse-anatomy-and-label-layout; replace-only-physiology-layers"
+    })
+  });
+});
+
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.Timeline = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  "use strict";
+
+  function positiveNumber(value, fallback) {
+    return Number.isFinite(Number(value)) && Number(value) > 0 ? Number(value) : fallback;
+  }
+
+  function fixedRrMs(config) {
+    return 60000 / positiveNumber(config.heartRate && config.heartRate.value, 60);
+  }
+
+  function buildBeatSchedule(config) {
+    const totalMs = positiveNumber(config.duration && config.duration.totalSeconds, 5) * 1000;
+    const declared = config.rhythm && Array.isArray(config.rhythm.rrIntervalsMs)
+      ? config.rhythm.rrIntervalsMs.map(Number).filter(value => value > 0)
+      : [];
+    const fallback = fixedRrMs(config);
+    const intervals = [];
+    let elapsed = 0;
+    let index = 0;
+    while (elapsed < totalMs - 1e-8) {
+      const next = declared.length ? declared[index % declared.length] : fallback;
+      const duration = Math.min(next, totalMs - elapsed);
+      intervals.push({ index, startMs: elapsed, durationMs: duration, nominalRrMs: next });
+      elapsed += duration;
+      index += 1;
+      if (index > 10000) throw new Error("Beat schedule exceeded 10,000 events.");
+    }
+    return Object.freeze(intervals.map(Object.freeze));
+  }
+
+  class TimelineEngine {
+    constructor(config) {
+      this.config = config;
+      this.totalDurationMs = positiveNumber(config.duration && config.duration.totalSeconds, 5) * 1000;
+      this.fps = positiveNumber(config.duration && config.duration.fps, 60);
+      this.frameCount = Math.round(this.totalDurationMs * this.fps / 1000);
+      this.beats = buildBeatSchedule(config);
+      this.ventricularEventTimesMs = config.rhythm && config.rhythm.cycleMode === "event_based" &&
+        config.timing && Array.isArray(config.timing.ventricularBeatTimes)
+        ? Object.freeze(config.timing.ventricularBeatTimes.map(value => Number(value) * 1000))
+        : null;
+    }
+
+    stateAt(elapsedTimeMs) {
+      const clamped = Math.max(0, Math.min(Number(elapsedTimeMs) || 0, this.totalDurationMs));
+      let beat = this.beats[this.beats.length - 1];
+      for (const candidate of this.beats) {
+        if (clamped < candidate.startMs + candidate.durationMs || candidate === beat) {
+          beat = candidate;
+          break;
+        }
+      }
+      const localMs = clamped >= this.totalDurationMs
+        ? 0
+        : Math.max(0, clamped - beat.startMs);
+      const cyclePositionMs = this.config.rhythm && this.config.rhythm.regularity === "regular"
+        ? ((clamped % beat.nominalRrMs) + beat.nominalRrMs) % beat.nominalRrMs
+        : localMs % beat.nominalRrMs;
+      const beatPhase = beat.nominalRrMs > 0 ? cyclePositionMs / beat.nominalRrMs : 0;
+      const outputFrame = Math.min(
+        this.frameCount - 1,
+        Math.floor(Math.max(0, Math.min(clamped, this.totalDurationMs - 1e-8)) * this.fps / 1000)
+      );
+      const sourceFrameCount = this.config.renderModel && this.config.renderModel.sourceFrameCount || this.frameCount;
+      const sourceFrame = Math.min(sourceFrameCount - 1, Math.floor(beatPhase * sourceFrameCount + 1e-8));
+      if (this.ventricularEventTimesMs) {
+        let previousIndex = -1;
+        for (let index = 0; index < this.ventricularEventTimesMs.length; index += 1) {
+          if (this.ventricularEventTimesMs[index] <= clamped + 1e-8) previousIndex = index;
+          else break;
+        }
+        const previousMs = previousIndex >= 0 ? this.ventricularEventTimesMs[previousIndex] : null;
+        const nextMs = previousIndex + 1 < this.ventricularEventTimesMs.length
+          ? this.ventricularEventTimesMs[previousIndex + 1]
+          : null;
+        return {
+          elapsedTimeMs: clamped,
+          timeSeconds: clamped / 1000,
+          outputFrame,
+          beatIndex: previousIndex + 1,
+          beatPhase: previousMs == null || nextMs == null ? 0 : (clamped - previousMs) / (nextMs - previousMs),
+          phase: previousMs == null || nextMs == null ? 0 : (clamped - previousMs) / (nextMs - previousMs),
+          cycleSeconds: previousMs == null ? clamped / 1000 : (clamped - previousMs) / 1000,
+          rrIntervalMs: previousMs != null && nextMs != null ? nextMs - previousMs : null,
+          beatStartMs: previousMs,
+          sourceFrame: 0,
+          previousVentricularEventSeconds: previousMs == null ? null : previousMs / 1000,
+          nextVentricularEventSeconds: nextMs == null ? null : nextMs / 1000,
+          timeSinceVentricularEventSeconds: previousMs == null ? null : (clamped - previousMs) / 1000
+        };
+      }
+      return {
+        elapsedTimeMs: clamped,
+        timeSeconds: clamped / 1000,
+        outputFrame,
+        beatIndex: Math.min(this.beats.length, beat.index + 1),
+        beatPhase,
+        phase: beatPhase,
+        cycleSeconds: beatPhase * beat.nominalRrMs / 1000,
+        rrIntervalMs: beat.nominalRrMs,
+        beatStartMs: beat.startMs,
+        sourceFrame
+      };
+    }
+  }
+
+  return { TimelineEngine, buildBeatSchedule };
+});
+
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.HeartRenderer = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  "use strict";
+
+  class HeartRenderer {
+    constructor(config, design) {
+      this.config = config;
+      this.design = design;
+      this.frames = [];
+    }
+
+    async preload() {
+      const urls = this.config.renderModel && this.config.renderModel.heartFrames || [];
+      if (typeof Image === "undefined") return [];
+      this.frames = await Promise.all(urls.map(url => new Promise((resolve, reject) => {
+        const image = new Image();
+        image.onload = () => resolve(image);
+        image.onerror = () => reject(new Error("Failed to load heart frame: " + url));
+        image.src = url;
+      })));
+      return this.frames;
+    }
+
+    render(context, state) {
+      if (!this.frames.length) throw new Error("Heart frames are not loaded.");
+      const adapter = this.config.renderAdapters && this.config.renderAdapters.heart;
+      if (typeof adapter === "function") {
+        const rendered = adapter(context, state, this.config, this.design, this.frames);
+        return Object.assign({ frameIndex: 0, mode: this.config.renderModel.mode }, rendered || {});
+      }
+      const geometry = this.design.heart;
+      const index = Math.min(this.frames.length - 1, state.sourceFrame);
+      context.drawImage(
+        this.frames[index],
+        geometry.left,
+        geometry.top,
+        geometry.width,
+        geometry.height
+      );
+      return { frameIndex: index, mode: this.config.renderModel.mode };
+    }
+  }
+
+  return { HeartRenderer };
+});
+
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.MechanicalRenderer = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  "use strict";
+
+  class MechanicalRenderer {
+    constructor(config, design, heartRenderer) {
+      this.config = config;
+      this.design = design;
+      this.heartRenderer = heartRenderer;
+    }
+
+    render(context, state) {
+      const adapters = this.config.renderAdapters || {};
+      const frames = this.heartRenderer.frames;
+      const atrialAdapter = adapters.atrialMechanical;
+      const ventricularAdapter = adapters.ventricularMechanical;
+      const atrial = typeof atrialAdapter === "function"
+        ? atrialAdapter(context, state, this.config, this.design, frames) || {}
+        : { active: false, mode: "none" };
+      const ventricular = typeof ventricularAdapter === "function"
+        ? ventricularAdapter(context, state, this.config, this.design, frames) || {}
+        : { active: false, progress: 0, mode: "none" };
+      return {
+        separated: typeof atrialAdapter === "function" &&
+          typeof ventricularAdapter === "function" &&
+          atrialAdapter !== ventricularAdapter,
+        atrial,
+        ventricular
+      };
+    }
+  }
+
+  return { MechanicalRenderer };
+});
+
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.ConductionRenderer = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  "use strict";
+
+  function conductionStage(time, events) {
+    if (time < events.pStart) return "sa-node";
+    if (time < events.avStart) return "atrial-pathways";
+    if (time < events.avEnd) return "av-node-delay";
+    if (time < events.hisEnd) return "his-bundle";
+    if (time < events.bundleEnd) return "bundle-branches-and-fascicles";
+    if (time < events.qrsEnd) return "purkinje-and-ventricular-activation";
+    return "resting";
+  }
+
+  class ConductionRenderer {
+    constructor(config) {
+      this.config = config;
+    }
+
+    render(context, state) {
+      const stage = conductionStage(state.cycleSeconds, this.config.timing.events);
+      // V24 contains the approved light-wave and pathway pixels in each protected
+      // composite frame. Future rhythm adapters may provide this hook to draw
+      // moving wavelets, reentry circuits, ectopic foci, or accessory pathways.
+      const adapter = this.config.renderAdapters && this.config.renderAdapters.conduction;
+      const rendered = typeof adapter === "function" ? adapter(context, state, this.config) : null;
+      return Object.assign({ stage, embeddedInCompositeFrame: !adapter }, rendered || {});
+    }
+  }
+
+  return { ConductionRenderer, conductionStage };
+});
+
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.ActivationRenderer = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  "use strict";
+
+  function activationState(time, events) {
+    return {
+      atrial: time >= events.pStart && time < events.pEnd,
+      avDelay: time >= events.avStart && time < events.avEnd,
+      ventricular: time >= events.qrsStart && time < events.qrsEnd,
+      ventricularRepolarization: time >= events.tStart && time < events.tEnd
+    };
+  }
+
+  class ActivationRenderer {
+    constructor(config) {
+      this.config = config;
+    }
+
+    render(context, state) {
+      const activation = activationState(state.cycleSeconds, this.config.timing.events);
+      const adapter = this.config.renderAdapters && this.config.renderAdapters.activation;
+      const rendered = typeof adapter === "function" ? adapter(context, state, activation, this.config) : null;
+      return Object.assign({ embeddedInCompositeFrame: !adapter }, activation, rendered || {});
+    }
+  }
+
+  return { ActivationRenderer, activationState };
+});
+
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.ContractionRenderer = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  "use strict";
+
+  function contractionState(time, events, config) {
+    return {
+      atrial: Boolean(config.atrialContraction.enabled) &&
+        time >= events.atrialContractionStart && time < events.qrsStart,
+      ventricular: Boolean(config.ventricularContraction.enabled) &&
+        time >= events.ventricularContractionStart && time < events.tEnd
+    };
+  }
+
+  class ContractionRenderer {
+    constructor(config) {
+      this.config = config;
+    }
+
+    render(context, state) {
+      const contraction = contractionState(state.cycleSeconds, this.config.timing.events, this.config);
+      const adapter = this.config.renderAdapters && this.config.renderAdapters.contraction;
+      const rendered = typeof adapter === "function" ? adapter(context, state, contraction, this.config) : null;
+      return Object.assign({ embeddedInCompositeFrame: !adapter }, contraction, rendered || {});
+    }
+  }
+
+  return { ContractionRenderer, contractionState };
+});
+
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.EcgRenderer = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  "use strict";
+
+  const SHAPE = Object.freeze({ p0: 0.07, p1: 0.17, q0: 0.25, q1: 0.34, t0: 0.48, t1: 0.68 });
+
+  function lerp(a, b, progress) {
+    return a + (b - a) * progress;
+  }
+
+  function mapTime(time, events, beatSeconds) {
+    const times = [0, events.pStart, events.pEnd, events.qrsStart, events.qrsEnd, events.tStart, events.tEnd, beatSeconds];
+    const positions = [0, SHAPE.p0, SHAPE.p1, SHAPE.q0, SHAPE.q1, SHAPE.t0, SHAPE.t1, 1];
+    for (let index = 1; index < times.length; index += 1) {
+      if (time <= times[index]) {
+        const progress = Math.max(0, (time - times[index - 1]) / (times[index] - times[index - 1]));
+        return lerp(positions[index - 1], positions[index], progress);
+      }
+    }
+    return 1;
+  }
+
+  function amplitude(position) {
+    if (position >= SHAPE.p0 && position <= SHAPE.p1) {
+      return 0.18 * Math.sin(Math.PI * (position - SHAPE.p0) / (SHAPE.p1 - SHAPE.p0)) ** 2;
+    }
+    if (position >= SHAPE.q0 && position <= SHAPE.q1) {
+      const points = [[0.25, 0], [0.262, -0.10], [0.276, 0], [0.290, 1.05], [0.301, 0], [0.314, -0.22], [0.340, 0]];
+      for (let index = 1; index < points.length; index += 1) {
+        if (position <= points[index][0]) {
+          return lerp(points[index - 1][1], points[index][1],
+            (position - points[index - 1][0]) / (points[index][0] - points[index - 1][0]));
+        }
+      }
+    }
+    if (position >= SHAPE.t0 && position <= SHAPE.t1) {
+      const peak = 0.596;
+      const progress = position < peak
+        ? (position - SHAPE.t0) / (peak - SHAPE.t0)
+        : (SHAPE.t1 - position) / (SHAPE.t1 - peak);
+      return 0.32 * Math.sin(Math.PI * 0.5 * progress) ** 2;
+    }
+    return 0;
+  }
+
+  function stage(time, events) {
+    if (time < events.pStart) return "洞結節発火";
+    if (time < events.pEnd) return "P波｜両心房の脱分極";
+    if (time < events.qrsStart) return "PR segment";
+    if (time < events.qrsEnd) return "QRS｜両心室の脱分極";
+    if (time < events.tStart) return "ST segment";
+    if (time < events.tEnd) return "T波｜心室の再分極";
+    return "TP segment";
+  }
+
+  function roundedRect(context, x, y, width, height, radius) {
+    const value = Math.min(radius, width / 2, height / 2);
+    context.beginPath(); context.moveTo(x + value, y); context.lineTo(x + width - value, y);
+    context.quadraticCurveTo(x + width, y, x + width, y + value); context.lineTo(x + width, y + height - value);
+    context.quadraticCurveTo(x + width, y + height, x + width - value, y + height); context.lineTo(x + value, y + height);
+    context.quadraticCurveTo(x, y + height, x, y + height - value); context.lineTo(x, y + value);
+    context.quadraticCurveTo(x, y, x + value, y); context.closePath();
+  }
+
+  class EcgRenderer {
+    constructor(config, design) {
+      this.config = config;
+      this.design = design;
+    }
+
+    render(context, state) {
+      const adapter = this.config.renderAdapters && this.config.renderAdapters.ecg;
+      if (typeof adapter === "function") return adapter(context, state, this.config, this.design);
+      const events = this.config.timing.events;
+      const beatSeconds = state.rrIntervalMs / 1000;
+      const time = state.beatPhase * beatSeconds;
+      const progress = mapTime(time, events, beatSeconds);
+      const totalBeats = this.config.rhythm.rrIntervalsMs.length;
+      const beatIndex = Math.max(0, Math.min(totalBeats - 1, state.beatIndex - 1));
+      const style = this.design.ecg;
+      const panelWidth = style.width;
+      const smallBox = style.smallBoxPx;
+      const largeBox = smallBox * 5;
+      const largeBoxesPerBeat = 5;
+      const fontStack = this.design.typography.fontStack;
+
+      context.fillStyle = "#ffffff"; context.fillRect(0, 0, panelWidth, style.height);
+      context.fillStyle = "#111827"; context.font = "800 42px " + fontStack; context.fillText("Ⅱ", 28, 52);
+      context.font = "700 34px " + fontStack; context.fillText(this.config.visual.ecgTitle, 92, 50);
+      const stageText = stage(time, events);
+      context.font = "700 30px " + fontStack;
+      const stagePadX = 18;
+      const stageWidth = Math.ceil(context.measureText(stageText).width) + stagePadX * 2;
+      const stageX = panelWidth - 28 - stageWidth;
+      const stageY = 7;
+      const stageHeight = 52;
+      context.fillStyle = "#F1F5F9"; roundedRect(context, stageX, stageY, stageWidth, stageHeight, 9); context.fill();
+      context.strokeStyle = "#CBD5E1"; context.lineWidth = 1.5; context.stroke();
+      context.fillStyle = "#111827"; context.textAlign = "right";
+      context.fillText(stageText, panelWidth - 28 - stagePadX, 44); context.textAlign = "left";
+
+      const left = 28;
+      const right = left + totalBeats * largeBoxesPerBeat * largeBox;
+      const top = 74;
+      const bottom = 306;
+      const baseline = 239;
+      const scale = 130;
+      context.fillStyle = "#fffdfd"; context.fillRect(left, top, right - left, bottom - top);
+      for (let x = left, index = 0; x <= right; x += smallBox, index += 1) {
+        context.beginPath(); context.moveTo(x, top); context.lineTo(x, bottom);
+        context.strokeStyle = index % 5 === 0 ? "#edb7bd" : "#f8e1e4";
+        context.lineWidth = index % 5 === 0 ? 1 : 0.65; context.stroke();
+      }
+      for (let y = top, index = 0; y <= bottom; y += smallBox, index += 1) {
+        context.beginPath(); context.moveTo(left, y); context.lineTo(right, y);
+        context.strokeStyle = index % 5 === 0 ? "#edb7bd" : "#f8e1e4";
+        context.lineWidth = index % 5 === 0 ? 1 : 0.65; context.stroke();
+      }
+
+      context.save(); context.beginPath(); context.rect(left, top, right - left, bottom - top); context.clip();
+      context.strokeStyle = "#20282e"; context.lineWidth = 3; context.lineJoin = "round"; context.lineCap = "butt"; context.beginPath();
+      const sequenceEnd = beatIndex + progress;
+      const end = Math.floor(sequenceEnd * 2400);
+      for (let index = 0; index <= end; index += 1) {
+        const sequencePosition = index / 2400;
+        const localPosition = sequencePosition - Math.floor(sequencePosition);
+        const normalizedPosition = sequencePosition / totalBeats;
+        const x = left + normalizedPosition * (right - left);
+        const y = baseline - amplitude(localPosition) * scale;
+        if (index === 0) context.moveTo(x, y); else context.lineTo(x, y);
+      }
+      if (progress > 0) {
+        context.lineTo(left + sequenceEnd / totalBeats * (right - left), baseline - amplitude(progress) * scale);
+      }
+      context.stroke(); context.restore();
+      context.fillStyle = "#1F2933"; context.font = "700 26px " + fontStack;
+      context.fillText(this.config.visual.ecgCaption, 28, 350);
+      context.fillStyle = "#374151"; context.font = "600 22px " + fontStack;
+      context.fillText(this.config.visual.ecgCalibration, 28, 385);
+      return { time, progress, sequenceProgress: sequenceEnd / totalBeats, stage: stageText };
+    }
+  }
+
+  return { EcgRenderer, SHAPE, mapTime, amplitude, stage };
+});
+
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.LabelRenderer = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  "use strict";
+
+  class LabelRenderer {
+    constructor(config) {
+      this.config = config;
+    }
+
+    render(context, state) {
+      const adapter = this.config.renderAdapters && this.config.renderAdapters.labels;
+      const rendered = typeof adapter === "function" ? adapter(context, state, this.config) : null;
+      return Object.assign({ language: "ja", embeddedInCompositeFrame: !adapter }, rendered || {});
+    }
+  }
+
+  return { LabelRenderer };
+});
+
+(function (root, factory) {
+  const api = factory(root.CardiacAnimation || {});
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.RhythmEngine = api;
+})(typeof window !== "undefined" ? window : globalThis, function (namespace) {
+  "use strict";
+
+  function clone(value) {
+    if (Array.isArray(value)) return value.map(clone);
+    if (value && typeof value === "object") {
+      const copy = {};
+      for (const [key, item] of Object.entries(value)) copy[key] = clone(item);
+      return copy;
+    }
+    return value;
+  }
+
+  function applyOverrides(baseConfig, overrides) {
+    const config = clone(baseConfig);
+    const requested = overrides || {};
+    if (requested.duration != null) config.duration.totalSeconds = Number(requested.duration);
+    if (requested.fps != null) config.duration.fps = Number(requested.fps);
+    if (requested.heartRate != null) {
+      const heartRate = Number(requested.heartRate);
+      if (typeof config.buildEventSchedule === "function") {
+        config.buildEventSchedule(config, {
+          heartRate,
+          duration: config.duration.totalSeconds,
+          seed: requested.seed
+        });
+      } else {
+        config.heartRate.value = heartRate;
+        const rr = 60000 / heartRate;
+        const beatCount = Math.ceil(config.duration.totalSeconds * 1000 / rr);
+        config.rhythm.rrIntervalsMs = Array.from({ length: beatCount }, () => rr);
+        config.visual.ecgCaption = "模式波形・HR " + heartRate + "回/分";
+        config.visual.ecgCalibration = "25 mm/秒相当｜1大マス＝0.20秒｜RR＝" + (rr / 1000).toFixed(2) + "秒";
+      }
+    }
+    if (requested.duration != null && requested.heartRate == null && typeof config.buildEventSchedule === "function") {
+      config.buildEventSchedule(config, {
+        heartRate: config.heartRate.value,
+        duration: config.duration.totalSeconds,
+        seed: requested.seed
+      });
+    } else if (requested.duration != null && requested.heartRate == null) {
+      const rr = 60000 / config.heartRate.value;
+      const beatCount = Math.ceil(config.duration.totalSeconds * 1000 / rr);
+      config.rhythm.rrIntervalsMs = Array.from({ length: beatCount }, () => rr);
+    }
+    return config;
+  }
+
+  class CardiacRhythmEngine {
+    constructor(config, design, sceneContext, ecgContext) {
+      this.config = config;
+      this.design = design;
+      this.sceneContext = sceneContext;
+      this.ecgContext = ecgContext;
+      this.timeline = new namespace.Timeline.TimelineEngine(config);
+      this.heart = new namespace.HeartRenderer.HeartRenderer(config, design);
+      this.mechanical = new namespace.MechanicalRenderer.MechanicalRenderer(config, design, this.heart);
+      this.conduction = new namespace.ConductionRenderer.ConductionRenderer(config);
+      this.activation = new namespace.ActivationRenderer.ActivationRenderer(config);
+      this.contraction = new namespace.ContractionRenderer.ContractionRenderer(config);
+      this.labels = new namespace.LabelRenderer.LabelRenderer(config);
+      this.ecg = new namespace.EcgRenderer.EcgRenderer(config, design);
+    }
+
+    async preload() {
+      return this.heart.preload();
+    }
+
+    renderAt(elapsedTimeMs) {
+      const state = this.timeline.stateAt(elapsedTimeMs);
+      const heart = this.heart.render(this.sceneContext, state);
+      const mechanical = this.mechanical.render(this.sceneContext, state);
+      const conduction = this.conduction.render(this.sceneContext, state);
+      const activation = this.activation.render(this.sceneContext, state);
+      const contraction = this.contraction.render(this.sceneContext, state);
+      const labels = this.labels.render(this.sceneContext, state);
+      const ecg = this.ecg.render(this.ecgContext, state);
+      this.sceneContext.drawImage(
+        this.ecgContext.canvas,
+        this.design.ecg.left || 0,
+        this.design.ecg.top || 0
+      );
+      return { state, heart, mechanical, conduction, activation, contraction, labels, ecg };
+    }
+  }
+
+  return { CardiacRhythmEngine, applyOverrides, clone };
+});
+
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.CardiacAnimation = root.CardiacAnimation || {};
+  root.CardiacAnimation.Rhythms = root.CardiacAnimation.Rhythms || {};
+  root.CardiacAnimation.Rhythms["right-bundle-branch-block"] = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  "use strict";
+
+  const bundledFrames = ["assets/rbbb-remake-20261009/000.webp","assets/rbbb-remake-20261009/001.webp","assets/rbbb-remake-20261009/002.webp","assets/rbbb-remake-20261009/003.webp","assets/rbbb-remake-20261009/004.webp","assets/rbbb-remake-20261009/005.webp","assets/rbbb-remake-20261009/006.webp","assets/rbbb-remake-20261009/007.webp","assets/rbbb-remake-20261009/008.webp","assets/rbbb-remake-20261009/009.webp","assets/rbbb-remake-20261009/010.webp","assets/rbbb-remake-20261009/011.webp","assets/rbbb-remake-20261009/012.webp","assets/rbbb-remake-20261009/013.webp","assets/rbbb-remake-20261009/014.webp","assets/rbbb-remake-20261009/015.webp","assets/rbbb-remake-20261009/016.webp","assets/rbbb-remake-20261009/017.webp","assets/rbbb-remake-20261009/018.webp","assets/rbbb-remake-20261009/019.webp","assets/rbbb-remake-20261009/020.webp","assets/rbbb-remake-20261009/021.webp","assets/rbbb-remake-20261009/022.webp","assets/rbbb-remake-20261009/023.webp","assets/rbbb-remake-20261009/024.webp","assets/rbbb-remake-20261009/025.webp","assets/rbbb-remake-20261009/026.webp","assets/rbbb-remake-20261009/027.webp","assets/rbbb-remake-20261009/028.webp","assets/rbbb-remake-20261009/029.webp","assets/rbbb-remake-20261009/030.webp","assets/rbbb-remake-20261009/031.webp","assets/rbbb-remake-20261009/032.webp","assets/rbbb-remake-20261009/033.webp","assets/rbbb-remake-20261009/034.webp","assets/rbbb-remake-20261009/035.webp","assets/rbbb-remake-20261009/036.webp","assets/rbbb-remake-20261009/037.webp","assets/rbbb-remake-20261009/038.webp","assets/rbbb-remake-20261009/039.webp","assets/rbbb-remake-20261009/040.webp"];
+  const sinusFrames = Array.from({length:120},(_,i)=>bundledFrames[Math.min(i,40)]);
+
+  const events = Object.freeze({
+    saPeak: 0.02,
+    pStart: 0.02,
+    pEnd: 0.10,
+    avStart: 0.10,
+    avEnd: 0.17,
+    hisStart: 0.17,
+    hisEnd: 0.19,
+    bundleStart: 0.19,
+    bundleEnd: 0.20,
+    qrsStart: 0.20,
+    septalActivationEnd: 0.220,
+    leftVentricleActivationStart: 0.20,
+    leftVentricleActivationEnd: 0.255,
+    transseptalActivationStart: 0.265,
+    rightVentricleActivationStart: 0.270,
+    qrsEnd: 0.320,
+    atrialContractionStart: 0.075,
+    leftVentricleContractionStart: 0.210,
+    rightVentricleContractionStart: 0.420,
+    tStart: 0.54,
+    tEnd: 0.74
+  });
+
+  const FONT = '"BIZ UDPGothic","BIZ UDPゴシック","Noto Sans JP","Yu Gothic","Meiryo",sans-serif';
+  const RIGHT_VENTRICLE_ANCHORS = Object.freeze({
+    tricuspidAnnulus: Object.freeze({ x: 180, y: 560 }),
+    outflowTract: Object.freeze({ x: 340, y: 515 }),
+    freeWallCenter: Object.freeze({ x: 100, y: 770 }),
+    apex: Object.freeze({ x: 410, y: 925 }),
+    septalAttachment: Object.freeze({ x: 430, y: 775 })
+  });
+  const RIGHT_VENTRICLE_MESH = Object.freeze({
+    left: 60,
+    top: 470,
+    right: 470,
+    bottom: 1040,
+    columns: 8,
+    rows: 10,
+    boundaryFadePx: 72,
+    maximumInwardPx: 50
+  });
+  const WHOLE_HEART_MESH = Object.freeze({
+    left: 0,
+    top: 0,
+    right: 768,
+    bottom: 1088,
+    columns: 10,
+    rows: 14
+  });
+  const RBBB_DESIGN = Object.freeze({
+    id: "rbbb-education-sinus-ecg-position",
+    background: "#F8FAFC",
+    // 心臓の位置・大きさは固定し、洞調律版と同じくECGを下段へ配置する。
+    canvas: Object.freeze({ width: 1808, height: 1488, heartHeight: 1088 }),
+    heart: Object.freeze({ width: 768, height: 1088, left: 176, top: -8 }),
+    ecg: Object.freeze({
+      width: 1808,
+      height: 400,
+      left: 0,
+      top: 1088,
+      smallBoxPx: 14,
+      largeBoxPx: 70,
+      paperSpeedMmPerSecond: 25,
+      minorGrid: "#f8e1e4",
+      majorGrid: "#edb7bd",
+      trace: "#20282e",
+      traceWidth: 3
+    }),
+    typography: Object.freeze({
+      fontStack: FONT,
+      text: "#1F2933",
+      heading: "#111827",
+      support: "#374151"
+    }),
+    labels: Object.freeze({ language: "ja", mode: "rbbb-external-callouts" }),
+    conduction: Object.freeze({
+      restingPath: "single-frame-continuous-mesh-delayed-right-ventricle",
+      excitation: "yellow-normal-cyan-delayed",
+      forbidGrowingThickPath: true
+    })
+  });
+
+  function clamp(value, minimum, maximum) {
+    return Math.max(minimum, Math.min(maximum, value));
+  }
+
+  function smoothStep(value) {
+    const progress = clamp(value, 0, 1);
+    return progress * progress * (3 - 2 * progress);
+  }
+
+  function windowEnvelope(time, start, peak, end) {
+    if (time < start || time > end) return 0;
+    if (time <= peak) return smoothStep((time - start) / Math.max(0.0001, peak - start));
+    return 1 - smoothStep((time - peak) / Math.max(0.0001, end - peak));
+  }
+
+  function roundedRect(context, x, y, width, height, radius) {
+    const value = Math.min(radius, width / 2, height / 2);
+    context.beginPath();
+    context.moveTo(x + value, y);
+    context.lineTo(x + width - value, y);
+    context.quadraticCurveTo(x + width, y, x + width, y + value);
+    context.lineTo(x + width, y + height - value);
+    context.quadraticCurveTo(x + width, y + height, x + width - value, y + height);
+    context.lineTo(x + value, y + height);
+    context.quadraticCurveTo(x, y + height, x, y + height - value);
+    context.lineTo(x, y + value);
+    context.quadraticCurveTo(x, y, x + value, y);
+    context.closePath();
+  }
+
+  function pointOnPolyline(points, progress) {
+    const lengths = [];
+    let total = 0;
+    for (let index = 1; index < points.length; index += 1) {
+      const length = Math.hypot(points[index][0] - points[index - 1][0], points[index][1] - points[index - 1][1]);
+      lengths.push(length);
+      total += length;
+    }
+    let target = clamp(progress, 0, 1) * total;
+    for (let index = 0; index < lengths.length; index += 1) {
+      if (target <= lengths[index]) {
+        const local = lengths[index] ? target / lengths[index] : 0;
+        return {
+          x: points[index][0] + (points[index + 1][0] - points[index][0]) * local,
+          y: points[index][1] + (points[index + 1][1] - points[index][1]) * local
+        };
+      }
+      target -= lengths[index];
+    }
+    return { x: points[points.length - 1][0], y: points[points.length - 1][1] };
+  }
+
+  function drawGlow(context, x, y, radius, alpha, hue) {
+    const palette = hue === "cyan"
+      ? ["226,255,255", "87,224,244", "26,155,190"]
+      : ["255,255,225", "255,239,86", "255,163,18"];
+    const gradient = context.createRadialGradient(x, y, 0, x, y, radius * 3.4);
+    gradient.addColorStop(0, "rgba(" + palette[0] + "," + Math.min(1, alpha) + ")");
+    gradient.addColorStop(0.18, "rgba(" + palette[1] + "," + (0.94 * alpha) + ")");
+    gradient.addColorStop(0.54, "rgba(" + palette[2] + "," + (0.48 * alpha) + ")");
+    gradient.addColorStop(1, "rgba(" + palette[2] + ",0)");
+    context.fillStyle = gradient;
+    context.beginPath();
+    context.arc(x, y, radius * 3.4, 0, Math.PI * 2);
+    context.fill();
+  }
+
+  function drawMovingSignal(context, points, progress, radius, hue) {
+    const head = pointOnPolyline(points, progress);
+    drawGlow(context, head.x, head.y, radius, 1, hue);
+    for (const trail of [0.06, 0.12]) {
+      const point = pointOnPolyline(points, progress - trail);
+      drawGlow(context, point.x, point.y, radius * 0.48, 0.20 * (1 - trail / 0.18), hue);
+    }
+  }
+
+  function drawRegionScaled(context, image, geometry, region, scaleX, scaleY, shiftX, shiftY, filter) {
+    const centerX = geometry.left + region.x;
+    const centerY = geometry.top + region.y;
+    context.save();
+    context.beginPath();
+    context.ellipse(centerX, centerY, region.rx, region.ry, region.rotation || 0, 0, Math.PI * 2);
+    context.clip();
+    context.fillStyle = "#ffffff";
+    context.fillRect(centerX - region.rx - 12, centerY - region.ry - 12, region.rx * 2 + 24, region.ry * 2 + 24);
+    context.translate(centerX + (shiftX || 0), centerY + (shiftY || 0));
+    context.scale(scaleX, scaleY);
+    context.translate(-centerX, -centerY);
+    if (filter) context.filter = filter;
+    context.drawImage(image, geometry.left, geometry.top, geometry.width, geometry.height);
+    context.restore();
+  }
+
+  function interpolateKeyframes(value, keyframes) {
+    if (value <= keyframes[0][0]) return keyframes[0][1];
+    for (let index = 1; index < keyframes.length; index += 1) {
+      const previous = keyframes[index - 1];
+      const current = keyframes[index];
+      if (value <= current[0]) {
+        const progress = (value - previous[0]) / Math.max(0.000001, current[0] - previous[0]);
+        return previous[1] + (current[1] - previous[1]) * progress;
+      }
+    }
+    return keyframes[keyframes.length - 1][1];
+  }
+
+  function frameAtSinusPhase(frames, phase) {
+    return frames[Math.min(frames.length - 1, Math.max(0, Math.floor(clamp(phase, 0, 0.999999) * frames.length)))];
+  }
+
+  function drawHeartRegion(context, image, geometry, regions, alpha) {
+    context.save();
+    context.beginPath();
+    for (const region of regions) {
+      context.moveTo(geometry.left + region.x + region.rx, geometry.top + region.y);
+      context.ellipse(
+        geometry.left + region.x,
+        geometry.top + region.y,
+        region.rx,
+        region.ry,
+        region.rotation || 0,
+        0,
+        Math.PI * 2
+      );
+    }
+    context.clip();
+    context.globalAlpha = alpha == null ? 1 : alpha;
+    context.drawImage(image, geometry.left, geometry.top, geometry.width, geometry.height);
+    context.restore();
+  }
+
+  function traceRightVentricle(context, geometry) {
+    const anchors = RIGHT_VENTRICLE_ANCHORS;
+    const left = geometry.left;
+    const top = geometry.top;
+    context.beginPath();
+    context.moveTo(left + anchors.tricuspidAnnulus.x, top + anchors.tricuspidAnnulus.y);
+    context.bezierCurveTo(left + 235, top + 525, left + 300, top + 500, left + anchors.outflowTract.x, top + anchors.outflowTract.y);
+    context.bezierCurveTo(left + 370, top + 570, left + 374, top + 675, left + 385, top + 775);
+    context.bezierCurveTo(left + 390, top + 845, left + 410, top + 900, left + anchors.apex.x, top + anchors.apex.y);
+    context.bezierCurveTo(left + 310, top + 930, left + 165, top + 850, left + anchors.freeWallCenter.x, top + anchors.freeWallCenter.y);
+    context.bezierCurveTo(left + 98, top + 675, left + 132, top + 600, left + anchors.tricuspidAnnulus.x, top + anchors.tricuspidAnnulus.y);
+    context.closePath();
+  }
+
+  function drawImageTriangle(context, image, source, destination) {
+    const s0 = source[0];
+    const s1 = source[1];
+    const s2 = source[2];
+    const d0 = destination[0];
+    const d1 = destination[1];
+    const d2 = destination[2];
+    const sx1 = s1.x - s0.x;
+    const sy1 = s1.y - s0.y;
+    const sx2 = s2.x - s0.x;
+    const sy2 = s2.y - s0.y;
+    const determinant = sx1 * sy2 - sx2 * sy1;
+    if (Math.abs(determinant) < 0.000001) return;
+    const dx1 = d1.x - d0.x;
+    const dy1 = d1.y - d0.y;
+    const dx2 = d2.x - d0.x;
+    const dy2 = d2.y - d0.y;
+    const a = (dx1 * sy2 - dx2 * sy1) / determinant;
+    const c = (dx2 * sx1 - dx1 * sx2) / determinant;
+    const b = (dy1 * sy2 - dy2 * sy1) / determinant;
+    const d = (dy2 * sx1 - dy1 * sx2) / determinant;
+    const e = d0.x - a * s0.x - c * s0.y;
+    const f = d0.y - b * s0.x - d * s0.y;
+    // Subpixel overlap prevents antialiased cracks between moving mesh triangles.
+    const center = { x: (d0.x + d1.x + d2.x) / 3, y: (d0.y + d1.y + d2.y) / 3 };
+    const edge = [d0, d1, d2].map(point => {
+      const dx = point.x - center.x, dy = point.y - center.y;
+      const factor = 0.7 / Math.max(1, Math.hypot(dx, dy));
+      return { x: point.x + dx * factor, y: point.y + dy * factor };
+    });
+    context.save();
+    context.beginPath();
+    context.moveTo(edge[0].x, edge[0].y);
+    context.lineTo(edge[1].x, edge[1].y);
+    context.lineTo(edge[2].x, edge[2].y);
+    context.closePath();
+    context.clip();
+    context.transform(a, b, c, d, e, f);
+    context.drawImage(image, 0, 0);
+    context.restore();
+  }
+
+  function rightVentricleMeshDisplacement(x, y, phase) {
+    const mesh = RIGHT_VENTRICLE_MESH;
+    const lateral = clamp((RIGHT_VENTRICLE_ANCHORS.septalAttachment.x - x) / 330, 0, 1);
+    // 左室は210 msから収縮。右室は390 msに中隔側から始まり、420 msに自由壁へ到達する。
+    const localStart = events.rightVentricleContractionStart - 0.030 + lateral * 0.030;
+    const delayedProgress = windowEnvelope(phase, localStart, localStart + 0.140, localStart + 0.380);
+    const vectorAnchors = [
+      { point: RIGHT_VENTRICLE_ANCHORS.tricuspidAnnulus, dx: 0.34, dy: 0.08, radius: 175 },
+      { point: RIGHT_VENTRICLE_ANCHORS.outflowTract, dx: 0.24, dy: 0.10, radius: 165 },
+      { point: RIGHT_VENTRICLE_ANCHORS.freeWallCenter, dx: 1.00, dy: 0.00, radius: 225 },
+      { point: RIGHT_VENTRICLE_ANCHORS.apex, dx: 0.24, dy: -0.34, radius: 190 },
+      { point: RIGHT_VENTRICLE_ANCHORS.septalAttachment, dx: 0.04, dy: 0.00, radius: 150 }
+    ];
+    let weightedDx = 0;
+    let weightedDy = 0;
+    let totalWeight = 0;
+    for (const anchor of vectorAnchors) {
+      const deltaX = x - anchor.point.x;
+      const deltaY = y - anchor.point.y;
+      const distanceSquared = deltaX * deltaX + deltaY * deltaY;
+      const weight = Math.exp(-distanceSquared / (2 * anchor.radius * anchor.radius));
+      weightedDx += anchor.dx * weight;
+      weightedDy += anchor.dy * weight;
+      totalWeight += weight;
+    }
+    const distanceToBoundary = Math.min(x - mesh.left, mesh.right - x, y - mesh.top, mesh.bottom - y);
+    const boundaryBlend = smoothStep(clamp(distanceToBoundary / mesh.boundaryFadePx, 0, 1));
+    const magnitude = delayedProgress * mesh.maximumInwardPx * boundaryBlend;
+    return {
+      x: magnitude * weightedDx / Math.max(0.0001, totalWeight),
+      y: magnitude * weightedDy / Math.max(0.0001, totalWeight),
+      delayedProgress,
+      correction: delayedProgress
+    };
+  }
+
+  function leftVentricleMeshDisplacement(x, y, phase) {
+    const progress = windowEnvelope(phase, events.leftVentricleContractionStart, 0.330, 0.570);
+    const region = { left: 350, top: 470, right: 768, bottom: 1088, boundaryFadePx: 82 };
+    const distanceToBoundary = Math.min(x - region.left, region.right - x, y - region.top, region.bottom - y);
+    const boundaryBlend = smoothStep(clamp(distanceToBoundary / region.boundaryFadePx, 0, 1));
+    const anchors = [
+      { x: 690, y: 750, dx: -1.00, dy: 0.00, radius: 235 },
+      { x: 560, y: 980, dx: -0.18, dy: -0.38, radius: 210 },
+      { x: 430, y: 775, dx: -0.05, dy: 0.00, radius: 175 },
+      { x: 615, y: 560, dx: -0.28, dy: 0.08, radius: 175 }
+    ];
+    let weightedDx = 0;
+    let weightedDy = 0;
+    let totalWeight = 0;
+    for (const anchor of anchors) {
+      const deltaX = x - anchor.x;
+      const deltaY = y - anchor.y;
+      const weight = Math.exp(-(deltaX * deltaX + deltaY * deltaY) / (2 * anchor.radius * anchor.radius));
+      weightedDx += anchor.dx * weight;
+      weightedDy += anchor.dy * weight;
+      totalWeight += weight;
+    }
+    const magnitude = progress * 50 * boundaryBlend;
+    return {
+      x: magnitude * weightedDx / Math.max(0.0001, totalWeight),
+      y: magnitude * weightedDy / Math.max(0.0001, totalWeight),
+      progress
+    };
+  }
+
+  function wholeHeartMeshDisplacement(x, y, phase) {
+    const left = leftVentricleMeshDisplacement(x, y, phase);
+    const right = rightVentricleMeshDisplacement(x, y, phase);
+    return { x: left.x + right.x, y: left.y + right.y };
+  }
+
+  function drawContinuousRightVentricleMesh(context, image, geometry, phase) {
+    const mesh = WHOLE_HEART_MESH;
+    const sourceWidth = Number(image && (image.naturalWidth || image.width)) || geometry.width;
+    const sourceHeight = Number(image && (image.naturalHeight || image.height)) || geometry.height;
+    const vertices = [];
+    let maximumDisplacement = 0;
+    for (let row = 0; row <= mesh.rows; row += 1) {
+      const y = mesh.top + (mesh.bottom - mesh.top) * row / mesh.rows;
+      const vertexRow = [];
+      for (let column = 0; column <= mesh.columns; column += 1) {
+        const x = mesh.left + (mesh.right - mesh.left) * column / mesh.columns;
+        const displacement = wholeHeartMeshDisplacement(x, y, phase);
+        maximumDisplacement = Math.max(maximumDisplacement, Math.hypot(displacement.x, displacement.y));
+        vertexRow.push({
+          source: { x: x * sourceWidth / geometry.width, y: y * sourceHeight / geometry.height },
+          destination: { x: geometry.left + x + displacement.x, y: geometry.top + y + displacement.y }
+        });
+      }
+      vertices.push(vertexRow);
+    }
+    for (let row = 0; row < mesh.rows; row += 1) {
+      for (let column = 0; column < mesh.columns; column += 1) {
+        const topLeft = vertices[row][column];
+        const topRight = vertices[row][column + 1];
+        const bottomLeft = vertices[row + 1][column];
+        const bottomRight = vertices[row + 1][column + 1];
+        drawImageTriangle(
+          context,
+          image,
+          [topLeft.source, topRight.source, bottomRight.source],
+          [topLeft.destination, topRight.destination, bottomRight.destination]
+        );
+        drawImageTriangle(
+          context,
+          image,
+          [topLeft.source, bottomRight.source, bottomLeft.source],
+          [topLeft.destination, bottomRight.destination, bottomLeft.destination]
+        );
+      }
+    }
+    const anchorDisplacements = {};
+    for (const [name, point] of Object.entries(RIGHT_VENTRICLE_ANCHORS)) {
+      const displacement = rightVentricleMeshDisplacement(point.x, point.y, phase);
+      anchorDisplacements[name] = { x: displacement.x, y: displacement.y };
+    }
+    return {
+      maximumDisplacementPx: maximumDisplacement,
+      meshColumns: mesh.columns,
+      meshRows: mesh.rows,
+      boundaryFadePx: RIGHT_VENTRICLE_MESH.boundaryFadePx,
+      anchorDisplacements,
+      septalOnsetSeconds: events.rightVentricleContractionStart - 0.030,
+      freeWallOnsetSeconds: events.rightVentricleContractionStart,
+      separateFrameUsed: false,
+      maskUsed: false
+    };
+  }
+
+  function drawDelayedRightVentricularWave(context, geometry, progress, alpha) {
+    if (progress <= 0 || alpha <= 0) return;
+    const front = clamp(progress, 0.02, 0.98);
+    const frontX = geometry.left + 430 - front * 318;
+    context.save();
+    traceRightVentricle(context, geometry);
+    context.clip();
+    context.globalCompositeOperation = "source-over";
+    context.globalAlpha = alpha;
+    context.filter = "blur(5px)";
+    context.strokeStyle = "rgba(0,185,255,0.95)";
+    context.shadowColor = "rgba(0,165,245,0.65)";
+    context.shadowBlur = 14;
+    context.lineWidth = 30;
+    context.lineCap = "round";
+    context.beginPath();
+    context.moveTo(frontX + 34, geometry.top + 560);
+    context.bezierCurveTo(
+      frontX - 8,
+      geometry.top + 660,
+      frontX - 20,
+      geometry.top + 825,
+      frontX + 58,
+      geometry.top + 965
+    );
+    context.stroke();
+    context.restore();
+
+    const terminalProgress = smoothStep((progress - 0.72) / 0.28);
+    if (terminalProgress > 0) {
+      context.save();
+      traceRightVentricle(context, geometry);
+      context.clip();
+      context.globalCompositeOperation = "source-over";
+      context.globalAlpha = alpha * terminalProgress;
+      const terminal = context.createRadialGradient(
+        geometry.left + 245,
+        geometry.top + 635,
+        12,
+        geometry.left + 245,
+        geometry.top + 635,
+        118
+      );
+      terminal.addColorStop(0, "rgba(0,190,255,0.80)");
+      terminal.addColorStop(0.45, "rgba(0,165,235,0.35)");
+      terminal.addColorStop(1, "rgba(31,166,201,0)");
+      context.fillStyle = terminal;
+      context.fillRect(geometry.left + 70, geometry.top + 455, 350, 360);
+      context.restore();
+    }
+  }
+
+  function traceLeftVentricle(context, geometry) {
+    context.beginPath();
+    context.moveTo(geometry.left + 438, geometry.top + 565);
+    context.bezierCurveTo(geometry.left + 550, geometry.top + 500, geometry.left + 720, geometry.top + 555, geometry.left + 742, geometry.top + 720);
+    context.bezierCurveTo(geometry.left + 760, geometry.top + 875, geometry.left + 650, geometry.top + 1035, geometry.left + 505, geometry.top + 1038);
+    context.bezierCurveTo(geometry.left + 430, geometry.top + 960, geometry.left + 400, geometry.top + 720, geometry.left + 438, geometry.top + 565);
+    context.closePath();
+  }
+
+  function drawLeftVentricularWave(context, geometry, progress, alpha) {
+    if (progress <= 0 || alpha <= 0) return;
+    const front = clamp(progress, 0.02, 0.98);
+    const frontX = geometry.left + 430 + front * 270;
+    context.save();
+    traceLeftVentricle(context, geometry);
+    context.clip();
+    context.globalCompositeOperation = "source-over";
+    context.globalAlpha = alpha;
+    context.filter = "blur(5px)";
+    context.strokeStyle = "rgba(255,210,0,0.95)";
+    context.shadowColor = "rgba(255,190,0,0.65)";
+    context.shadowBlur = 13;
+    context.lineWidth = 32;
+    context.lineCap = "round";
+    context.beginPath();
+    context.moveTo(frontX - 15, geometry.top + 575);
+    context.bezierCurveTo(
+      frontX + 22,
+      geometry.top + 700,
+      frontX + 8,
+      geometry.top + 865,
+      frontX - 80,
+      geometry.top + 1015
+    );
+    context.stroke();
+    context.restore();
+  }
+
+
+  function drawTissueState(context, geometry, phase) {
+    const fade = phase < events.tStart ? 1 : 1-smoothStep((phase-events.tStart)/(events.tEnd-events.tStart));
+    if (fade<=0) return;
+    for (const side of ['left','right']) {
+      const start=side==='left'?events.leftVentricleActivationStart:events.transseptalActivationStart;
+      const end=side==='left'?events.leftVentricleActivationEnd:events.qrsEnd;
+      const progress=clamp((phase-start)/(end-start),0,1);
+      if(progress<=0)continue;
+      context.save();
+      (side==='left'?traceLeftVentricle:traceRightVentricle)(context,geometry); context.clip();
+      context.globalCompositeOperation='color';
+      context.fillStyle=side==='left'?'rgba(255,210,0,'+(0.26*fade)+')':'rgba(0,185,255,'+(0.30*fade)+')';
+      const septum=geometry.left+430;
+      if(side==='left')context.fillRect(septum,geometry.top+500,progress*340,550);
+      else context.fillRect(septum-progress*370,geometry.top+480,progress*370,570);
+      context.restore();
+    }
+  }
+
+  function drawBaseHeart(context, state, config, design, frames) {
+    const geometry = design.heart;
+    const phase = state.cycleSeconds;
+    context.fillStyle = design.background || "#ffffff";
+    context.fillRect(0, 0, design.canvas.width, design.canvas.heartHeight);
+    if (phase < events.hisStart) {
+      // 心房・房室結節・His束までは、洞調律の承認済みフレーム推移をそのまま使用する。
+      const sinusPhase = interpolateKeyframes(phase, [
+        [0, 0],
+        [events.pStart, 0.0375],
+        [events.pEnd, 0.2171],
+        [events.avEnd, 0.34],
+        [events.hisEnd, 0.37],
+        [events.qrsStart, 0.465]
+      ]);
+      const frame = frameAtSinusPhase(frames, sinusPhase);
+      context.drawImage(frame, geometry.left, geometry.top, geometry.width, geometry.height);
+      return {
+        frameIndex: frames.indexOf(frame),
+        rightPurkinjeActivated: false,
+        rightVentricleRenderedFromSinusFrames: false,
+        rightVentricleRenderedFromSeparateFrame: false,
+        rightVentricleMaskCompositing: false,
+        mode: "sinus-v24-identical-preventricular-spread"
+      };
+    }
+
+    // 興奮の焼き込まれていない静止フレームのみを心室の基準面にする。
+    const ventricularSourcePhase = 0;
+    const leftFrame = frameAtSinusPhase(frames, ventricularSourcePhase);
+    // 一枚の同一フレームを土台にし、右室は共有頂点メッシュの変位だけで遅延させる。
+    // 別フレーム、マスク、切り抜きは使用しない。
+    context.drawImage(leftFrame, geometry.left, geometry.top, geometry.width, geometry.height);
+    const rightMesh = drawContinuousRightVentricleMesh(context, leftFrame, geometry, phase);
+    drawTissueState(context, geometry, phase);
+    const leftMyocardialProgress = clamp(
+      (phase - events.leftVentricleActivationStart) / (events.leftVentricleActivationEnd - events.leftVentricleActivationStart),
+      0,
+      1
+    );
+    const leftExcitationFade = phase <= events.leftVentricleActivationEnd
+      ? 1
+      : 1 - clamp((phase - events.leftVentricleActivationEnd) / 0.010, 0, 1);
+    drawLeftVentricularWave(context, geometry, leftMyocardialProgress, phase<=events.leftVentricleActivationEnd?leftExcitationFade:0);
+    const myocardialProgress = clamp(
+      (phase - events.transseptalActivationStart) / (events.qrsEnd - events.transseptalActivationStart),
+      0,
+      1
+    );
+    const excitationFade = phase <= events.qrsEnd
+      ? 1
+      : 1 - clamp((phase - events.qrsEnd) / 0.035, 0, 1);
+    drawDelayedRightVentricularWave(context, geometry, myocardialProgress, phase<=events.qrsEnd?excitationFade:0);
+    return {
+      frameIndex: frames.indexOf(leftFrame),
+      rightFrameIndex: frames.indexOf(leftFrame),
+      rightPurkinjeActivated: false,
+      rightVentricleRenderedFromSinusFrames: false,
+      rightVentricleRenderedFromSeparateFrame: false,
+      rightVentricleFullyAnimated: true,
+      rightVentricleContinuousSurface: true,
+      rightVentricleContinuousMesh: true,
+      rightVentricleBoundaryFeatherPx: 0,
+      rightVentricleMaskCompositing: false,
+      rightVentricleMeshColumns: rightMesh.meshColumns,
+      rightVentricleMeshRows: rightMesh.meshRows,
+      rightVentricleMeshBoundaryFadePx: rightMesh.boundaryFadePx,
+      rightVentricleMaximumDisplacementPx: rightMesh.maximumDisplacementPx,
+      rightVentricleAnchorDisplacements: rightMesh.anchorDisplacements,
+      rightVentricleSeptalMeshOnsetSeconds: rightMesh.septalOnsetSeconds,
+      rightVentricleFreeWallMeshOnsetSeconds: rightMesh.freeWallOnsetSeconds,
+      rightVentricleAnchors: Object.keys(RIGHT_VENTRICLE_ANCHORS),
+      rightVentricleAnimatedRegions: ["tricuspid_annulus", "outflow_tract", "free_wall", "apex", "septal_attachment"],
+      rightVentricleMyocardialWavefront: phase>=events.transseptalActivationStart && phase<=events.qrsEnd,
+      leftVentricleMyocardialWavefront: phase>=events.leftVentricleActivationStart && phase<=events.leftVentricleActivationEnd,
+      rightVentricleMyocardialProgress: myocardialProgress,
+      rightVentricleTerminalRegion: myocardialProgress >= 0.72,
+      mode: "resting-sinus-anatomy-sequential-lv-rv"
+    };
+  }
+
+  function drawAtrialMechanical(context, state, config, design, frames) {
+    const phase = state.cycleSeconds;
+    const progress = windowEnvelope(phase, 0.075, 0.13, 0.205);
+    return { active: progress > 0, progress, organized: true, chambers: ["right_atrium", "left_atrium"], embeddedInSinusFrames: true };
+  }
+
+  function drawVentricularMechanical(context, state, config, design, frames) {
+    const phase = state.cycleSeconds;
+    const leftProgress = windowEnvelope(phase, events.leftVentricleContractionStart, 0.330, 0.570);
+    const rightProgress = windowEnvelope(phase, events.rightVentricleContractionStart, 0.560, 0.800);
+    return {
+      active: leftProgress > 0 || rightProgress > 0,
+      progress: Math.max(leftProgress, rightProgress),
+      leftProgress,
+      rightProgress,
+      rightDelaySeconds: events.rightVentricleContractionStart - events.leftVentricleContractionStart,
+      mode: config.ventricularContraction.mode,
+      embeddedInSinusFrames: false,
+      qrsTriggered: true
+    };
+  }
+
+  function drawBlockMark(context, x, y, active) {
+    context.save();
+    context.fillStyle = active ? "rgba(255,239,235,0.98)" : "rgba(255,248,246,0.92)";
+    context.strokeStyle = "#C54835";
+    context.lineWidth = 3;
+    context.beginPath();
+    context.arc(x, y, active ? 17 : 14, 0, Math.PI * 2);
+    context.fill();
+    context.stroke();
+    context.beginPath();
+    context.moveTo(x - 7, y - 7);
+    context.lineTo(x + 7, y + 7);
+    context.moveTo(x + 7, y - 7);
+    context.lineTo(x - 7, y + 7);
+    context.stroke();
+    context.restore();
+  }
+
+  function drawPathFront(context, geometry, points, progress, width) {
+    if (progress < 0 || progress > 1) return;
+    context.save();
+    context.translate(geometry.left, geometry.top);
+    context.globalCompositeOperation = "screen";
+    context.strokeStyle = "#ffffdc";
+    context.shadowColor = "#ffe32d";
+    context.shadowBlur = 20;
+    context.lineWidth = width || 7;
+    context.lineCap = "round";
+    context.beginPath();
+    const start = Math.max(0, progress - 0.22);
+    for (let i = 0; i <= 20; i++) {
+      const p = pointOnPolyline(points, start + (progress - start) * i / 20);
+      if (i === 0) context.moveTo(p.x, p.y); else context.lineTo(p.x, p.y);
+    }
+    context.stroke();
+    context.restore();
+  }
+
+  function drawConduction(context, state, config) {
+    const geometry = config.visual.design.heart;
+    const left = geometry.left;
+    const top = geometry.top;
+    const phase = state.cycleSeconds;
+    let stage = "洞結節発火待機";
+
+    if (phase >= events.pStart && phase < events.pEnd) {
+      stage = "洞結節から両心房へ正常伝導";
+    } else if (phase >= events.avStart && phase < events.avEnd) {
+      stage = "房室結節で生理的遅延";
+    } else if (phase >= events.hisStart && phase < events.hisEnd) {
+      stage = "ヒス束（His束）まで正常伝導";
+    } else if (phase >= events.bundleStart && phase < events.leftVentricleActivationStart + 0.055) {
+      stage = "左脚・左脚前枝／後枝へ正常伝導";
+    } else if (phase >= events.transseptalActivationStart && phase < events.qrsEnd) {
+      stage = "左室から心筋間伝導で右室へ遅延興奮";
+    }
+
+    const hisProgress = (phase - events.hisStart) / (events.hisEnd - events.hisStart);
+    drawPathFront(context, geometry, [[333,463],[353,493],[372,541]], hisProgress, 9);
+    const fascicleProgress = (phase - events.bundleStart) / (events.qrsStart - events.bundleStart);
+    drawPathFront(context, geometry, [[372,541],[415,596],[491,628],[560,676],[620,708]], fascicleProgress, 8);
+    drawPathFront(context, geometry, [[372,541],[397,600],[405,697],[420,785],[474,859]], fascicleProgress, 8);
+    const purkinjeProgress = (phase - events.qrsStart) / 0.035;
+    for (const path of [
+      [[620,708],[640,753],[656,824],[620,902],[550,949]],
+      [[474,859],[508,889],[557,900],[612,844],[651,780]],
+      [[474,859],[494,909],[538,949],[597,933],[660,877]]
+    ]) drawPathFront(context, geometry, path, purkinjeProgress, 5);
+    const blockActive = phase >= events.hisStart && phase <= events.qrsEnd;
+    const blockPoint={x:358,y:642};
+    const blockDisplacement=phase>=events.hisStart?wholeHeartMeshDisplacement(blockPoint.x,blockPoint.y,phase):{x:0,y:0};
+    drawBlockMark(context,left+blockPoint.x+blockDisplacement.x,top+blockPoint.y+blockDisplacement.y,blockActive);
+    return {
+      stage,
+      avConducted: phase >= events.avStart && phase <= events.hisEnd,
+      avBlocked: false,
+      avStatus: phase >= events.avStart && phase <= events.hisEnd ? "通過" : "待機",
+      rightBundleBlocked: true,
+      rightBundleSignalPropagated: false,
+      leftBundleConducted: phase >= events.bundleStart && phase <= events.leftVentricleActivationStart + 0.055,
+      transseptalToRightVentricle: phase >= events.transseptalActivationStart && phase <= events.qrsEnd,
+      usesExistingAnatomicalConductionPaths: true,
+      visualPropagationMode: "left-fascicles-only-short-wavefront",
+      movingSignalDots: false,
+      addedConductionLines: false,
+      embeddedInCompositeFrame: false
+    };
+  }
+
+  function drawActivationGlow(context, x, y, rx, ry, alpha, colorStops) {
+    const gradient = context.createRadialGradient(x, y, 12, x, y, Math.max(rx, ry));
+    gradient.addColorStop(0, colorStops[0].replace("ALPHA", String(0.36 * alpha)));
+    gradient.addColorStop(0.55, colorStops[1].replace("ALPHA", String(0.17 * alpha)));
+    gradient.addColorStop(1, colorStops[2]);
+    context.fillStyle = gradient;
+    context.beginPath();
+    context.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2);
+    context.fill();
+  }
+
+  function drawActivation(context, state, activation, config) {
+    const phase = state.cycleSeconds;
+    const geometry = config.visual.design.heart;
+    const left = geometry.left;
+    const top = geometry.top;
+    const atrial = phase >= events.pStart && phase <= events.pEnd;
+    const leftProgress = clamp((phase - events.leftVentricleActivationStart) / (events.leftVentricleActivationEnd - events.leftVentricleActivationStart), 0, 1);
+    const rightProgress = clamp((phase - events.rightVentricleActivationStart) / (events.qrsEnd - events.rightVentricleActivationStart), 0, 1);
+    const leftActive = phase >= events.leftVentricleActivationStart && phase <= events.leftVentricleActivationEnd;
+    const rightActive = phase >= events.rightVentricleActivationStart && phase <= events.qrsEnd;
+    return {
+      atrial,
+      organizedAtrial: true,
+      leftVentricle: leftActive,
+      rightVentricle: rightActive,
+      leftVentricleProgress: leftProgress,
+      rightVentricleProgress: rightProgress,
+      rightVentricleDelaySeconds: events.rightVentricleActivationStart - events.leftVentricleActivationStart,
+      activationOrder: "left-first-right-delayed",
+      ventricular: leftActive || rightActive,
+      ventricularRepolarization: phase >= events.tStart && phase <= events.tEnd,
+      embeddedInCompositeFrame: false,
+      visualPropagationMode: "sinus-anatomy-independent-sequential-wavefronts",
+      movingSignalDots: false
+    };
+  }
+
+  function drawContraction(context, state) {
+    const phase = state.cycleSeconds;
+    const atrial = phase >= 0.075 && phase <= 0.205;
+    const leftProgress = windowEnvelope(phase, events.leftVentricleContractionStart, 0.330, 0.570);
+    const rightProgress = windowEnvelope(phase, events.rightVentricleContractionStart, 0.560, 0.800);
+    return {
+      atrial,
+      atrialLocalQuiver: false,
+      ventricular: leftProgress > 0 || rightProgress > 0,
+      ventricularProgress: Math.max(leftProgress, rightProgress),
+      leftVentricleProgress: leftProgress,
+      rightVentricleProgress: rightProgress,
+      rightVentricleDelaySeconds: events.rightVentricleContractionStart - events.leftVentricleContractionStart,
+      embeddedInCompositeFrame: false
+    };
+  }
+
+  function drawLeader(context, text, x, y, targetX, targetY, align) {
+    context.font = "700 23px " + FONT;
+    context.fillStyle = "#263238";
+    context.textAlign = align || "left";
+    context.fillText(text, x, y);
+    const width = context.measureText(text).width;
+    const startX = (align || "left") === "right" ? x - width - 12 : x + width + 12;
+    context.strokeStyle = "#526A75";
+    context.lineWidth = 2;
+    context.beginPath();
+    context.moveTo(startX, y - 8);
+    context.lineTo(targetX, targetY);
+    context.stroke();
+    context.fillStyle = "#526A75";
+    context.beginPath();
+    context.arc(targetX, targetY, 4, 0, Math.PI * 2);
+    context.fill();
+    context.textAlign = "left";
+  }
+
+  function drawPill(context, text, x, y, width, palette) {
+    context.save();
+    context.fillStyle = palette.fill;
+    context.strokeStyle = palette.stroke;
+    context.lineWidth = 2;
+    roundedRect(context, x, y, width, 42, 10);
+    context.fill();
+    context.stroke();
+    context.fillStyle = palette.text;
+    context.font = "800 20px " + FONT;
+    context.textAlign = "center";
+    context.fillText(text, x + width / 2, y + 29);
+    context.restore();
+  }
+
+  function drawLabels(context, state, config) {
+    // Match the sinus ECG title and phase badge, using the free strip immediately
+    // above the ECG so both accepted lead traces retain their size and position.
+    const design = config.visual.design;
+    const top = design.canvas.heartHeight - 60;
+    const stageText = ecgStage(state.cycleSeconds);
+    context.save();
+    context.fillStyle = "#111827";
+    context.font = "700 34px " + FONT;
+    context.fillText(config.visual.ecgTitle, 28, top + 43);
+    context.font = "700 30px " + FONT;
+    const width = Math.ceil(context.measureText(stageText).width) + 36;
+    const x = design.canvas.width - 28 - width;
+    context.fillStyle = "#F1F5F9";
+    roundedRect(context, x, top, width, 52, 9);
+    context.fill();
+    context.strokeStyle = "#CBD5E1";
+    context.lineWidth = 1.5;
+    context.stroke();
+    context.fillStyle = "#111827";
+    context.textAlign = "right";
+    context.fillText(stageText, design.canvas.width - 46, top + 37);
+    context.restore();
+    return { labelsVisible: true, embeddedInCompositeFrame: false, teachingStage: stageText };
+  }
+
+  function piecewise(points, time) {
+    if (time < points[0][0] || time > points[points.length - 1][0]) return 0;
+    for (let index = 1; index < points.length; index += 1) {
+      if (time <= points[index][0]) {
+        const previous = points[index - 1];
+        const next = points[index];
+        const progress = (time - previous[0]) / Math.max(0.00001, next[0] - previous[0]);
+        return previous[1] + (next[1] - previous[1]) * progress;
+      }
+    }
+    return 0;
+  }
+
+  // Fixed coordinates digitized from the supplied V1 and V6 images.
+  const MORPHOLOGY = Object.freeze({"V1":[[0,0],[0.010909,-0.013333],[0.014545,-0.053333],[0.018182,-0.013333],[0.021818,-0.013333],[0.025455,0.0],[0.029091,0.0],[0.032727,0.0],[0.036364,-0.013333],[0.04,-0.013333],[0.043636,-0.053333],[0.047273,-0.013333],[0.050909,-0.013333],[0.054545,-0.013333],[0.058182,0.0],[0.061818,-0.013333],[0.065455,-0.013333],[0.069091,-0.013333],[0.072727,-0.013333],[0.076364,-0.013333],[0.08,-0.013333],[0.083636,-0.013333],[0.087273,-0.013333],[0.090909,-0.013333],[0.094545,-0.013333],[0.098182,-0.013333],[0.101818,-0.013333],[0.105455,-0.013333],[0.109091,-0.013333],[0.112727,0.0],[0.116364,0.0],[0.12,0.0],[0.123636,-0.013333],[0.127273,-0.013333],[0.130909,-0.013333],[0.134545,-0.013333],[0.138182,-0.013333],[0.141818,-0.013333],[0.145455,-0.013333],[0.149091,0.0],[0.152727,0.0],[0.156364,0.0],[0.16,0.0],[0.163636,0.0],[0.167273,0.0],[0.170909,0.0],[0.174545,0.013333],[0.178182,0.013333],[0.181818,0.013333],[0.185455,0.013333],[0.189091,0.013333],[0.192727,0.013333],[0.196364,0.013333],[0.2,0.013333],[0.203636,0.013333],[0.207273,0.013333],[0.210909,0.106667],[0.214545,0.053333],[0.218182,0.066667],[0.221818,0.093333],[0.225455,0.133333],[0.229091,0.053333],[0.232727,0.0],[0.236364,-0.106667],[0.24,-0.173333],[0.243636,-0.266667],[0.247273,-0.28],[0.250909,-0.24],[0.254545,-0.173333],[0.258182,-0.093333],[0.261818,-0.013333],[0.265455,0.24],[0.269091,0.44],[0.272727,0.733333],[0.276364,0.84],[0.28,0.946667],[0.283636,0.986667],[0.287273,0.84],[0.290909,0.64],[0.294545,0.48],[0.298182,0.346667],[0.301818,0.173333],[0.305455,0.066667],[0.309091,0.08],[0.312727,0.08],[0.316364,0.08],[0.32,0.08],[0.323636,0.08],[0.327273,0.08],[0.330909,0.066667],[0.334545,0.066667],[0.338182,0.08],[0.341818,0.08],[0.345455,0.066667],[0.349091,0.066667],[0.352727,0.066667],[0.356364,0.066667],[0.36,0.066667],[0.363636,0.053333],[0.367273,0.066667],[0.370909,0.066667],[0.374545,0.066667],[0.378182,0.066667],[0.381818,0.08],[0.385455,0.093333],[0.389091,0.093333],[0.392727,0.08],[0.396364,0.066667],[0.4,0.053333],[0.403636,0.04],[0.407273,0.026667],[0.410909,-0.013333],[0.414545,-0.04],[0.418182,-0.04],[0.421818,-0.026667],[0.425455,-0.013333],[0.429091,0.0],[0.432727,0.0],[0.436364,0.0],[0.44,-0.013333],[0.443636,-0.013333],[0.447273,-0.026667],[0.450909,-0.04],[0.454545,-0.053333],[0.458182,-0.066667],[0.461818,-0.08],[0.465455,-0.08],[0.469091,-0.093333],[0.472727,-0.106667],[0.476364,-0.12],[0.48,-0.133333],[0.483636,-0.16],[0.487273,-0.173333],[0.490909,-0.173333],[0.494545,-0.2],[0.498182,-0.226667],[0.501818,-0.24],[0.505455,-0.266667],[0.509091,-0.293333],[0.512727,-0.306667],[0.516364,-0.333333],[0.52,-0.346667],[0.523636,-0.36],[0.527273,-0.373333],[0.530909,-0.386667],[0.534545,-0.413333],[0.538182,-0.426667],[0.541818,-0.44],[0.545455,-0.453333],[0.549091,-0.4],[0.552727,-0.453333],[0.556364,-0.453333],[0.56,-0.453333],[0.563636,-0.44],[0.567273,-0.426667],[0.570909,-0.413333],[0.574545,-0.386667],[0.578182,-0.373333],[0.581818,-0.346667],[0.585455,-0.32],[0.589091,-0.306667],[0.592727,-0.266667],[0.596364,-0.253333],[0.6,-0.213333],[0.603636,-0.186667],[0.607273,-0.173333],[0.610909,-0.173333],[0.614545,-0.12],[0.618182,-0.093333],[0.621818,-0.08],[0.625455,-0.053333],[0.629091,-0.026667],[0.632727,-0.013333],[0.636364,-0.013333],[0.64,0.0],[0.643636,0.013333],[0.647273,0.026667],[0.650909,0.04],[0.654545,0.053333],[0.658182,0.066667],[0.661818,0.066667],[0.665455,0.08],[0.669091,0.08],[0.672727,0.053333],[0.676364,0.08],[0.68,0.08],[0.683636,0.08],[0.687273,0.08],[0.690909,0.08],[0.694545,0.08],[0.698182,0.08],[0.701818,0.066667],[0.705455,0.066667],[0.709091,0.066667],[0.712727,0.066667],[0.716364,0.066667],[0.72,0.066667],[0.723636,0.066667],[0.727273,0.053333],[0.730909,0.053333],[0.734545,0.053333],[0.738182,0.053333],[0.741818,0.053333],[0.745455,0.053333],[0.749091,0.053333],[0.752727,0.066667],[0.756364,0.066667],[0.76,0.066667],[0.763636,0.053333],[0.767273,0.053333],[0.770909,0.066667],[0.774545,0.066667],[0.778182,0.066667],[0.781818,0.066667],[0.785455,0.066667],[0.789091,0.066667],[0.792727,0.053333],[0.796364,0.053333],[0.8,0.066667],[0.803636,0.066667],[0.807273,0.066667],[0.810909,0.066667],[0.814545,0.066667],[0.818182,0.053333],[0.821818,0.053333],[0.825455,0.053333],[0.829091,0.053333],[0.832727,0.053333],[0.836364,0.053333],[0.84,0.053333],[0.843636,0.04],[0.847273,0.04],[0.850909,0.04],[0.854545,0.04],[0.858182,0.04],[0.861818,0.04],[0.865455,0.026667],[0.869091,0.026667],[0.872727,0.026667],[0.876364,0.026667],[0.88,0.013333],[0.883636,0.013333],[0.887273,0.013333],[0.890909,0.013333],[0.894545,0.013333],[0.898182,0.013333],[0.901818,0.013333],[0.905455,0.0],[0.909091,0.0],[0.912727,0.0],[0.916364,0.0],[0.92,-0.066667],[0.923636,-0.013333],[0.927273,-0.013333],[0.930909,-0.013333],[0.934545,-0.013333],[0.938182,-0.013333],[0.941818,-0.013333],[0.945455,-0.026667],[0.949091,-0.066667],[0.952727,-0.026667],[0.956364,-0.026667],[0.96,-0.026667],[0.963636,-0.026667],[0.967273,-0.026667],[0.970909,-0.026667],[0.974545,-0.026667],[0.978182,-0.026667],[0.981818,-0.026667],[0.985455,-0.026667],[0.989091,-0.026667],[0.992727,-0.026667],[0.996364,-0.04],[1,0]],"V6":[[0,0],[0.018182,0.053333],[0.021818,0.053333],[0.025455,0.066667],[0.029091,0.066667],[0.032727,0.066667],[0.036364,0.066667],[0.04,0.053333],[0.043636,0.053333],[0.047273,0.053333],[0.050909,0.053333],[0.054545,0.053333],[0.058182,0.053333],[0.061818,0.053333],[0.065455,0.053333],[0.069091,0.053333],[0.072727,0.053333],[0.076364,0.053333],[0.08,0.053333],[0.083636,0.053333],[0.087273,-0.013333],[0.090909,0.04],[0.094545,0.04],[0.098182,0.04],[0.101818,0.04],[0.105455,0.04],[0.109091,0.04],[0.112727,0.053333],[0.116364,0.04],[0.12,-0.013333],[0.123636,0.053333],[0.127273,0.04],[0.130909,0.04],[0.134545,0.04],[0.138182,0.04],[0.141818,0.026667],[0.145455,0.026667],[0.149091,0.026667],[0.152727,0.026667],[0.156364,0.026667],[0.16,0.026667],[0.163636,0.013333],[0.167273,0.013333],[0.170909,0.013333],[0.174545,0.026667],[0.178182,-0.013333],[0.181818,0.026667],[0.185455,0.026667],[0.189091,0.013333],[0.192727,0.013333],[0.196364,0.013333],[0.2,0.013333],[0.203636,0.0],[0.207273,0.0],[0.210909,-0.013333],[0.214545,-0.013333],[0.218182,-0.053333],[0.221818,-0.08],[0.225455,-0.08],[0.229091,0.026667],[0.232727,0.066667],[0.236364,0.293333],[0.24,0.44],[0.243636,0.6],[0.247273,0.48],[0.250909,0.36],[0.254545,0.2],[0.258182,0.093333],[0.261818,-0.08],[0.265455,-0.213333],[0.269091,-0.24],[0.272727,-0.36],[0.276364,-0.453333],[0.28,-0.426667],[0.283636,-0.4],[0.287273,-0.466667],[0.290909,-0.333333],[0.294545,-0.24],[0.298182,-0.133333],[0.301818,-0.066667],[0.305455,-0.053333],[0.309091,-0.053333],[0.312727,-0.053333],[0.316364,-0.053333],[0.32,-0.04],[0.323636,-0.04],[0.327273,-0.04],[0.330909,-0.026667],[0.334545,-0.04],[0.338182,-0.04],[0.341818,-0.04],[0.345455,-0.04],[0.349091,-0.053333],[0.352727,-0.053333],[0.356364,-0.066667],[0.36,-0.066667],[0.363636,-0.066667],[0.367273,-0.08],[0.370909,-0.08],[0.374545,-0.093333],[0.378182,-0.093333],[0.381818,-0.093333],[0.385455,-0.093333],[0.389091,-0.093333],[0.392727,-0.133333],[0.396364,-0.106667],[0.4,-0.106667],[0.403636,-0.106667],[0.407273,-0.106667],[0.410909,-0.106667],[0.414545,-0.106667],[0.418182,-0.106667],[0.421818,-0.106667],[0.425455,-0.106667],[0.429091,-0.093333],[0.432727,-0.093333],[0.436364,-0.093333],[0.44,-0.08],[0.443636,-0.08],[0.447273,-0.066667],[0.450909,-0.053333],[0.454545,-0.053333],[0.458182,-0.04],[0.461818,-0.04],[0.465455,-0.026667],[0.469091,-0.013333],[0.472727,0.0],[0.476364,0.013333],[0.48,0.026667],[0.483636,0.04],[0.487273,0.08],[0.490909,0.093333],[0.494545,0.106667],[0.498182,0.106667],[0.501818,0.146667],[0.505455,0.146667],[0.509091,0.16],[0.512727,0.186667],[0.516364,0.2],[0.52,0.213333],[0.523636,0.226667],[0.527273,0.24],[0.530909,0.24],[0.534545,0.253333],[0.538182,0.253333],[0.541818,0.253333],[0.545455,0.253333],[0.549091,0.213333],[0.552727,0.24],[0.556364,0.226667],[0.56,0.213333],[0.563636,0.2],[0.567273,0.186667],[0.570909,0.16],[0.574545,0.146667],[0.578182,0.133333],[0.581818,0.106667],[0.585455,0.106667],[0.589091,0.08],[0.592727,0.08],[0.596364,0.066667],[0.6,0.053333],[0.603636,0.04],[0.607273,0.013333],[0.610909,-0.013333],[0.614545,0.0],[0.618182,0.0],[0.621818,-0.013333],[0.625455,-0.013333],[0.629091,-0.013333],[0.632727,-0.013333],[0.636364,-0.026667],[0.64,-0.026667],[0.643636,-0.026667],[0.647273,-0.04],[0.650909,-0.04],[0.654545,-0.026667],[0.658182,-0.026667],[0.661818,-0.026667],[0.665455,-0.026667],[0.669091,-0.026667],[0.672727,-0.013333],[0.676364,-0.013333],[0.68,-0.013333],[0.683636,-0.013333],[0.687273,-0.013333],[0.690909,0.0],[0.694545,0.0],[0.698182,0.0],[0.701818,-0.013333],[0.705455,0.0],[0.709091,0.0],[0.712727,0.0],[0.716364,0.013333],[0.72,0.013333],[0.723636,0.013333],[0.727273,0.013333],[0.730909,0.0],[0.734545,-0.013333],[0.738182,0.0],[0.741818,0.0],[0.745455,-0.013333],[0.749091,0.0],[0.752727,0.0],[0.756364,0.0],[0.76,0.0],[0.763636,0.0],[0.767273,0.0],[0.770909,0.0],[0.774545,0.0],[0.778182,0.0],[0.781818,0.0],[0.785455,-0.013333],[0.789091,-0.013333],[0.792727,-0.013333],[0.796364,-0.013333],[0.8,0.0],[0.803636,0.0],[0.807273,-0.013333],[0.810909,0.0],[0.814545,0.0],[0.818182,-0.013333],[0.821818,-0.013333],[0.825455,-0.013333],[0.829091,0.0],[0.832727,0.0],[0.836364,0.0],[0.84,0.0],[0.843636,0.0],[0.847273,0.0],[0.850909,0.0],[0.854545,0.0],[0.858182,0.0],[0.861818,0.0],[0.865455,0.013333],[0.869091,0.013333],[0.872727,0.013333],[0.876364,0.013333],[0.88,0.013333],[0.883636,0.013333],[0.887273,0.013333],[0.890909,0.013333],[0.894545,0.013333],[0.898182,0.026667],[0.901818,0.013333],[0.905455,0.013333],[0.909091,0.013333],[0.912727,0.026667],[0.916364,0.026667],[0.92,0.026667],[0.923636,0.026667],[0.927273,0.026667],[0.930909,0.026667],[0.934545,0.026667],[0.938182,0.026667],[0.941818,0.026667],[0.945455,0.026667],[0.949091,0.026667],[0.952727,0.026667],[0.956364,0.026667],[0.96,0.04],[0.963636,0.04],[0.967273,0.04],[0.970909,0.04],[0.974545,0.04],[0.978182,0.04],[0.981818,0.04],[0.985455,0.04],[0.989091,0.04],[0.992727,0.04],[0.996364,0.04],[1,0]]});
+
+  // Keep the accepted QRS/ST/T amplitudes; map only their time coordinates
+  // to the locked cardiac electrical events. Mechanical timing stays separate.
+  const ECG_POINTS = Object.freeze(Object.fromEntries(["V1", "V6"].map(lead => {
+    const tStart = lead === "V1" ? 0.44 : 0.461818;
+    const tEnd = lead === "V1" ? 0.665455 : 0.636364;
+    const anchors = [[0,0], [0.2,events.qrsStart], [0.265455,events.rightVentricleActivationStart],
+      [0.32,events.qrsEnd], [tStart,events.tStart], [tEnd,events.tEnd], [1,1]];
+    const points = MORPHOLOGY[lead].filter(p => p[0] >= 0.2).map(([time,value]) =>
+      [interpolateKeyframes(time, anchors),value]);
+    // Organized atrial excitation needs a visible P wave before ventricular excitation.
+    const atrial = [[0,0], [events.pStart,0]];
+    for (let i=1;i<=32;i++) {
+      const progress=i/32;
+      atrial.push([events.pStart+(events.pEnd-events.pStart)*progress,
+        (lead === "V1" ? 0.08 : 0.10)*Math.sin(Math.PI*progress)**2]);
+    }
+    atrial.push([events.qrsStart-0.001,0]);
+    return [lead,Object.freeze(atrial.concat(points).map(Object.freeze))];
+  })));
+
+  function ecgAmplitude(time, lead) {
+    const local = ((time % 1) + 1) % 1;
+    return piecewise(ECG_POINTS[lead], local);
+  }
+
+  function ecgStage(phase) {
+    if (phase < events.pStart) return "洞結節発火";
+    if (phase < events.pEnd) return "P波｜両心房の脱分極";
+    if (phase < events.avEnd) return "房室結節で生理的遅延";
+    if (phase < events.hisEnd) return "ヒス束（His束）へ伝導";
+    if (phase < events.qrsStart) return "右脚遮断・左脚は伝導";
+    if (phase < events.septalActivationEnd) return "QRS第1相｜中隔興奮";
+    if (phase < events.rightVentricleActivationStart) return "QRS第2相｜左室優位興奮";
+    if (phase < events.qrsEnd) return "QRS第3相｜遅れた右室終末興奮";
+    if (phase < events.tStart) return "ST部分｜二次性変化";
+    if (phase < events.tEnd) return "T波｜心室再分極";
+    return "TP部分｜規則的洞調律";
+  }
+
+  function drawGrid(context, left, right, top, bottom, smallBox) {
+    context.fillStyle = "#fffdfd";
+    context.fillRect(left, top, right - left, bottom - top);
+    for (let x = left, index = 0; x <= right + 0.1; x += smallBox, index += 1) {
+      context.beginPath();
+      context.moveTo(x, top);
+      context.lineTo(x, bottom);
+      context.strokeStyle = index % 5 === 0 ? "#edb7bd" : "#f8e1e4";
+      context.lineWidth = index % 5 === 0 ? 1 : 0.65;
+      context.stroke();
+    }
+    for (let y = top, index = 0; y <= bottom + 0.1; y += smallBox, index += 1) {
+      context.beginPath();
+      context.moveTo(left, y);
+      context.lineTo(right, y);
+      context.strokeStyle = index % 5 === 0 ? "#edb7bd" : "#f8e1e4";
+      context.lineWidth = index % 5 === 0 ? 1 : 0.65;
+      context.stroke();
+    }
+  }
+
+  function drawLead(context, lead, top, state, config, style) {
+    const left = 28;
+    const right = style.width - 30;
+    const duration = config.duration.totalSeconds;
+    const pixelsPerSecond = (right - left) / duration;
+    const baseline = top + 118;
+    const scale = 85;
+    drawGrid(context, left, right, top, top + 172, pixelsPerSecond * 0.04);
+    context.save();
+    context.beginPath(); context.rect(left, top, right - left, 172); context.clip();
+    context.strokeStyle = style.trace;
+    context.lineWidth = 2.5;
+    context.lineJoin = "round";
+    context.lineCap = "round";
+    context.beginPath();
+    const elapsed = clamp(state.timeSeconds, 0, duration);
+    const rr = state.rrIntervalMs / 1000;
+    // Draw the actual digitized vertices, so narrow peaks are never lost by sampling.
+    context.moveTo(left, baseline);
+    for (let beat = 0; beat * rr <= elapsed; beat++) {
+      for (const [time, amplitude] of ECG_POINTS[lead]) {
+        const absolute = beat * rr + time;
+        if (absolute > elapsed) break;
+        context.lineTo(left + absolute * pixelsPerSecond, baseline - amplitude * scale);
+      }
+    }
+    context.lineTo(left + elapsed * pixelsPerSecond, baseline - ecgAmplitude(state.cycleSeconds, lead) * scale);
+    context.stroke(); context.restore();
+    context.fillStyle = "#111827";
+    context.font = "700 25px " + FONT;
+    context.fillText(lead, left + 8, top + 29);
+    return { terminalHighlighted: false, paperSpeedMmPerSecond: 25,
+      smallBoxDurationSeconds: 0.04, qrsSmallBoxes: (events.qrsEnd-events.qrsStart)/0.04 };
+  }
+
+  function drawEcg(context, state, config, design) {
+    context.fillStyle = "#ffffff";
+    context.fillRect(0, 0, design.ecg.width, design.ecg.height);
+    const v1 = drawLead(context, "V1", 14, state, config, design.ecg);
+    drawLead(context, "V6", 210, state, config, design.ecg);
+    return {
+      time: state.timeSeconds, progress: state.timeSeconds / config.duration.totalSeconds,
+      sequenceProgress: state.timeSeconds / config.duration.totalSeconds,
+      stage: ecgStage(state.cycleSeconds), pWavePresent: true,
+      leads: ["V1", "V6"], leadMorphologies: {V1:"rSR_prime",V6:"broad_terminal_S"},
+      renderingMode: "independent_vector_path_per_lead",
+      qrsPhases: ["septal_activation", "left_ventricular_dominant_activation", "delayed_right_ventricular_terminal_activation"],
+      qrsWidthSeconds: events.qrsEnd-events.qrsStart, qrsSmallBoxes: v1.qrsSmallBoxes,
+      smallBoxDurationSeconds: 0.04, paperSpeedMmPerSecond: 25,
+      synchronizedLeadEvents: true, ventricularActivationOrder: "left-first-right-delayed",
+      terminalRPrimeHighlighted: false, terminalSHighlighted: false,
+      delayedRightVentricularActivationActive: state.cycleSeconds>=events.rightVentricleActivationStart && state.cycleSeconds<=events.qrsEnd,
+      panelPlacement: "below-heart-sinus-position", displayedBeats: state.timeSeconds / (state.rrIntervalMs/1000),
+      referenceTrace: "assets/ecg/rbbb-reference/traced-waveforms.json"
+    };
+  }
+
+  const config = {
+    id: "right-bundle-branch-block",
+    name: "右脚ブロック",
+    abbreviation: "RBBB",
+    duration: { totalSeconds: 5, fps: 60 },
+    heartRate: { mode: "fixed", value: 60, min: null, max: null },
+    rhythm: {
+      regularity: "regular",
+      cycleMode: "beat_based",
+      rrIntervalsMs: [1000, 1000, 1000, 1000, 1000]
+    },
+    pacemakerOrigin: {
+      type: "sinus_node",
+      location: "right_atrial_superior_lateral_wall",
+      dominant: true
+    },
+    saNode: { active: true, dominant: true },
+    atrialActivation: {
+      mode: "normal_sinus",
+      organized: true,
+      pathways: ["right_atrium", "bachmann_bundle", "left_atrium", "internodal_pathways"],
+      spreadPattern: "sa_node_to_both_atria_then_av_node",
+      contractionEnabled: true,
+      ecgSyncEvent: "pWave"
+    },
+    avNode: {
+      conductionMode: "one_to_one",
+      delayMode: "physiologic",
+      conductionRatio: "1:1"
+    },
+    hisPurkinjeActivation: {
+      enabled: true,
+      mode: "rbbb",
+      pathways: ["his_bundle", "left_bundle_branch", "left_anterior_fascicle", "left_posterior_fascicle", "left_purkinje_network"],
+      blockedPathways: ["right_bundle_branch"],
+      rightBundleBranch: { conduction: "blocked", signal: "stops_at_proximal_segment" },
+      leftBundleBranch: { conduction: "normal", fascicles: ["left_anterior_fascicle", "left_posterior_fascicle"] }
+    },
+    ventricularActivation: {
+      origin: "supraventricular",
+      mode: "left-first-right-delayed",
+      qrsWidthMode: "wide",
+      ecgSyncEvent: "qrs",
+      leftVentricleStartSeconds: 0.20,
+      rightVentricleStartSeconds: 0.270,
+      rightVentricleDelayMs: 70,
+      rightVentricleMechanism: "transseptal_myocardial_spread_from_left_ventricle"
+    },
+    atrialContraction: { enabled: true, timing: "after_atrial_depolarization", mode: "organized" },
+    ventricularContraction: {
+      enabled: true,
+      timing: "slightly_dyssynchronous_after_ventricular_depolarization",
+      mode: "left_first_right_slightly_delayed",
+      leftStartSeconds: events.leftVentricleContractionStart,
+      rightStartSeconds: events.rightVentricleContractionStart,
+      rightDelayMs: 210
+    },
+    ecg: {
+      lead: "V1",
+      leads: ["V1", "V6"],
+      pWave: { present: true, morphology: "sinus_p_waves_in_V1_and_V6", timing: "pWave" },
+      prInterval: { present: true, durationMode: "physiologic", durationMs: 180 },
+      qrs: {
+        morphology: { V1: "rSR_prime", V6: "broad_terminal_S" },
+        widthMode: "wide",
+        durationMs: 120,
+        timing: "qrs",
+        V1: { pattern: "rSR_prime", terminalRPrime: true, terminalRPrimeStrength: 0.78 },
+        V6: { pattern: "broad_terminal_S", broadTerminalS: true, terminalSStrength: 0.35 }
+      },
+      stSegment: { morphology: { V1: "secondary_depression", V6: "near_isoelectric" } },
+      tWave: {
+        morphology: { V1: "secondary_inversion", V6: "upright" },
+        timing: "tWave",
+        represents: "ventricular_repolarization"
+      },
+      baseline: { mode: "isoelectric" },
+      rrPattern: { mode: "regular" },
+      synchronizedFromSingleEvent: true
+    },
+    timing: { units: "seconds-within-cycle", events },
+    renderModel: {
+      mode: "rbbb-single-sinus-v24-frame-plus-continuous-rv-mesh-wavefront",
+      sourceFrameCount: 120,
+      heartFrames: sinusFrames,
+      anatomySource: "sinus-v24/000-119.webp",
+      mechanicalLayersSeparated: true,
+      layerOrder: ["base_anatomy", "atrial_mechanical", "ventricular_mechanical", "electrical_conduction", "myocardial_activation", "labels", "two_lead_ecg"],
+      physiologyLayers: ["normal_atrial_activation", "normal_av_his_conduction", "blocked_right_bundle", "left_bundle_fascicles", "left_ventricle_activation", "transseptal_right_ventricle_activation", "slightly_dyssynchronous_contraction"]
+    },
+    visual: {
+      design: RBBB_DESIGN,
+      playbackRate: 1,
+      playbackRates: [1, 0.5, 0.25],
+      designId: "rbbb-education-sinus-ecg-position",
+      screenTitle: "右脚ブロック",
+      documentTitle: "右脚ブロックとV1・V6誘導心電図",
+      ariaLabel: "上段に右脚ブロックの心臓内伝導、下段に同期したV1誘導・V6誘導心電図を示す医療教育アニメーション",
+      ecgTitle: "右脚ブロック",
+      ecgCaption: "模式波形・洞調律 HR 60回/分・QRS 120 ms",
+      ecgCalibration: "25 mm/秒相当｜V1：rSR′｜V6：幅広い終末S波",
+      explanation: "右脚ブロックは心房リズム異常ではなく心室内伝導障害です。洞結節からヒス束までは正常に伝わり、左脚・左脚前枝・左脚後枝を通って左室が先に興奮します。右脚は遮断され、右室は左室側からの心筋間伝導で遅れて興奮します。V1・V6は提供画像の波形を座標化し、同じ拍動イベントから5拍連続で描画します。初期再生は1倍速で、0.5倍速・0.25倍速に切り替えられます。P波とT波は固定した心臓イベントへ同期し、QRSは心室の電気的興奮に対応します。収縮の時間差と変形量は教育用に強調し、左室の収縮開始は210 ms、右室自由壁は420 msです。画像からのトレースであり診断用実測データではありません。"
+    },
+    renderAdapters: {
+      heart: drawBaseHeart,
+      atrialMechanical: drawAtrialMechanical,
+      ventricularMechanical: drawVentricularMechanical,
+      conduction: drawConduction,
+      activation: drawActivation,
+      contraction: drawContraction,
+      labels: () => ({labelsVisible:false, stage:4}),
+      ecg: drawEcg
+    }
+  };
+
+  return config;
+});
+
+
+
+
+</script><script src="learner-display.js?v=fullscreen-20261005"></script><script src="learner-player.js?v=fullscreen-20261005"></script><script>(function () {
+  "use strict";
+
+  const namespace = window.CardiacAnimation;
+  const query = new URLSearchParams(window.location.search);
+  const request = Object.assign({}, window.CARDIAC_ANIMATION_REQUEST || {});
+  if (query.has("rhythm")) request.rhythm = query.get("rhythm");
+  if (query.has("heartRate")) request.heartRate = Number(query.get("heartRate"));
+  if (query.has("duration")) request.duration = Number(query.get("duration"));
+  if (query.has("fps")) request.fps = Number(query.get("fps"));
+  if (query.has("seed")) request.seed = Number(query.get("seed"));
+
+  const rhythmId = request.rhythm || namespace.Defaults.rhythm;
+  const baseConfig = namespace.Rhythms[rhythmId];
+  const loading = document.getElementById("loading");
+  if (!baseConfig) {
+    loading.textContent = "未対応の心調律です: " + rhythmId;
+    return;
+  }
+
+  const config = namespace.RhythmEngine.applyOverrides(baseConfig, request);
+  const design = config.visual && config.visual.design || namespace.Design;
+  const canvas = document.getElementById("scene");
+  canvas.width = design.canvas.width;
+  canvas.height = design.canvas.height;
+  canvas.style.aspectRatio = design.canvas.width + "/" + design.canvas.height;
+  document.title = config.visual && config.visual.documentTitle || config.name + "とⅡ誘導心電図";
+  canvas.setAttribute("aria-label", config.visual && config.visual.ariaLabel || "上段に" + config.name + "の心臓、下段にⅡ誘導心電図");
+  const explanation = document.querySelector("#explanation p");
+  if (explanation && config.visual && config.visual.explanation) explanation.textContent = config.visual.explanation;
+  const context = canvas.getContext("2d");
+  const panel = document.createElement("canvas");
+  panel.width = design.ecg.width;
+  panel.height = design.ecg.height;
+  const panelContext = panel.getContext("2d");
+  const engine = new namespace.RhythmEngine.CardiacRhythmEngine(
+    config,
+    design,
+    context,
+    panelContext
+  );
+
+  const play = document.getElementById("play");
+  const reset = document.getElementById("reset");
+  const seek = document.getElementById("seek");
+  const speedControl = document.getElementById("speed");
+  const status = document.getElementById("status");
+  const totalDuration = engine.timeline.totalDurationMs;
+  const frameCount = engine.timeline.frameCount;
+  const exportMode = query.get("mode") === "export";
+  const previewLoop = !exportMode;
+  seek.max = String(frameCount - 1);
+
+  let elapsedTime = 0;
+  let previousTimestamp = null;
+  let playing = true;
+  let speed = config.visual.playbackRate || 1;
+
+  if (!Array.from(speedControl.options).some(option => Number(option.value) === speed)) {
+    speedControl.add(new Option(speed + "倍速", String(speed)));
+  }
+  speedControl.value = String(speed);
+  let lastOutputFrame = -1;
+
+  function renderElapsed(elapsed) {
+    const state = engine.timeline.stateAt(elapsed);
+    if (state.outputFrame === lastOutputFrame && !config.visual.playbackRate) return state;
+    lastOutputFrame = state.outputFrame;
+    const result = engine.renderAt(elapsed);
+    seek.value = String(state.outputFrame);
+    const totalBeats = config.timing && Array.isArray(config.timing.ventricularBeatTimes)
+      ? config.timing.ventricularBeatTimes.length
+      : engine.timeline.beats.length;
+    status.value = state.timeSeconds.toFixed(2) + " / " + config.duration.totalSeconds.toFixed(2) +
+      " 秒｜" + state.beatIndex + "/" + totalBeats + "拍";
+    canvas.dataset.heartFrame = String(result.heart.frameIndex);
+    canvas.dataset.ecgFrame = String(state.outputFrame);
+    canvas.dataset.phase = String(state.beatPhase);
+    canvas.dataset.beatPhase = String(state.beatPhase);
+    canvas.dataset.ecgProgress = String(result.ecg.progress);
+    canvas.dataset.ecgSequenceProgress = String(result.ecg.sequenceProgress);
+    canvas.dataset.stage = result.ecg.stage;
+    canvas.dataset.conductionStage = result.conduction.stage;
+    canvas.dataset.activeAtrialWavelets = String(result.conduction.activeAtrialWavelets == null ? 0 : result.conduction.activeAtrialWavelets);
+    canvas.dataset.avConducted = String(Boolean(result.conduction.avConducted));
+    canvas.dataset.avBlocked = String(Boolean(result.conduction.avBlocked));
+    canvas.dataset.avStatus = String(result.conduction.avStatus || "待機");
+    canvas.dataset.atrialContraction = String(Boolean(result.contraction.atrial));
+    canvas.dataset.mechanicalLayersSeparated = String(Boolean(result.mechanical.separated));
+    canvas.dataset.ventricularContraction = String(Boolean(result.mechanical.ventricular.active));
+    canvas.dataset.atrialLocalQuiver = String(Boolean(result.mechanical.atrial.active));
+    canvas.dataset.ventricularContractionProgress = String(result.mechanical.ventricular.progress == null ? 0 : result.mechanical.ventricular.progress);
+    canvas.dataset.pWavePresent = String(Boolean(result.ecg.pWavePresent == null ? config.ecg.pWave.present : result.ecg.pWavePresent));
+    canvas.dataset.rightBundleBlocked = String(Boolean(result.conduction.rightBundleBlocked));
+    canvas.dataset.rightBundleSignalPropagated = String(Boolean(result.conduction.rightBundleSignalPropagated));
+    canvas.dataset.leftBundleConducted = String(Boolean(result.conduction.leftBundleConducted));
+    canvas.dataset.transseptalToRightVentricle = String(Boolean(result.conduction.transseptalToRightVentricle));
+    canvas.dataset.ventricularActivationOrder = String(result.ecg.ventricularActivationOrder || "");
+    canvas.dataset.ecgLeads = Array.isArray(result.ecg.leads) ? result.ecg.leads.join(",") : String(config.ecg.lead || "");
+    canvas.dataset.qrsWidthSeconds = String(result.ecg.qrsWidthSeconds == null ? "" : result.ecg.qrsWidthSeconds);
+    canvas.dataset.qrsSmallBoxes = String(result.ecg.qrsSmallBoxes == null ? "" : result.ecg.qrsSmallBoxes);
+    canvas.dataset.synchronizedLeadEvents = String(Boolean(result.ecg.synchronizedLeadEvents));
+    canvas.dataset.terminalRPrimeHighlighted = String(Boolean(result.ecg.terminalRPrimeHighlighted));
+    canvas.dataset.terminalSHighlighted = String(Boolean(result.ecg.terminalSHighlighted));
+    canvas.dataset.canvasSize = canvas.width + "x" + canvas.height;
+    return result;
+  }
+
+
+  window.cardiacAnimation={config,engine,renderElapsed};
+  window.renderExportTime=milliseconds=>renderElapsed(Math.max(0,Math.min(milliseconds,totalDuration)));
+  window.renderExportFrame=i=>renderElapsed(i*1000/config.duration.fps);
+  function muteFrames(){    // Dim the static yellow RV network in derived browser canvases only. Original images stay intact.
+    for(let i=0;i<engine.heart.frames.length;i++){
+      const original=engine.heart.frames[i], muted=document.createElement('canvas');
+      muted.width=original.naturalWidth;muted.height=original.naturalHeight;
+      const cx=muted.getContext('2d',{willReadFrequently:true});cx.drawImage(original,0,0);
+      const pixels=cx.getImageData(0,0,muted.width,muted.height),d=pixels.data;
+      // x=375 separates the RV network from the normally conducting left fascicles.
+      for(let y=610;y<1030;y++)for(let x=65;x<375;x++){
+        const j=(y*muted.width+x)*4,r=d[j],g=d[j+1],b=d[j+2];
+        if(r>200&&g>145&&b<125&&g>b*1.45){const v=Math.round((r+g+b)/3);d[j]=v*.75;d[j+1]=v*.68;d[j+2]=v*.60;}
+      }
+      cx.putImageData(pixels,0,0);engine.heart.frames[i]=muted;
+    }
+
+}
+  async function prepare(){await Promise.all([engine.preload(),document.fonts.load('700 31px "BIZ UDPGothic"'),document.fonts.load('400 16px "BIZ UDPGothic"')]);muteFrames();window.__CARDIAC_READY__=true;}
+  window.LearnerPlayer.waitForPlay(async()=>{await prepare();window.LearnerPlayer.start(renderElapsed,totalDuration,config.duration.fps,true);},loading);
+  // A still preview uses unchanged resting anatomy; full data preparation happens on play.
+  document.fonts.load('700 31px "BIZ UDPGothic"').then(()=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=reject;im.src=config.renderModel.heartFrames[0];})).then(im=>{if(window.__CARDIAC_READY__)return;engine.heart.frames=[im];muteFrames();renderElapsed(0);canvas.dataset.previewReady='true';}).catch(error=>console.error(error));
+})();</script><style id="rbbb-note-style">.diagram-viewport{position:relative}.rbbb-callouts{position:absolute;pointer-events:none}.rbbb-callouts text{font-family:"BIZ UDPGothic","BIZ UDPゴシック",sans-serif;fill:#243746;font-weight:700}.rbbb-callouts .heading{font-size:42px}.rbbb-callouts .title{font-size:40px}.rbbb-callouts .detail{font-size:31px;font-weight:400}.rbbb-callouts .legend{font-size:29px}.rbbb-callouts rect{stroke-width:2;stroke:#b8c7d1}.rbbb-callouts .blocked{fill:#fff1f2;stroke:#bf6570}.rbbb-callouts .left{fill:#fff9e6;stroke:#c9ab55}.rbbb-callouts .right{fill:#eaf8fc;stroke:#73aebd}.rbbb-callouts .arrow{fill:none;stroke:#657c89;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.rbbb-now{margin:10px 0 0;font-size:16px;line-height:1.65;color:#243746;max-width:1100px}.rbbb-now strong{color:#234f60}@media(max-width:600px){.rbbb-now{font-size:15px}}</style><script id="rbbb-note-script">(()=>{'use strict';const canvas=document.getElementById('scene'),view=canvas.parentElement;view.insertAdjacentHTML('beforeend',"<svg class=\"rbbb-callouts\" viewBox=\"0 0 1808 1488\" aria-hidden=\"true\"><g>\n<text class=\"heading\" x=\"1030\" y=\"80\">右脚ブロックの伝わり方</text><text class=\"detail\" x=\"1030\" y=\"135\">洞結節からヒス束までは正常に伝わる</text>\n<rect class=\"blocked\" x=\"1025\" y=\"200\" width=\"735\" height=\"185\" rx=\"16\"/><text class=\"title\" x=\"1050\" y=\"255\">① 右脚で伝導が遮断</text><text class=\"detail\" x=\"1050\" y=\"310\">×印が右脚の遮断部位</text><text class=\"detail\" x=\"1050\" y=\"352\">右脚から右室へ直接は伝わらない</text>\n<path class=\"arrow\" d=\"M1392 402 V433 M1381 420 L1392 433 L1403 420\"/>\n<rect class=\"left\" x=\"1025\" y=\"450\" width=\"735\" height=\"200\" rx=\"16\"/><text class=\"title\" x=\"1050\" y=\"510\">② 左脚から左室へ伝導</text><text class=\"detail\" x=\"1050\" y=\"565\">左脚前枝・後枝の伝導は保たれる</text><text class=\"detail\" x=\"1050\" y=\"610\">画面右の左室が先に興奮する</text>\n<path class=\"arrow\" d=\"M1392 668 V700 M1381 687 L1392 700 L1403 687\"/>\n<rect class=\"right\" x=\"1025\" y=\"715\" width=\"735\" height=\"200\" rx=\"16\"/><text class=\"title\" x=\"1050\" y=\"775\">③ 心筋を介して右室へ</text><text class=\"detail\" x=\"1050\" y=\"830\">左室側から右室へ興奮が広がる</text><text class=\"detail\" x=\"1050\" y=\"875\">画面左の右室が遅れて興奮する</text>\n<text class=\"legend\" x=\"1030\" y=\"975\">黄色の光：正常に伝わる興奮</text><text class=\"legend\" x=\"1030\" y=\"1020\">水色の光：遅れた右室の興奮</text></g></svg>");const svg=view.querySelector('.rbbb-callouts');const box=document.createElement('p');box.className='rbbb-now';box.innerHTML='<strong>図の見方：</strong>右側の①→②→③を順に読むと、興奮が伝わる経路を確認できます。注釈は固定表示です。小さい画面では「図の倍率」を2倍・4倍にすると読めます。';view.after(box);const label=document.createElement('label');label.innerHTML='<input id="rbbb-label-toggle" type="checkbox" checked>注釈を表示';document.querySelector('nav.controls').append(label);label.querySelector('input').onchange=e=>{svg.style.visibility=e.target.checked?'visible':'hidden';box.hidden=!e.target.checked;};function layout(){svg.style.left=canvas.offsetLeft+'px';svg.style.top=canvas.offsetTop+'px';svg.style.width=canvas.offsetWidth+'px';svg.style.height=canvas.offsetHeight+'px';}new ResizeObserver(layout).observe(canvas);window.addEventListener('resize',layout);layout();})();</script></body></html>

@@ -757,8 +757,8 @@
     },
     {
       "path": "animations/rbbb.html",
-      "bytes": 17590,
-      "sha256": "bf6aeda68a7a90ca5c6186f9f20fd831912817844799f8cb8e5842427f16bb39"
+      "bytes": 110750,
+      "sha256": "94560144b2cdfad0b68c9f9af34d3dc9b298560fb40068ffcc5d5d77921cd4f6"
     },
     {
       "path": "animations/rhythms/README.md",
@@ -953,6 +953,211 @@
           "sha256": "974fb51ac9b11c9eaada54a0fabdd224c51287f7dfdfaf39c5a6d41729de1ae3"
         }
       ]
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/000.webp",
+      "bytes": 917696,
+      "sha256": "33031bd7ecdd128350aa8dc207cfa553247bcefdaecb2a53634199648ae7fd98"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/001.webp",
+      "bytes": 917538,
+      "sha256": "49e0ef4ed349adf45327fe7785a6cf474b1e0b562c255d2b63ebe52cd020fd61"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/002.webp",
+      "bytes": 917402,
+      "sha256": "7d87aa275d363f7f756d26300527e99c69be36f5cd50d4751b23689f1cffebce"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/003.webp",
+      "bytes": 917366,
+      "sha256": "59e04f049baf120d8953db36c8103a8dca75abe648130967f025c2793869f27e"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/004.webp",
+      "bytes": 917362,
+      "sha256": "c9bb0f34847e7a0ecbcc7b97a0c20938df56dc8d31079989e44c9ab5d138ea62"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/005.webp",
+      "bytes": 917486,
+      "sha256": "94e2dfc8da173e62a1167eea644cd844a19363391e97ee9750aafac18f0fea47"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/006.webp",
+      "bytes": 917716,
+      "sha256": "4d6d8aaf3319dffe8c60d1a982babab681e32af1223d3c59d39f403403c990e5"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/007.webp",
+      "bytes": 917798,
+      "sha256": "4f58490233bec97a43b32378e7b4b2a4b0a02130c281ae123f09f991a2335100"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/008.webp",
+      "bytes": 917958,
+      "sha256": "20f7d9c75026cc283216e4e2028441213684d61cf5c44016b411e72b9645aa4a"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/009.webp",
+      "bytes": 918494,
+      "sha256": "c4e4dacb75bfae1129d1557fbbe1a2e1fb3a06583177cfab16d7ed91d006ee97"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/010.webp",
+      "bytes": 914390,
+      "sha256": "5dffb7a4815b69b08b5488f0b8911e171ccf80727da6e3c84f12cf8e9b34acc7"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/011.webp",
+      "bytes": 903806,
+      "sha256": "c43b995d23cb81eb6055ba494b3e0eb8208ddc271770248d9f179943889b4f21"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/012.webp",
+      "bytes": 901438,
+      "sha256": "21bc93ebb938aa4265f796462f18d9d49052533d1c5b1ab182ccc28ac59b44bb"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/013.webp",
+      "bytes": 901050,
+      "sha256": "20e34354dba8cb0bbba04b435e8a576b46def26b5fbb54b53c24d11794df32e6"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/014.webp",
+      "bytes": 900544,
+      "sha256": "c15571a9ec0b0b502828ef4399432c41d8f9d5861a1d80f03c51124e7d5ef819"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/015.webp",
+      "bytes": 900008,
+      "sha256": "f5bf52c38facc327b5a2d9bd49f2da4271bf99ec70861f56afbd91fcc6457c5b"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/016.webp",
+      "bytes": 900818,
+      "sha256": "e7fc5aeb7a7dfe3c366f1614a0f39393dfce8ccf20f0c852c9fb6deea10bb1b7"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/017.webp",
+      "bytes": 900660,
+      "sha256": "77b49694a5a8c233aa0cd21804df94c79ff5002a4005b75b0b10d51d17b4c4a8"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/018.webp",
+      "bytes": 899506,
+      "sha256": "0534ecf3e6e10806e9278928343ce8a978329bb0d467fe714437cc1bd5a73e63"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/019.webp",
+      "bytes": 898830,
+      "sha256": "b446dac8da1b038473d27dbfa2059dfeec61454c28746f3185f0030c38e6e3b3"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/020.webp",
+      "bytes": 897730,
+      "sha256": "67569208743fe91c50a46dcb130ed21e3d841a525460518c605c36216e390db0"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/021.webp",
+      "bytes": 897674,
+      "sha256": "963f4df37eda8c657b0a34f52d7e81cc4fabf786bd08f6a141510ed99d685275"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/022.webp",
+      "bytes": 896962,
+      "sha256": "f34ead5d3e88ce94ed2255a23e26959d849ff652bb467ac511083c6fa762609f"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/023.webp",
+      "bytes": 896976,
+      "sha256": "ce7db1471662a80e7bba563f60dd22488f0a81d3cbf9c688606411d8c2aad1a2"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/024.webp",
+      "bytes": 896752,
+      "sha256": "357f26d2aac51a66b421811b1c389540105f0a38d339cd1396bbe3bfe1a5b928"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/025.webp",
+      "bytes": 896694,
+      "sha256": "f777d76fec9c3d059fcaf715c26bc535c4c695fb0ccff668fa4a0ea3bdf95df4"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/026.webp",
+      "bytes": 895978,
+      "sha256": "33cff212feae722e787e74cc4223b2de12d1c33199890d452e3d1829d9efd184"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/027.webp",
+      "bytes": 895650,
+      "sha256": "86662c245194ad10b39fd088b97852b2b93c07e39700772ffea7906658e097d1"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/028.webp",
+      "bytes": 895008,
+      "sha256": "0999aceeeb4232486c3f8b1817eb9cd29f8ce98eed3038c5a557e8d681f87594"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/029.webp",
+      "bytes": 895696,
+      "sha256": "13fb26e27516ef9118adc441e692e41e7da584615dbcf40876ec1380470f0ae5"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/030.webp",
+      "bytes": 895392,
+      "sha256": "226cd53ff01c962b3c4d5010652a03de9452ccd343719b603f87af26625c4edc"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/031.webp",
+      "bytes": 895520,
+      "sha256": "658413a907b3a832cfe52bd50d924defccb548c7447c450bab15b8550058cadf"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/032.webp",
+      "bytes": 895614,
+      "sha256": "7e253cfcfc5bf2a36ac6e0f138b4ef9cffe65f1ed6ce23b2de322dbf3c42cfc8"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/033.webp",
+      "bytes": 895268,
+      "sha256": "b7f951df0ea4f529622f21f520302ef6556943b8b2990244aaff19e5645765ed"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/034.webp",
+      "bytes": 896128,
+      "sha256": "da9319be724aae9a887e358893e13998504975fe6443650587fb773d19a1e58f"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/035.webp",
+      "bytes": 895436,
+      "sha256": "e298fa05869b3ef958c314ceeeb4474dadbc1001863d9c2ccec4f980ab7dd956"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/036.webp",
+      "bytes": 897900,
+      "sha256": "cb74ac37bd00915857d133eec23c9a96678636415105e1901f320db02e67cda8"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/037.webp",
+      "bytes": 906204,
+      "sha256": "708ee538667a0928af93e2fc9991b73efc43216b39622bcd04449475a77f943e"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/038.webp",
+      "bytes": 910414,
+      "sha256": "3ce7ddf4da2d909c22e2f3b5a2531ded0d692d9f5598fdbd3ff9a1e1928e3066"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/039.webp",
+      "bytes": 916316,
+      "sha256": "5b0dab4432f883dbf1a825d468ab357a30ff34fd231641006bb9665b3c6565a9"
+    },
+    {
+      "path": "animations/assets/rbbb-remake-20261009/040.webp",
+      "bytes": 916260,
+      "sha256": "754aeab22e6c7622b8b08b804abd947045948227dd859bc638d328189b49a983"
     }
   ]
 }
