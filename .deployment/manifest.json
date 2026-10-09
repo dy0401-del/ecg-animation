@@ -812,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 20317,
-      "sha256": "a7015dcca235a2c53600e0da6cabd8999f46ef39245f77a10aced7dab12ea6a1"
+      "bytes": 28686,
+      "sha256": "dfa88c31b38864eece2f23fca7ce28399252baf84750046ceb6f28ebe026823b"
     },
     {
       "path": "rhythm-finder.js",
