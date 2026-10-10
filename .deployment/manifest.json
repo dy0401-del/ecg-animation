@@ -812,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 28686,
-      "sha256": "dfa88c31b38864eece2f23fca7ce28399252baf84750046ceb6f28ebe026823b"
+      "bytes": 29104,
+      "sha256": "a58775fc0ba8734570a7688f4daa50d1ff6bb7dc254c4eb52f56d784cb18aaf3"
     },
     {
       "path": "rhythm-finder.js",
@@ -1158,6 +1158,23 @@
       "path": "animations/assets/rbbb-remake-20261009/040.webp",
       "bytes": 916260,
       "sha256": "754aeab22e6c7622b8b08b804abd947045948227dd859bc638d328189b49a983"
+    },
+    {
+      "path": "animations/right-axis-deviation.html",
+      "bytes": 13859636,
+      "sha256": "7607bb5dd5a4e2d1ff29bcb5834cb40f1f2e417e29ced0458c568eafe2ae1df0",
+      "parts": [
+        {
+          "path": ".deployment/parts/right-axis-deviation.html.part-001",
+          "bytes": 8388608,
+          "sha256": "f5f55e4d787224daaf27a9cd1e03c309e60d6f04f97da6680b3fd9386f7b345c"
+        },
+        {
+          "path": ".deployment/parts/right-axis-deviation.html.part-002",
+          "bytes": 5471028,
+          "sha256": "3896adcf808eb535a61750fbbe050ccf4cd1cbf457ab00161c9d9a961d3af55e"
+        }
+      ]
     }
   ]
 }
