@@ -525,7 +525,7 @@ async function prepareHeartCache(){
  for(let i=0;i<config.duration.fps;i++){
   const s=state(i*1000/config.duration.fps);ctx.fillStyle='#F8FAFC';ctx.fillRect(0,0,canvas.width,canvas.height);prepareTissue(s);drawMesh(s);electrical(s);
   heartCache.push(await createImageBitmap(canvas,geometry.left,geometry.top,768,1088));
-  if(i%4===0)await new Promise(resolve=>requestAnimationFrame(resolve));
+  if(i%4===0){const progress=document.getElementById('preparing');if(progress)progress.textContent='最初の図を表示しています。再生の準備中… '+Math.round((i+1)/config.duration.fps*100)+'%';await new Promise(resolve=>setTimeout(resolve,0));}
  }
 }
 function render(ms){
@@ -546,7 +546,18 @@ function loop(){const now=performance.now();if(origin===null)origin=now;if(lastC
  render(Math.min(playedMs,config.duration.totalSeconds*1000-1000/config.duration.fps));
  if(playedMs<config.duration.totalSeconds*1000)scheduleFrame();
 }
-heart.onload=async()=>{await Promise.all([document.fonts.load('32px "BIZ UDPGothic"'),document.fonts.load('bold 32px "BIZ UDPGothic"')]);tissueCtx.drawImage(heart,0,0,768,1088);restingPixels=tissueCtx.getImageData(0,0,768,1088).data;muteStaticVentricularLines();initMeshGPU();for(const mode of ["sinus","pac"]){const e=config.timing.atrialEvents.find(e=>e.mode===mode);if(e)render(e.pStart+.001);}for(const mode of ["sinus","pac","pvc"]){const e=config.timing.ventricularEvents.find(e=>e.mode===mode);if(e)render(e.qrsStart+.001);}await prepareHeartCache();render(0);window.__CARDIAC_READY__=true;document.getElementById("preparing")?.remove();if(!location.search.includes('mode=export'))window.LearnerPlayer.start(render,config.duration.totalSeconds*1000,config.duration.fps)};heart.src=window.HEART_DATA;
+heart.onload=async()=>{await Promise.all([document.fonts.load('32px "BIZ UDPGothic"'),document.fonts.load('bold 32px "BIZ UDPGothic"')]);tissueCtx.drawImage(heart,0,0,768,1088);restingPixels=tissueCtx.getImageData(0,0,768,1088).data;muteStaticVentricularLines();initMeshGPU();for(const mode of ["sinus","pac"]){const e=config.timing.atrialEvents.find(e=>e.mode===mode);if(e)render(e.pStart+.001);}for(const mode of ["sinus","pac","pvc"]){const e=config.timing.ventricularEvents.find(e=>e.mode===mode);if(e)render(e.qrsStart+.001);}render(0);
+// Show the original first frame while preparing the same playback cache.
+const startupPreview=document.createElement('img');
+startupPreview.alt='アニメーションの最初の図。再生を準備しています';
+startupPreview.src=canvas.toDataURL('image/png');
+startupPreview.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none';
+canvas.parentElement.style.position='relative';canvas.parentElement.append(startupPreview);
+try{await prepareHeartCache();}catch(error){
+ console.warn('Playback cache unavailable; using original live rendering',error);
+ for(const bitmap of heartCache)bitmap.close?.();heartCache=[];
+}finally{startupPreview.remove();}
+render(0);canvas.style.visibility='visible';window.__CARDIAC_READY__=true;document.getElementById("preparing")?.remove();if(!location.search.includes('mode=export'))window.LearnerPlayer.start(render,config.duration.totalSeconds*1000,config.duration.fps)};heart.src=window.HEART_DATA;
 const FONT='"BIZ UDPGothic", "BIZ UDPゴシック", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif';
 const radians=d=>d*Math.PI/180;
 const caseAt=ms=>config.axis.cases.find(c=>ms>=c.start&&ms<c.end)||config.axis.cases.at(-1);
