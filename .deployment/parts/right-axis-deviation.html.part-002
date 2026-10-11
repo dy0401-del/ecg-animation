@@ -511,19 +511,20 @@ function electrical(s){
  ctx.restore();
 }
 
+const HEART_CACHE_FPS=60;
 let heartCache=[];
 async function prepareHeartCache(){
- for(let i=0;i<config.duration.fps;i++){
-  const s=state(i*1000/config.duration.fps);ctx.fillStyle='#F8FAFC';ctx.fillRect(0,0,canvas.width,canvas.height);prepareTissue(s);drawMesh(s);electrical(s);
+ for(let i=0;i<HEART_CACHE_FPS;i++){
+  const s=state(i*1000/HEART_CACHE_FPS);ctx.fillStyle='#F8FAFC';ctx.fillRect(0,0,canvas.width,canvas.height);prepareTissue(s);drawMesh(s);electrical(s);
   heartCache.push(await createImageBitmap(canvas,geometry.left,geometry.top,768,1088));
-  if(i%4===0){const progress=document.getElementById('preparing');if(progress)progress.textContent='最初の図を表示しています。再生の準備中… '+Math.round((i+1)/config.duration.fps*100)+'%';await new Promise(resolve=>setTimeout(resolve,0));}
+  if(i%4===0){const progress=document.getElementById('preparing');if(progress)progress.textContent='最初の図を表示しています。再生の準備中… '+Math.round((i+1)/HEART_CACHE_FPS*100)+'%';await new Promise(resolve=>setTimeout(resolve,0));}
  }
 }
 function render(ms){
  const frame=Math.floor(Math.max(0,Math.min(ms,config.duration.totalSeconds*1000-.001))*config.duration.fps/1000+1e-7);
  const sampleMs=frame*1000/config.duration.fps,s=state(sampleMs);
  ctx.fillStyle='#F8FAFC';ctx.fillRect(0,0,canvas.width,canvas.height);
- if(heartCache.length===config.duration.fps)ctx.drawImage(heartCache[frame%config.duration.fps],geometry.left,geometry.top);
+ if(heartCache.length===HEART_CACHE_FPS){const cacheIndex=Math.floor((frame%config.duration.fps)*HEART_CACHE_FPS/config.duration.fps);ctx.drawImage(heartCache[cacheIndex],geometry.left,geometry.top);}
  else{prepareTissue(s);drawMesh(s);electrical(s);}
  drawAxis(sampleMs);drawHeartVectors(sampleMs,s);if(config.ecg.enabled)drawAxisECG(sampleMs);updateLearning(sampleMs);return s;
 }
