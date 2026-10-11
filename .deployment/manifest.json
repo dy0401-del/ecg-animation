@@ -939,8 +939,8 @@
     },
     {
       "path": "animations/left-axis-deviation.html",
-      "bytes": 13859972,
-      "sha256": "e0b1079dbf6cd2c613f7eae9ddd8254a875ea1f87d57cb0b34a65a72390756d4",
+      "bytes": 13869734,
+      "sha256": "820be8ab08c0a2dc580617a29c6b7edd706b1a2f1889dc251004126f3375db9f",
       "parts": [
         {
           "path": ".deployment/parts/left-axis-deviation.html.part-001",
@@ -949,8 +949,8 @@
         },
         {
           "path": ".deployment/parts/left-axis-deviation.html.part-002",
-          "bytes": 5471364,
-          "sha256": "974fb51ac9b11c9eaada54a0fabdd224c51287f7dfdfaf39c5a6d41729de1ae3"
+          "bytes": 5481126,
+          "sha256": "e8abdf33fcb6f9d2c66f93a396c9db80fe67fee62810f39be6420d5a5bd17f1c"
         }
       ]
     },
