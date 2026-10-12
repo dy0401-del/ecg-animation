@@ -812,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 29533,
-      "sha256": "33146ceb7f43dce1edf0eb380c19dff1230209bf554b1b2f58c5aa5dec14823e"
+      "bytes": 29858,
+      "sha256": "82c030c3b78c3c90f36a586405a9e5fd1a21bf245b14382a99e21e0522432207"
     },
     {
       "path": "rhythm-finder.js",
@@ -1190,6 +1190,23 @@
           "path": ".deployment/parts/tdp.html.part-002",
           "bytes": 5361035,
           "sha256": "5f9746500dbc6e7463c979008d19cd2f3667cf44878451ba6e53b1c58c50c24f"
+        }
+      ]
+    },
+    {
+      "path": "animations/sinus-tachycardia.html",
+      "bytes": 13736051,
+      "sha256": "ceb50ebe7b98c4caff51ec96c01194f5153f7f602bfecf2642b2b529ec6aaa9d",
+      "parts": [
+        {
+          "path": ".deployment/parts/sinus-tachycardia.html.part-001",
+          "bytes": 8388608,
+          "sha256": "9dabb4089eb839472bd0d025934be57f75bc14f8f70c723c8507b2c62a8cc765"
+        },
+        {
+          "path": ".deployment/parts/sinus-tachycardia.html.part-002",
+          "bytes": 5347443,
+          "sha256": "6c69a082083490700b391de8bb8e5a36c9b772ae37ba62751394b6c6390f045c"
         }
       ]
     }
