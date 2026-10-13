@@ -159,7 +159,16 @@ html, body { height:auto; min-height:100%; overflow:visible; }
 
 .diagram-shell:is(:fullscreen,.expanded) .rbbb-now { max-height:64px; overflow:auto; margin:4px 0; font-size:14px; line-height:1.4; }
 
-body{margin:0;background:#f8fafc;font-family:'BIZ UDPGothic',sans-serif}h1{font-size:20px;margin:10px 16px}canvas{display:block;width:100%;height:auto}.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px}#seek{flex:1;min-width:100px}button,select,input,output{font:inherit}#preparing{text-align:center}</style><link rel="stylesheet" href="learner-ui.css?v=fullscreen-20261005"></head><body><main class="ecg-page"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><h1>AsVp — 教育用模式図</h1><canvas id="scene" width="1808" height="1488" data-ecg-y="1088" aria-label="AsVpの心臓と心電図"></canvas><p class="ecg-subtitle">心房センシング・心室ペーシング</p><p id="preparing">準備中…</p><nav class="controls"><button id="play">再生</button><button id="reset">最初から</button><label>速度<select id="speed"><option value=".25">0.25倍</option><option value=".5">0.5倍</option><option value="1" selected>1倍</option><option value="2">2倍</option></select></label><label><input id="repeat" type="checkbox">繰り返し</label><input id="seek" type="range" min="0" value="0" aria-label="再生位置"><output id="status"></output></nav><script>(() => {
+body{margin:0;background:#f8fafc;font-family:'BIZ UDPGothic',sans-serif}h1{font-size:20px;margin:10px 16px}canvas{display:block;width:100%;height:auto}.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px}#seek{flex:1;min-width:100px}button,select,input,output{font:inherit}#preparing{text-align:center}</style><link rel="stylesheet" href="learner-ui.css?v=fullscreen-20261005"></head><body><main class="ecg-page"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><h1>AsVp — 教育用模式図</h1><canvas id="scene" width="1808" height="1488" data-ecg-y="1088" aria-label="AsVpの心臓と心電図"></canvas><p class="ecg-subtitle">心房センシング・心室ペーシング</p><p id="preparing">準備中…</p><nav class="controls"><button id="play">再生</button><button id="reset">最初から</button><label>速度<select id="speed"><option value=".25">0.25倍</option><option value=".5">0.5倍</option><option value="1" selected>1倍</option><option value="2">2倍</option></select></label><label><input id="repeat" type="checkbox">繰り返し</label><input id="seek" type="range" min="0" value="0" aria-label="再生位置"><output id="status"></output></nav><script data-explanation-predeclare="asvp">function drawAnnotations(){
+ if(window.__ANNOTATIONS_DISABLED__)return;
+ const asvp=config.abbreviation==='AsVp';ctx.save();
+ const box=(x,y,title,lines)=>{ctx.fillStyle='#fff';ctx.strokeStyle='#cbd5e1';ctx.lineWidth=2;ctx.fillRect(x,y,430,86+lines.length*42);ctx.strokeRect(x,y,430,86+lines.length*42);ctx.fillStyle='#253746';ctx.font='bold 30px "BIZ UDPGothic"';ctx.fillText(title,x+18,y+45);ctx.font='27px "BIZ UDPGothic"';lines.forEach((line,i)=>ctx.fillText(line,x+18,y+90+i*42));};
+ box(35,80,asvp?'As：心房センシング':'Ap：心房ペーシング',asvp?['心房の電気信号を','Aリードで読み取ります。','心房への刺激は出しません。']:['Aリードから心房を刺激。','その刺激で心房が反応し、','スパイクの後に','P波が現れます。']);
+ box(1335,80,asvp?'Vp：心室ペーシング':'Vs：心室センシング',asvp?['Vリードから心室を刺激。','スパイクの後に','QRSが現れます。','この例では、心房の信号が','心室へ伝わっていません。']:['心房から伝わった信号で','心室が反応します。','Vリードで信号を読み取り、','心室への刺激は出しません。']);
+ box(35,590,'図と波形の見方',['図の上側が心房、下側が心室','小さな山がP波','大きな波がQRS','細い縦線がスパイク','（ペースメーカーの刺激の印）','黄色の発光は電気信号の広がり','水色の点は信号を読み取った印']);
+ box(1335,590,'電気信号と波形の関係',asvp?['① 心房の電気信号が広がる','　P波が現れる','② Aリードで信号を読み取る','③ Vリードから心室を刺激','　スパイクに続いてQRS','④ 心室が電気的に回復する','　T波はこの回復を表す']:['① Aリードから心房を刺激','　スパイクに続いてP波','② 信号が心房から心室へ','③ 心室が反応してQRSが現れる','　Vリードで信号を読み取る','④ 心室が電気的に回復する','　T波はこの回復を表す']);
+ ctx.restore();
+}</script><script>(() => {
  'use strict';
  const canvas=document.getElementById('scene');
  const shell=document.createElement('section');shell.className='diagram-shell';shell.setAttribute('aria-label','心臓と心電図の表示');
@@ -506,7 +515,7 @@ heart.onload=async()=>{try{await document.fonts.ready;tissueCtx.drawImage(heart,
 }
 document.addEventListener('DOMContentLoaded',()=>{const button=document.createElement('button');button.id='annotation-toggle';button.textContent='注釈を隠す';button.onclick=()=>{window.__ANNOTATIONS_DISABLED__=!window.__ANNOTATIONS_DISABLED__;button.textContent=window.__ANNOTATIONS_DISABLED__?'注釈を表示':'注釈を隠す';render(cardiacAnimation.playback.getState().elapsed);};document.querySelector('.diagram-tools').append(button);});
 </script>
-<section class="ecg-watch"><h2>AsVpとは</h2>
+<section class="ecg-watch"><h2>AsVpの意味と主な特徴</h2><p>「興奮」は心筋の電気的な活動、「伝播」は興奮が周囲へ伝わることです。心臓図の黄色い光は電気的な興奮を示します。収縮はその後に起こります。</p>
 <p><strong>AsVpは、ペースメーカーが心房の電気信号を読み取り、その後に心室を刺激する動作を表します。</strong>心房は心臓の上側、心室は下側の部屋です。</p>
 <p>ペースメーカーには、心臓の電気信号を読み取る<strong>センシング（感知）</strong>と、電気刺激を出す<strong>ペーシング</strong>という働きがあります。センシングで読み取るのは電気信号です。心臓の筋肉の動きを直接検出しているわけではありません。ペーシングは、心房や心室に電気刺激を送り、拍動を助けることです。</p>
 <p>Aは心房、Vは心室、sはセンシング、pはペーシングを表します。<strong>As＝心房センシング、Vp＝心室ペーシング</strong>です。AsVp・ApVsは、ペースメーカーが一拍の中で行った動作を表します。病名や装置の設定名ではありません。</p>
@@ -515,13 +524,13 @@ document.addEventListener('DOMContentLoaded',()=>{const button=document.createEl
 <li><strong>細い縦線（スパイク）の位置を確認します。</strong>スパイクはペースメーカーが刺激を出した印です。この例では、P波の前にはなく、QRSの直前にあります。</li>
 <li><strong>スパイクの後に波が続くかを確認します。</strong>心室への刺激に反応して、QRSが続いています。</li></ol>
 <p><strong>センシングをしただけでは、スパイクは現れません。</strong>図の水色の点は、装置が信号を読み取ったことを示す教材上の表示です。心電図に水色の点が記録されるわけではありません。</p></section>
-<section class="ecg-learning-notes"><h2>なぜ、この波形になるのか</h2>
-<h3>心臓とペースメーカーの動作の順序</h3>
+<section class="ecg-watch revision-annotation-notes"><h3>図の固定注釈</h3><p>この模式例の観察点は「心房の信号を感知」「心室に刺激を出す」です。「QRS直前のスパイク」「感知だけではスパイクなし」も、下の本文で説明しています。</p></section><section class="ecg-learning-notes"><h3>1．調律・状態の特徴</h3><p><strong>AsVpは、ペースメーカーが心房の電気信号を読み取り、その後に心室を刺激する動作を表します。</strong>心房は心臓の上側、心室は下側の部屋です。</p><h3>2．心臓で起こっていること</h3><h4>心臓内と装置の動作の仕組み</h4>
+<h4>心臓とペースメーカーの動作の順序</h4>
 <p>装置と心臓をつなぐ細い線を<strong>リード</strong>と呼びます。Aリードは心房、Vリードは心室に入っています。図の左側が右心房・右心室です。黄色の発光は電気信号の広がりを示し、その後に筋肉が縮みます。</p>
 <ol><li><strong>心臓自身の電気信号によって、心房が活動します。</strong>心臓自身が作った電気信号が心房に広がり、P波が現れます。心房を刺激していないので、P波の前にスパイクはありません。</li><li><strong>Aリードで心房の信号を読み取ります（As）。</strong>続いて、ペースメーカーは、設定された時間内に心室の電気信号が検出されるかを確認します。</li><li><strong>この例では、心房から心室へ信号が伝わりません。</strong>設定された時間内に心室の信号を検出しなかったため、Vリードから心室を刺激します（Vp）。この刺激がスパイクとして現れます。</li><li><strong>刺激に反応して心室が活動します。</strong>心室に電気信号が広がり、スパイクの後にQRSが現れます。</li></ol>
 <p>心房の信号を読み取った後、または心房を刺激した後に、心室の電気信号が現れるのを待つ時間を<strong>AVディレイ（房室遅延時間）</strong>と呼びます。例えば、その時間内に心室の信号を検出すれば、心室への刺激は出しません。その時間内に信号を検出しなければ、心室を刺激します。</p>
 
-<h3>ペースメーカーの設定と動作の関係</h3>
+<h4>ペースメーカーの設定と動作の関係</h4>
 <p>ペースメーカーは、刺激する場所、刺激するタイミング、電気信号の読み取り方などを設定して使用します。設定の名前と、一拍ごとの動作を表すAsVp・ApVsは区別されます。</p>
 <h4>動作モード：この教材ではDDD</h4>
 <p><strong>モード</strong>は装置の動作方式です。DDDの最初のDは心房と心室の両方を刺激できること、2番目のDは両方の電気信号を読み取れることを表します。3番目のDは、読み取った信号に応じて刺激のタイミングを決めたり、不要な刺激を出さなかったりすることを表します。</p>
@@ -535,20 +544,13 @@ document.addEventListener('DOMContentLoaded',()=>{const button=document.createEl
 <h4>センシング感度：電気信号の検出のしやすさ</h4>
 <p><strong>センシング感度</strong>は、心臓の電気信号をどの程度検出しやすくするかを決める設定です。信号を検出しにくい設定では、心臓が活動していても装置が読み取れない場合があります。反対に、検出しやすすぎる設定では、心臓の信号以外の電気的な雑音を読み取る場合があります。感度は刺激の強さとは別の設定です。装置によっては自動的に調整されます。</p>
 <p>AsVp・ApVsという表記や体表の心電図だけでは、実際の設定値は分かりません。設定を確認する際は、装置の記録にあるモード、基本レート、AVディレイ、出力、感度と、患者さんの心電図を照らし合わせます。</p>
-<h3>QRSの幅の違い</h3>
+<h3>3．特徴的な心電図所見</h3><h4>QRSの幅の違い</h4>
 <p>この例では、心室のリード先端から周囲の筋肉へ電気信号が広がるため、QRSが幅広くなっています。心臓自身の伝導経路を使う場合より、心室全体へ広がるのに時間がかかるためです。</p>
 <p>この教材では、動作を説明するために一つの例を示しています。心臓の状態や刺激する場所によって、QRSの幅は変わります。AsVpという表記だけで心房から心室へ全く信号が伝わらないとは判断できません。ApVsでも、心室内で電気信号が伝わりにくくなっていればQRSは広くなることがあります。</p>
-<h3>AsVpとApVsの比較</h3><div class="ecg-comparison" role="region" tabindex="0" aria-label="AsVpとApVsの比較。狭い画面では横にスクロールできます"><table><thead><tr><th>観察点</th><th>AsVp</th><th>ApVs</th></tr></thead><tbody><tr><th>心房での動作</th><td>As：信号を読み取る</td><td>Ap：刺激を出す</td></tr><tr><th>心室での動作</th><td>Vp：刺激を出す</td><td>Vs：信号を読み取る</td></tr><tr><th>この図のスパイク</th><td>QRSの直前</td><td>P波の直前</td></tr><tr><th>この例の心房から心室への伝わり方</th><td>伝わらない</td><td>伝わる</td></tr></tbody></table></div><p><a href="apvs.html">ApVsのアニメーションと比較する</a></p>
-<h3>患者さんの観察と刺激後の反応</h3>
+<h4>AsVpとApVsの比較</h4><div class="ecg-comparison" role="region" tabindex="0" aria-label="AsVpとApVsの比較。狭い画面では横にスクロールできます"><table><thead><tr><th>観察点</th><th>AsVp</th><th>ApVs</th></tr></thead><tbody><tr><th>心房での動作</th><td>As：信号を読み取る</td><td>Ap：刺激を出す</td></tr><tr><th>心室での動作</th><td>Vp：刺激を出す</td><td>Vs：信号を読み取る</td></tr><tr><th>この図のスパイク</th><td>QRSの直前</td><td>P波の直前</td></tr><tr><th>この例の心房から心室への伝わり方</th><td>伝わらない</td><td>伝わる</td></tr></tbody></table></div><p><a href="apvs.html">ApVsのアニメーションと比較する</a></p>
+<h3>4．患者さんへの影響と看護</h3><h4>患者さんの観察と刺激後の反応</h4>
 <p>刺激によって心房や心室が電気的に反応することを<strong>捕捉（ほそく）</strong>といいます。心房を刺激したときのスパイクの後にP波、心室を刺激したときのスパイクの後にQRSが続くかが、確認の手掛かりです。例えば、心室を刺激したときのスパイクがあってもQRSが続かなければ、刺激を出しても、心室が反応していない可能性があります。スパイクの有無だけでは、装置が正常に働いているか判断できません。</p>
 <p>電気的に反応していても、十分に血液を送り出せているかは心電図だけでは分かりません。患者さんの意識や症状、脈拍、血圧を合わせて確認します。めまい・息苦しさなどの症状や刺激後の波形に変化があれば、症状、脈拍・血圧、心電図の変化を伝え、施設の手順に沿って相談・報告します。装置が適切に動作しているかを調べるには、設定や保存された記録も確認する必要があります。</p>
 <details><summary>図と実際の心電図の違い・補足</summary><p>この図は学習用の模式図で、形や動きを分かりやすく簡略化しています。Aリード先端は左右の心房を隔てる壁の右心房側、Vリード先端は左右の心室を隔てる壁の右心室側に置いています。留置位置の一例です。</p><p>スパイクは見つけやすく大きく描いています。実際には、記録方法によってスパイクが小さく、見えにくいこともあります。体表の心電図だけでは、装置が電気信号を正しく読み取れたか判断できない場合があります。As・Vsなどの表示や装置の記録も確認します。</p><p>QRSの後のT波は、心室が電気的に回復する過程を示す波です。新たな刺激の印ではありません。心電図は電気活動の記録であり、収縮そのものを記録しているわけではありません。</p><p>同じ患者さんでも、心臓の状態や装置の設定によって、一拍ごとの動作は変わることがあります。QRSの形だけでリードの位置や病気の原因は判断できません。</p></details>
-<details><summary>参考資料・確認状況</summary><ul><li><a href="https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/US/en/60033180_.pdf">Abbottの説明書：AsVp・ApVsの定義と装置の動作</a></li><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5067035/">刺激後の反応とペースメーカーの動作の確認</a></li><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12378894/">学会資料：リードの留置位置</a></li></ul><p>対象者：看護師1～2年目。資料確認日：2026年10月13日。専門家レビュー、実機確認、対象者による理解度確認は未実施です。</p></details></section>
-<section class="ecg-remember"><h2>学習の要点</h2><p><strong>AsVp：心房はセンシング、心室はペーシング。この図ではQRSの直前にスパイクがあります。</strong></p><p>観察では、刺激した場所と、刺激の後にP波・QRSが続くかを確認します。患者さんの状態と合わせた評価が必要です。</p></section><p>下の説明で使う「興奮」は電気信号によって心臓の筋肉が活動すること、「伝播」はその信号が周囲へ伝わることを指します。「所見」は検査で分かった特徴、「既往歴」は過去にかかった病気のことです。</p><section class="ecg-learning-common" aria-labelledby="ecg-learning-common-title">
-<h3 id="ecg-learning-common-title">共通の学習内容</h3>
-<p>心電図は、波形の形だけを暗記するのではなく、</p>
-<p>「心臓のどこが、どの順番で興奮しているか」<br>↓<br>「その電気活動が、なぜこの心電図波形として現れるのか」</p>
-<p>を結びつけて考えることが大切です。</p>
-<p>このアニメーションでは、心臓の興奮伝播と心電図を同時に見ることで、波形を単なる「形」ではなく、「心臓の電気活動の結果として理解すること」を目標としています。</p>
-<p>また、心電図所見だけで患者の状態や原因疾患を判断することはできません。実際の臨床では、症状・バイタルサイン・既往歴・以前の心電図・その他の検査結果を合わせて評価します。</p>
-</section></main></body></html>
+<details><summary>参考資料・確認状況</summary><ul><li><a href="https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/US/en/60033180_.pdf">Abbottの説明書：AsVp・ApVsの定義と装置の動作</a></li><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5067035/">刺激後の反応とペースメーカーの動作の確認</a></li><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12378894/">学会資料：リードの留置位置</a></li></ul><p>対象者：看護師1～2年目。資料確認日：2026年10月13日。専門家レビュー、実機確認、対象者による理解度確認は未実施です。</p></details><h3>5．学習の要点</h3><p>心房の信号を感知。心室に刺激を出す。QRS直前のスパイク。感知だけではスパイクなし。</p></section>
+<section class="ecg-remember"><h2>学習の要点</h2><p><strong>AsVp：心房はセンシング、心室はペーシング。この図ではQRSの直前にスパイクがあります。</strong></p><p>観察では、刺激した場所と、刺激の後にP波・QRSが続くかを確認します。患者さんの状態と合わせた評価が必要です。</p></section><section class="ecg-learning-common" aria-labelledby="ecg-learning-common-title"><h3 id="ecg-learning-common-title">共通の学習内容</h3><p>心電図の波形は、心臓のどこに、どの順番で電気的な興奮が広がったかを反映しています。心臓図と波形を対応させることで、所見が現れる理由を理解できます。</p><p>心電図は電気活動の記録であり、収縮や血液の送り出しを直接記録するものではありません。患者さんの状態は、症状、脈拍・血圧・呼吸など、以前の心電図と合わせて評価します。</p></section></main></body><link rel="stylesheet" href="explanation-review.css?v=20261013"><script defer src="explanation-annotations.js?v=20261013"></script></html>

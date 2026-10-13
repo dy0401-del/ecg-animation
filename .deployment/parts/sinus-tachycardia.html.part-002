@@ -159,28 +159,20 @@ html, body { height:auto; min-height:100%; overflow:visible; }
 
 .diagram-shell:is(:fullscreen,.expanded) .rbbb-now { max-height:64px; overflow:auto; margin:4px 0; font-size:14px; line-height:1.4; }
 
-body{margin:0;background:#F8FAFC;font-family:'BIZ UDPGothic',sans-serif}canvas{display:block;width:100%;height:auto}#preparing{text-align:center}nav.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px}#seek{flex:1;min-width:100px}h1{font-size:20px;margin:10px 16px}button,select,input,output{font:inherit}</style><link rel="stylesheet" href="learner-ui.css?v=fullscreen-20261005"><main class="ecg-page"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><h1>洞調律から洞性頻脈へ — 教育用模式図</h1><canvas id="scene" width="1808" height="1488" data-ecg-y="1088" aria-label="洞調律から洞性頻脈へ徐々に移行する心臓と心電図"></canvas><p id="preparing">準備中…</p><nav class="controls"><button id="play">再生</button><button id="reset">最初から</button><label>速度<select id="speed"><option value=".25">0.25倍</option><option value=".5">0.5倍</option><option value="1" selected>1倍</option><option value="2">2倍</option></select></label><label><input id="repeat" type="checkbox" checked>繰り返し</label><input id="seek" type="range" min="0" value="0" aria-label="再生位置"><output id="status"></output></nav><section class="ecg-watch"><h2>ここを見る</h2><ol><li>まず、各QRSの前に同じ形のP波があることを確認します。</li><li>次に、P波どうしの間隔とR波どうしの間隔が、徐々に短くなる様子を見ます。</li><li>心臓では、刺激が洞結節から始まる経路を保ちながら、興奮と収縮の回数が増えることを確認します。</li></ol><p>中央の線を通過する波形の時刻と、心臓の動きが対応します。右側の薄い波形は、この教材で予定されている次の拍です。</p></section>
-<section class="ecg-learning-notes"><h2>洞性頻脈を理解する</h2>
-<h3>どんな波形？</h3><p>洞性頻脈は、心臓の通常の刺激源である洞結節が、普段より速く刺激を出す状態です。成人では、洞結節から始まる心拍が100回/分を超える場合を指します。子どもでは年齢により心拍数の基準が異なります。</p>
-<h3>波形の特徴</h3><p>このⅡ誘導では、同じ形の上向きのP波が続き、各P波の後にQRSが1つずつ現れます。P波どうしの間隔（P–P間隔）とR波どうしの間隔（R–R間隔）が短くなり、同じ時間に見える拍数が増えます。この模式例では、QRSの幅は狭いままです。</p><p>速くなる過程でも、刺激源が別の場所へ切り替わったり、心房から心室への伝導が脱落したりする場面はありません。</p>
-<h3>なぜこの波形になる？</h3><p><strong>洞結節が次の刺激を早く出すようになります。</strong>たとえば運動や緊張などに応じて、心拍数は自律神経によって調節されます。心拍を速める交感神経の働きが強まったり、心拍を抑える副交感神経（迷走神経）の働きが弱まったりすると、洞結節が次の刺激を出すまでの時間が短くなります。その結果、心房と心室が興奮する回数が増え、P–P間隔とR–R間隔が短くなります。</p>
+body{margin:0;background:#F8FAFC;font-family:'BIZ UDPGothic',sans-serif}canvas{display:block;width:100%;height:auto}#preparing{text-align:center}nav.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px}#seek{flex:1;min-width:100px}h1{font-size:20px;margin:10px 16px}button,select,input,output{font:inherit}</style><link rel="stylesheet" href="learner-ui.css?v=fullscreen-20261005"><main class="ecg-page"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><h1>洞調律から洞性頻脈へ — 教育用模式図</h1><canvas id="scene" width="1808" height="1488" data-ecg-y="1088" aria-label="洞調律から洞性頻脈へ徐々に移行する心臓と心電図"></canvas><p id="preparing">準備中…</p><nav class="controls"><button id="play">再生</button><button id="reset">最初から</button><label>速度<select id="speed"><option value=".25">0.25倍</option><option value=".5">0.5倍</option><option value="1" selected>1倍</option><option value="2">2倍</option></select></label><label><input id="repeat" type="checkbox" checked>繰り返し</label><input id="seek" type="range" min="0" value="0" aria-label="再生位置"><output id="status"></output></nav><section class="ecg-watch"><h2>心電図と図の観察点</h2><p>P波は心房の電気的な興奮、QRSは心室の電気的な興奮、T波は心室の電気的な回復を表します。波形と、その後に起こる心筋の収縮は別の現象です。</p><ol><li>まず、各QRSの前に同じ形のP波があることを確認します。</li><li>次に、P波どうしの間隔とR波どうしの間隔が、徐々に短くなる様子を見ます。</li><li>心臓では、刺激が洞結節から始まる経路を保ちながら、興奮と収縮の回数が増えることを確認します。</li></ol><p>中央の線を通過する波形の時刻と、心臓の動きが対応します。右側の薄い波形は、この教材で予定されている次の拍です。</p></section>
+<section class="ecg-watch revision-annotation-notes"><h3>図の固定注釈</h3><p>この模式例の観察点は「同じ形のP波が続く」「P–PとR–Rが短い」です。「洞結節から開始」「経路を保って加速」も、下の本文で説明しています。</p></section><section class="ecg-learning-notes"><h2>洞性頻脈の特徴</h2><h3>1．調律・状態の特徴</h3><h4>調律・状態の特徴</h4><p>洞性頻脈は、心臓の通常の刺激源である洞結節が、普段より速く刺激を出す状態です。成人では、洞結節から始まる心拍が100回/分を超える場合を指します。子どもでは年齢により心拍数の基準が異なります。</p>
+<h3>2．心臓で起こっていること</h3><h4>心臓内の仕組み</h4><p><strong>洞結節が次の刺激を早く出すようになります。</strong>たとえば運動や緊張などに応じて、心拍数は自律神経によって調節されます。心拍を速める交感神経の働きが強まったり、心拍を抑える副交感神経（迷走神経）の働きが弱まったりすると、洞結節が次の刺激を出すまでの時間が短くなります。その結果、心房と心室が興奮する回数が増え、P–P間隔とR–R間隔が短くなります。</p>
 <p><strong>刺激を運ぶ経路は保たれています。</strong>洞結節で生まれた刺激は心房へ広がり、房室結節で少し遅れてから心室へ伝わります。房室結節から続くHis束（ヒス束）は、右脚と左脚に分かれて左右の心室へ刺激を運びます。その先のPurkinje線維（プルキンエ線維）は、心室内に広がる伝導路で、刺激を心室の筋肉へ素早く届けます。</p>
 <p><strong>P波の形が保たれる理由。</strong>この模式例では、刺激が毎回同じ洞結節から始まり、心房へ広がる順序を保っています。そのため、心房の興奮を表すP波は同じ形で続きます。各刺激が心室まで伝わるので、各P波の後にQRSが1つずつ現れます。</p>
 <p><strong>QRSが狭いままの理由。</strong>QRSの幅は、心室全体に興奮が広がるのにかかる時間に対応します。この教材ではHis束・左右の脚・Purkinje線維の伝導を保ち、心室へ刺激が素早く広がるため、QRSは狭いままです。拍の間隔は短くなり、各拍の心室興奮は短時間で完了します。</p>
 <p>心臓図では黄色が興奮、青色が心室の再分極（興奮からの回復）です。青色は新しい刺激が伝わる波ではありません。心房と心室の収縮は、それぞれの興奮の後に起こります。</p>
-<h3>この教材で示す移行</h3><p>洞調律から徐々に加速し、最後は洞性頻脈が続く経過を示します。70→130回/分は比較しやすくするために選んだ教材の設定で、すべての人が同じ心拍数・速さで移行するわけではありません。洞調律が必ず病的な頻脈へ進むという意味でもありません。</p><p>徐々に始まることは鑑別の手がかりの一つですが、移行の速さだけで洞性頻脈と他の頻拍を断定できません。P波の形、拍の対応、症状や誘因も合わせて確認します。繰り返し再生で先頭へ戻る動きは、自然に回復した場面ではありません。</p>
-<h3>臨床での注意</h3><p>運動や緊張に対する正常な反応として速くなることもあれば、発熱、脱水、貧血、感染、甲状腺機能の亢進などへの反応として現れることもあります。心電図だけで原因を決めず、安静時か運動時か、症状やバイタルサインとともに、心拍数が増えた理由を評価することが大切です。</p>
-<div class="ecg-remember"><h3>覚えるポイント</h3><p>「洞結節から始まる」「P波とQRSの対応を保つ」「P–PとR–Rの間隔が短い」の3点を結びつけて観察します。</p></div>
-<details class="ecg-reading-guide"><summary>波形と再生の基本を確認する</summary><dl><dt>P・QRS・T</dt><dd>P波は心房の脱分極（興奮）、QRSは心室の脱分極、T波は心室の再分極（回復）に対応します。電気活動と収縮は同じ現象ではありません。</dd><dt>R–R間隔と心拍数</dt><dd>隣り合うR波の頂点どうしを測ります。規則的な区間では「60÷R–R間隔（秒）」が心拍数（回/分）です。移行中の表示は、直前の拍間隔から求めた値です。</dd><dt>図の左右・再生速度</dt><dd>図の左側は右心、右側は左心です。再生倍率を変えると心臓と波形が一緒にゆっくり、または速く再生されます。心拍数の設定や25 mm/秒相当の記録尺度を変える操作ではありません。</dd></dl></details>
-<section class="ecg-learning-common" aria-labelledby="ecg-learning-common-title">
-<h3 id="ecg-learning-common-title">この教材で共通して覚えてほしいこと</h3>
-<p>心電図は、波形の形だけを暗記するのではなく、</p>
-<p>「心臓のどこが、どの順番で興奮しているか」<br>↓<br>「その電気活動が、なぜこの心電図波形として現れるのか」</p>
-<p>を結びつけて考えることが大切です。</p>
-<p>このアニメーションでは、心臓の興奮伝播と心電図を同時に見ることで、波形を単なる「形」ではなく、「心臓の電気活動の結果として理解すること」を目標としています。</p>
-<p>また、心電図所見だけで患者の状態や原因疾患を判断することはできません。実際の臨床では、症状・バイタルサイン・既往歴・以前の心電図・その他の検査結果を合わせて評価します。</p>
-</section>
-</section>
+
+<details class="ecg-reading-guide"><summary>波形と再生の基本</summary><dl><dt>P・QRS・T</dt><dd>P波は心房の脱分極（興奮）、QRSは心室の脱分極、T波は心室の再分極（回復）に対応します。電気活動と収縮は同じ現象ではありません。</dd><dt>R–R間隔と心拍数</dt><dd>隣り合うR波の頂点どうしを測ります。規則的な区間では「60÷R–R間隔（秒）」が心拍数（回/分）です。移行中の表示は、直前の拍間隔から求めた値です。</dd><dt>図の左右・再生速度</dt><dd>図の左側は右心、右側は左心です。再生倍率を変えると心臓と波形が一緒にゆっくり、または速く再生されます。心拍数の設定や25 mm/秒相当の記録尺度を変える操作ではありません。</dd></dl></details>
+
+<h3>3．特徴的な心電図所見</h3><h4>特徴的な心電図所見</h4><p>このⅡ誘導では、同じ形の上向きのP波が続き、各P波の後にQRSが1つずつ現れます。P波どうしの間隔（P–P間隔）とR波どうしの間隔（R–R間隔）が短くなり、同じ時間に見える拍数が増えます。この模式例では、QRSの幅は狭いままです。</p><p>速くなる過程でも、刺激源が別の場所へ切り替わったり、心房から心室への伝導が脱落したりする場面はありません。</p>
+<h4>この教材で示す移行</h4><p>洞調律から徐々に加速し、最後は洞性頻脈が続く経過を示します。この模式例では、洞調律から徐々に心拍数が増えます。すべての人が同じ心拍数・速さで移行するわけではありません。洞調律が必ず病的な頻脈へ進むという意味でもありません。</p><p>徐々に始まることは鑑別の手がかりの一つですが、移行の速さだけで洞性頻脈と他の頻拍を断定できません。P波の形、拍の対応、症状や誘因も合わせて確認します。繰り返し再生で先頭へ戻る動きは、自然に回復した場面ではありません。</p>
+<h3>4．患者さんへの影響と看護</h3><h4>患者さんへの影響と看護</h4><p>運動や緊張に対する正常な反応として速くなることもあれば、発熱、脱水、貧血、感染、甲状腺機能の亢進などへの反応として現れることもあります。心電図だけで原因を決めず、安静時か運動時か、症状やバイタルサインとともに、心拍数が増えた理由を評価することが大切です。</p>
+<p>安静時にも頻脈が続くか、発熱・脱水・痛みなどの誘因があるかを確認します。胸痛、息切れ、めまい、血圧低下などを伴う変化は、発症時刻、脈拍・血圧・呼吸状態と心電図を合わせて速やかに相談・報告します。</p><h3>5．学習の要点</h3><div class="ecg-remember"><p>「洞結節から始まる」「P波とQRSの対応を保つ」「P–PとR–Rの間隔が短い」の3点を結びつけて観察します。</p></div><section class="ecg-learning-common" aria-labelledby="ecg-learning-common-title"><h3 id="ecg-learning-common-title">共通の学習内容</h3><p>心電図の波形は、心臓のどこに、どの順番で電気的な興奮が広がったかを反映しています。心臓図と波形を対応させることで、所見が現れる理由を理解できます。</p><p>心電図は電気活動の記録であり、収縮や血液の送り出しを直接記録するものではありません。患者さんの状態は、症状、脈拍・血圧・呼吸など、以前の心電図と合わせて評価します。</p></section><details><summary>この模式例の設定（病態の基準とは別の補足）</summary><p>心拍数70から130回/分への移行は教材の設定です。移行の速さや到達する心拍数は患者さんの一般的な基準ではありません。</p></details></section>
 <section class="ecg-learning-references"><h2>参考資料</h2><ul><li><a href="https://www.heart.org/en/health-topics/arrhythmia/about-arrhythmia/tachycardia--fast-heart-rate">American Heart Association：Tachycardia: Fast Heart Rate</a></li><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9523592/">Sinus Tachycardia: A Multidisciplinary Expert Focused Review</a></li><li><a href="https://www.merckmanuals.com/professional/cardiovascular-disorders/arrhythmias-and-conduction-disorders/overview-of-arrhythmias">MSDマニュアル／Merck Manual：Overview of Arrhythmias（自律神経・刺激伝導系・心電図の基礎）</a></li></ul><p>資料確認：2026年10月12日。教育用模式図であり、実測の診断波形や血行動態シミュレーションではありません。</p></section>
 </main><script>(() => {
  'use strict';
@@ -483,4 +475,4 @@ function drawAnnotations(ms){
  ctx.restore();
 }
 
-</script></html>
+</script><link rel="stylesheet" href="explanation-review.css?v=20261013"><script defer src="explanation-annotations.js?v=20261013"></script></html>
