@@ -787,18 +787,18 @@
     },
     {
       "path": "animations/sss-group-i.html",
-      "bytes": 1255205,
-      "sha256": "f87cfbe45ccfc739ecc2a65dd775a231e4b758ef23dba35359dfacc8449f7c3f"
+      "bytes": 1253686,
+      "sha256": "5200f1692cf101c173d90733f3369ed3b6283d1c8338c35334520121478a95e8"
     },
     {
       "path": "animations/sss-group-ii-sa-block.html",
-      "bytes": 1259282,
-      "sha256": "00a571ead2b41c7d7b104e8e50ef57fecfe8a62e806d0ea930685f572306a2b5"
+      "bytes": 1257765,
+      "sha256": "0f2efa1068d9c3e8b5eeed5609b6afd660cdf8248dc64748bc38188507d49c86"
     },
     {
       "path": "animations/sss-group-ii-sinus-arrest.html",
-      "bytes": 1256112,
-      "sha256": "cef498d0063ec5991d4fbcaeb5735186c90102a5834282f66f8cf4c4678e5bbb"
+      "bytes": 1254683,
+      "sha256": "a3ee950047f59216f3f3176413280875a0e4fc8e6f41970a7555dbcaab5b2046"
     },
     {
       "path": "animations/third-degree-av-block.html",
@@ -822,8 +822,8 @@
     },
     {
       "path": "animations/sss-group-iii.html",
-      "bytes": 13711272,
-      "sha256": "1089bb861212fc1388a7d98e77e320066bfbbbab559b180b34395835033896e5"
+      "bytes": 13708109,
+      "sha256": "7f293ad42ab68b6aa3f2de96e950fb988dcef36f5d0ebb27bf36c4940223b94a"
     },
     {
       "path": "animations/pac.html",
@@ -1195,18 +1195,18 @@
     },
     {
       "path": "animations/sinus-tachycardia.html",
-      "bytes": 13737078,
-      "sha256": "f9e754b2cc620811f6febaf1abf590249d89d193720e0a5c247174d076edb0c0",
+      "bytes": 13736436,
+      "sha256": "b0e72b233bd7c58b0573ab175033df4ec363df1e974fd6e5856010f53624ff2b",
       "parts": [
         {
           "path": ".deployment/parts/sinus-tachycardia.html.part-001",
           "bytes": 8388608,
-          "sha256": "9dabb4089eb839472bd0d025934be57f75bc14f8f70c723c8507b2c62a8cc765"
+          "sha256": "da359a6b4d0cd35114e847d49cd686b4d85ad81ae13e0bd10e24eb831806a9be"
         },
         {
           "path": ".deployment/parts/sinus-tachycardia.html.part-002",
-          "bytes": 5348470,
-          "sha256": "37b02b285d3a221323769b9489993f3880a3774db48eb63c28c76bb250a80967"
+          "bytes": 5347828,
+          "sha256": "02e97f0fd63b280bda8e9dc3271951e65ccf8892a2582ae8d13515ef97ad7f0f"
         }
       ]
     },
@@ -1268,6 +1268,16 @@
       "path": "animations/category-basic.css",
       "bytes": 811,
       "sha256": "acfee1f38acbabb5f0121bc6b5d5167bf83644b17051dcb1411709e71c6fec33"
+    },
+    {
+      "path": "animations/category-sinus.js",
+      "bytes": 7472,
+      "sha256": "b43cc52c7f0610984d5a5d185af236843c0777f9e79005ca64e00b3b9aecd265"
+    },
+    {
+      "path": "animations/category-sinus.css",
+      "bytes": 789,
+      "sha256": "1f641a4eeff9d50aab7f794d4cec5bb721fef689d35b4e82210b71cf0e0824bc"
     }
   ]
 }

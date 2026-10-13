@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>洞不全症候群（SSSⅢ群・徐脈頻脈症候群）</title><style>/* Learner-facing layout only. Animation canvases and playback logic are unchanged. */
+<!doctype html><html data-category-review="sinus" lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>洞不全症候群（SSSⅢ群・徐脈頻脈症候群）</title><style>/* Learner-facing layout only. Animation canvases and playback logic are unchanged. */
 html { background: #f5f7f9; }
 body {
   margin: 0;
@@ -172,7 +172,7 @@ body,button,input,select,output{font-family:"BIZ UDPGothic","BIZ UDPゴシック
 <h3>3．特徴的な心電図所見</h3><h4>参考資料</h4><ul><li><a href="https://doi.org/10.1161/CIR.0000000000000628" target="_blank" rel="noopener">2018 ACC/AHA/HRS 徐脈・伝導障害ガイドライン</a></li><li><a href="https://www.msdmanuals.com/professional/cardiovascular-disorders/specific-cardiac-arrhythmias/sick-sinus-syndrome" target="_blank" rel="noopener">MSD Manual：洞不全症候群</a></li><li><a href="https://www.msdmanuals.com/professional/cardiovascular-disorders/specific-cardiac-arrhythmias/ectopic-supraventricular-arrhythmias" target="_blank" rel="noopener">MSD Manual：心房期外収縮・房室接合部補充拍</a></li><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/" target="_blank" rel="noopener">2023 ACC/AHA/ACCP/HRS AFガイドライン：発生機序</a></li></ul><h3>4．患者さんへの影響と看護</h3><h4>患者さんへの影響と看護</h4><p>頻脈では動悸、徐脈や長い休止では倦怠感・めまい・失神などが起こることがあります。特に頻脈が止まった直後の症状と休止の対応が重要です。</p><p>心電図だけで症状の原因を断定せず、症状と不整脈の時間的な関係、薬剤などの可逆的な要因も含めて評価します。AFは徐脈頻脈症候群がなくても起こり、AF停止後の休止だけでこの病型を一律に確定することもできません。</p>
 <p>頻脈が止まった直後は、意識、めまい・失神、脈拍・血圧の変化を確認します。頻脈の停止、洞休止、補充拍、洞性P波の再開の時刻を症状と対応させ、心電図の記録とともに相談・報告します。</p><h3>5．学習の要点</h3><p>徐脈と心房性頻脈。頻脈後の洞休止。補充拍と洞性P。再開する刺激源が違う。</p><details><summary>この模式例の設定（病態の基準とは別の補足）</summary><p>この模式例のAF停止は31.6秒、補充QRSの出現は33.8秒、洞性P波の再開は38.0秒です。これらは教材内の位置の補足で、患者さんに共通する経過や診断基準ではありません。</p></details></section>
 <section class="ecg-remember"><h2>学習の要点</h2><p><strong>徐脈頻脈症候群は、徐脈・洞休止と心房性頻脈性不整脈が交互に現れる病型です。特に頻脈停止後の長い洞休止に注目し、補充収縮と洞調律の再開を見分けます。</strong></p></section>
-<section class="ecg-learning-common" aria-labelledby="ecg-learning-common-title"><h3 id="ecg-learning-common-title">共通の学習内容</h3><p>心電図の波形は、心臓のどこに、どの順番で電気的な興奮が広がったかを反映しています。心臓図と波形を対応させることで、所見が現れる理由を理解できます。</p><p>心電図は電気活動の記録であり、収縮や血液の送り出しを直接記録するものではありません。患者さんの状態は、症状、脈拍・血圧・呼吸など、以前の心電図と合わせて評価します。</p></section></main><script>(() => {
+<section class="ecg-learning-common" aria-labelledby="ecg-learning-common-title"><h3 id="ecg-learning-common-title">共通の学習内容</h3><p>心電図の波形は、心臓のどこに、どの順番で電気的な興奮が広がったかを反映しています。心臓図と波形を対応させることで、所見が現れる理由を理解できます。</p><p>心電図は電気活動の記録であり、収縮や血液の送り出しを直接記録するものではありません。患者さんの状態は、症状、脈拍・血圧・呼吸など、以前の心電図と合わせて評価します。</p></section></main><script data-category-annotations src="category-sinus.js?v=sinus-20261013"></script><script>(() => {
  'use strict';
  const canvas=document.getElementById('scene');
  const shell=document.createElement('section');shell.className='diagram-shell';shell.setAttribute('aria-label','心臓と心電図の表示');
@@ -448,39 +448,11 @@ Object.assign(window.cardiacAnimation,{components,ecgValue,ecgViewport});
 const annotationCanvas=document.createElement('canvas');annotationCanvas.width=1808;annotationCanvas.height=1488;
 const annotationCtx=annotationCanvas.getContext('2d');
 function note(text,x,y,size=28,color='#283743'){annotationCtx.font=`700 ${size}px "BIZ UDPGothic"`;annotationCtx.fillStyle=color;annotationCtx.fillText(text,x,y);}
-function drawAnnotations(ms){
- annotationCtx.clearRect(0,0,1808,1488);const s=cardiacAnimation.state(ms),e=s.event;
- note('洞不全症候群',35,80,40);note('SSS（Ⅲ群）',35,138,34);note('徐脈頻脈症候群',35,192,30);
- const steps=['① 洞性徐脈：40回／分','② PACが3拍散発','③ ショートランを3回','④ 心房細動（AF）','⑤ AF停止後に洞停止','⑥ 補充収縮3拍 → 洞調律'];
- steps.forEach((text,i)=>note(text,35,300+i*60,27));
- note('ショートラン：心房性の連発',35,745,25);note('3拍 → 4拍 → 5拍',35,797,27);note('最初の2回は洞調律に戻る',35,849,25);note('3回目からAFへ移行する例',35,901,25);
- note('Ⅱ誘導・全長42.5秒',35,976,24);note('教育用模式図',35,1030,23,'#687780');
- const run=config.rhythm.shortRuns.find(r=>ms>=r.pStartTimes[0]&&ms<r.pStartTimes.at(-1)+500);
- let label='洞性徐脈';
- if(s.phase==='af')label='心房細動：不規則な興奮';else if(s.phase==='pause')label='洞停止：洞結節の回復待ち';else if(s.phase==='escape')label='房室接合部から補充収縮';else if(run)label='心房性ショートラン';else if(e.mode==='pac'&&s.t<740)label='PAC：予定より早い心房興奮';
- note('いまの状態',1332,80,32);note(label,1332,142,25);
- if(s.phase==='af'){
-  note('明瞭なP波なし・細かなf波',1332,285,25);note('心房は組織的に収縮しない',1332,345,25);note('房室結節を不規則に伝導',1332,405,25);note('心室RR：350～520 ms',1332,510,26);
- }else if(s.phase==='pause'){
-  note('AFは31.6秒に停止',1332,285,26);note('洞結節がすぐ再開できない',1332,345,25);note('P波と新たなQRSが途絶える',1332,405,24);note('残ったT波・弛緩後に休止',1332,465,24);note('33.8秒に補充QRSが出現',1332,570,25);
- }else if(s.phase==='escape'){
-  const escaped=config.rhythm.escapeEvents.filter(b=>ms>=b.firingTime).length;
-  note(`補充収縮 ${escaped}／3拍`,1332,285,29);note('洞結節の刺激はまだない',1332,345,25);note('房室接合部 → 心室へ興奮',1332,405,25);note('先行する洞性P波はない',1332,465,25);note('狭いQRS・続いて心室収縮',1332,525,24);note('補充拍のRR：1.5秒',1332,630,25);
- }else if(ms>=38000){
-  note('38.0秒に洞性P波が再開',1332,285,25);note('38.2秒に洞性QRSが出現',1332,345,25);note('洞結節 → 心房 → 心室',1332,405,27);note('PとQRSが1対1に戻る',1332,465,26);note('再び洞性徐脈：40回／分',1332,570,25);
- }else if(run){
-  const index=config.rhythm.shortRuns.indexOf(run)+1;
-  note(`${index}回目：${run.beatCount}拍の連発`,1332,285,29);note('同じ異所性心房起源が反復',1332,345,25);note('P′と狭いQRSが連続する',1332,405,25);note('150回／分・間隔400 ms',1332,465,25);note(index<3?'連発終了後は洞調律へ':'最後の連発からAFへ',1332,570,27);
- }else{
-  note('洞性P → QRS：200 ms',1332,285,26);note('PACのP′ → QRS：180 ms',1332,345,25);note('QRS幅：90 ms',1332,405,27);note('PACの間に洞調律の拍がある',1332,510,24);note('PAC：心房期外収縮',1332,570,26);
- }
- note('この順序は選択した模式例',1332,830,24);note('必ずAFになるわけではない',1332,885,24);note('補充拍：先行P波のない例',1332,976,23,'#687780');
- ctx.drawImage(annotationCanvas,0,0);
-}
+function drawAnnotations(ms){window.drawSinusStaticAnnotations(ctx,'sss-group-iii');}
 const approvedBaseRender=render;
 function renderAnnotated(ms){const s=approvedBaseRender(ms);drawAnnotations(ms);return s;}
 render=renderAnnotated;window.renderExportTime=renderAnnotated;window.renderExportFrame=i=>renderAnnotated(i*1000/config.duration.fps);
 Object.assign(window.cardiacAnimation,{render:renderAnnotated,renderBase:approvedBaseRender,drawAnnotations,annotationCanvas});
 
 function startPlayback(){window.LearnerPlayer.start(render,42500,60);}
-</script></body><link rel="stylesheet" href="explanation-review.css?v=20261013"><script defer src="explanation-annotations.js?v=20261013"></script></html>
+</script></body><link rel="stylesheet" href="explanation-review.css?v=20261013"><link rel="stylesheet" href="category-sinus.css?v=sinus-20261013"></html>
