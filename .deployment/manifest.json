@@ -812,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 29858,
-      "sha256": "82c030c3b78c3c90f36a586405a9e5fd1a21bf245b14382a99e21e0522432207"
+      "bytes": 30753,
+      "sha256": "f57dff80e9c13ca89d6c5509a8b9c72c54bc731768233135f756326b88e9d01b"
     },
     {
       "path": "rhythm-finder.js",
@@ -1207,6 +1207,40 @@
           "path": ".deployment/parts/sinus-tachycardia.html.part-002",
           "bytes": 5347443,
           "sha256": "6c69a082083490700b391de8bb8e5a36c9b772ae37ba62751394b6c6390f045c"
+        }
+      ]
+    },
+    {
+      "path": "animations/asvp.html",
+      "bytes": 15308938,
+      "sha256": "ee8a043239e8917f6988253e19d5586de2f1e32b5c6e2e84e1ce36e04b69e7fc",
+      "parts": [
+        {
+          "path": ".deployment/parts/asvp.html.part-001",
+          "bytes": 8388608,
+          "sha256": "666c74dbe0b4245255d4249b9dd1d91c3a8af855254b6a70fa8f9376687d0f8d"
+        },
+        {
+          "path": ".deployment/parts/asvp.html.part-002",
+          "bytes": 6920330,
+          "sha256": "dea83ccc8e89e57e1eb82fb48693f11c97a3db15571ddbbbdf4ef09fd963868a"
+        }
+      ]
+    },
+    {
+      "path": "animations/apvs.html",
+      "bytes": 15308775,
+      "sha256": "c743817cab244f742e9a367fff9c1e5522bda2bf4633d4de923a3d74be66f58b",
+      "parts": [
+        {
+          "path": ".deployment/parts/apvs.html.part-001",
+          "bytes": 8388608,
+          "sha256": "58d777113cfcc636faf7d1d2cb20bf9704a427c7d8145612dfe2fe65ae421af4"
+        },
+        {
+          "path": ".deployment/parts/apvs.html.part-002",
+          "bytes": 6920167,
+          "sha256": "41cb06f9081095654944974bb9ba1b68db6d7dfcd8832ff5a5a38f1c1369e21e"
         }
       ]
     }
