@@ -782,8 +782,8 @@
     },
     {
       "path": "animations/sinus-rhythm.html",
-      "bytes": 8819394,
-      "sha256": "c7855dd42ca13186f9f9c93358911931018c7c755b7ea194120ac698ece38fc6"
+      "bytes": 8819247,
+      "sha256": "bee0ee75e9dd0c68038c16377a458976c156187ae9f197e5bce9fe05b5d5d967"
     },
     {
       "path": "animations/sss-group-i.html",
@@ -922,35 +922,35 @@
     },
     {
       "path": "animations/normal-axis.html",
-      "bytes": 13720184,
-      "sha256": "45a5c9a8a1456b5b6575efcfe5ef532b37950dceb7981cab0552bdeeccea99c1",
+      "bytes": 13718361,
+      "sha256": "2dcaf31ef54caa54d3cf7c5a3067284ad51816697955d32a72b905da92f40541",
       "parts": [
         {
           "path": ".deployment/parts/normal-axis.html.part-001",
           "bytes": 8388608,
-          "sha256": "decd7b3650406ecd7e1a2a6e5741709da65cf6f4638f53c752862c64de3a4724"
+          "sha256": "48170f568e19b858a99aeb80e14244b4c63380bf1c23d08cd0ccb8dce5eba784"
         },
         {
           "path": ".deployment/parts/normal-axis.html.part-002",
-          "bytes": 5331576,
-          "sha256": "ec7dd1e413f21f7b3815818f3a645294670b128eeabf0dab25ec3a73810bb61a"
+          "bytes": 5329753,
+          "sha256": "9b15671efbf68840540b53c1be20ca10e2a15e66892cf9184dece93b068ae992"
         }
       ]
     },
     {
       "path": "animations/left-axis-deviation.html",
-      "bytes": 13870604,
-      "sha256": "e006d14f771c035088ee3a68183dbb591ba7f68a5b0ec59e2161743cca620a0d",
+      "bytes": 13869504,
+      "sha256": "6a23d3f9eb80a2e5e1f2f6aa3a493ffdce854d059872172894c0262ff0672fbc",
       "parts": [
         {
           "path": ".deployment/parts/left-axis-deviation.html.part-001",
           "bytes": 8388608,
-          "sha256": "830e2ad27f50eaf372e78d0bcbc616d86d06a26a6a6c9bc4fc6848d52751ffb9"
+          "sha256": "19714bcdf844ecfaef5eadeae75741a5f186b39056afccf63fb64e30993c0ff5"
         },
         {
           "path": ".deployment/parts/left-axis-deviation.html.part-002",
-          "bytes": 5481996,
-          "sha256": "e4c2888c5aab883669e0e1ebc0fe5b00fb51b05eb86901ae5e87588be67bcc23"
+          "bytes": 5480896,
+          "sha256": "0f012fc3ac5d43b9e97ad41c328f0c6079a928e2950b674a499abd0b23958d82"
         }
       ]
     },
@@ -1161,18 +1161,18 @@
     },
     {
       "path": "animations/right-axis-deviation.html",
-      "bytes": 13868312,
-      "sha256": "5117445c8cbf8946371f5f6194b3e66ba7523931c06909feb755582cc1b34b47",
+      "bytes": 13868307,
+      "sha256": "e30c326a20d07674b37d2851eb4ff2e99a2050acec4127d692b7aea6611d6fb2",
       "parts": [
         {
           "path": ".deployment/parts/right-axis-deviation.html.part-001",
           "bytes": 8388608,
-          "sha256": "f5f55e4d787224daaf27a9cd1e03c309e60d6f04f97da6680b3fd9386f7b345c"
+          "sha256": "95f43dba0a954e8e89abfed343d3e38253710d7b8446e5317b4b4b9962ed3938"
         },
         {
           "path": ".deployment/parts/right-axis-deviation.html.part-002",
-          "bytes": 5479704,
-          "sha256": "c2eda5387a4e006e58cf4ce87be8467f97f4c4d769ddf7cbf03d75b2717196e1"
+          "bytes": 5479699,
+          "sha256": "3f1aa797e3cebcc0d92e0abd23710f62d71ad021f3636b3e2d0bed2992bbc327"
         }
       ]
     },
@@ -1258,6 +1258,16 @@
       "path": "animations/af-static-annotations.js",
       "bytes": 2153,
       "sha256": "fab32fa898389e90ff5ef3ea038432a35714e7a25ae4c95301fe34db364caca6"
+    },
+    {
+      "path": "animations/category-basic.js",
+      "bytes": 2694,
+      "sha256": "a873d3a8f457b32ac76e740a94694e0f168c6e6eefa21dd22bdc0c5bbf8b8e91"
+    },
+    {
+      "path": "animations/category-basic.css",
+      "bytes": 811,
+      "sha256": "acfee1f38acbabb5f0121bc6b5d5167bf83644b17051dcb1411709e71c6fec33"
     }
   ]
 }

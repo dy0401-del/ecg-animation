@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>正常洞調律｜心電図アニメーション</title><style>html,body{margin:0;background:#F8FAFC;font-family:Meiryo,sans-serif}canvas{display:block;width:100%;max-height:calc(100vh - 58px);object-fit:contain}.controls{height:58px;display:flex;gap:18px;align-items:center;justify-content:center}button,select{font:inherit;padding:7px 14px;border:1px solid #aab6bd;border-radius:7px;background:white}.export canvas{max-height:100vh}.export .controls{display:none}
+<!doctype html><html data-category-review="basic" lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>正常洞調律｜心電図アニメーション</title><style>html,body{margin:0;background:#F8FAFC;font-family:Meiryo,sans-serif}canvas{display:block;width:100%;max-height:calc(100vh - 58px);object-fit:contain}.controls{height:58px;display:flex;gap:18px;align-items:center;justify-content:center}button,select{font:inherit;padding:7px 14px;border:1px solid #aab6bd;border-radius:7px;background:white}.export canvas{max-height:100vh}.export .controls{display:none}
 .ecg-learning-notes{width:min(100%,1100px);margin:24px auto 40px;padding:clamp(20px,4vw,38px);background:#fff;color:#111827;border:1px solid #d1d5db;border-radius:8px;font-size:16px;font-weight:400;line-height:1.8;overflow-wrap:anywhere}.ecg-learning-notes h2{margin:0 0 28px;color:#111827;font-size:clamp(22px,4vw,30px);line-height:1.45}.ecg-learning-notes h3{margin:30px 0 10px;color:#111827;font-size:clamp(18px,3vw,23px);line-height:1.5}.ecg-learning-notes p{margin:0 0 16px;color:#111827;text-align:left;font-size:inherit;line-height:inherit}.ecg-learning-notes ul{margin:0 0 16px;padding-left:1.45em}.ecg-learning-notes li{margin:4px 0}.ecg-learning-common{margin-top:34px;padding-top:24px;border-top:1px solid #d1d5db}.ecg-learning-common h3{margin-top:0}@media(max-width:600px){.ecg-learning-notes{margin:16px auto 28px;padding:18px 16px;font-size:15px}.ecg-learning-notes h2{margin-bottom:22px}.ecg-learning-notes h3{margin-top:24px}.ecg-learning-notes ul{padding-left:1.3em}}
 </style><link rel="stylesheet" href="learner-ui.css?v=fullscreen-20261005"><body class="ecg-page"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><h1>正常洞調律</h1><canvas id="scene" data-ecg-x="1030" data-ecg-y="190" width="2400" height="1488" aria-label="従来の洞調律Golden Masterの心臓と12誘導心電図"></canvas><nav class="controls" aria-label="再生設定">
 <button id="play" type="button">再生</button><button id="reset" type="button">最初から</button>
@@ -81,12 +81,13 @@ function drawECG(ms){if(!ecgPaper)makePaper();ctx.drawImage(ecgPaper,0,0);const 
  text('0',1120,1370,21);text('5秒',1627,1370,21);text('0',1750,1370,21);text('5秒',2257,1370,21);
 }
 function labels(s){
- text('正常洞調律  ×  12誘導心電図',180,102,48);text('HR 60回/分　｜　RR 1.00秒　｜　5秒・5拍',180,158,29,'#52616c');
+ text('正常洞調律と12誘導心電図',180,102,48);
+ text('規則的なP波と1対1のP–QRSの対応',180,158,29,'#52616c');
  text('右房',230,495,27);text('左房',868,480,27);text('右室',259,1210,29);text('左室',847,1250,29);
- const t=s.t,phase=t<20?'拡張期':t<120?'心房興奮：P波':t<200?'房室結節遅延：PR区間':t<220?'His束へ伝導：PR終末':t<310?'心室興奮：QRS波':t<450?'心室収縮：ST区間':t<620?'心室再分極：T波':'弛緩・拡張期';
- text(phase,180,1340,30,'#9b6919');text('黄色：興奮　青緑：再分極',180,1394,25,'#52616c');
- text('PR 200 ms　｜　QRS 90 ms　｜　QT 400 ms',1055,154,28,'#52616c');
- text('正常範囲を示す模式波形 ／ 縦線は心臓と共通の現在時刻',1055,193,23,'#687780');
+ text('P波：心房の興奮　QRS：心室の興奮',180,1340,28,'#283743');
+ text('黄色：興奮　青緑：再分極',180,1394,25,'#52616c');
+ text('各誘導の波形を同じ時刻で比較',1055,154,28,'#52616c');
+ text('縦線は心臓と心電図で共通の現在時刻です',1055,193,23,'#687780');
 }
 
 const canvas=document.getElementById('scene'),ctx=canvas.getContext('2d');
@@ -104,4 +105,4 @@ function render(ms){const s=state(ms);ctx.fillStyle='#F8FAFC';ctx.fillRect(0,0,2
 window.renderExportTime=render;window.renderExportFrame=i=>render(i*1000/60);
 window.cardiacAnimation={config,state,sourceTime,frameAt,render,ecgValue,ECG};config.ecg=ECG;
 window.LearnerPlayer.prepareFrames(frames,window.HEART_FRAMES,render,5000,60);
-</script><link rel="stylesheet" href="explanation-review.css?v=20261013"><script defer src="explanation-annotations.js?v=20261013"></script></html>
+</script><link rel="stylesheet" href="explanation-review.css?v=20261013"><link rel="stylesheet" href="category-basic.css?v=basic-20261013"><script defer src="category-basic.js?v=basic-20261013"></script></html>
