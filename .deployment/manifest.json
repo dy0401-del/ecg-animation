@@ -12,8 +12,8 @@
     },
     {
       "path": "animations/afl.html",
-      "bytes": 12718,
-      "sha256": "56100fe6bb692d908232483144278679b923e647785e52b9bfb1a59bef37db2a"
+      "bytes": 12840,
+      "sha256": "72cf0e70578b3949e51d5fd2b88241f10f6c95ee2dd51891a1a0f949a7a056ab"
     },
     {
       "path": "animations/app.js",
@@ -827,8 +827,8 @@
     },
     {
       "path": "animations/pac.html",
-      "bytes": 1270823,
-      "sha256": "8b8bf8cfcca61be39a556da0cc4a08190d9fcf0bc5803773421b7ce1b90ad5e4"
+      "bytes": 1269214,
+      "sha256": "c0e0c04cf0f8549bc51f926c9c347437b84ed0d3356f3e052615c3fcd4a68902"
     },
     {
       "path": "animations/pvc.html",
@@ -902,8 +902,8 @@
     },
     {
       "path": "animations/at.html",
-      "bytes": 1282777,
-      "sha256": "15e2bd55ce0449a46631f87da382d71fb381959522440cb7f2233583e1eb36a0"
+      "bytes": 1281279,
+      "sha256": "f17963afa31348ef2dc054842c5a53bf7d5177efb3a1ad75754428f47e0ef686"
     },
     {
       "path": "animations/assets/at-fonts/BIZUDPGothic-Regular.ttf",
@@ -1278,6 +1278,21 @@
       "path": "animations/category-sinus.css",
       "bytes": 789,
       "sha256": "1f641a4eeff9d50aab7f794d4cec5bb721fef689d35b4e82210b71cf0e0824bc"
+    },
+    {
+      "path": "animations/category-atrial.js",
+      "bytes": 5351,
+      "sha256": "286db3fb5997347c3ead6b1745ea4df25b0afea2dd4d05717bd16bada672cc59"
+    },
+    {
+      "path": "animations/category-atrial.css",
+      "bytes": 795,
+      "sha256": "fe5ec5ce7cd17af16253a2c4a2dbe6185146b1404b0e97cd7621be809eddf038"
+    },
+    {
+      "path": "animations/afl-fixed-frame-player.js",
+      "bytes": 6969,
+      "sha256": "ae38aee25e9ab5dd26d9a80c7710eb683c49c506e6ce8c950fd352adec7acb10"
     }
   ]
 }
