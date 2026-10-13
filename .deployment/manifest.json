@@ -837,23 +837,23 @@
     },
     {
       "path": "animations/avnrt-typical.html",
-      "bytes": 1286488,
-      "sha256": "e3e3a10d5a337bb7408460e88f98a7e17f179238e0a71127e2af21b39ebd7590"
+      "bytes": 1286877,
+      "sha256": "1e608422431c9e3c96598934336b8bdd2908981739be245dbf275d0a8a70001e"
     },
     {
       "path": "animations/avnrt-fast-slow.html",
-      "bytes": 1286853,
-      "sha256": "169aa7fb9a770d5e3e0694295352ed5d8c2df1f5f6123bff0ae65b11361da1ba"
+      "bytes": 1287173,
+      "sha256": "46aeb09ba271db19d96b254abd51d6397ace584cfca4a3bbc2a84bafa0cb4d3c"
     },
     {
       "path": "animations/avrt-orthodromic.html",
-      "bytes": 1295946,
-      "sha256": "04dc3ded4740adf5781784499eb2a0c677f9bd9a1332271a745b5e8ffc63d084"
+      "bytes": 1296243,
+      "sha256": "d8d5138b70deca4c44383359449146f24354934366995a8e71fcee7832ef1bb2"
     },
     {
       "path": "animations/avrt-antidromic.html",
-      "bytes": 1296271,
-      "sha256": "29ec78909fba65f1dd6592afba7663ffba02af45321b9bd190f03f2708ce1181"
+      "bytes": 1296566,
+      "sha256": "99f1bb08faa966790d4d408ee4ecad4f8cc19d85eb32e8d2320a8b355ae85a34"
     },
     {
       "path": "animations/pvc-run.html",
@@ -1293,6 +1293,16 @@
       "path": "animations/afl-fixed-frame-player.js",
       "bytes": 6969,
       "sha256": "ae38aee25e9ab5dd26d9a80c7710eb683c49c506e6ce8c950fd352adec7acb10"
+    },
+    {
+      "path": "animations/category-reentry.js",
+      "bytes": 6626,
+      "sha256": "196a3394f3ac1c76e507800b5eb371dca26ecd0da3675e99bbd45a160a69f2be"
+    },
+    {
+      "path": "animations/category-reentry.css",
+      "bytes": 801,
+      "sha256": "39d0939bd481adc39188bb98308267b8657b75b0c88f730931eed1aa32225c88"
     }
   ]
 }
