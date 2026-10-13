@@ -832,8 +832,8 @@
     },
     {
       "path": "animations/pvc.html",
-      "bytes": 1271989,
-      "sha256": "e18d640496ec56e448a0b10af1a385d32c0789ca0f64bb8d25ea5a64ea1dc3c4"
+      "bytes": 1270416,
+      "sha256": "e89ae573bc7eba13f35952ea868cb46f134df661bbddc3a8130c69c67673ee11"
     },
     {
       "path": "animations/avnrt-typical.html",
@@ -857,18 +857,18 @@
     },
     {
       "path": "animations/pvc-run.html",
-      "bytes": 1268459,
-      "sha256": "7fdb4b101432f6cc5aa021848ec48a8b7606fe7911560be8898011b0e84f8100"
+      "bytes": 1267638,
+      "sha256": "c809af01409ed6ce46e581f73b7f1a66468eb2669d321526a5da8725b83a78db"
     },
     {
       "path": "animations/vt.html",
-      "bytes": 1291874,
-      "sha256": "cf537d9e614ac5239ca289b20e28a225422e3c462b0d587e27f4889c26dba473"
+      "bytes": 1291032,
+      "sha256": "06e54fd0481137d9cc200069f8a7ec952eae1fe94e5792a4c22beb19c16faf51"
     },
     {
       "path": "animations/vf-transition.html",
-      "bytes": 1292543,
-      "sha256": "30dbc5228e363928155326d4e601e075f0319bd0ee0bd567a5b5247bdd4db625"
+      "bytes": 1291031,
+      "sha256": "97cc984d2e81e4b0d3bb460c4286f56537e6dea515dded1efc8c84e4f9b65632"
     },
     {
       "path": "animations/high-grade-av-block.html",
@@ -1178,18 +1178,18 @@
     },
     {
       "path": "animations/tdp.html",
-      "bytes": 13750391,
-      "sha256": "5b5178cb62bf36236b53107332dca601d54e8b4653c7fd779a11c937753c9246",
+      "bytes": 13748562,
+      "sha256": "218a6e01b681aed375fc41112540973c5122a95949b3306d1a1cae370b638096",
       "parts": [
         {
           "path": ".deployment/parts/tdp.html.part-001",
           "bytes": 8388608,
-          "sha256": "3caec5f63a9ff8e0f6286a0d359221cb99a1f83905b5efbbb13bf3be9cd4066c"
+          "sha256": "091da3c9e8be009c93df760734eaa59323fb18c7e4182aa41ded45b5b01c8148"
         },
         {
           "path": ".deployment/parts/tdp.html.part-002",
-          "bytes": 5361783,
-          "sha256": "a3fdfdd07affb15fb6d3b3e38ab11526d463b19a585159f48a5667fa7382c452"
+          "bytes": 5359954,
+          "sha256": "bc015c2798f291acbfb4b0ba2e989ce8f176bbe67a954c9d5efed3fa5ed1e75c"
         }
       ]
     },
@@ -1313,6 +1313,16 @@
       "path": "animations/category-wpw.css",
       "bytes": 777,
       "sha256": "d4692eb0cc84282823e136e9a16bbb14d0d030a08bd7a7796a8024aa25e3530c"
+    },
+    {
+      "path": "animations/category-ventricular.js",
+      "bytes": 7853,
+      "sha256": "fee52a8c494526266eb725df462d73d5595e8f0fb7f8cb0b85bf917b1ec6c6d1"
+    },
+    {
+      "path": "animations/category-ventricular.css",
+      "bytes": 825,
+      "sha256": "7e4b799b06e1ddc30b9cf2421d6412f3bd8d9a06261682bf18bf91d2e5a63167"
     }
   ]
 }
