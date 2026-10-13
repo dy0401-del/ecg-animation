@@ -887,18 +887,18 @@
     },
     {
       "path": "animations/wpw-a.html",
-      "bytes": 1286300,
-      "sha256": "3b785f6dfc2e488f4985efc76fa04609a014b257d110d743106e066ecbf8243c"
+      "bytes": 1286556,
+      "sha256": "f928b09fe3513652d410f22a519984a0b98c7552f7ce47e8c7777f7e0666f87d"
     },
     {
       "path": "animations/wpw-b.html",
-      "bytes": 1286440,
-      "sha256": "dac4d90e52da353e52ffa939db6c36a4a27957884aa3d93b19112494683d2323"
+      "bytes": 1286696,
+      "sha256": "3df31362bc344ca4fd2c032a618d6e673ca60ced1d370690bd7dc2c06c192c85"
     },
     {
       "path": "animations/wpw-c.html",
-      "bytes": 1286426,
-      "sha256": "f17d4d0c58d273e784a0501b4c5d62b46bacae51c36df07fd385b60c334d3556"
+      "bytes": 1286682,
+      "sha256": "cc72a3a1e97c597805f8a7202e1cd3cd6aa31630e41713e7d3c6a6e6c81f6192"
     },
     {
       "path": "animations/at.html",
@@ -1303,6 +1303,16 @@
       "path": "animations/category-reentry.css",
       "bytes": 801,
       "sha256": "39d0939bd481adc39188bb98308267b8657b75b0c88f730931eed1aa32225c88"
+    },
+    {
+      "path": "animations/category-wpw.js",
+      "bytes": 2747,
+      "sha256": "0955ca5f8f16c4e3d664193f8d3c46a4eef16800665a1e0df89208c48ea811b5"
+    },
+    {
+      "path": "animations/category-wpw.css",
+      "bytes": 777,
+      "sha256": "d4692eb0cc84282823e136e9a16bbb14d0d030a08bd7a7796a8024aa25e3530c"
     }
   ]
 }
