@@ -812,8 +812,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 30753,
-      "sha256": "f57dff80e9c13ca89d6c5509a8b9c72c54bc731768233135f756326b88e9d01b"
+      "bytes": 31143,
+      "sha256": "0847a77613d35283d1320f7f76a4aa8a17f0ad10f33885b8253d234a914d0efd"
     },
     {
       "path": "rhythm-finder.js",
@@ -1358,6 +1358,23 @@
       "path": "animations/category-pacing.css",
       "bytes": 795,
       "sha256": "77eed14618d3b61fe3509f29aea31cb6ec4dc910557750ebd0bb066efad7e383"
+    },
+    {
+      "path": "animations/apvp.html",
+      "bytes": 15305319,
+      "sha256": "905ac999255233b88adee1c6152c328087128f0bd4ec1546bf536f1c10acd866",
+      "parts": [
+        {
+          "path": ".deployment/parts/apvp.html.part-001",
+          "bytes": 8388608,
+          "sha256": "dc4302ebaba15f2edd060ccc14e1afe50f961906e7d9d12b89c8a6ef7413bb1f"
+        },
+        {
+          "path": ".deployment/parts/apvp.html.part-002",
+          "bytes": 6916711,
+          "sha256": "531c934e4aaa3e9e0fbabc41ef61184a8753c74a6d5d14e55203fce5c369a672"
+        }
+      ]
     }
   ]
 }
