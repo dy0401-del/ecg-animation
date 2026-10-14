@@ -727,8 +727,8 @@
     },
     {
       "path": "animations/first-degree-av-block.html",
-      "bytes": 26264,
-      "sha256": "c6bed651fb050c389e97feb638fa8de691e4d36e04b42ae5352e68eefd64c5c5"
+      "bytes": 26160,
+      "sha256": "75993b6e9e481a6c364a261945c4985690cc8a8efa15a0f42c1efa12372ffdf4"
     },
     {
       "path": "animations/frame-player.js",
@@ -752,8 +752,8 @@
     },
     {
       "path": "animations/mobitz-ii.html",
-      "bytes": 1259682,
-      "sha256": "7a0f625b77560717607fddcc8308c5c838e92e5e983b04b2921c133a741bb2a9"
+      "bytes": 1257729,
+      "sha256": "97b9f0410aaa6366d4dd5ccef0b2f1566b0085d5cdbf4e82be164275f88b4b7c"
     },
     {
       "path": "animations/rbbb.html",
@@ -802,13 +802,13 @@
     },
     {
       "path": "animations/third-degree-av-block.html",
-      "bytes": 1266382,
-      "sha256": "8e9072978c514f698fb63f0b095ba73b1ed6b280e72fb696ecf6700fd6a58022"
+      "bytes": 1264990,
+      "sha256": "9753fcf84f2785eb0e4b92fe44f5708a91e1aa199f975124a74043a79f9d2bdd"
     },
     {
       "path": "animations/wenckebach.html",
-      "bytes": 1258123,
-      "sha256": "d9dfd9cec2ff254df001d7283c6198f0a44d2c99b78457d259bc669dd828239c"
+      "bytes": 1256388,
+      "sha256": "5215048dfb6f3cc5c834378d1690e2e9993d26beeb200b62ff93d58afd3604d9"
     },
     {
       "path": "index.html",
@@ -872,8 +872,8 @@
     },
     {
       "path": "animations/high-grade-av-block.html",
-      "bytes": 1263796,
-      "sha256": "86fd0302bef1b8446694f5a9909dca50be0a7eea9570828a08e1754a6656ba5d"
+      "bytes": 1264283,
+      "sha256": "7814e52e4ba456bc44b88d3f9a6d4a7356d173e75c5be128f522e6dbbf086e06"
     },
     {
       "path": "animations/learner-display.js",
@@ -1323,6 +1323,16 @@
       "path": "animations/category-ventricular.css",
       "bytes": 825,
       "sha256": "7e4b799b06e1ddc30b9cf2421d6412f3bd8d9a06261682bf18bf91d2e5a63167"
+    },
+    {
+      "path": "animations/category-av.js",
+      "bytes": 7893,
+      "sha256": "bc0ded0f09c65bc583f699e1cbb4a5bc49efe84859c6c54af2c431d6ec5a3e61"
+    },
+    {
+      "path": "animations/category-av.css",
+      "bytes": 771,
+      "sha256": "2f69252dc03033ac568bcf42fc65f92a8905767ca62e1056f00ed233180a8932"
     }
   ]
 }
