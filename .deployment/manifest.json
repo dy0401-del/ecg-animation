@@ -737,8 +737,8 @@
     },
     {
       "path": "animations/lbbb.html",
-      "bytes": 12348,
-      "sha256": "4211b239809ccdbc678f34cbb0415a87c6013b1d09da4cf3db6d9e3977df367e"
+      "bytes": 12496,
+      "sha256": "88d7e08eaee7c68d10c2fe76fd72230a018966c205288785d612077a5cb9ef8b"
     },
     {
       "path": "animations/learner-player.js",
@@ -757,8 +757,8 @@
     },
     {
       "path": "animations/rbbb.html",
-      "bytes": 111800,
-      "sha256": "f78f35a1783502cb4fe1416210afab9526b531c7f259d49c5165cef2e9d8e99e"
+      "bytes": 107331,
+      "sha256": "7e8e059cb03702cba47ebc659d94c84d5ee24f6af32ce74fedb689c56cb52759"
     },
     {
       "path": "animations/rhythms/README.md",
@@ -1333,6 +1333,21 @@
       "path": "animations/category-av.css",
       "bytes": 771,
       "sha256": "2f69252dc03033ac568bcf42fc65f92a8905767ca62e1056f00ed233180a8932"
+    },
+    {
+      "path": "animations/category-bundle.js",
+      "bytes": 4770,
+      "sha256": "b5db08f197c07943a6abde154e7b31a560da6530db973b3f6130b334f1e44b00"
+    },
+    {
+      "path": "animations/category-bundle.css",
+      "bytes": 857,
+      "sha256": "04bc19dc5c4ff66f633afdcc2fa06c4c7d84b564ab5130e23f686e9c2e3a7a0a"
+    },
+    {
+      "path": "animations/lbbb-fixed-frame-player.js",
+      "bytes": 6963,
+      "sha256": "5229bcff39f69a1291c2b42526fdd42b846740c63faba46f292bb1e7cfafdadc"
     }
   ]
 }

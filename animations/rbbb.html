@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>右脚ブロック（RBBB）｜心電図アニメーション</title><link rel="icon" href="data:,"><script>window.CARDIAC_ANIMATION_REQUEST={rhythm:'right-bundle-branch-block',heartRate:60,duration:5,fps:60};</script><style>@font-face{font-family:'BIZ UDPGothic';font-weight:400;src:url(assets/at-fonts/BIZUDPGothic-Regular.ttf) format('truetype');font-display:block}@font-face{font-family:'BIZ UDPGothic';font-weight:700;src:url(assets/at-fonts/BIZUDPGothic-Bold.ttf) format('truetype');font-display:block}</style><link rel="stylesheet" href="learner-ui.css?v=fullscreen-20261005"></head><body><main class="ecg-page"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><h1>右脚ブロック（RBBB）</h1><canvas id="scene" data-ecg-x="0" data-ecg-y="1088" width="1808" height="1488" aria-label="右脚ブロックの心臓とV1・V6の同期アニメーション"></canvas><nav class="controls" aria-label="再生設定">
+<!doctype html><html data-category-review="bundle" data-bundle-page="rbbb" lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>右脚ブロック（RBBB）｜心電図アニメーション</title><link rel="icon" href="data:,"><script data-category-annotations src="category-bundle.js?v=bundle-20261014"></script><script>window.CARDIAC_ANIMATION_REQUEST={rhythm:'right-bundle-branch-block',heartRate:60,duration:5,fps:60};</script><style>@font-face{font-family:'BIZ UDPGothic';font-weight:400;src:url(assets/at-fonts/BIZUDPGothic-Regular.ttf) format('truetype');font-display:block}@font-face{font-family:'BIZ UDPGothic';font-weight:700;src:url(assets/at-fonts/BIZUDPGothic-Bold.ttf) format('truetype');font-display:block}</style><link rel="stylesheet" href="learner-ui.css?v=fullscreen-20261005"></head><body><main class="ecg-page"><a class="ecg-back-link" href="../index.html">← 心電図一覧へ戻る</a><h1>右脚ブロック（RBBB）</h1><canvas id="scene" data-ecg-x="0" data-ecg-y="1088" width="1808" height="1488" aria-label="右脚ブロックの心臓とV1・V6の同期アニメーション"></canvas><nav class="controls" aria-label="再生設定">
 <button id="play" type="button">再生</button><button id="reset" type="button">最初から</button>
 <label>速度<select id="speed"><option value="0.25">0.25倍速</option><option value="0.5">0.5倍速</option><option value="1" selected>1倍速</option><option value="2">2倍速</option></select></label>
 <label class="seek-label">再生位置<input id="seek" type="range" min="0" max="299" step="1" value="0" aria-label="再生位置"></label>
@@ -1512,31 +1512,7 @@
     context.restore();
   }
 
-  function drawLabels(context, state, config) {
-    // Match the sinus ECG title and phase badge, using the free strip immediately
-    // above the ECG so both accepted lead traces retain their size and position.
-    const design = config.visual.design;
-    const top = design.canvas.heartHeight - 60;
-    const stageText = ecgStage(state.cycleSeconds);
-    context.save();
-    context.fillStyle = "#111827";
-    context.font = "700 34px " + FONT;
-    context.fillText(config.visual.ecgTitle, 28, top + 43);
-    context.font = "700 30px " + FONT;
-    const width = Math.ceil(context.measureText(stageText).width) + 36;
-    const x = design.canvas.width - 28 - width;
-    context.fillStyle = "#F1F5F9";
-    roundedRect(context, x, top, width, 52, 9);
-    context.fill();
-    context.strokeStyle = "#CBD5E1";
-    context.lineWidth = 1.5;
-    context.stroke();
-    context.fillStyle = "#111827";
-    context.textAlign = "right";
-    context.fillText(stageText, design.canvas.width - 46, top + 37);
-    context.restore();
-    return { labelsVisible: true, embeddedInCompositeFrame: false, teachingStage: stageText };
-  }
+  function drawLabels(context, state, config) {return {labelsVisible:true,embeddedInCompositeFrame:false,teachingStage:'固定注釈'};}
 
   function piecewise(points, time) {
     if (time < points[0][0] || time > points[points.length - 1][0]) return 0;
@@ -1861,6 +1837,7 @@
     if (state.outputFrame === lastOutputFrame && !config.visual.playbackRate) return state;
     lastOutputFrame = state.outputFrame;
     const result = engine.renderAt(elapsed);
+    window.relayoutRbbb(context,canvas);
     seek.value = String(state.outputFrame);
     const totalBeats = config.timing && Array.isArray(config.timing.ventricularBeatTimes)
       ? config.timing.ventricularBeatTimes.length
@@ -1923,4 +1900,4 @@
   window.LearnerPlayer.waitForPlay(async()=>{await prepare();window.LearnerPlayer.start(renderElapsed,totalDuration,config.duration.fps,true);},loading);
   // A still preview uses unchanged resting anatomy; full data preparation happens on play.
   document.fonts.load('700 31px "BIZ UDPGothic"').then(()=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=reject;im.src=config.renderModel.heartFrames[0];})).then(im=>{if(window.__CARDIAC_READY__)return;engine.heart.frames=[im];muteFrames();renderElapsed(0);canvas.dataset.previewReady='true';}).catch(error=>console.error(error));
-})();</script><style id="rbbb-note-style">.diagram-viewport{position:relative}.rbbb-callouts{position:absolute;pointer-events:none}.rbbb-callouts text{font-family:"BIZ UDPGothic","BIZ UDPゴシック",sans-serif;fill:#243746;font-weight:700}.rbbb-callouts .heading{font-size:42px}.rbbb-callouts .title{font-size:40px}.rbbb-callouts .detail{font-size:31px;font-weight:400}.rbbb-callouts .legend{font-size:29px}.rbbb-callouts rect{stroke-width:2;stroke:#b8c7d1}.rbbb-callouts .blocked{fill:#fff1f2;stroke:#bf6570}.rbbb-callouts .left{fill:#fff9e6;stroke:#c9ab55}.rbbb-callouts .right{fill:#eaf8fc;stroke:#73aebd}.rbbb-callouts .arrow{fill:none;stroke:#657c89;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.rbbb-now{margin:10px 0 0;font-size:16px;line-height:1.65;color:#243746;max-width:1100px}.rbbb-now strong{color:#234f60}@media(max-width:600px){.rbbb-now{font-size:15px}}</style><script id="rbbb-note-script">(()=>{'use strict';const canvas=document.getElementById('scene'),view=canvas.parentElement;view.insertAdjacentHTML('beforeend',"<svg class=\"rbbb-callouts\" viewBox=\"0 0 1808 1488\" aria-hidden=\"true\"><g>\n<text class=\"heading\" x=\"1030\" y=\"80\">右脚ブロックの伝わり方</text><text class=\"detail\" x=\"1030\" y=\"135\">洞結節からヒス束までは正常に伝わる</text>\n<rect class=\"blocked\" x=\"1025\" y=\"200\" width=\"735\" height=\"185\" rx=\"16\"/><text class=\"title\" x=\"1050\" y=\"255\">① 右脚で伝導が遮断</text><text class=\"detail\" x=\"1050\" y=\"310\">×印が右脚の遮断部位</text><text class=\"detail\" x=\"1050\" y=\"352\">右脚から右室へ直接は伝わらない</text>\n<path class=\"arrow\" d=\"M1392 402 V433 M1381 420 L1392 433 L1403 420\"/>\n<rect class=\"left\" x=\"1025\" y=\"450\" width=\"735\" height=\"200\" rx=\"16\"/><text class=\"title\" x=\"1050\" y=\"510\">② 左脚から左室へ伝導</text><text class=\"detail\" x=\"1050\" y=\"565\">左脚前枝・後枝の伝導は保たれる</text><text class=\"detail\" x=\"1050\" y=\"610\">画面右の左室が先に興奮する</text>\n<path class=\"arrow\" d=\"M1392 668 V700 M1381 687 L1392 700 L1403 687\"/>\n<rect class=\"right\" x=\"1025\" y=\"715\" width=\"735\" height=\"200\" rx=\"16\"/><text class=\"title\" x=\"1050\" y=\"775\">③ 心筋を介して右室へ</text><text class=\"detail\" x=\"1050\" y=\"830\">左室側から右室へ興奮が広がる</text><text class=\"detail\" x=\"1050\" y=\"875\">画面左の右室が遅れて興奮する</text>\n<text class=\"legend\" x=\"1030\" y=\"975\">黄色の光：正常に伝わる興奮</text><text class=\"legend\" x=\"1030\" y=\"1020\">水色の光：遅れた右室の興奮</text></g></svg>");const svg=view.querySelector('.rbbb-callouts');const box=document.createElement('p');box.className='rbbb-now';box.innerHTML='<strong>図の見方：</strong>右側の①→②→③を順に読むと、興奮が伝わる経路を確認できます。注釈は固定表示です。小さい画面では「図の倍率」を2倍・4倍にすると読めます。';view.after(box);const label=document.createElement('label');label.innerHTML='<input id="rbbb-label-toggle" type="checkbox" checked>注釈を表示';document.querySelector('nav.controls').append(label);label.querySelector('input').onchange=e=>{svg.style.visibility=e.target.checked?'visible':'hidden';box.hidden=!e.target.checked;};function layout(){svg.style.left=canvas.offsetLeft+'px';svg.style.top=canvas.offsetTop+'px';svg.style.width=canvas.offsetWidth+'px';svg.style.height=canvas.offsetHeight+'px';}new ResizeObserver(layout).observe(canvas);window.addEventListener('resize',layout);layout();})();</script></body><link rel="stylesheet" href="explanation-review.css?v=20261013"><script defer src="explanation-annotations.js?v=20261013"></script></html>
+})();</script></body><link rel="stylesheet" href="explanation-review.css?v=20261013"><link rel="stylesheet" href="category-bundle.css?v=bundle-20261014"></html>
