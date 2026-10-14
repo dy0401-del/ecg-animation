@@ -1,0 +1,5 @@
+html[data-category-review="pacing"] .diagram-shell:not(:fullscreen):not(.expanded) .diagram-viewport{max-height:none}
+html[data-category-review="pacing"] .diagram-shell:not(:fullscreen):not(.expanded):has(#diagram-zoom option[value="1"]:checked) .diagram-viewport #scene{width:100%!important}
+.category-pacing-notes{margin:12px 0 16px;padding:16px 18px;border:1px solid #cbd5df;border-radius:8px;background:#eef5f6;color:#25313b;font-size:16px;line-height:1.8;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px;word-break:normal}
+.category-pacing-notes p{margin:0;text-align:left;color:inherit;font:inherit}.category-pacing-notes strong{display:block;margin-bottom:4px}
+@media(max-width:600px){.category-pacing-notes{grid-template-columns:1fr;padding:14px;font-size:15px}}

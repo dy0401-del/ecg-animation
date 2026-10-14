@@ -1212,35 +1212,35 @@
     },
     {
       "path": "animations/asvp.html",
-      "bytes": 15311678,
-      "sha256": "8370debc10a6933cb80c114a6a53097b5d003f2dcd000ebe74fedfd164a0a344",
+      "bytes": 15307935,
+      "sha256": "46080574550bc57f9bc2a8789686d9563d78b3e8b8c3f6b83b580b34a5067700",
       "parts": [
         {
           "path": ".deployment/parts/asvp.html.part-001",
           "bytes": 8388608,
-          "sha256": "666c74dbe0b4245255d4249b9dd1d91c3a8af855254b6a70fa8f9376687d0f8d"
+          "sha256": "b90fe52fbc866f671d2ee6d6d4cca75e314bf6f58886c0ff66ed2404b6d966d0"
         },
         {
           "path": ".deployment/parts/asvp.html.part-002",
-          "bytes": 6923070,
-          "sha256": "54ec3b0721dd82257301d0bddcf3e202b2b1fb6f757765408224a6294b1c42c3"
+          "bytes": 6919327,
+          "sha256": "14ec2751c87d3c44bdd011a6c954ad8555216f8bdf9214088928898e98e68966"
         }
       ]
     },
     {
       "path": "animations/apvs.html",
-      "bytes": 15311516,
-      "sha256": "50d09849e5ed69882c840e0792dd5a374baf2d45bbbddc9497a74b25235da4c6",
+      "bytes": 15307816,
+      "sha256": "3e1bf63297d1af96603e855238ee1c1ca928c284358b86b9094ab9284992f218",
       "parts": [
         {
           "path": ".deployment/parts/apvs.html.part-001",
           "bytes": 8388608,
-          "sha256": "58d777113cfcc636faf7d1d2cb20bf9704a427c7d8145612dfe2fe65ae421af4"
+          "sha256": "18ef86f30e159461abf8de9c8b70771c6a8207303a4685bbd3c0857a7da59e89"
         },
         {
           "path": ".deployment/parts/apvs.html.part-002",
-          "bytes": 6922908,
-          "sha256": "5dea7c1c66dd9993d3ef614445910f42f89b0606ca3a160e20533626d77525e2"
+          "bytes": 6919208,
+          "sha256": "f3644dce328b0463334d509832a8b4eb16c142c5ab5c94505a1fce7a9b4c5e2c"
         }
       ]
     },
@@ -1348,6 +1348,16 @@
       "path": "animations/lbbb-fixed-frame-player.js",
       "bytes": 6963,
       "sha256": "5229bcff39f69a1291c2b42526fdd42b846740c63faba46f292bb1e7cfafdadc"
+    },
+    {
+      "path": "animations/category-pacing.js",
+      "bytes": 3510,
+      "sha256": "bd234ae06ba7afd791dc00af21cd4efe9d4622f0f7a50dd6902895b53d9fb907"
+    },
+    {
+      "path": "animations/category-pacing.css",
+      "bytes": 795,
+      "sha256": "77eed14618d3b61fe3509f29aea31cb6ec4dc910557750ebd0bb066efad7e383"
     }
   ]
 }
