@@ -1,0 +1,4 @@
+.normal-wide-scene{display:none}
+.ecg-page .avnrt-approved-layout:not(:fullscreen):not(.expanded) .diagram-viewport{position:relative;height:auto}
+.ecg-page .avnrt-approved-layout:not(:fullscreen):not(.expanded) .diagram-viewport #scene{position:absolute;visibility:hidden;pointer-events:none}
+.ecg-page .avnrt-approved-layout:not(:fullscreen):not(.expanded) .normal-wide-scene{display:block;width:100%;height:var(--avnrt-normal-fit-height,60svh);margin:0}

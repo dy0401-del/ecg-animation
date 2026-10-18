@@ -837,8 +837,8 @@
     },
     {
       "path": "animations/avnrt-typical.html",
-      "bytes": 1286877,
-      "sha256": "1e608422431c9e3c96598934336b8bdd2908981739be245dbf275d0a8a70001e"
+      "bytes": 1287119,
+      "sha256": "4af9d4c7e251050b1a7caab3d04bdda3e4646cd29581ea348dad1cf404df8278"
     },
     {
       "path": "animations/avnrt-fast-slow.html",
@@ -1375,6 +1375,26 @@
           "sha256": "531c934e4aaa3e9e0fbabc41ef61184a8753c74a6d5d14e55203fce5c369a672"
         }
       ]
+    },
+    {
+      "path": "animations/approved-layout.css",
+      "bytes": 4546,
+      "sha256": "e9a232777f141522f636b982f5c5605e33309031c3363dc5236dd3700ccc13dc"
+    },
+    {
+      "path": "animations/approved-layout.js",
+      "bytes": 4897,
+      "sha256": "4ce3f3005d24ff3405b7f0421685f4b19fb8b95c96234ab46c79b5d5e7a86df6"
+    },
+    {
+      "path": "animations/normal-layout.css",
+      "bytes": 457,
+      "sha256": "1bac32cd106262e94c1f93ca3c6235f1c55e9b067034a99b83717b5fe1a0a8e1"
+    },
+    {
+      "path": "animations/normal-layout.js",
+      "bytes": 3852,
+      "sha256": "528d72b5ec32db3e92c6893ec2ce649566bd757adadeda7e7ec5764e41d4e4c1"
     }
   ]
 }
