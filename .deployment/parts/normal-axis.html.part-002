@@ -740,6 +740,6 @@ Object.assign(window.cardiacAnimation,{heartFlowAt,heartDisplayAt,qrsMeanVector}
 })();
 </script>
 <!-- Playback bar only; original diagram layout preserved. -->
-<link rel="stylesheet" href="playbar-only.css?v=20261019">
-<script src="playbar-only.js?v=20261019"></script>
+<link rel="stylesheet" href="playbar-only.css?v=20261019-below-nozoom">
+<script src="playbar-only.js?v=20261019-below-nozoom"></script>
 </body><link rel="stylesheet" href="explanation-review.css?v=20261013"><link rel="stylesheet" href="category-basic.css?v=basic-20261013"><script defer src="category-basic.js?v=basic-20261013"></script></html>

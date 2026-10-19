@@ -1,4 +1,5 @@
 /* Playback controls only. No rules change the canvas, viewport or diagram shell. */
+.diagram-shell[data-playbar-only-ready=true] .diagram-tools,.diagram-shell[data-playbar-only-ready=true] .diagram-help{display:none!important}
 .ecg-page .controls.playbar-only{position:static;display:flex;align-items:center;flex-wrap:nowrap;gap:18px;padding:8px 10px;min-height:46px;margin:0;border:0;border-top:1px solid #ccd8e3;background:transparent;flex-shrink:0;color:#506377}
 .ecg-page .controls.playbar-only button,.ecg-page .controls.playbar-only select{border:0;border-radius:0;background:transparent;box-shadow:none;padding:3px 5px;min-height:30px;font-size:13px;color:#203449}
 .ecg-page .controls.playbar-only #play{min-width:56px;text-align:left}

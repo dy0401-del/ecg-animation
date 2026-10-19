@@ -7,13 +7,13 @@
     },
     {
       "path": "animations/af.html",
-      "bytes": 14637,
-      "sha256": "a11367863570597bf55379e6f0d59d1ec2e858fc5c33eecb3f92460113965523"
+      "bytes": 14663,
+      "sha256": "63f0c1c5eb7b35cca4ff07f8bb726cfaf9c7273780d4034f96a61b22aa217d1c"
     },
     {
       "path": "animations/afl.html",
-      "bytes": 13014,
-      "sha256": "d72ab29ff13f51eab306d4b45591f63e302dade50cbe335296cf986cc90145e7"
+      "bytes": 13040,
+      "sha256": "df7d00d1f20eb31bf33dfed15b1e234d1c1beeed2fa08ba1362b2d5fa967d176"
     },
     {
       "path": "animations/app.js",
@@ -727,8 +727,8 @@
     },
     {
       "path": "animations/first-degree-av-block.html",
-      "bytes": 26334,
-      "sha256": "a0bbd689976b0dd05cabd3418eb3a7acebb905c7d7ac6a7a4a23f061869ddad3"
+      "bytes": 26360,
+      "sha256": "d214aa81e6ce39f68cadbbcf48d8fe7c801da704c25f58b6f8d1c23f57d99d1f"
     },
     {
       "path": "animations/frame-player.js",
@@ -737,8 +737,8 @@
     },
     {
       "path": "animations/lbbb.html",
-      "bytes": 12670,
-      "sha256": "384028807d8949644ece751873077e40d430da57af91d30efda912578b9c9c34"
+      "bytes": 12696,
+      "sha256": "93a48e223f7e0f3d9304a84a7e30a3965f7ff170801f00817910c46bba444f41"
     },
     {
       "path": "animations/learner-player.js",
@@ -752,13 +752,13 @@
     },
     {
       "path": "animations/mobitz-ii.html",
-      "bytes": 1257903,
-      "sha256": "634d5dfb7f4926d0f4f623061f62a4036d275714ce9ac062b79c88e05e8ff737"
+      "bytes": 1257929,
+      "sha256": "0993c5ea35c91799f9cb7f42137e41505b77d6cb35cb6e4464d554360da030f4"
     },
     {
       "path": "animations/rbbb.html",
-      "bytes": 107505,
-      "sha256": "c0354e8797bea7674ff1e68bc137649c6fc33cc626dbc314b44746af139bdee3"
+      "bytes": 107531,
+      "sha256": "e3945a2ff18714ace799cd87a563402d997540ceb5ba6792c3055d7521be5d4c"
     },
     {
       "path": "animations/rhythms/README.md",
@@ -782,33 +782,33 @@
     },
     {
       "path": "animations/sinus-rhythm.html",
-      "bytes": 8819421,
-      "sha256": "fece997472252662c162aa5c8b5ca26f2d92361a4eb1a4781c63a11ce8e7e42f"
+      "bytes": 8819447,
+      "sha256": "1d7b00587fffe773a8a237e17a85e537a6d7725640b245fbed4a6ba999aebb07"
     },
     {
       "path": "animations/sss-group-i.html",
-      "bytes": 1253860,
-      "sha256": "f809fdac635cacf307808cd596960a2a75c4bd3cf500785d091af5306ae8a329"
+      "bytes": 1253886,
+      "sha256": "9055b000eedd247976caeffe82e9abc179d93cdb52d40ececef8257c433517fa"
     },
     {
       "path": "animations/sss-group-ii-sa-block.html",
-      "bytes": 1257939,
-      "sha256": "603ef15bf1cd96d66e14baee4f6f1e24c04a49352231829e2de6a3e3e026926c"
+      "bytes": 1257965,
+      "sha256": "263379bd36c9b34ab2382e35cfcfec76b281c7ffd1b457cd93122ec54883bd45"
     },
     {
       "path": "animations/sss-group-ii-sinus-arrest.html",
-      "bytes": 1254857,
-      "sha256": "a04b364fe2949b3d1c7d86f52f5ca7044c854f5fb57f077f32e856b4cde1be86"
+      "bytes": 1254883,
+      "sha256": "d3abeb9c2678aa69a89a5e5296cff23d74e59b7976f2a73078926eb2b7d8af0d"
     },
     {
       "path": "animations/third-degree-av-block.html",
-      "bytes": 1265164,
-      "sha256": "eaea93de7308554d3f75d7b13b4370b31efa754f0e0292e71ba549e9441a1279"
+      "bytes": 1265190,
+      "sha256": "6e997609c9ec4ac38303d2c183d9bcbad76da5a6d1792beefd1854fdcc629963"
     },
     {
       "path": "animations/wenckebach.html",
-      "bytes": 1256562,
-      "sha256": "97cb4d1ab2c0893f3df975cdee5c2b599cf6aed7afacdc06a9b6c239ffc78fd0"
+      "bytes": 1256588,
+      "sha256": "801ba929ee870607fdf42246d330b33aa6d53f4165a7113d9524f1e1b5afaf04"
     },
     {
       "path": "index.html",
@@ -822,18 +822,18 @@
     },
     {
       "path": "animations/sss-group-iii.html",
-      "bytes": 13708283,
-      "sha256": "07e23765d43d172645fbdf9526c2f4f69e0348874abcb65d4ad6fb99c6652e48"
+      "bytes": 13708309,
+      "sha256": "df9c325362cd603d8ce54a025ff7829ef00b48dcd9a0a726fe9b103a724cbaf0"
     },
     {
       "path": "animations/pac.html",
-      "bytes": 1269388,
-      "sha256": "6e67896222a0bb5eac004d90cfdb15c883dadeab76da107b7fe5b0f613d4a2ae"
+      "bytes": 1269414,
+      "sha256": "d5dc89d06e9a69141f8771e21e7322f29289cc1af1464a2b991bb4861027e633"
     },
     {
       "path": "animations/pvc.html",
-      "bytes": 1270590,
-      "sha256": "7eb4ef3b893a65e74c2c0dbf32259b4297bd7065786e2b69525a0f80e80c7cd8"
+      "bytes": 1270616,
+      "sha256": "89a3ee8dd965cac223ff7552a34fb587e560b44d6586955d46811f76a1ae658b"
     },
     {
       "path": "animations/avnrt-typical.html",
@@ -842,38 +842,38 @@
     },
     {
       "path": "animations/avnrt-fast-slow.html",
-      "bytes": 1287347,
-      "sha256": "19537924e1ce065e50220ba64687ef99131fc4905c7a35df783996ccb224e61e"
+      "bytes": 1287373,
+      "sha256": "4a40f31c12ae1da7d610b9bdaa7666f57a24d12d1bb265d4376807d83be6a3c9"
     },
     {
       "path": "animations/avrt-orthodromic.html",
-      "bytes": 1296417,
-      "sha256": "984eecd33808772647ffc46f84db9ddca762a507a625caa981dbaa91cf14cc19"
+      "bytes": 1296443,
+      "sha256": "8d504a45b4cb7a89b4bc4a72c07f0183528c2fcb9b947f1bc92c680ac6d0a685"
     },
     {
       "path": "animations/avrt-antidromic.html",
-      "bytes": 1296740,
-      "sha256": "bbe0a618e43c119318df639c6b630cd0a064df430bfaaa3b5e99838c02c56949"
+      "bytes": 1296766,
+      "sha256": "d4a96ff6013bcdfb97938216e7664634fbe13e54b0ba411670a64455ab5ffcf2"
     },
     {
       "path": "animations/pvc-run.html",
-      "bytes": 1267812,
-      "sha256": "bcd8cf7b53d321aac4f0c8bd2586a8bc41596d692805083ce9fd2d4f52c1d24c"
+      "bytes": 1267838,
+      "sha256": "d57b470d7920c6bca19d6c859af61519d865f3785c8f7124f55761bbca4bd08a"
     },
     {
       "path": "animations/vt.html",
-      "bytes": 1291206,
-      "sha256": "51a96398e19e1f39bc825026bb33b79726784fec7ba8b039f29c2351ae781aac"
+      "bytes": 1291232,
+      "sha256": "82c4e02536b2cc5002933749a5d245408393b24d7b15b63d4a12933a2ce1dbee"
     },
     {
       "path": "animations/vf-transition.html",
-      "bytes": 1291205,
-      "sha256": "dac41094f1f275e4ec43c8704f25c41e781a2a3f7c7dfd65bc501597e052a9db"
+      "bytes": 1291231,
+      "sha256": "a7807adf13db3d13cb99153bca29c9a072ba1ea896b509dd167f7d24fe27992d"
     },
     {
       "path": "animations/high-grade-av-block.html",
-      "bytes": 1264457,
-      "sha256": "0a0dd8fc1b2f5a4af2716633420548985a73377ee2641010e6788069e47ac4fb"
+      "bytes": 1264483,
+      "sha256": "804054177b7cfbaccc235f471e382ac84bc109ef327597e1395c196e19deb66c"
     },
     {
       "path": "animations/learner-display.js",
@@ -887,23 +887,23 @@
     },
     {
       "path": "animations/wpw-a.html",
-      "bytes": 1286730,
-      "sha256": "8a3a6a3c491cb8cf55a43c2a29486cf0907bbdba50343fcde4549ab2e0ba04ef"
+      "bytes": 1286756,
+      "sha256": "db1b62801d318b0782ea783dcd2c0ed4cb433876b1ce533b45e6a7302f141f61"
     },
     {
       "path": "animations/wpw-b.html",
-      "bytes": 1286870,
-      "sha256": "a644a051b9ba114074abb559f23e0cd6fe3de71263b211c844fec86c95e803f9"
+      "bytes": 1286896,
+      "sha256": "64023c6bad3461d78b471185a11f337b2b1c9b35be7e1dcbe5ae2bf1b2430a97"
     },
     {
       "path": "animations/wpw-c.html",
-      "bytes": 1286856,
-      "sha256": "028653c63b46f35fdb7ccbd29c528f78242433de42ce44d40c4c7d93e744bf45"
+      "bytes": 1286882,
+      "sha256": "219d974f8d0d16e4567521388b3d92003fa27db9c589a29b2b0c788927b8cf43"
     },
     {
       "path": "animations/at.html",
-      "bytes": 1281453,
-      "sha256": "c0a307ff03faacf16272b2f2737004f62e7e7841a24d83ce184b89c924949eaa"
+      "bytes": 1281479,
+      "sha256": "556892ba57605c5ac403206e5a25c5d59a0110667eaf799ac7fc74d8cf0fdc1a"
     },
     {
       "path": "animations/assets/at-fonts/BIZUDPGothic-Regular.ttf",
@@ -922,8 +922,8 @@
     },
     {
       "path": "animations/normal-axis.html",
-      "bytes": 13718535,
-      "sha256": "10af9a674822cf1b072bd6bb18c9c685ebf9be2aaba36091b689ebe5bd478012",
+      "bytes": 13718561,
+      "sha256": "6a6cf99a126a9f36666c1e7894f6d8e8c4361af71d9dd538c260b07af92119d0",
       "parts": [
         {
           "path": ".deployment/parts/normal-axis.html.part-001",
@@ -932,15 +932,15 @@
         },
         {
           "path": ".deployment/parts/normal-axis.html.part-002",
-          "bytes": 5329927,
-          "sha256": "10c175c2bf2a864d87b07b81ab42bd8084071f11d0b59c5175b43c065f02e32c"
+          "bytes": 5329953,
+          "sha256": "9a7585d8bc94af294971bc1da977542c8cf8946d30eed1137cd7cfc733f4fa98"
         }
       ]
     },
     {
       "path": "animations/left-axis-deviation.html",
-      "bytes": 13869678,
-      "sha256": "1f7d7c53798af5c780ad62a35fbe73db36bd73fe5ad1fb137564691cb03ce4b0",
+      "bytes": 13869704,
+      "sha256": "96dd6d4c0d96315eb011605466ec2aeb6478b881091ab1da1826711daf2cc681",
       "parts": [
         {
           "path": ".deployment/parts/left-axis-deviation.html.part-001",
@@ -949,8 +949,8 @@
         },
         {
           "path": ".deployment/parts/left-axis-deviation.html.part-002",
-          "bytes": 5481070,
-          "sha256": "253461b16ef712d097f6722d24ed2c342cd87c3e92951256831273ba6552d589"
+          "bytes": 5481096,
+          "sha256": "bd3bc854cf9094243120c4a598958a70edda17d499046322791eaba5db08503f"
         }
       ]
     },
@@ -1161,8 +1161,8 @@
     },
     {
       "path": "animations/right-axis-deviation.html",
-      "bytes": 13868481,
-      "sha256": "b4619fcf8cae4a014ce06dc9d45a70c707514c854a0ca831ada018c430c82b8d",
+      "bytes": 13868507,
+      "sha256": "b9af50818207c8a5548a2ef8058bc8d30dc88c8951991e4c04379dd3471412e2",
       "parts": [
         {
           "path": ".deployment/parts/right-axis-deviation.html.part-001",
@@ -1171,15 +1171,15 @@
         },
         {
           "path": ".deployment/parts/right-axis-deviation.html.part-002",
-          "bytes": 5479873,
-          "sha256": "3cc7ea31f5b0c86af8fc7260dacbe8c22ce7f38d4910735ac17d0e8a16f35c02"
+          "bytes": 5479899,
+          "sha256": "243404ef8b4bf044cfe1501720f89a35b234432817ad458fdc2f2b62ec31322f"
         }
       ]
     },
     {
       "path": "animations/tdp.html",
-      "bytes": 13748736,
-      "sha256": "6602e13413b501e7d523eacc3fd63c3352f983b7c032c028777b4809e226a110",
+      "bytes": 13748762,
+      "sha256": "47cd8520bb5289885b1cbe1999778257ed3805616f0ad05f8601c0fc7d9b4acf",
       "parts": [
         {
           "path": ".deployment/parts/tdp.html.part-001",
@@ -1188,15 +1188,15 @@
         },
         {
           "path": ".deployment/parts/tdp.html.part-002",
-          "bytes": 5360128,
-          "sha256": "afadf4eca0d8bb38def9b6aa3787ce14d13efe4581445ee5b6c74bf628bf5c5e"
+          "bytes": 5360154,
+          "sha256": "7275c3ba982fd6ca5c14baadfcf17c26bc2b4ad2d4de993854a4ccb3b96df5d4"
         }
       ]
     },
     {
       "path": "animations/sinus-tachycardia.html",
-      "bytes": 13736610,
-      "sha256": "da892e3fe56571f3f58b308ccbe1a046eebb56aebbc02d969b38b5dcd16f5f43",
+      "bytes": 13736636,
+      "sha256": "2328bcfc79fd1ef1d2be51869481852f67c1cfdc5ea8f4f1bef2c7fa426ed3ef",
       "parts": [
         {
           "path": ".deployment/parts/sinus-tachycardia.html.part-001",
@@ -1205,15 +1205,15 @@
         },
         {
           "path": ".deployment/parts/sinus-tachycardia.html.part-002",
-          "bytes": 5348002,
-          "sha256": "527af0187f9b1efb57848d29d187f9ad0316434920f4ed839d07a251014ddd7b"
+          "bytes": 5348028,
+          "sha256": "c9526fd265c9da1e1170a34f5407eca70c9b02ef7cc849252166e7b773397280"
         }
       ]
     },
     {
       "path": "animations/asvp.html",
-      "bytes": 15308109,
-      "sha256": "4c0d9286f8df85582336e72a8b7a6f897ee7e85dbf2ba98d0e64003ee6caab42",
+      "bytes": 15308135,
+      "sha256": "2e92b8ba54a56151c854d2ae0bde683afc0338d0b910d1b67caf627bac354242",
       "parts": [
         {
           "path": ".deployment/parts/asvp.html.part-001",
@@ -1222,15 +1222,15 @@
         },
         {
           "path": ".deployment/parts/asvp.html.part-002",
-          "bytes": 6919501,
-          "sha256": "47451cedba3d4da90e3a4c6ad47aaa44dec7f7f789a4ffb0500c005c25027ef8"
+          "bytes": 6919527,
+          "sha256": "a3e5f43916e30d9135c99dc5bac5017bb6265062d0103e8e991be53a33328f58"
         }
       ]
     },
     {
       "path": "animations/apvs.html",
-      "bytes": 15307990,
-      "sha256": "dbd71db98901655a986692d47b1b03bebb1ba0ca69f6352b364611c5ade93565",
+      "bytes": 15308016,
+      "sha256": "374229db577934fceecea9440d9ac6b65e818f18c69ba7ea6c27f97df01f68a5",
       "parts": [
         {
           "path": ".deployment/parts/apvs.html.part-001",
@@ -1239,8 +1239,8 @@
         },
         {
           "path": ".deployment/parts/apvs.html.part-002",
-          "bytes": 6919382,
-          "sha256": "55cd4309563042fa20b44c8c9a519ee994ca16cdb56ef05129723798b3754bd2"
+          "bytes": 6919408,
+          "sha256": "4629cf3d32ed622b7958105f928da842366819674342f75557d03873f5017a06"
         }
       ]
     },
@@ -1361,8 +1361,8 @@
     },
     {
       "path": "animations/apvp.html",
-      "bytes": 15305493,
-      "sha256": "a23e50aec842e131ff743ca23113adf7248e41d26557c6a43c88419b58710e3e",
+      "bytes": 15305519,
+      "sha256": "4d08600f3f644c28c34557b4198c6f5987271c0d05a5ef9b9e3c3a0fe9132120",
       "parts": [
         {
           "path": ".deployment/parts/apvp.html.part-001",
@@ -1371,8 +1371,8 @@
         },
         {
           "path": ".deployment/parts/apvp.html.part-002",
-          "bytes": 6916885,
-          "sha256": "ad7d24870b2325d3ae62b165f5af2eddd65869ea81e83483e971205ac3e993b7"
+          "bytes": 6916911,
+          "sha256": "8b7fe35f15e39a8434bce1b3587792cd47e9db498fe500a246f911f231e5a236"
         }
       ]
     },
@@ -1398,13 +1398,13 @@
     },
     {
       "path": "animations/playbar-only.css",
-      "sha256": "c1c890f3515008372b0b96830efc4a10076fe97d20169f3d5464262ec53cca47",
-      "bytes": 1478
+      "sha256": "31b82eb36e29b4880bc5f4164b3d09de22822d79406150546af454914997bd80",
+      "bytes": 1621
     },
     {
       "path": "animations/playbar-only.js",
-      "sha256": "1c780947cc6ef42200cc452c321a839914a3777cec95be2a2bd4b9f1971d459a",
-      "bytes": 1345
+      "sha256": "a1484dd354c04293ea459cd0c169d011d692745707c642248205ab382e92b0e5",
+      "bytes": 1552
     }
   ]
 }

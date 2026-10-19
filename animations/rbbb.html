@@ -1902,6 +1902,6 @@
   document.fonts.load('700 31px "BIZ UDPGothic"').then(()=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=reject;im.src=config.renderModel.heartFrames[0];})).then(im=>{if(window.__CARDIAC_READY__)return;engine.heart.frames=[im];muteFrames();renderElapsed(0);canvas.dataset.previewReady='true';}).catch(error=>console.error(error));
 })();</script>
 <!-- Playback bar only; original diagram layout preserved. -->
-<link rel="stylesheet" href="playbar-only.css?v=20261019">
-<script src="playbar-only.js?v=20261019"></script>
+<link rel="stylesheet" href="playbar-only.css?v=20261019-below-nozoom">
+<script src="playbar-only.js?v=20261019-below-nozoom"></script>
 </body><link rel="stylesheet" href="explanation-review.css?v=20261013"><link rel="stylesheet" href="category-bundle.css?v=bundle-20261014"></html>

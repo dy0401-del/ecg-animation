@@ -532,6 +532,6 @@ document.addEventListener('DOMContentLoaded',()=>{const button=document.createEl
 <section class="ecg-learning-notes ecg-remember"><h2>5．学習の要点</h2><p><strong>ApVpは、心房刺激に続いて心室刺激を出す動作です。</strong>この例ではP波とQRSの前にそれぞれスパイクがあり、刺激の後に対応する波が続きます。観察では、刺激の場所と捕捉を確認し、患者さんの脈拍・血圧・症状と結び付けます。</p></section>
 <div class="ecg-learning-references"><section class="ecg-learning-common" aria-labelledby="ecg-learning-common-title"><h3 id="ecg-learning-common-title">共通の学習内容</h3><p>心電図の波形は、心臓のどこに、どの順番で電気的な興奮が広がったかを反映しています。心臓図と波形を対応させることで、所見が現れる理由を理解できます。</p><p>心電図は電気活動の記録であり、収縮や血液の送り出しを直接記録するものではありません。患者さんの状態は、症状、脈拍・血圧・呼吸など、以前の心電図と合わせて評価します。</p></section></div></main>
 <!-- Playback bar only; original diagram layout preserved. -->
-<link rel="stylesheet" href="playbar-only.css?v=20261019">
-<script src="playbar-only.js?v=20261019"></script>
+<link rel="stylesheet" href="playbar-only.css?v=20261019-below-nozoom">
+<script src="playbar-only.js?v=20261019-below-nozoom"></script>
 </body></html>

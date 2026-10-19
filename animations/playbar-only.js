@@ -6,5 +6,5 @@
  const seekLabel=document.createElement('label');seekLabel.className='playbar-only-seek';seekLabel.append(document.createTextNode('再生位置'),seek);
  const speedLabel=document.createElement('label');speedLabel.append(document.createTextNode('速度 '),speed);
  const repeatLabel=document.createElement('label');repeatLabel.append(repeat,document.createTextNode('繰り返し'));
- bar.classList.add('playbar-only');bar.setAttribute('aria-label','再生バー');bar.replaceChildren(play,seekLabel,speedLabel,repeatLabel,...extras,fullscreen);shell.dataset.playbarOnlyReady='true';
+ bar.classList.add('playbar-only');bar.setAttribute('aria-label','再生バー');bar.replaceChildren(play,seekLabel,speedLabel,repeatLabel,...extras,fullscreen);window.LearnerDiagram.viewport.after(bar);for(const el of shell.querySelectorAll('.diagram-tools,.diagram-help'))el.hidden=true;window.LearnerDiagram.viewport.setAttribute('aria-label','図の表示領域');shell.dataset.playbarOnlyReady='true';
 }if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();})();

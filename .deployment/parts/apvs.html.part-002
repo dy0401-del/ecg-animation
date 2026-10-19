@@ -536,6 +536,6 @@ document.addEventListener('DOMContentLoaded',()=>{const button=document.createEl
 <details><summary>参考資料・確認状況</summary><ul><li><a href="https://manuals.eifu.abbott/content/dam/av/manuals-eifu/global/US/en/60033180_.pdf">Abbottの説明書：AsVp・ApVsの定義と装置の動作</a></li><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5067035/">刺激後の反応とペースメーカーの動作の確認</a></li><li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12378894/">学会資料：リードの留置位置</a></li></ul><p>対象者：看護師1～2年目。資料確認日：2026年10月13日。専門家レビュー、実機確認、対象者による理解度確認は未実施です。</p></details><h3>5．学習の要点</h3><p>心房を刺激し、その後に心室の電気信号を読み取ります。この例ではP波の直前にスパイクがあり、その後にP波が続きます。心室の信号を読み取るため、その拍では心室を刺激しません。</p></section>
 <section class="ecg-remember"><h2>学習の要点</h2><p><strong>ApVs：心房はペーシング、心室はセンシング。この図ではP波の直前にスパイクがあります。</strong></p><p>観察では、刺激した場所と、刺激の後にP波・QRSが続くかを確認します。患者さんの状態と合わせた評価が必要です。</p></section><section class="ecg-learning-common" aria-labelledby="ecg-learning-common-title"><h3 id="ecg-learning-common-title">共通の学習内容</h3><p>心電図の波形は、心臓のどこに、どの順番で電気的な興奮が広がったかを反映しています。心臓図と波形を対応させることで、所見が現れる理由を理解できます。</p><p>心電図は電気活動の記録であり、収縮や血液の送り出しを直接記録するものではありません。患者さんの状態は、症状、脈拍・血圧・呼吸など、以前の心電図と合わせて評価します。</p></section></main>
 <!-- Playback bar only; original diagram layout preserved. -->
-<link rel="stylesheet" href="playbar-only.css?v=20261019">
-<script src="playbar-only.js?v=20261019"></script>
+<link rel="stylesheet" href="playbar-only.css?v=20261019-below-nozoom">
+<script src="playbar-only.js?v=20261019-below-nozoom"></script>
 </body><link rel="stylesheet" href="explanation-review.css?v=20261013"><link rel="stylesheet" href="category-pacing.css?v=pacing-20261014"></html>
