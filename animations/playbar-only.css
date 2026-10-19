@@ -1,0 +1,11 @@
+/* Playback controls only. No rules change the canvas, viewport or diagram shell. */
+.ecg-page .controls.playbar-only{position:static;display:flex;align-items:center;flex-wrap:nowrap;gap:18px;padding:8px 10px;min-height:46px;margin:0;border:0;border-top:1px solid #ccd8e3;background:transparent;flex-shrink:0;color:#506377}
+.ecg-page .controls.playbar-only button,.ecg-page .controls.playbar-only select{border:0;border-radius:0;background:transparent;box-shadow:none;padding:3px 5px;min-height:30px;font-size:13px;color:#203449}
+.ecg-page .controls.playbar-only #play{min-width:56px;text-align:left}
+.ecg-page .controls.playbar-only label{display:flex;align-items:center;gap:5px;white-space:nowrap;font-size:13px}
+.ecg-page .controls.playbar-only .playbar-only-seek{flex:1;min-width:50px;font-size:0}
+.ecg-page .controls.playbar-only input[type=range]{width:100%;min-width:30px;min-height:30px;margin:0;accent-color:#136b77}
+.ecg-page .controls.playbar-only input[type=checkbox]{width:16px;height:16px;margin:0;accent-color:#136b77}
+.ecg-page .controls.playbar-only #diagram-fullscreen{margin-left:auto;white-space:nowrap}
+.ecg-page .controls.playbar-only :is(button,select,input):focus-visible{outline:2px solid #136b77;outline-offset:2px}
+@media(max-width:600px){.ecg-page .controls.playbar-only{gap:5px;flex-wrap:wrap;padding:5px 0}.ecg-page .controls.playbar-only .playbar-only-seek{min-width:80px}.ecg-page .controls.playbar-only :is(button,label,select){font-size:12px}}

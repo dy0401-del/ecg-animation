@@ -238,4 +238,8 @@ function startPlayback(){
  window.cardiacAnimation.playback={getState:()=>({elapsed,playing,speed:Number(speed.value),repeat:repeat.checked,cycles})};canvas.dataset.ecgY=String(1088*canvas.height/1488);canvas.dataset.ecgX='0';canvas.dataset.previewReady='true';draw();requestAnimationFrame(tick);
 }
 
-</script></body><link rel="stylesheet" href="explanation-review.css?v=20261013"><link rel="stylesheet" href="category-reentry.css?v=reentry-20261013"></html>
+</script>
+<!-- Playback bar only; original diagram layout preserved. -->
+<link rel="stylesheet" href="playbar-only.css?v=20261019">
+<script src="playbar-only.js?v=20261019"></script>
+</body><link rel="stylesheet" href="explanation-review.css?v=20261013"><link rel="stylesheet" href="category-reentry.css?v=reentry-20261013"></html>

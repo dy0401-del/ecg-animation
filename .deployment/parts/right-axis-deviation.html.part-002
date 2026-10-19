@@ -711,4 +711,8 @@ function phaseOf(ms){const e=observationEvent(ms),a=config.timing.atrialEvents.f
 function updateLearning(ms){window.learningSnapshot={ms,event:observationEvent(ms).id,phase:phaseOf(ms),vector:vectorAt(ms),I:qrsProjection(ms,'I'),aVF:qrsProjection(ms,'aVF'),II:qrsProjection(ms,'II'),activeFlowIds:heartDisplayAt(ms).flows.map(f=>f.id),mean:meanFor(observationEvent(ms))};const put=(id,s)=>{const n=document.getElementById(id);if(n)n.textContent=s;};put('phase-now',phaseOf(ms));put('projection-I',vectorAt(ms).event?qrsProjection(ms,'I').toFixed(3)+' mV':'QRS外：投影なし');put('projection-aVF',vectorAt(ms).event?qrsProjection(ms,'aVF').toFixed(3)+' mV':'QRS外：投影なし');put('mean-now','＋'+meanFor(observationEvent(ms)).angle.toFixed(1)+'°');}
 document.querySelectorAll?.('[data-qrs-phase]').forEach(b=>b.addEventListener('click',()=>{const elapsed=window.cardiacAnimation.playback?.getState().elapsed||0,e=observationEvent(elapsed),seek=document.getElementById('seek');seek.value=Math.round((e.qrsStart+Number(b.dataset.qrsPhase))*config.duration.fps/1000);seek.dispatchEvent(new Event('input',{bubbles:true}));}));
 Object.assign(window.cardiacAnimation,{meanFor,qrsProjection,phaseOf,observationEvent});
-</script></body><link rel="stylesheet" href="explanation-review.css?v=20261013"><link rel="stylesheet" href="category-basic.css?v=basic-20261013"><script defer src="category-basic.js?v=basic-20261013"></script></html>
+</script>
+<!-- Playback bar only; original diagram layout preserved. -->
+<link rel="stylesheet" href="playbar-only.css?v=20261019">
+<script src="playbar-only.js?v=20261019"></script>
+</body><link rel="stylesheet" href="explanation-review.css?v=20261013"><link rel="stylesheet" href="category-basic.css?v=basic-20261013"><script defer src="category-basic.js?v=basic-20261013"></script></html>
